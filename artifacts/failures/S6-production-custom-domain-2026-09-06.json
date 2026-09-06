@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "stage": "S6",
+  "responsibilityStage": "S5-Cloudflare-deploy-target",
+  "failureType": "external-blocker",
+  "evidenceLevel": "L3",
+  "status": "failed",
+  "rootCauseConfirmed": false,
+  "observedAt": "2026-09-06T14:15:23+08:00",
+  "error": "正式域名六项验收均为 HTTP 0 / fetch failed；Worker workers.dev 已返回 HTTP 200，dungeonsettler.top DNS 查询无记录，TLS 自定义域握手失败。",
+  "evidence": {
+    "productionReport": "artifacts/production/",
+    "workerUrl": "https://dungeonsettler-top.apiskpai-fe0.workers.dev",
+    "deploymentVersion": "1b94de4b-dbc4-42cb-a5ff-f5e3b86b485c",
+    "customDomain": "https://dungeonsettler.top",
+    "checks": [
+      "homepage",
+      "representative-page",
+      "robots",
+      "sitemap",
+      "not-found",
+      "https"
+    ]
+  },
+  "retryChange": "把 deployment-contract.json 中的 domains 真实传入 wrangler deploy 的 --domains 参数，重新执行 deploy:cloudflare；随后重新跑正式域名验收并核对域名解析/Cloudflare Custom Domain 状态。"
+}
