@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "stage": "S3",
+  "responsibleStage": "S3 build and test",
+  "failureType": "incomplete-output",
+  "evidenceLevel": "L2",
+  "rootCauseConfirmed": false,
+  "result": "recovered",
+  "observedAt": "2026-09-06T13:50:00.000Z",
+  "symptom": "npm test initially failed only because the copied starter self-test expected template compatibility markers that the site-specific research files had replaced.",
+  "evidence": ["npm test output", "tests/template-contract.test.mjs"],
+  "changedRetry": "保留真实研究内容，在研究文件中加入明确的模板合同来源说明；平台文件的 not-queried 只作为注释标记，并让 research-pack 解析器忽略该标记，真实状态仍为 verified。",
+  "retry": { "attempt": 2, "changed": ["context", "approach"] }
+}

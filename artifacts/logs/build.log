@@ -1,0 +1,55 @@
+
+> data-to-decision-site-starter@1.1.1 build
+> vinext build
+
+
+  vinext build  (Vite 8.0.13)
+
+▲ [WARNING] Proxy environment variables detected. We'll use your proxy for fetch requests.
+
+
+(node:23440) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[1/5] analyze client references...
+[2K
+transforming...✓ 233 modules transformed.
+rendering chunks...
+✓ built in 1.72s
+[2/5] analyze server references...
+[2K
+transforming...✓ 126 modules transformed.
+rendering chunks...
+✓ built in 189ms
+[3/5] build rsc environment...
+[2K
+transforming...✓ 231 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.07s
+[4/5] build client environment...
+[2K
+transforming...✓ 130 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 452ms
+[5/5] build ssr environment...
+[2K
+transforming...✓ 127 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 388ms
+[0m
+  Route (app)
+  ┌ ? /             
+  ├ ƒ /guides/:slug 
+  ├ ? /library      
+  ├ ƒ /library/:slug
+  └ ? /updates      
+
+  ƒ Dynamic  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+  Build complete. Run `vinext start` to start the production server.
+

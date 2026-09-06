@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "phase": "S4",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 4,
+  "capturedAt": "2026-09-06T14:05:22.050Z",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 2,
+      "changed": [
+        "approach",
+        "scope"
+      ]
+    },
+    "note": "全量 verify、逐 URL On-page、素材闭环、第二轮代表页截图和 fresh-context 复审均已通过。",
+    "recordedAt": "2026-09-06T14:05:22.050Z"
+  },
+  "checks": [
+    {
+      "id": "build",
+      "status": "passed",
+      "evidence": [
+        "artifacts/logs/build.log"
+      ],
+      "note": "vinext build 完成，生成 dist/server 与 Cloudflare 构建入口。"
+    },
+    {
+      "id": "test",
+      "status": "passed",
+      "evidence": [
+        "artifacts/logs/test.log"
+      ],
+      "note": "15 个测试全部通过。"
+    },
+    {
+      "id": "public-copy",
+      "status": "passed",
+      "evidence": [
+        "artifacts/logs/public-copy.log"
+      ],
+      "note": "4 个公开 URL 的无内部研究文案检查通过；页面不展示关键词指标、AI 日志或未核验视频步骤。"
+    },
+    {
+      "id": "assets",
+      "status": "passed",
+      "evidence": [
+        "artifacts/logs/assets.log",
+        "research/素材清单.json",
+        "artifacts/visual/home-desktop.png",
+        "artifacts/visual/home-mobile.png"
+      ],
+      "note": "两个原创视觉锚点已完成代码、权利、合同和首页真实截图闭环；检查仅保留抽象 SVG 警示。"
+    },
+    {
+      "id": "onpage-seo",
+      "status": "passed",
+      "evidence": [
+        "artifacts/quality/seo-routes.json"
+      ],
+      "note": "4 个合同 URL 逐页 HTTP 200、TDK、H1、canonical、正文、关键词、内链、alt 和 JSON-LD 全部通过。"
+    },
+    {
+      "id": "onpage-check",
+      "status": "passed",
+      "evidence": [
+        "artifacts/logs/check-onpage.log"
+      ],
+      "note": "标准 seo-routes.json 与交接 ID、输入修订一致。"
+    },
+    {
+      "id": "final-desktop-screenshot",
+      "status": "passed",
+      "evidence": [
+        "artifacts/quality/representative-final-r3-desktop.png",
+        "artifacts/quality/representative-final-r3-desktop-viewport.png"
+      ],
+      "note": "第二轮最终代表页桌面真实 PNG 与 SHA-256 已绑定。"
+    },
+    {
+      "id": "final-mobile-screenshot",
+      "status": "passed",
+      "evidence": [
+        "artifacts/quality/representative-final-r3-mobile.png",
+        "artifacts/quality/representative-final-r3-mobile-viewport.png"
+      ],
+      "note": "第二轮最终代表页移动真实 PNG 与 SHA-256 已绑定，无横向溢出。"
+    },
+    {
+      "id": "quality-pass",
+      "status": "passed",
+      "evidence": [
+        "artifacts/quality/quality-run.json",
+        "artifacts/quality/quality-review.json",
+        "artifacts/quality/independent-review-packet.json",
+        "artifacts/quality/independent-review-run.json"
+      ],
+      "note": "quality-run 五轮记录最新为 representative-final-r3；fresh reviewer 通过，blockingOpen/majorOpen 均为 0。"
+    }
+  ],
+  "artifacts": [
+    "artifacts/quality/seo-routes.json",
+    "artifacts/quality/quality-run.json",
+    "artifacts/quality/quality-review.json",
+    "artifacts/research/research-pack.json",
+    "artifacts/logs/verify-release.log"
+  ],
+  "commands": [
+    {
+      "id": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/build.log"
+    },
+    {
+      "id": "test",
+      "command": "npm test",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/test.log"
+    },
+    {
+      "id": "public-copy",
+      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/public-copy.log"
+    },
+    {
+      "id": "assets",
+      "command": "npm run check:assets",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/assets.log"
+    },
+    {
+      "id": "onpage-seo",
+      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/audit-onpage.log"
+    },
+    {
+      "id": "check:onpage",
+      "command": "npm run check:onpage",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/check-onpage.log"
+    }
+  ],
+  "evidenceId": "phase-s4-ab6ad5b30acd0753"
+}

@@ -1,0 +1,5 @@
+
+> data-to-decision-site-starter@1.1.1 audit:onpage
+> node scripts/审计页面SEO.mjs --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e
+
+On-page SEO 审计：passed，4 个页面，0 个失败项。

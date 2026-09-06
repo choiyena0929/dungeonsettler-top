@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-06T13:24:10+08:00",
+  "responsiblePhase": "S1",
+  "responsibleCheck": "visual-benchmark-screenshot",
+  "result": "blocked",
+  "failureType": "environment-issue",
+  "evidenceLevel": "L1",
+  "rootCauseConfirmed": true,
+  "error": "正式站初始化复制时排除了 node_modules；站点工作区按包名导入 playwright-core 返回 ERR_MODULE_NOT_FOUND。未生成任何对标 PNG。",
+  "changedRetry": [
+    "改用模板目录已安装且与站点版本一致的 playwright-core file:/// 模块路径",
+    "保持截图输出仍写入站点 artifacts/visual-benchmark，不复用旧站截图"
+  ],
+  "nextAction": "重新采集三张公开页面截图并检查真实 PNG。"
+}

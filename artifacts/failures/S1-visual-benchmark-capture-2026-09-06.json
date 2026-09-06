@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-06T13:23:30+08:00",
+  "responsiblePhase": "S1",
+  "responsibleCheck": "visual-benchmark-screenshot",
+  "result": "blocked",
+  "failureType": "environment-issue",
+  "evidenceLevel": "L1",
+  "rootCauseConfirmed": true,
+  "error": "Node ESM 拒绝 Windows d: 绝对路径模块导入：ERR_UNSUPPORTED_ESM_URL_SCHEME。未生成任何对标 PNG。",
+  "changedRetry": [
+    "改在站点工作区运行",
+    "使用已安装的 playwright-core 包名导入，不传 d: 模块 URL"
+  ],
+  "nextAction": "重新采集 Steam Store、Steam Community 和 Prima Games 的浏览器渲染截图，并逐张检查文件尺寸与 PNG 解压。"
+}

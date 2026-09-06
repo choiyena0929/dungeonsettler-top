@@ -1,0 +1,127 @@
+{
+  "type": "ai-web-youtube-video-research",
+  "schemaVersion": 1,
+  "videoId": "BkGIa5V39-w",
+  "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+  "title": null,
+  "description": null,
+  "channel": null,
+  "channelId": null,
+  "publishedAt": null,
+  "viewCount": 0,
+  "likeCount": 0,
+  "duration": null,
+  "siteId": "steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "revision": "youtube-video-e6db2251e643dabb",
+  "inputHash": "921d37966cc7f287114ea562f5044bec38f8d272a4135114cf06fd978dc22fa3",
+  "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
+  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "analysisStatus": "unavailable",
+  "verificationStatus": "not-queried",
+  "analysisPath": "unavailable",
+  "evidencePath": "research/youtube/BkGIa5V39-w.json",
+  "reason": "Antigravity headless 没有可审计的公开 YouTube URL 原生视频输入；转入 yt-dlp 字幕 + metadata 分析。 没有可用字幕文本，无法调用 Antigravity headless。",
+  "analysisAttempts": {
+    "direct": {
+      "status": "unavailable",
+      "mode": "direct-youtube-url",
+      "reason": "Antigravity headless 没有可审计的公开 YouTube URL 原生视频输入；转入 yt-dlp 字幕 + metadata 分析。"
+    },
+    "fallback": {
+      "status": "unavailable",
+      "mode": "transcript-metadata",
+      "reason": "没有可用字幕文本，无法调用 Antigravity headless。"
+    },
+    "visualEvidenceStatus": "not-queried"
+  },
+  "transcript": {
+    "status": "error",
+    "source": "yt-dlp",
+    "path": "",
+    "textHash": "",
+    "segmentCount": null,
+    "reason": "Command failed: C:\\Users\\86134\\AppData\\Roaming\\Python\\Python313\\Scripts\\yt-dlp.exe --skip-download --write-subs --write-auto-subs --sub-langs en,en-US,en-GB --sub-format vtt --no-warnings --output C:\\Users\\86134\\AppData\\Local\\Temp\\ai-web-youtube-transcript-zbkWj1\\BkGIa5V39-w.%(ext)s https://www.youtube.com/watch?v=BkGIa5V39-w\nERROR: [youtube] BkGIa5V39-w: Sign in to confirm you��re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wi"
+  },
+  "analysis": null,
+  "topics": [
+    "topic-1",
+    "topic-2",
+    "topic-3"
+  ],
+  "receipts": [
+    {
+      "kind": "antigravity-model-list",
+      "provider": "antigravity-cli",
+      "executable": "C:\\Users\\86134\\AppData\\Local\\agy\\bin\\agy.exe",
+      "requestHash": "4a09c4b20179eefb",
+      "status": "success",
+      "startedAt": "2026-09-06T13:22:12.293Z",
+      "completedAt": "2026-09-06T13:22:18.763Z",
+      "responseHash": "b1cc011310435afa"
+    },
+    {
+      "kind": "youtube-transcript-yt-dlp",
+      "requestUrl": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+      "requestHash": "663f389e6ddbfc949efdbdedeeb203f888a5aea22d44f9f65740308a71605f3b",
+      "attempt": 0,
+      "retryChanged": [],
+      "status": "error",
+      "responseStatus": null,
+      "responseHash": null,
+      "startedAt": "2026-09-06T13:22:18.764Z",
+      "completedAt": "2026-09-06T13:22:21.600Z",
+      "error": "Command failed: C:\\Users\\86134\\AppData\\Roaming\\Python\\Python313\\Scripts\\yt-dlp.exe --skip-download --write-subs --write-auto-subs --sub-langs en,en-US,en-GB --sub-format vtt --no-warnings --output C:\\Users\\86134\\AppData\\Local\\Temp\\ai-web-youtube-transcript-zbkWj1\\BkGIa5V39-w.%(ext)s https://www.youtube.com/watch?v=BkGIa5V39-w\nERROR: [youtube] BkGIa5V39-w: Sign in to confirm you��re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wi"
+    },
+    {
+      "kind": "antigravity-model-list",
+      "provider": "antigravity-cli",
+      "executable": "C:\\Users\\86134\\AppData\\Local\\agy\\bin\\agy.exe",
+      "requestHash": "4a09c4b20179eefb",
+      "status": "success",
+      "startedAt": "2026-09-06T13:22:12.293Z",
+      "completedAt": "2026-09-06T13:22:18.763Z",
+      "responseHash": "b1cc011310435afa"
+    }
+  ],
+  "conflicts": [],
+  "rights": {
+    "status": "not-assessed",
+    "directPublish": false,
+    "note": "视频证据不能直接变成站点页面或素材。"
+  },
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "partial",
+    "failureType": "environment-issue",
+    "evidenceLevel": "L3",
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "Antigravity headless 没有可审计的公开 YouTube URL 原生视频输入；转入 yt-dlp 字幕 + metadata 分析。 没有可用字幕文本，无法调用 Antigravity headless。",
+    "recordedAt": "2026-09-06T13:22:21.602Z"
+  },
+  "topicContext": [
+    {
+      "topicId": "topic-1",
+      "label": "Dungeon Settlers beginner guide",
+      "query": "Dungeon Settlers beginner guide",
+      "path": "/guides/beginner-guide"
+    },
+    {
+      "topicId": "topic-2",
+      "label": "How to get clay in Dungeon Settlers",
+      "query": "How to get clay in Dungeon Settlers",
+      "path": "/guides/how-to-get-clay"
+    },
+    {
+      "topicId": "topic-3",
+      "label": "How to research in Dungeon Settlers",
+      "query": "How to research in Dungeon Settlers",
+      "path": "/guides/how-to-research"
+    }
+  ]
+}

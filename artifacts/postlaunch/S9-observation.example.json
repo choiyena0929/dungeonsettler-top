@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s9-observation",
+  "phase": "S9",
+  "status": "not-started",
+  "siteId": "{{state-id}}",
+  "registryId": "site-{{state-id}}",
+  "handoffId": "{{handoff-id}}",
+  "inputRevision": "{{input-revision}}",
+  "phaseStateRevision": 9,
+  "capturedAt": "",
+  "observationWindow": { "status": "ongoing", "start": "", "end": null, "days": 0 },
+  "sources": [],
+  "sourceRefs": [],
+  "nextPrimaryAction": { "type": "hold", "priority": "P1", "summary": "", "reason": "", "requiresUserConfirmation": false, "evidence": [] }
+}

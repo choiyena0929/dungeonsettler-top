@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "phase": "S1",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 1,
+  "capturedAt": "2026-09-06T13:49:03.269Z",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 1,
+      "changed": [
+        "tool"
+      ]
+    },
+    "note": "六项 S1 资料与视觉证据已按真实来源完成核验；受限来源和 W3 不可用状态均保留。",
+    "recordedAt": "2026-09-06T13:49:03.269Z"
+  },
+  "checks": [
+    {
+      "id": "keyword-matrix",
+      "status": "passed",
+      "evidence": [
+        "research/keyword-matrix.md"
+      ],
+      "note": "页面问题、内部需求信号和扩页停止条件已分开。"
+    },
+    {
+      "id": "source-manifest",
+      "status": "passed",
+      "evidence": [
+        "research/source-manifest.md",
+        "artifacts/research/research-source-snapshot.json"
+      ],
+      "note": "S001-S007 均可回查，partial/error 状态未被覆盖。"
+    },
+    {
+      "id": "content-status",
+      "status": "passed",
+      "evidence": [
+        "research/content-status.md"
+      ],
+      "note": "首版范围、代表页、事实边界和 pending 机制已记录。"
+    },
+    {
+      "id": "platform-questions",
+      "status": "passed",
+      "evidence": [
+        "research/platform-questions.md",
+        "research/video-evidence.json"
+      ],
+      "note": "YouTube 两条视频已重试并保留 unavailable，不生成视频事实。"
+    },
+    {
+      "id": "visual-benchmark",
+      "status": "passed",
+      "evidence": [
+        "research/visual-benchmark.md",
+        "artifacts/visual-benchmark/capture-log.json",
+        "artifacts/visual-benchmark/dungeon-settlers-site.png",
+        "artifacts/visual-benchmark/steam-header.jpg"
+      ],
+      "note": "真实对标截图和受限来源截图路径已区分，生产资产采用原创 SVG。"
+    },
+    {
+      "id": "asset-manifest",
+      "status": "passed",
+      "evidence": [
+        "research/素材清单.json",
+        "public/game/dungeon-settlers-hero.svg",
+        "app/components/game-loop-diagram.tsx"
+      ],
+      "note": "两个不同职责的原创资产已登记、绑定代码与来源边界。"
+    }
+  ],
+  "artifacts": [
+    "artifacts/research/research-source-snapshot.json",
+    "artifacts/research/research-pack.json",
+    "artifacts/failures/S1-W3-youtube-precondition-2026-09-06.json",
+    "artifacts/failures/S1-visual-benchmark-capture-r3-2026-09-06.json"
+  ],
+  "commands": [
+    {
+      "id": "research-source-collector",
+      "command": "node research-source-collector.mjs",
+      "exitCode": 0,
+      "logPath": "artifacts/research/research-source-snapshot.json"
+    },
+    {
+      "id": "youtube-evidence",
+      "command": "npm run youtube:evidence",
+      "exitCode": 0,
+      "logPath": "research/video-evidence.json"
+    }
+  ],
+  "evidenceId": "phase-s1-5e923ebe11e94fcb"
+}

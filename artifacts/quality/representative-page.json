@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "type": "representative-page-evidence",
+  "status": "passed",
+  "route": "/guides/beginner-guide",
+  "url": "http://localhost:3000/guides/beginner-guide",
+  "pageContract": "research/page-contracts.json#/pages/1",
+  "contentSource": "app/content.ts",
+  "desktopScreenshot": "artifacts/quality/representative-final-r3-desktop.png",
+  "mobileScreenshot": "artifacts/quality/representative-final-r3-mobile.png",
+  "desktopViewportScreenshot": "artifacts/quality/representative-final-r3-desktop-viewport.png",
+  "mobileViewportScreenshot": "artifacts/quality/representative-final-r3-mobile-viewport.png",
+  "qualityRun": "artifacts/quality/quality-run.json",
+  "independentReview": "artifacts/quality/quality-review.json",
+  "reviewer": "codex-fresh-25d7907624e9",
+  "reviewedRoundId": "representative-final-r3",
+  "observations": [
+    "桌面 1440px 和移动 390px 均 HTTP 200、唯一 H1、无横向溢出。",
+    "首屏先给版本边界和 Quick answer，相关攻略与 Sources 在同一阅读路径内。",
+    "fresh-context 独立审阅五项标准全部 passed，issues 为空；前一轮的移动导航与主动作问题已按审阅目标修复。"
+  ],
+  "capturedAt": "2026-09-06T14:02:20.000Z"
+}

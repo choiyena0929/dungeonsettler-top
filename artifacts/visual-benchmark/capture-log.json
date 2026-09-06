@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-06T13:28:50+08:00",
+  "method": "Microsoft Edge headless with explicit local proxy 127.0.0.1:7897",
+  "captures": [
+    {
+      "id": "benchmark-dungeon-settlers-site",
+      "url": "https://www.dungeon-settlers.com/",
+      "path": "artifacts/visual-benchmark/dungeon-settlers-site.png",
+      "status": "success",
+      "evidenceLevel": "L3",
+      "note": "公开页面真实渲染；只用于布局观察，不复制资产、品牌或文案。"
+    },
+    {
+      "id": "benchmark-steam-header",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2798330/d261312249a66cb55857c791bd3fb65f44894542/header.jpg?t=1788527075",
+      "path": "artifacts/visual-benchmark/steam-header.jpg",
+      "status": "success",
+      "evidenceLevel": "L3",
+      "note": "官方 Steam 静态身份图；只作为构图观察，不复制到生产站。"
+    },
+    {
+      "id": "benchmark-steam-html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "path": "artifacts/visual-benchmark/steam-store.png",
+      "status": "blocked",
+      "failureType": "external-blocker",
+      "evidenceLevel": "L3",
+      "note": "真实 Edge 页面显示 ERR_CONNECTION_CLOSED；不作为通过截图。"
+    },
+    {
+      "id": "benchmark-prima-html",
+      "url": "https://primagames.com/tips/how-to-get-clay-in-dungeon-settlers",
+      "path": "artifacts/visual-benchmark/prima-clay.png",
+      "status": "blocked",
+      "failureType": "external-blocker",
+      "evidenceLevel": "L3",
+      "note": "真实 Edge 页面显示 Cloudflare blocked；页面事实仍以 S003 文本回查为准。"
+    }
+  ],
+  "retryChange": "从直连改为显式代理，并增加一个可访问的同主题公开页面作为布局观察；不把被拦截页面截图写成成功。"
+}

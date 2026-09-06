@@ -1,0 +1,6 @@
+
+> data-to-decision-site-starter@1.1.1 check:assets
+> node scripts/检查素材使用.mjs
+
+提示：首页没有图片或图标型游戏锚点；请确认这不是用抽象 CSS 替代游戏视觉。
+素材使用检查通过：首页必需资产已完成来源、权利、本地路径、代码引用、合同和截图证据闭环。

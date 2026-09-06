@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-research-pack",
+  "status": "ready",
+  "generatedAt": "2026-09-06T13:57:58.653Z",
+  "packRevision": "research-pack-cf8ce853e7ebc954",
+  "siteId": "steam-2798330",
+  "siteName": "Dungeon Settlers Field Guide",
+  "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "required": {
+    "keyword-matrix": {
+      "path": "research/keyword-matrix.md",
+      "status": "present",
+      "bytes": 3041,
+      "sha256": "7bd4649c31e28f976d233b1d03a8fef2aaf7830a829c9308b43ea0b4ce971749"
+    },
+    "source-manifest": {
+      "path": "research/source-manifest.md",
+      "status": "present",
+      "bytes": 5088,
+      "sha256": "cd8bd65e750d4a60d4382528892dfbfa6d32d9e52592718e977f9a92251e4615"
+    },
+    "content-status": {
+      "path": "research/content-status.md",
+      "status": "present",
+      "bytes": 733,
+      "sha256": "7cd6aafbf47c7b24c79a77bc52bdb8997e4d12c0b81b63eaeb285965ee4790b1"
+    },
+    "platform-questions": {
+      "path": "research/platform-questions.md",
+      "status": "present",
+      "bytes": 2219,
+      "sha256": "35e4c36ca938c8ec3321faa8b88be09666dcba023207ceab9a88797c17845a79"
+    },
+    "visual-benchmark": {
+      "path": "research/visual-benchmark.md",
+      "status": "present",
+      "bytes": 3731,
+      "sha256": "081230c1f201650d178ef6d855aba6800feb75bc76e08b72ff810b370ab8e9b3"
+    },
+    "asset-manifest": {
+      "path": "research/素材清单.json",
+      "status": "present",
+      "bytes": 2922,
+      "sha256": "55717baaff793c947d846200b73c600136fc2e8503c2101e27d2109ab276eea4"
+    },
+    "page-contracts": {
+      "path": "research/page-contracts.json",
+      "status": "present",
+      "bytes": 3418,
+      "sha256": "d16d123659e09479208ba48179515e649ef97413785a56c8a255e3f2d6655e0c"
+    }
+  },
+  "optional": {
+    "video-evidence": {
+      "path": "research/video-evidence.json",
+      "status": "present",
+      "bytes": 5633,
+      "sha256": "c1316e0a03e48e32f99be1223816f02a58da6f1217494aa305ecd082242db309"
+    },
+    "structured-input": {
+      "path": "research/research-pack-input.json",
+      "status": "missing",
+      "bytes": 0,
+      "sha256": ""
+    },
+    "research-source-snapshot": {
+      "path": "artifacts/research/research-source-snapshot.json",
+      "status": "present",
+      "bytes": 14815,
+      "sha256": "b7a34deb31654ea0f1950674ff3d54660f6b45879fd0d9ce1ff287d599a79696"
+    }
+  },
+  "summary": {
+    "keywordRows": 12,
+    "platformQuestionRows": 6,
+    "platformQuestionStatus": "verified",
+    "sourceIds": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007"
+    ],
+    "sourceCount": 7,
+    "mappedRoutes": [
+      "/guides/beginner-guide",
+      "/guides/how-to-get-clay",
+      "/guides/how-to-research",
+      "/"
+    ],
+    "pageCount": 4,
+    "assetCount": 2,
+    "requiredAssetCount": 2,
+    "videoItemCount": 2,
+    "videoEvidenceStatus": "measured",
+    "videoAnalysisMeasuredCount": 0,
+    "videoVerificationPendingCount": 2,
+    "youtubeChildCount": 5,
+    "structuredInput": false,
+    "internalOpportunityReferences": 4
+  },
+  "boundaries": {
+    "publicResearchOnly": true,
+    "internalOpportunityDataForFrontend": false,
+    "videoIsOptional": true,
+    "note": "本产物只汇总研究交付状态；它不把内部关键词指标写入前台，也不替代事实来源、页面合同或独立质量审阅。"
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "research-source-snapshot-incomplete",
+      "message": "公共研究来源快照当前为 partial；请按来源状态补齐或核验，不能把它当成完整事实输入。"
+    }
+  ]
+}

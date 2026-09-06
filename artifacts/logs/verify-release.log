@@ -1,0 +1,117 @@
+
+> data-to-decision-site-starter@1.1.1 verify:release
+> npm run verify && npm run check:onpage
+
+
+> data-to-decision-site-starter@1.1.1 verify
+> npm run lint && npm run build && npm run test && npm run check:assets && npm run check:deployment && node scripts/verify-template.mjs
+
+
+> data-to-decision-site-starter@1.1.1 lint
+> eslint . --ignore-pattern dist --ignore-pattern .next
+
+
+D:\WebProjects\sites\dungeonsettler.top\app\page.tsx
+  30:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+> data-to-decision-site-starter@1.1.1 build
+> vinext build
+
+
+  vinext build  (Vite 8.0.13)
+
+▲ [WARNING] Proxy environment variables detected. We'll use your proxy for fetch requests.
+
+
+(node:22300) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[1/5] analyze client references...
+[2K
+transforming...✓ 233 modules transformed.
+rendering chunks...
+✓ built in 1.53s
+[2/5] analyze server references...
+[2K
+transforming...✓ 126 modules transformed.
+rendering chunks...
+✓ built in 169ms
+[3/5] build rsc environment...
+[2K
+transforming...✓ 231 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 946ms
+[4/5] build client environment...
+[2K
+transforming...✓ 130 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 420ms
+[5/5] build ssr environment...
+[2K
+transforming...✓ 127 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 305ms
+[0m
+  Route (app)
+  ┌ ? /             
+  ├ ƒ /guides/:slug 
+  ├ ? /library      
+  ├ ƒ /library/:slug
+  └ ? /updates      
+
+  ƒ Dynamic  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+  Build complete. Run `vinext start` to start the production server.
+
+
+> data-to-decision-site-starter@1.1.1 test
+> node --test tests/*.test.mjs
+
+✔ 模板保留内容合同、搜索、结构化 SEO、发布与素材闭环门禁 (5.1431ms)
+✔ 模板内置新站治理、来源、阶段证据与页面质量交接文件 (3.3211ms)
+✔ 模板不携带原站游戏名、原域名或 Cloudflare 资源名 (0.9761ms)
+✔ 独立审阅执行器按固定顺序校验五项标准 (1.089ms)
+✔ 独立审阅执行器保留 needs-fix 与可复验问题 (0.1518ms)
+✔ 独立审阅执行器拒绝自相矛盾或缺少理由的结果 (2.6003ms)
+✔ 独立审阅执行器只接受站点内且哈希匹配的四张绑定截图 (15.1609ms)
+✔ 独立审阅执行器不会用旧结果覆盖新截图轮次 (0.4833ms)
+✔ review:run 的 dry-run 命令会生成可追踪的 fresh 派发计划 (91.3228ms)
+✔ review:run 在 Codex CLI 不可用时保留失败收据而不伪造通过 (93.4ms)
+✔ 素材检查接受已闭环的首页游戏视觉资产 (86.1202ms)
+✔ 素材检查拒绝已声明却没有源码引用的必需资产 (84.5847ms)
+✔ 素材检查拒绝正式站保留模板阶段 (90.1446ms)
+✔ On-page SEO 审计对机器页面合同逐页验收并生成绑定报告 (164.9874ms)
+✔ On-page SEO 审计会拒绝错误语言和过短 TDK (154.2064ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 462.2369
+
+> data-to-decision-site-starter@1.1.1 check:assets
+> node scripts/检查素材使用.mjs
+
+提示：首页没有图片或图标型游戏锚点；请确认这不是用抽象 CSS 替代游戏视觉。
+素材使用检查通过：首页必需资产已完成来源、权利、本地路径、代码引用、合同和截图证据闭环。
+
+> data-to-decision-site-starter@1.1.1 check:deployment
+> node scripts/检查发布目标.mjs
+
+发布目标检查通过：仅保留 Cloudflare Worker 正式链路。
+模板结构检查通过：33 个核心文件存在。
+
+> data-to-decision-site-starter@1.1.1 check:onpage
+> node scripts/验证SEO产物.mjs
+
+SEO 产物合同检查通过：4 个 URL，正文/关键词/页面合同指标均已绑定。

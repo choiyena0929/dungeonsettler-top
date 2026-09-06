@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "phase": "ready",
+  "site": "Dungeon Settlers Field Guide",
+  "visualStrategy": "original-settlement-field-map-plus-mechanic-diagram",
+  "homepage": {
+    "requiredAssetIds": [
+      "dungeon-settlers-hero",
+      "dungeon-settlers-research-loop"
+    ],
+    "desktopScreenshot": "artifacts/visual/home-desktop.png",
+    "mobileScreenshot": "artifacts/visual/home-mobile.png"
+  },
+  "assets": [
+    {
+      "id": "dungeon-settlers-hero",
+      "role": "hero-identity",
+      "kind": "original-editorial-illustration",
+      "gameSpecific": true,
+      "officialGameAsset": false,
+      "state": "in-use",
+      "required": true,
+      "source": {
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "evidence": "research/source-manifest.md#S001"
+      },
+      "rights": {
+        "status": "confirmed",
+        "basis": "本站原创 SVG 编辑插画；只依据 S001 已核验的 settlement、dungeon expedition 与 research 主题绘制，不复制官方角色、Logo、UI 或截图。"
+      },
+      "localPath": "public/game/dungeon-settlers-hero.svg",
+      "renderTargets": [
+        {
+          "route": "/",
+          "implementation": "app/page.tsx",
+          "placement": "首页首屏右侧主视觉"
+        }
+      ],
+      "crop": "宽幅画面保留左下 settlement 灯火、右侧 dungeon 门和中间路径；标题置于左侧留白，不覆盖地标。",
+      "alt": "An original editorial field-map illustration of a torchlit settlement preparing a four-person dungeon expedition."
+    },
+    {
+      "id": "dungeon-settlers-research-loop",
+      "role": "mechanic/icon-system",
+      "kind": "mechanic-visual",
+      "gameSpecific": true,
+      "officialGameAsset": false,
+      "state": "in-use",
+      "required": true,
+      "source": {
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "evidence": "research/source-manifest.md#S001"
+      },
+      "rights": {
+        "status": "confirmed",
+        "basis": "本站原创内联 SVG 机制图；只表达官方页面确认的 settlement → research → expedition → resources 关系，不描摹游戏内图标。"
+      },
+      "localPath": "app/components/game-loop-diagram.tsx",
+      "renderTargets": [
+        {
+          "route": "/",
+          "implementation": "app/components/game-loop-diagram.tsx",
+          "placement": "首页 Start here 区域与研究入口"
+        },
+        {
+          "route": "/guides/how-to-research",
+          "implementation": "app/guides/[slug]/page.tsx",
+          "placement": "Research 页面事实边界说明"
+        }
+      ],
+      "crop": "保持四节点完整可读；移动端改为单列，图标与文字始终并置，不冒充官方 UI。",
+      "alt": "Original diagram showing the verified Dungeon Settlers loop from settlement to research, expedition, and resources."
+    }
+  ]
+}

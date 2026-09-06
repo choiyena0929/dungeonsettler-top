@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "siteName": "Dungeon Settlers Field Guide",
+  "canonicalOrigin": "https://dungeonsettler.top",
+  "pages": [
+    {
+      "path": "/",
+      "pageType": "homepage",
+      "primaryKeyword": "Dungeon Settlers beginner guide",
+      "intent": "A new player wants one clear starting route through the settlement and first dungeon expedition.",
+      "acceptance": "The first screen identifies Dungeon Settlers, states the Early Access boundary, presents one Beginner Guide action, and links to the Clay and Research pages with real content and sources.",
+      "primaryAction": "Start the Beginner Guide",
+      "requiredSections": ["Start here route", "What is confirmed right now", "Three problem-led guides", "Early Access note", "Official and source links"],
+      "sourceRefs": ["S001", "S002", "S004", "S005"],
+      "minWords": 650,
+      "minInternalLinks": 3
+    },
+    {
+      "path": "/guides/beginner-guide",
+      "pageType": "guide",
+      "primaryKeyword": "Dungeon Settlers beginner guide",
+      "intent": "A first-time player wants to understand what to prepare in the settlement before committing a party to the dungeon.",
+      "acceptance": "The page gives a direct first-route answer, separates official facts from cautious guidance, covers settlement needs, party size, research, expedition preparation, version limits, and links to both task guides.",
+      "primaryAction": "Follow the first expedition route",
+      "requiredSections": ["Quick answer", "Build the settlement loop", "Prepare the party", "Research before the expedition", "When to return and what can change", "Sources"],
+      "sourceRefs": ["S001", "S002", "S004", "S005"],
+      "minWords": 850,
+      "minInternalLinks": 2
+    },
+    {
+      "path": "/guides/how-to-get-clay",
+      "pageType": "guide",
+      "primaryKeyword": "How to get clay in Dungeon Settlers",
+      "intent": "A player is blocked by early Clay costs and wants the current enemy, merchant, and deeper-region routes.",
+      "acceptance": "The page answers the Clay question before background, cites the current secondary report, labels quantities and floors as version-sensitive, explains early versus later routes, and links to the beginner and research guides.",
+      "primaryAction": "Compare the current Clay routes",
+      "requiredSections": ["Quick answer", "Early dungeon sources", "Merchant and Region 2 fallback", "What Clay is used for", "Version and evidence note", "Sources"],
+      "sourceRefs": ["S001", "S002", "S003", "S005"],
+      "minWords": 750,
+      "minInternalLinks": 2
+    },
+    {
+      "path": "/guides/how-to-research",
+      "pageType": "guide",
+      "primaryKeyword": "How to research in Dungeon Settlers",
+      "intent": "A player wants to understand what Research unlocks without trusting an unverified or outdated tech order.",
+      "acceptance": "The page states what the official store confirms, gives a conservative early decision method, marks unverified research-tree details as pending, and links to the beginner and Clay guides.",
+      "primaryAction": "Use the safe research checklist",
+      "requiredSections": ["What Research is confirmed to do", "A safe early checklist", "How it fits the expedition loop", "What remains unverified", "Version note", "Sources"],
+      "sourceRefs": ["S001", "S002", "S004", "S005"],
+      "minWords": 750,
+      "minInternalLinks": 2
+    }
+  ]
+}

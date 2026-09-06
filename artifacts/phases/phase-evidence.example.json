@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "phase": "S1",
+  "result": "passed",
+  "siteId": "{{state-id}}",
+  "registryId": "site-{{state-id}}",
+  "handoffId": "{{handoff-id}}",
+  "inputRevision": "{{input-revision}}",
+  "expectedStateRevision": 1,
+  "capturedAt": "{{ISO-time}}",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": { "attempt": 0, "changed": [] },
+    "note": "本阶段已按机器验收合同完成。",
+    "recordedAt": "{{ISO-time}}"
+  },
+  "checks": [],
+  "commands": []
+}

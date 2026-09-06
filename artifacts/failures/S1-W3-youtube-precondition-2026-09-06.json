@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-06T13:18:00+08:00",
+  "responsiblePhase": "S2",
+  "responsibleCheck": "page-contract-machine",
+  "command": "npm run youtube:evidence -- --site-path D:\\WebProjects\\sites\\dungeonsettler.top --state D:\\Obsidian\\zwk-AI1\\20_项目\\AI Web\\07_自动化\\上站操作系统\\站点状态\\steam-2798330.md --handoff ... --video-urls ...",
+  "result": "blocked",
+  "failureType": "missing-context",
+  "evidenceLevel": "L2",
+  "rootCauseConfirmed": false,
+  "error": "research/page-contracts.json 不符合中央 page-contract-rules：机器页面合同缺少 schemaVersion、站名、HTTPS canonicalOrigin 或 pages。",
+  "changedRetry": [
+    "先完成三页机器页面合同并绑定真实 S 编号",
+    "再重跑同一 handoff 下的 W3 YouTube 证据，不把占位合同当作 not-queried 视频结果"
+  ],
+  "nextAction": "由 S2 生成 research/page-contracts.json；合同校验通过后重新运行 youtube:evidence。"
+}

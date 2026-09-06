@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "status": "passed",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "implementerId": "codex-implementer-dungeonsettler-20260906",
+  "rounds": [
+    {
+      "id": "representative-first",
+      "completedAt": "2026-09-06T13:54:36.836Z",
+      "route": "/guides/beginner-guide",
+      "url": "http://localhost:3000/guides/beginner-guide",
+      "desktopScreenshot": "artifacts/quality/representative-first-desktop.png",
+      "mobileScreenshot": "artifacts/quality/representative-first-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/representative-first-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/representative-first-mobile-viewport.png",
+      "desktopSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+      "mobileSha256": "d3ed7fa5c937d5b2dec0a2e3d06feb1668b36ed07c2262733a81ee668aa1eebe",
+      "desktopViewportSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5",
+      "mobileViewportSha256": "d4dfbe5d65dfb325c5c984da30066d00c348cf515a8a3bc4ca3b934bf270aace",
+      "desktopDomSha256": "3e3d9ea057cc2dd2a327d173faf666f804c09be606af8ac8fc72c390f4ffdbd3",
+      "mobileDomSha256": "1c0174689839cd77d6cdebc7f4e3fe7191d0b1cbcbb6cb90da288c06b8140ebf",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 3957,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "3e3d9ea057cc2dd2a327d173faf666f804c09be606af8ac8fc72c390f4ffdbd3",
+          "screenshotSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+          "viewportScreenshotSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5"
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 6146,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "1c0174689839cd77d6cdebc7f4e3fe7191d0b1cbcbb6cb90da288c06b8140ebf",
+          "screenshotSha256": "d3ed7fa5c937d5b2dec0a2e3d06feb1668b36ed07c2262733a81ee668aa1eebe",
+          "viewportScreenshotSha256": "d4dfbe5d65dfb325c5c984da30066d00c348cf515a8a3bc4ca3b934bf270aace"
+        }
+      }
+    },
+    {
+      "id": "home-assets",
+      "completedAt": "2026-09-06T13:57:11.998Z",
+      "route": "/",
+      "url": "http://localhost:3000/",
+      "desktopScreenshot": "artifacts/quality/home-assets-desktop.png",
+      "mobileScreenshot": "artifacts/quality/home-assets-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/home-assets-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/home-assets-mobile-viewport.png",
+      "desktopSha256": "5e8706c5a5911f130e595d4bc1ca7895cd9fded0c0ff0f085312bd8ae29b8031",
+      "mobileSha256": "b1b937f8cedb76496c88fdeec378fca93d3550dfe8f7eb5f98d09b952cfca63f",
+      "desktopViewportSha256": "843519712d716fe9dcbb7419666b0343898cfd9428d02f37316799b854649c95",
+      "mobileViewportSha256": "3b5f631cf2185d5df009258e6cdf89e640cf2b4ea4c9f526a3e087bd9048438e",
+      "desktopDomSha256": "16b298692ac67167de6276303eea16a36d7f838ea06725e9c758df156cf98f90",
+      "mobileDomSha256": "b1c03eb3171f3325f64cbd171a2da404922c099d75540eba41395e113754a78a",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:3000/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 3833,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4292,
+          "domSha256": "16b298692ac67167de6276303eea16a36d7f838ea06725e9c758df156cf98f90",
+          "screenshotSha256": "5e8706c5a5911f130e595d4bc1ca7895cd9fded0c0ff0f085312bd8ae29b8031",
+          "viewportScreenshotSha256": "843519712d716fe9dcbb7419666b0343898cfd9428d02f37316799b854649c95"
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:3000/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 392,
+          "viewportHeight": 849,
+          "documentWidth": 392,
+          "documentHeight": 6188,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4286,
+          "domSha256": "b1c03eb3171f3325f64cbd171a2da404922c099d75540eba41395e113754a78a",
+          "screenshotSha256": "b1b937f8cedb76496c88fdeec378fca93d3550dfe8f7eb5f98d09b952cfca63f",
+          "viewportScreenshotSha256": "3b5f631cf2185d5df009258e6cdf89e640cf2b4ea4c9f526a3e087bd9048438e"
+        }
+      }
+    },
+    {
+      "id": "representative-final",
+      "completedAt": "2026-09-06T13:58:29.321Z",
+      "route": "/guides/beginner-guide",
+      "url": "http://localhost:3000/guides/beginner-guide",
+      "desktopScreenshot": "artifacts/quality/representative-final-desktop.png",
+      "mobileScreenshot": "artifacts/quality/representative-final-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/representative-final-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/representative-final-mobile-viewport.png",
+      "desktopSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+      "mobileSha256": "d3ed7fa5c937d5b2dec0a2e3d06feb1668b36ed07c2262733a81ee668aa1eebe",
+      "desktopViewportSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5",
+      "mobileViewportSha256": "d4dfbe5d65dfb325c5c984da30066d00c348cf515a8a3bc4ca3b934bf270aace",
+      "desktopDomSha256": "c2b4479590cde8f6770979e8ad3592b84d0d0ae4ac975143ebe790a7c31e6d87",
+      "mobileDomSha256": "129de9ba6ce48a61109509fa9b93aa308296c05a91f46c69488fddeae3e3bf20",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 3957,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "c2b4479590cde8f6770979e8ad3592b84d0d0ae4ac975143ebe790a7c31e6d87",
+          "screenshotSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+          "viewportScreenshotSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5"
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 6146,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "129de9ba6ce48a61109509fa9b93aa308296c05a91f46c69488fddeae3e3bf20",
+          "screenshotSha256": "d3ed7fa5c937d5b2dec0a2e3d06feb1668b36ed07c2262733a81ee668aa1eebe",
+          "viewportScreenshotSha256": "d4dfbe5d65dfb325c5c984da30066d00c348cf515a8a3bc4ca3b934bf270aace"
+        }
+      }
+    },
+    {
+      "id": "representative-final-r2",
+      "completedAt": "2026-09-06T13:59:53.457Z",
+      "route": "/guides/beginner-guide",
+      "url": "http://localhost:3000/guides/beginner-guide",
+      "desktopScreenshot": "artifacts/quality/representative-final-r2-desktop.png",
+      "mobileScreenshot": "artifacts/quality/representative-final-r2-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/representative-final-r2-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/representative-final-r2-mobile-viewport.png",
+      "desktopSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+      "mobileSha256": "bd1530db647ee59207caab5c47fbf91a78e13cddcfab3ace716dc04474dc80e7",
+      "desktopViewportSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5",
+      "mobileViewportSha256": "98ee82984784ebdc2162a0a0c4ac1a33f3812eddb4971884513ace863dccd848",
+      "desktopDomSha256": "d3e91d0a80fb4899a9f7db46db5038206e026bc8865759eb29370845075d811e",
+      "mobileDomSha256": "702e14db1c6a6ac50a1e8b6820cca8519f7cf1892634840af35d3be1b66e500c",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 3957,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "d3e91d0a80fb4899a9f7db46db5038206e026bc8865759eb29370845075d811e",
+          "screenshotSha256": "9a75a61d91f1a5d85062bf08c63bf15cef24f8944a40ae642b394609f833381b",
+          "viewportScreenshotSha256": "e3de988d817d549e0a9e3f0c290c5b9c4e7efe8dbf6a1f29cd7a885eb22e32d5"
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 6152,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6839,
+          "domSha256": "702e14db1c6a6ac50a1e8b6820cca8519f7cf1892634840af35d3be1b66e500c",
+          "screenshotSha256": "bd1530db647ee59207caab5c47fbf91a78e13cddcfab3ace716dc04474dc80e7",
+          "viewportScreenshotSha256": "98ee82984784ebdc2162a0a0c4ac1a33f3812eddb4971884513ace863dccd848"
+        }
+      }
+    },
+    {
+      "id": "representative-final-r3",
+      "completedAt": "2026-09-06T14:01:30.552Z",
+      "route": "/guides/beginner-guide",
+      "url": "http://localhost:3000/guides/beginner-guide",
+      "desktopScreenshot": "artifacts/quality/representative-final-r3-desktop.png",
+      "mobileScreenshot": "artifacts/quality/representative-final-r3-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/representative-final-r3-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/representative-final-r3-mobile-viewport.png",
+      "desktopSha256": "d0bd3181e3ad13c968191b784f1e5187bffe16025ce9f7da677c5e1093aca6cf",
+      "mobileSha256": "4444e8a95bbea5f436fdc3ac35a4f0893bc3401b071a54482d0b041eb22bb2ff",
+      "desktopViewportSha256": "21f5094dffa343ea3f6401672e11c86d6fe2263104a5ea498e934a14c7dc93a1",
+      "mobileViewportSha256": "0b7f2d93c7807415bf5a8a49848d26e2d15db557e255f1e0a8a58d2b317b2c3f",
+      "desktopDomSha256": "cf436e0d6ca85c5fd9a4314c3af5da6c8a73dfa35e52cffb6f6981e72a2765b1",
+      "mobileDomSha256": "16b41027aa98e3652c46dfd6bd045fb41c9662ba63f99eef018d2e4911039dd3",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 4032,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6898,
+          "domSha256": "cf436e0d6ca85c5fd9a4314c3af5da6c8a73dfa35e52cffb6f6981e72a2765b1",
+          "screenshotSha256": "d0bd3181e3ad13c968191b784f1e5187bffe16025ce9f7da677c5e1093aca6cf",
+          "viewportScreenshotSha256": "21f5094dffa343ea3f6401672e11c86d6fe2263104a5ea498e934a14c7dc93a1"
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:3000/guides/beginner-guide",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 6287,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 6898,
+          "domSha256": "16b41027aa98e3652c46dfd6bd045fb41c9662ba63f99eef018d2e4911039dd3",
+          "screenshotSha256": "4444e8a95bbea5f436fdc3ac35a4f0893bc3401b071a54482d0b041eb22bb2ff",
+          "viewportScreenshotSha256": "0b7f2d93c7807415bf5a8a49848d26e2d15db557e255f1e0a8a58d2b317b2c3f"
+        }
+      }
+    }
+  ],
+  "blockingOpen": 0,
+  "majorOpen": 0,
+  "independentReviewRunId": "codex-fresh-25d7907624e9"
+}

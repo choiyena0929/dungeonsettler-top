@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "type": "research-pack-input",
+  "game": {
+    "name": "示例游戏",
+    "entityId": "platform-app-id",
+    "releaseAt": "2026-09-01",
+    "platforms": ["Steam"],
+    "officialSources": ["https://store.steampowered.com/app/example"]
+  },
+  "versionBoundary": "当前 Early Access / 1.0 版本边界，以及本轮资料的核验日期。",
+  "keywordRows": [
+    {
+      "keyword": "示例游戏任务答案",
+      "intent": "玩家想立即解决的具体问题",
+      "userQuestion": "玩家会怎样自然地问这个问题？",
+      "route": "/guides/example-quest-answers",
+      "evidenceRefs": ["S001"],
+      "status": "approved"
+    }
+  ],
+  "platformQuestions": [
+    {
+      "platform": "Steam",
+      "question": "官方商店、公告或社区里反复出现了哪些可服务的攻略问题？",
+      "answerStatus": "verified",
+      "evidenceRefs": ["S001", "S002"],
+      "notes": "只记录可回查的玩家问题，不把搜索指标直接写到前台。"
+    },
+    {
+      "platform": "YouTube",
+      "question": "是否存在能补充玩法步骤或视觉地标的公开视频？",
+      "answerStatus": "not-queried",
+      "evidenceRefs": [],
+      "notes": "视频是可选资料；未查询必须保留为未查询。"
+    }
+  ],
+  "facts": [
+    {
+      "claim": "示例事实",
+      "status": "verified",
+      "sourceRefs": ["S001"],
+      "versionBoundary": "适用版本",
+      "publicUse": "可改写为访客能理解的帮助语句"
+    }
+  ]
+}

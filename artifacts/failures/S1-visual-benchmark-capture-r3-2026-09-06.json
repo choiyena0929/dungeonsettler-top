@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-06T13:25:30+08:00",
+  "responsiblePhase": "S1",
+  "responsibleCheck": "visual-benchmark-screenshot",
+  "result": "blocked",
+  "failureType": "external-blocker",
+  "evidenceLevel": "L3",
+  "rootCauseConfirmed": false,
+  "error": "使用模板依赖启动真实 Edge 浏览器后，访问 Steam 官方页返回 net::ERR_EMPTY_RESPONSE；未生成截图文件。",
+  "changedRetry": [
+    "改用本机显式代理路径验证，不重复直连",
+    "若仍失败，保留公开 URL 和浏览器可见回查收据，不把网页 URL 冒充本地截图"
+  ],
+  "nextAction": "验证 127.0.0.1:7897 代理和当前公开浏览器；S1 证据只在有真实回查材料时推进。"
+}

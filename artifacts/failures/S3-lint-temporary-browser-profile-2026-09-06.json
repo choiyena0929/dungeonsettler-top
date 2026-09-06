@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "stage": "S3",
+  "responsibleStage": "S3 representative-page quality setup",
+  "failureType": "environment-issue",
+  "evidenceLevel": "L1",
+  "rootCauseConfirmed": false,
+  "result": "recovered",
+  "observedAt": "2026-09-06T13:45:00.000Z",
+  "symptom": "npm run lint initially scanned real Edge benchmark profile extension scripts under artifacts/visual-benchmark/edge-profile* and returned 2261 generated-script errors.",
+  "evidence": ["npm run lint output", "artifacts/visual-benchmark/capture-log.json"],
+  "changedRetry": "将真实浏览器临时 profile 目录加入 eslint 忽略范围后重跑 lint；未删除截图或用假文件替代。",
+  "retry": { "attempt": 1, "changed": ["tool"] }
+}

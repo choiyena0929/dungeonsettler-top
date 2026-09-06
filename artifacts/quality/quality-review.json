@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "type": "quality-review",
+  "status": "passed",
+  "verdict": "passed",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "reviewedAt": "2026-09-06T14:01:56.273Z",
+  "reviewedRoundId": "representative-final-r3",
+  "reviewer": {
+    "id": "codex-fresh-25d7907624e9",
+    "role": "independent-quality-reviewer",
+    "context": "fresh"
+  },
+  "summary": "页面以清晰的攻略标题、快速答案、分段正文、来源边界和相关路线组织信息，桌面与移动端均能快速识别游戏及首条远征任务，主要按钮和导航可操作，长标题与正文布局没有明显溢出或遮挡。",
+  "criteria": [
+    {
+      "id": "visual-hierarchy",
+      "status": "passed",
+      "notes": "首屏标题和主按钮最突出，正文按 Quick answer、准备、研究、版本变化、来源和相关路线递进，信息层级清楚。"
+    },
+    {
+      "id": "game-identity",
+      "status": "passed",
+      "notes": "标题、Early Access 标识、settlement、party、research 和 dungeon expedition 等具体语境足以辨认 Dungeon Settlers 及其玩法身份。"
+    },
+    {
+      "id": "responsive",
+      "status": "passed",
+      "notes": "桌面端内容宽度和长标题可读，移动端标题自然换行，导航折行后仍完整可见，主按钮纵向排列且没有横向溢出。"
+    },
+    {
+      "id": "usability",
+      "status": "passed",
+      "notes": "移动端首屏即可看到返回入口、页面定位、核心答案入口和主动作；桌面端主动作与 Quick answer 同样位于首屏主要阅读路径。"
+    },
+    {
+      "id": "content-seo-balance",
+      "status": "passed",
+      "notes": "内容围绕新手远征准备展开，关键词融入标题和正文自然，来源与限制单独说明，没有看到内部指标或明显堆砌。"
+    }
+  ],
+  "issues": [],
+  "reviewRunId": "codex-fresh-25d7907624e9"
+}

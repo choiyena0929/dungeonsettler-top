@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "type": "independent-quality-review-run",
+  "status": "passed",
+  "runId": "codex-fresh-25d7907624e9",
+  "startedAt": "2026-09-06T14:01:36.641Z",
+  "completedAt": "2026-09-06T14:01:56.275Z",
+  "executor": "codex-cli",
+  "freshContext": true,
+  "roundId": "representative-final-r3",
+  "responseValidated": true,
+  "processExitCode": 0,
+  "processTimedOut": false,
+  "processWarning": false,
+  "reviewArtifact": "artifacts/quality/quality-review.json",
+  "qualityRunArtifact": "artifacts/quality/quality-run.json"
+}

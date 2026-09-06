@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "type": "independent-quality-review-handoff",
+  "status": "ready",
+  "createdAt": "2026-09-06T14:01:36.250Z",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "implementerId": "codex-implementer-dungeonsettler-20260906",
+  "reviewerContract": {
+    "id": "",
+    "role": "independent-quality-reviewer",
+    "context": "fresh",
+    "mustDifferFrom": "codex-implementer-dungeonsettler-20260906"
+  },
+  "sourceArtifacts": {
+    "pageContracts": "research/page-contracts.json",
+    "designContract": "设计合同.md",
+    "visualBenchmark": "research/visual-benchmark.md",
+    "assetManifest": "research/素材清单.json",
+    "qualityRun": "artifacts/quality/quality-run.json"
+  },
+  "latestRound": {
+    "id": "representative-final-r3",
+    "completedAt": "2026-09-06T14:01:30.552Z",
+    "route": "/guides/beginner-guide",
+    "desktopScreenshot": "artifacts/quality/representative-final-r3-desktop.png",
+    "mobileScreenshot": "artifacts/quality/representative-final-r3-mobile.png",
+    "desktopViewportScreenshot": "artifacts/quality/representative-final-r3-desktop-viewport.png",
+    "mobileViewportScreenshot": "artifacts/quality/representative-final-r3-mobile-viewport.png",
+    "desktopSha256": "d0bd3181e3ad13c968191b784f1e5187bffe16025ce9f7da677c5e1093aca6cf",
+    "mobileSha256": "4444e8a95bbea5f436fdc3ac35a4f0893bc3401b071a54482d0b041eb22bb2ff",
+    "desktopViewportSha256": "21f5094dffa343ea3f6401672e11c86d6fe2263104a5ea498e934a14c7dc93a1",
+    "mobileViewportSha256": "0b7f2d93c7807415bf5a8a49848d26e2d15db557e255f1e0a8a58d2b317b2c3f"
+  },
+  "criteria": [
+    {
+      "id": "visual-hierarchy",
+      "question": "首屏、正文、工具、来源和内链是否有明确主次？"
+    },
+    {
+      "id": "game-identity",
+      "question": "遮住站名后，页面是否仍能辨认具体游戏及其玩法身份？"
+    },
+    {
+      "id": "responsive",
+      "question": "桌面和移动端的主要任务、长标题、触控和导航是否可用？"
+    },
+    {
+      "id": "usability",
+      "question": "玩家能否在几秒内找到核心答案并完成主要动作？"
+    },
+    {
+      "id": "content-seo-balance",
+      "question": "真实内容、来源边界、关键词和页面体验是否自然平衡？"
+    }
+  ],
+  "reviewerInstructions": [
+    "只使用本审阅包列出的合同、来源和真实截图；不要沿用实现者的自评理由。",
+    "逐项填写 quality-review.json 的 criteria notes；每项至少写具体观察和通过/不通过依据，并把 reviewedRoundId 填为 latestRound.id。",
+    "审阅四张图：桌面/移动整页图用于判断整体层级和页面长度，桌面/移动首屏视口图用于判断真实字号、导航、触控和首屏可用性；不能把整页图缩放后的显示比例当作页面实际字号。",
+    "发现问题时保留 route、viewport、截图证据、责任阶段和可复验修订目标。",
+    "不要把“看起来不错”当作通过，也不要用总分替代五项判断。"
+  ],
+  "returnArtifact": "artifacts/quality/quality-review.json"
+}

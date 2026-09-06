@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "phase": "S2",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 2,
+  "capturedAt": "2026-09-06T13:52:00.000Z",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 1,
+      "changed": [
+        "context",
+        "approach"
+      ]
+    },
+    "note": "页面合同、前端系统和 research-pack 已在真实文件上完成机器校验，W3 前置失败已按新合同重试。",
+    "recordedAt": "2026-09-06T13:52:00.000Z"
+  },
+  "checks": [
+    {
+      "id": "page-matrix",
+      "status": "passed",
+      "evidence": [
+        "research/page-matrix.md"
+      ],
+      "note": "四条首版 URL、任务、动作、来源边界和停止条件已绑定。"
+    },
+    {
+      "id": "page-contract",
+      "status": "passed",
+      "evidence": [
+        "research/page-contract.md"
+      ],
+      "note": "页面合同写明用户任务、首要动作、事实边界和移动端优先级。"
+    },
+    {
+      "id": "page-contract-machine",
+      "status": "passed",
+      "evidence": [
+        "research/page-contracts.json"
+      ],
+      "note": "四页 HTTPS canonical、requiredSections、sourceRefs、minWords 和 minInternalLinks 均通过中央规则。"
+    },
+    {
+      "id": "homepage-map",
+      "status": "passed",
+      "evidence": [
+        "research/homepage-map.md"
+      ],
+      "note": "首页区域、内容、动作和资产职责已映射。"
+    },
+    {
+      "id": "design-contract",
+      "status": "passed",
+      "evidence": [
+        "设计合同.md"
+      ],
+      "note": "Token、页面角色、原创资产和截图闭环均为站点具体值。"
+    },
+    {
+      "id": "frontend-system",
+      "status": "passed",
+      "evidence": [
+        "前端系统.md"
+      ],
+      "note": "前端系统执行版已绑定代表页、响应式、素材和审阅门。"
+    },
+    {
+      "id": "research-pack",
+      "status": "passed",
+      "evidence": [
+        "artifacts/research/research-pack.json"
+      ],
+      "note": "research-pack-a4aa58c610946344 ready；partial 快照保留为 warning。"
+    }
+  ],
+  "artifacts": [
+    "research/page-matrix.md",
+    "research/page-contract.md",
+    "research/homepage-map.md",
+    "research/page-contracts.json",
+    "前端系统.md",
+    "设计合同.md",
+    "artifacts/research/research-pack.json",
+    "research/video-evidence.json"
+  ],
+  "commands": [
+    {
+      "id": "research-pack",
+      "command": "node research-pack.mjs --site-path D:\\WebProjects\\sites\\dungeonsettler.top",
+      "exitCode": 0,
+      "logPath": "artifacts/research/research-pack.json"
+    },
+    {
+      "id": "youtube-retry",
+      "command": "npm run youtube:evidence",
+      "exitCode": 0,
+      "logPath": "research/video-evidence.json"
+    }
+  ],
+  "evidenceId": "phase-s2-b67b1a0818186ffc"
+}

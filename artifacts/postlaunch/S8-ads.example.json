@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s8-ads",
+  "phase": "S8",
+  "status": "not-started",
+  "siteId": "{{state-id}}",
+  "registryId": "site-{{state-id}}",
+  "handoffId": "{{handoff-id}}",
+  "inputRevision": "{{input-revision}}",
+  "phaseStateRevision": 8,
+  "capturedAt": "",
+  "mode": "disabled",
+  "provider": "none",
+  "userConfirmation": { "status": "not-required", "reason": "" },
+  "checks": {
+    "privacy": { "status": "not-started", "route": "/privacy", "checkedAt": "", "notes": "" },
+    "desktopAdUx": { "status": "not-started", "behavior": "ads-not-enabled", "checkedAt": "", "screenshot": "", "notes": "" },
+    "mobileAdUx": { "status": "not-started", "behavior": "ads-not-enabled", "checkedAt": "", "screenshot": "", "networkEvidence": "", "notes": "" }
+  }
+}

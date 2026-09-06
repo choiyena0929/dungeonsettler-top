@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s7-integrations",
+  "phase": "S7",
+  "status": "not-started",
+  "siteId": "{{state-id}}",
+  "registryId": "site-{{state-id}}",
+  "handoffId": "{{handoff-id}}",
+  "inputRevision": "{{input-revision}}",
+  "phaseStateRevision": 7,
+  "capturedAt": "",
+  "secretsRedacted": true,
+  "services": {
+    "gsc": { "status": "not-started", "source": "manual-console", "property": "", "sitemapUrl": "", "verification": { "observed": false, "observedAt": "", "detail": "" } },
+    "ga4": { "status": "not-started", "source": "manual-console", "propertyId": "", "measurementId": "", "verification": { "observed": false, "observedAt": "", "detail": "" } },
+    "clarity": { "status": "not-started", "source": "manual-console", "projectId": "", "verification": { "observed": false, "observedAt": "", "detail": "" } }
+  }
+}

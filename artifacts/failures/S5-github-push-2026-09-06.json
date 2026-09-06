@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "stage": "S5",
+  "responsibilityStage": "S5-GitHub-upstream",
+  "failureType": "external-blocker",
+  "evidenceLevel": "L3",
+  "status": "failed",
+  "observedAt": "2026-09-06T14:10:00+08:00",
+  "error": "GH007: Your push would publish a private email address.",
+  "evidence": {
+    "remote": "https://github.com/choiyena0929/dungeonsettler-top.git",
+    "command": "gh repo create choiyena0929/dungeonsettler-top --public --source . --remote origin --push",
+    "repositoryCreated": true,
+    "pushCompleted": false
+  },
+  "retryChange": "把未推送首个提交的作者邮箱改为 GitHub noreply 地址，再重新推送；不修改站点内容和阶段状态卡。"
+}

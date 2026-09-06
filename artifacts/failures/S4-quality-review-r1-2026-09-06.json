@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "stage": "S4",
+  "responsibleStage": "S4 visual quality and responsive usability",
+  "failureType": "incomplete-output",
+  "evidenceLevel": "L3",
+  "rootCauseConfirmed": false,
+  "result": "recovered",
+  "observedAt": "2026-09-06T13:59:05.427Z",
+  "symptom": "代表页第二轮 fresh-context 审阅发现移动导航触控提示不足，且页面合同要求的首要远征动作没有独立 CTA；状态为 needs-fix，存在两个 open major 问题。",
+  "evidence": ["artifacts/quality/quality-review.json", "artifacts/quality/representative-final-r2-mobile-viewport.png"],
+  "changedRetry": "增加移动导航边框、留白和 44px 最小高度；在攻略标题区加入指向 Quick answer 的主动作 CTA；重新采集 representative-final-r3 并重新生成审阅包。",
+  "retry": { "attempt": 1, "changed": ["approach", "scope"] }
+}
