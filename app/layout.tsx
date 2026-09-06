@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig, absoluteUrl } from "./site-config";
 import { JsonLd, siteStructuredData } from "./structured-data";
@@ -14,7 +15,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <head><JsonLd value={siteStructuredData()} /></head>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GE8ZVMQJ0N"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GE8ZVMQJ0N');
+          `}
+        </Script>
+        <JsonLd value={siteStructuredData()} />
+      </head>
       <body>
         <header className="site-header">
           <Link className="brand" href="/" aria-label="Dungeon Settlers Field Guide home"><span className="brand-mark">DS</span><span>{siteConfig.name}</span></Link>
