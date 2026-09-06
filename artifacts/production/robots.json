@@ -1,0 +1,9 @@
+{
+  "url": "https://dungeonsettler.top/robots.txt",
+  "schemaVersion": 1,
+  "status": "failed",
+  "statusCode": 0,
+  "expectedStatus": 200,
+  "error": "fetch failed",
+  "capturedAt": "2026-09-06T14:15:23.629Z"
+}

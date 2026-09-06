@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "phase": "S5",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 7,
+  "capturedAt": "2026-09-06T14:21:00+08:00",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 2,
+      "changed": [
+        "approach",
+        "tool"
+      ]
+    },
+    "note": "S6 正式域名验收失败后按责任阶段回退 S5；已把发布合同中的 domains 逐个传入 Wrangler 的 --domains 参数，verify:release、发布计划、部署合同和 GitHub main upstream 复核均通过，准备重新部署并验证正式域名。",
+    "recordedAt": "2026-09-06T14:21:00+08:00"
+  },
+  "checks": [
+    {
+      "id": "git-diff",
+      "status": "passed",
+      "evidence": [
+        "artifacts/release/git-diff.txt"
+      ],
+      "note": "发布源代码提交 91187c8fd6c8cd70e83b1725eb487329e3e83f12 已推送；当前没有已跟踪代码改动。"
+    },
+    {
+      "id": "release-plan",
+      "status": "passed",
+      "evidence": [
+        "artifacts/release/release-plan.md"
+      ],
+      "note": "计划明确 GitHub main upstream 到 Cloudflare Worker 的发布链、HTTPS 验收和回滚方式。"
+    },
+    {
+      "id": "remote-upstream",
+      "status": "passed",
+      "evidence": [
+        "artifacts/release/remote-upstream.txt"
+      ],
+      "note": "GitHub 仓库与 main 分支已真实建立，git ls-remote 核验通过。"
+    },
+    {
+      "id": "deploy-target",
+      "status": "passed",
+      "evidence": [
+        "artifacts/release/deployment-contract.json",
+        "artifacts/logs/verify-release.log"
+      ],
+      "note": "Cloudflare Worker dungeonsettler-top、正式域名和 deploy:cloudflare 入口合同有效；部署脚本强制先跑 verify:release。"
+    }
+  ],
+  "artifacts": [
+    "artifacts/release/git-diff.txt",
+    "artifacts/release/release-plan.md",
+    "artifacts/release/remote-upstream.txt",
+    "artifacts/release/deployment-contract.json",
+    "artifacts/failures/S5-github-push-2026-09-06.json",
+    "artifacts/failures/S6-production-custom-domain-2026-09-06.json",
+    "artifacts/phases/S5-reopened-r6.json"
+  ],
+  "commands": [
+    {
+      "id": "verify-release",
+      "command": "npm run verify:release",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/verify-release.log"
+    },
+    {
+      "id": "git-upstream",
+      "command": "git remote get-url origin; git ls-remote --heads origin main",
+      "exitCode": 0,
+      "logPath": "artifacts/release/remote-upstream.txt"
+    },
+    {
+      "id": "deployment-contract",
+      "command": "npm run check:deployment",
+      "exitCode": 0,
+      "logPath": "artifacts/logs/verify-release.log"
+    }
+  ],
+  "evidenceId": "phase-s5-f39413cc8a13aadd"
+}

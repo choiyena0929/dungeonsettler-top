@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "phase": "S5",
+  "result": "reopened",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 6,
+  "capturedAt": "2026-09-06T14:18:00+08:00",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "failed",
+    "failureType": "external-blocker",
+    "evidenceLevel": "L3",
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "S6 正式域名验收失败，责任回退到 S5：发布脚本没有把发布合同中的 domains 传给 Wrangler，且 DNS/Custom Domain 仍需实测确认。",
+    "recordedAt": "2026-09-06T14:18:00+08:00"
+  },
+  "reason": "生产 Worker workers.dev 已部署，但 dungeonsettler.top 六项公开 HTTPS 验收均为 HTTP 0；必须先修复 S5 的 Cloudflare Custom Domain 发布入口，再顺序重验 S5/S6。",
+  "error": "S6 正式域名验收失败：HTTP 0 / fetch failed。",
+  "artifacts": [
+    "artifacts/failures/S6-production-custom-domain-2026-09-06.json",
+    "artifacts/production/homepage.json",
+    "artifacts/production/https.json"
+  ],
+  "evidenceId": "phase-s5-f610db1fccd500aa"
+}
