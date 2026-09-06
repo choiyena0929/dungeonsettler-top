@@ -17,10 +17,7 @@
     "rootCauseConfirmed": false,
     "retry": {
       "attempt": 1,
-      "changed": [
-        "assumption",
-        "approach"
-      ]
+      "changed": ["assumption", "approach"]
     },
     "note": "S5 责任阶段已按用户纠正重验：正式域名锁定为 dungeonsettlers.top，Worker/仓库目标仍为 dungeonsettler-top，并用 Cloudflare active zone 与复数 custom domain 实时回执核对发布目标。verify:release、页面合同、GitHub main upstream 和发布合同均通过。",
     "recordedAt": "2026-09-06T22:41:24+08:00"
@@ -29,33 +26,25 @@
     {
       "id": "git-diff",
       "status": "passed",
-      "evidence": [
-        "artifacts/release/git-diff.txt"
-      ],
+      "evidence": ["artifacts/release/git-diff.txt"],
       "note": "域名合同修正提交 65b1a8a9b524f30709c9ebbfac3691981bb0c4de 已推送；当前发布源无已跟踪代码改动。"
     },
     {
       "id": "release-plan",
       "status": "passed",
-      "evidence": [
-        "artifacts/release/release-plan.md"
-      ],
+      "evidence": ["artifacts/release/release-plan.md"],
       "note": "发布链已明确为 GitHub main upstream → Cloudflare Worker dungeonsettler-top → dungeonsettlers.top，并包含 HTTPS 验收和回滚方式。"
     },
     {
       "id": "remote-upstream",
       "status": "passed",
-      "evidence": [
-        "artifacts/release/remote-upstream.txt"
-      ],
+      "evidence": ["artifacts/release/remote-upstream.txt"],
       "note": "GitHub 仓库 main 已真实接收域名修正发布源。"
     },
     {
       "id": "deploy-target",
       "status": "passed",
-      "evidence": [
-        "artifacts/release/deployment-contract.json"
-      ],
+      "evidence": ["artifacts/release/deployment-contract.json"],
       "note": "Cloudflare Worker dungeonsettler-top 与 dungeonsettlers.top、www.dungeonsettlers.top 的发布合同一致，deploy:cloudflare 强制先执行 verify:release。"
     }
   ],
@@ -87,6 +76,5 @@
       "exitCode": 0,
       "logPath": "artifacts/release/remote-upstream.txt"
     }
-  ],
-  "evidenceId": "phase-s5-28240336dc5699a1"
+  ]
 }

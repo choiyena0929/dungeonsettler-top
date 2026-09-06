@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-06T13:57:58.653Z",
-  "packRevision": "research-pack-cf8ce853e7ebc954",
+  "generatedAt": "2026-09-06T14:42:05.208Z",
+  "packRevision": "research-pack-64d8779b31e08a25",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -49,8 +49,8 @@
     "page-contracts": {
       "path": "research/page-contracts.json",
       "status": "present",
-      "bytes": 3418,
-      "sha256": "d16d123659e09479208ba48179515e649ef97413785a56c8a255e3f2d6655e0c"
+      "bytes": 3419,
+      "sha256": "4dc532ce9ac229568f1e2eb9d452789c4dbddec713a325a30a1f6a3db1a9ce83"
     }
   },
   "optional": {
