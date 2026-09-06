@@ -4,15 +4,15 @@
 
 本次发布只允许沿着以下链路推进：
 
-`GitHub main upstream → Cloudflare Worker dungeonsettler-top → dungeonsettler.top`
+`GitHub main upstream → Cloudflare Worker dungeonsettler-top → dungeonsettlers.top`
 
 发布输入为当前仓库 `main` 分支的真实提交。Cloudflare 发布前必须保留 `verify:release`、页面合同、逐 URL On-page SEO、代表页桌面/移动截图、独立 fresh-context 审阅和阶段证据。
 
 ## 发布目标
 
-- 主域名：`https://dungeonsettler.top`
+- 主域名：`https://dungeonsettlers.top`
 - Worker：`dungeonsettler-top`
-- 备用主机：`https://www.dungeonsettler.top`
+- 备用主机：`https://www.dungeonsettlers.top`
 - 构建目录：`dist`
 - 发布命令：`npm run deploy:cloudflare`
 

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "stage": "S5",
+  "responsibilityStage": "S5-domain-target",
+  "failureType": "hallucinated-assumption",
+  "evidenceLevel": "L3",
+  "status": "failed",
+  "rootCauseConfirmed": true,
+  "observedAt": "2026-09-06T14:30:00+08:00",
+  "error": "前一轮把单数 dungeonsettler.top 当成正式域名；用户确认正确域名为复数 dungeonsettlers.top。Cloudflare 实时 API 显示复数 zone 已 active，Worker 名称仍为 dungeonsettler-top。",
+  "evidence": {
+    "correctDomain": "dungeonsettlers.top",
+    "workerName": "dungeonsettler-top",
+    "cloudflareZoneStatus": "active",
+    "cloudflareZoneId": "7216928cdb0df6b8af2c3fdd17ec22e0",
+    "registrar": "spaceship, inc. (id: 3862)",
+    "originalNameServers": [
+      "launch2.spaceship.net.",
+      "launch1.spaceship.net."
+    ],
+    "userCorrection": "应该是 dungeonsettlers.top，有一个没有 s，变成 dungeonsettler-top"
+  },
+  "retryChange": "以用户确认和 Cloudflare active zone 为正式目标；域名统一使用 dungeonsettlers.top，Worker/repository 名称保持 dungeonsettler-top；重新生成 canonical、部署合同、生产验收和站点注册证据。"
+}

@@ -3,8 +3,8 @@
   "platform": "cloudflare-worker",
   "workerName": "dungeonsettler-top",
   "domains": [
-    "dungeonsettler.top",
-    "www.dungeonsettler.top"
+    "dungeonsettlers.top",
+    "www.dungeonsettlers.top"
   ],
   "publishCommand": "npm run deploy:cloudflare"
 }

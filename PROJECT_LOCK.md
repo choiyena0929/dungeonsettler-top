@@ -1,7 +1,7 @@
 # 项目锁定卡
 
 - 站点：Dungeon Settlers
-- 正式域名：dungeonsettler.top
+- 正式域名：dungeonsettlers.top
 - 源码目录：D:\WebProjects\sites\dungeonsettler.top
 - 部署平台：cloudflare-worker
 - 部署目标：dungeonsettler-top

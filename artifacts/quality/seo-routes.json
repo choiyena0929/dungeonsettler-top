@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-06T14:04:41.191Z",
+  "capturedAt": "2026-09-06T14:39:19.421Z",
   "handoffId": "handoff-90ee65acdd42",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "http://localhost:3000",
-  "canonicalOrigin": "https://dungeonsettler.top",
+  "canonicalOrigin": "https://dungeonsettlers.top",
   "contractPath": "D:/WebProjects/sites/dungeonsettler.top/research/page-contracts.json",
   "routes": [
     {
@@ -16,7 +16,7 @@
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
       "description": "Start with a source-bounded Dungeon Settlers beginner guide for the settlement, first expedition, Clay questions, and Research choices.",
-      "canonical": "https://dungeonsettler.top",
+      "canonical": "https://dungeonsettlers.top",
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
@@ -52,7 +52,7 @@
         {
           "id": "canonical",
           "status": "passed",
-          "detail": "https://dungeonsettler.top"
+          "detail": "https://dungeonsettlers.top"
         },
         {
           "id": "word-count",
@@ -115,7 +115,7 @@
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide | DS Field Guide",
       "description": "This Dungeon Settlers beginner guide gives new Early Access players a source-bounded route from settlement setup to the first dungeon expedition.",
-      "canonical": "https://dungeonsettler.top/guides/beginner-guide",
+      "canonical": "https://dungeonsettlers.top/guides/beginner-guide",
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
@@ -151,7 +151,7 @@
         {
           "id": "canonical",
           "status": "passed",
-          "detail": "https://dungeonsettler.top/guides/beginner-guide"
+          "detail": "https://dungeonsettlers.top/guides/beginner-guide"
         },
         {
           "id": "word-count",
@@ -214,7 +214,7 @@
       "statusCode": 200,
       "title": "How to get clay in Dungeon Settlers | DS Field Guide",
       "description": "Learn how to get Clay in Dungeon Settlers through early dungeon encounters, merchants, and later regions while keeping version-sensitive quantities clearly labelled.",
-      "canonical": "https://dungeonsettler.top/guides/how-to-get-clay",
+      "canonical": "https://dungeonsettlers.top/guides/how-to-get-clay",
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
@@ -250,7 +250,7 @@
         {
           "id": "canonical",
           "status": "passed",
-          "detail": "https://dungeonsettler.top/guides/how-to-get-clay"
+          "detail": "https://dungeonsettlers.top/guides/how-to-get-clay"
         },
         {
           "id": "word-count",
@@ -313,7 +313,7 @@
       "statusCode": 200,
       "title": "How to research in Dungeon Settlers | DS Field Guide",
       "description": "This guide explains how to research in Dungeon Settlers using a cautious checklist grounded in the official loop and clear version boundaries.",
-      "canonical": "https://dungeonsettler.top/guides/how-to-research",
+      "canonical": "https://dungeonsettlers.top/guides/how-to-research",
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
@@ -349,7 +349,7 @@
         {
           "id": "canonical",
           "status": "passed",
-          "detail": "https://dungeonsettler.top/guides/how-to-research"
+          "detail": "https://dungeonsettlers.top/guides/how-to-research"
         },
         {
           "id": "word-count",
