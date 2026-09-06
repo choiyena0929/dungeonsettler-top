@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "phase": "S6",
+  "result": "blocked",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 8,
+  "capturedAt": "2026-09-06T14:23:00+08:00",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "failed",
+    "failureType": "external-blocker",
+    "evidenceLevel": "L3",
+    "rootCauseConfirmed": true,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "Worker 与两个 Custom Domain 已在 Cloudflare 账号侧启用，但 zone 仍 pending；正式域名尚未切换 nameserver，因此无法完成 HTTP、HTTPS 和线上 On-page 验收。",
+    "recordedAt": "2026-09-06T14:23:00+08:00"
+  },
+  "error": "S6 生产验收阻塞：请把 dungeonsettler.top 的 nameserver 切到 dawn.ns.cloudflare.com 与 sonny.ns.cloudflare.com 后重试。",
+  "checks": [
+    {
+      "id": "homepage",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/homepage.json"
+      ]
+    },
+    {
+      "id": "representative-page",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/representative-page.json"
+      ]
+    },
+    {
+      "id": "robots",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/robots.json"
+      ]
+    },
+    {
+      "id": "sitemap",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/sitemap.json"
+      ]
+    },
+    {
+      "id": "not-found",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/not-found.json"
+      ]
+    },
+    {
+      "id": "https",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/production/https.json"
+      ]
+    },
+    {
+      "id": "live-onpage-seo",
+      "status": "blocked",
+      "evidence": [
+        "artifacts/failures/S6-production-nameserver-pending-2026-09-06.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    "artifacts/release/cloudflare-production-receipt.json",
+    "artifacts/failures/S6-production-nameserver-pending-2026-09-06.json",
+    "artifacts/production/"
+  ],
+  "evidenceId": "phase-s6-2be9e66ac29bd962"
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "stage": "S6",
+  "responsibilityStage": "S6-domain-activation",
+  "failureType": "external-blocker",
+  "evidenceLevel": "L3",
+  "status": "blocked",
+  "rootCauseConfirmed": true,
+  "observedAt": "2026-09-06T14:23:00+08:00",
+  "error": "Cloudflare zone dungeonsettler.top 仍为 pending，公开 DNS 查询 ENOTFOUND；正式域名六项生产验收 HTTP 0，线上 On-page fetch failed。",
+  "evidence": {
+    "cloudflareReceipt": "artifacts/release/cloudflare-production-receipt.json",
+    "productionReports": "artifacts/production/",
+    "onPageCommand": "npm run audit:onpage -- --base-url https://dungeonsettler.top --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e --out artifacts/production/onpage-seo.json",
+    "cloudflareNameServers": [
+      "dawn.ns.cloudflare.com",
+      "sonny.ns.cloudflare.com"
+    ]
+  },
+  "retryChange": "由域名所有者在注册商处把 dungeonsettler.top 和 www 的权威 nameserver 切换到 Cloudflare 分配的两个 nameserver；切换生效后重新运行 check:production、线上 audit:onpage 和 S6 validate。"
+}
