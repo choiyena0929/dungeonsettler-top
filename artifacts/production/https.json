@@ -1,11 +1,11 @@
 {
-  "url": "https://dungeonsettler.top/",
+  "url": "https://dungeonsettlers.top/",
   "scheme": "https",
   "schemaVersion": 1,
-  "status": "failed",
-  "statusCode": 0,
-  "customDomain": "dungeonsettler.top",
+  "status": "passed",
+  "statusCode": 200,
+  "customDomain": "dungeonsettlers.top",
   "tlsCheck": "passed",
-  "deploymentVersion": "3210527a-9027-48a8-8283-5aac412a04d4",
-  "capturedAt": "2026-09-06T14:22:34.139Z"
+  "deploymentVersion": "59e97d9a-8b9e-408f-b8d4-4cfdfe5b569b",
+  "capturedAt": "2026-09-06T14:43:16.862Z"
 }

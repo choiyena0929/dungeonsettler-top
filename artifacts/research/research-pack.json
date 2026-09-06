@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-06T14:42:05.208Z",
-  "packRevision": "research-pack-64d8779b31e08a25",
+  "generatedAt": "2026-09-06T14:51:23.087Z",
+  "packRevision": "research-pack-4eb2228af765477e",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "required": {
     "keyword-matrix": {
@@ -57,8 +57,8 @@
     "video-evidence": {
       "path": "research/video-evidence.json",
       "status": "present",
-      "bytes": 5633,
-      "sha256": "c1316e0a03e48e32f99be1223816f02a58da6f1217494aa305ecd082242db309"
+      "bytes": 11314,
+      "sha256": "615cdb776fa0dca2211260567ff9594dbfd26ae0e241d58a997c2a993f50134e"
     },
     "structured-input": {
       "path": "research/research-pack-input.json",
@@ -70,7 +70,7 @@
       "path": "artifacts/research/research-source-snapshot.json",
       "status": "present",
       "bytes": 14815,
-      "sha256": "b7a34deb31654ea0f1950674ff3d54660f6b45879fd0d9ce1ff287d599a79696"
+      "sha256": "a0c2ad18f7dd4c912adc7e781f4366286268509ade6e021e308ff3ac9a1fe2ab"
     }
   },
   "summary": {
@@ -96,11 +96,11 @@
     "pageCount": 4,
     "assetCount": 2,
     "requiredAssetCount": 2,
-    "videoItemCount": 2,
+    "videoItemCount": 9,
     "videoEvidenceStatus": "measured",
     "videoAnalysisMeasuredCount": 0,
-    "videoVerificationPendingCount": 2,
-    "youtubeChildCount": 5,
+    "videoVerificationPendingCount": 9,
+    "youtubeChildCount": 12,
     "structuredInput": false,
     "internalOpportunityReferences": 4
   },

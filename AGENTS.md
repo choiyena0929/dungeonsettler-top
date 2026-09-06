@@ -1,6 +1,7 @@
 # Dungeon Settlers Agent 规则
 
 - 只处理 dungeonsettlers.top。
+- 正式发布链固定为 GitHub upstream → Cloudflare Worker dungeonsettler-top → dungeonsettlers.top。
 - 先读 PROJECT_LOCK.md、RELEASE_POLICY.md 和 research/。
 - 开始或恢复阶段工作前，先运行 AI Web 工作台 npm run site:resume -- --site-path <站点> --state <状态卡>；它只读输出当前阶段、state_revision、缺项和下一动作，不能用聊天记忆判断进度。
 - 只使用已核验来源，不把关键词指标或内部研究写入公开页面。

@@ -1,9 +1,11 @@
 {
-  "url": "https://dungeonsettler.top/guides/beginner-guide",
+  "url": "https://dungeonsettlers.top/guides/beginner-guide",
   "schemaVersion": 1,
-  "status": "failed",
-  "statusCode": 0,
+  "status": "passed",
+  "statusCode": 200,
   "expectedStatus": 200,
-  "error": "fetch failed",
-  "capturedAt": "2026-09-06T14:22:34.139Z"
+  "contentLength": 42568,
+  "capturedAt": "2026-09-06T14:43:16.862Z",
+  "title": "Dungeon Settlers beginner guide | DS Field Guide",
+  "deploymentVersion": "59e97d9a-8b9e-408f-b8d4-4cfdfe5b569b"
 }

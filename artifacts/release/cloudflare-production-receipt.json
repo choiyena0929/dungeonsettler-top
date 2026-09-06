@@ -5,39 +5,59 @@
   "workerName": "dungeonsettler-top",
   "deploymentCommand": "npm run deploy:cloudflare",
   "wranglerVersion": "4.92.0",
-  "deploymentVersion": "3210527a-9027-48a8-8283-5aac412a04d4",
+  "deploymentVersion": "59e97d9a-8b9e-408f-b8d4-4cfdfe5b569b",
   "workerPreviewUrl": "https://dungeonsettler-top.apiskpai-fe0.workers.dev",
   "customDomains": [
     {
-      "hostname": "dungeonsettler.top",
+      "hostname": "dungeonsettlers.top",
       "status": "enabled",
-      "domainId": "c177bd15e13391482ffe32671d1043159e9018fb",
-      "zoneId": "37ca57c6ae30e8f30c2655bb103d1646",
-      "certificateId": "1bb42338-cd3e-4246-b453-259639b0a9d0"
+      "environment": "production",
+      "domainId": "8f21426ff4f442a2d342e9e82b596ea0a88779d8",
+      "zoneId": "7216928cdb0df6b8af2c3fdd17ec22e0",
+      "certificateId": "90c2034f-475f-43c0-a784-9f1fb9a00a75"
     },
     {
-      "hostname": "www.dungeonsettler.top",
+      "hostname": "www.dungeonsettlers.top",
       "status": "enabled",
-      "domainId": "64e9f4c26536cb6547d60c7a122fec601e410908",
-      "zoneId": "37ca57c6ae30e8f30c2655bb103d1646",
-      "certificateId": "fecea0a3-cc97-4333-8b1e-d282bf3b364d"
+      "environment": "production",
+      "domainId": "85f64bd9d27c9fb83322da69822610039d622e5c",
+      "zoneId": "7216928cdb0df6b8af2c3fdd17ec22e0",
+      "certificateId": "10346b17-c8df-44bd-8aa8-735fd45ce18c"
     }
   ],
   "zone": {
-    "name": "dungeonsettler.top",
-    "status": "pending",
-    "activatedOn": null,
+    "name": "dungeonsettlers.top",
+    "status": "active",
+    "activatedOn": "2026-09-06T13:19:42.648923Z",
     "nameServers": [
       "dawn.ns.cloudflare.com",
       "sonny.ns.cloudflare.com"
+    ],
+    "registrar": "spaceship, inc. (id: 3862)",
+    "originalNameServers": [
+      "launch2.spaceship.net.",
+      "launch1.spaceship.net."
     ]
   },
   "productionAcceptance": {
-    "status": "blocked",
-    "reason": "注册商侧尚未把域名 nameserver 切换到 Cloudflare；正式域名 DNS 查询 ENOTFOUND，六项 HTTPS 生产检查 HTTP 0。",
+    "status": "passed",
+    "baseUrl": "https://dungeonsettlers.top",
+    "representativePath": "/guides/beginner-guide",
+    "checks": [
+      "homepage",
+      "representative-page",
+      "robots",
+      "sitemap",
+      "not-found",
+      "https",
+      "live-onpage-seo"
+    ],
     "reportDirectory": "artifacts/production/",
-    "onPageReport": null,
-    "onPageFailure": "artifacts/failures/S6-production-nameserver-pending-2026-09-06.json"
+    "onPageReport": "artifacts/production/onpage-seo.json"
   },
-  "capturedAt": "2026-09-06T14:23:00+08:00"
+  "supersedes": {
+    "wrongTarget": "dungeonsettler.top",
+    "failureEvidence": "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
+  },
+  "capturedAt": "2026-09-06T22:43:40+08:00"
 }

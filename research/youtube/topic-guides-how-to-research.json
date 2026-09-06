@@ -7,52 +7,67 @@
   "path": "/guides/how-to-research",
   "query": "How to research in Dungeon Settlers",
   "siteId": "steam-2798330",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "revision": "youtube-topic-4b22ab836d332a58",
-  "inputHash": "66d8aea7094fd2c9ae271a89f2585e7942c5e18c38ddecf5d6bf5aa0c71f239f",
-  "contentHash": "7aca9bda9592047ffed531180b61ebc7f41d8b135cf73bb85ecdd24ea2def738",
-  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "revision": "youtube-topic-b8c24b7de2b225dc",
+  "inputHash": "b295c0bd0bf058791c00f818bbf6afcd29c9d5c17d2eee4e4de65f7c74740081",
+  "contentHash": "e48792714ea799114fa1bfb46eddc1231b16bd50a3e4a5e130e0d968b91eff9d",
+  "generatedAt": "2026-09-06T14:50:51.524Z",
   "status": "measured",
   "searchStatus": "measured",
   "analysisStatus": "unavailable",
   "verificationStatus": "not-queried",
   "videoIds": [
-    "BkGIa5V39-w",
-    "FxqGcrey9S8"
+    "FUBrQY5bRF8",
+    "C0reaRgJe8s",
+    "husKFGxAuGc"
   ],
   "evidencePath": "research/youtube/topic-guides-how-to-research.json",
   "videos": [
     {
-      "videoId": "BkGIa5V39-w",
-      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
-      "title": null,
-      "evidencePath": "research/youtube/BkGIa5V39-w.json",
+      "videoId": "FUBrQY5bRF8",
+      "url": "https://www.youtube.com/watch?v=FUBrQY5bRF8",
+      "title": "Try to Build a Colony Inside A Dangerous Dungeon - Dungeon Settlers",
+      "evidencePath": "research/youtube/FUBrQY5bRF8.json",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
-      "revision": "youtube-video-e6db2251e643dabb"
+      "contentHash": "0e46ddf93664947c2ebb74931668ec0121e1df37929c81a2f02fa16b0a4e3bae",
+      "revision": "youtube-video-ad4d5fc9247d6dda"
     },
     {
-      "videoId": "FxqGcrey9S8",
-      "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
-      "title": null,
-      "evidencePath": "research/youtube/FxqGcrey9S8.json",
+      "videoId": "C0reaRgJe8s",
+      "url": "https://www.youtube.com/watch?v=C0reaRgJe8s",
+      "title": "The Expedition is Running Out of Food | Dungeon Settlers | Episode 2",
+      "evidencePath": "research/youtube/C0reaRgJe8s.json",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3",
-      "revision": "youtube-video-8c8b59ac8ed7fe95"
+      "contentHash": "cd37dedead31a8497c31a591bab58c0e2086f5715a66d4b44e6cf337cfba9f40",
+      "revision": "youtube-video-8269f5ceb1e5b5e8"
+    },
+    {
+      "videoId": "husKFGxAuGc",
+      "url": "https://www.youtube.com/watch?v=husKFGxAuGc",
+      "title": "Build Your Colony. Enter the Dungeon. TRY NOT TO DIE! | Dungeon Settlers",
+      "evidencePath": "research/youtube/husKFGxAuGc.json",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "68944635d6dcc488866ef2ac873d157a6f43dea343e9a944a6e14773f1923177",
+      "revision": "youtube-video-f41c3c5de7bd568e"
     }
   ],
   "semanticChildren": {
     "videos": [
       {
-        "videoId": "BkGIa5V39-w",
-        "hash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12"
+        "videoId": "FUBrQY5bRF8",
+        "hash": "0e46ddf93664947c2ebb74931668ec0121e1df37929c81a2f02fa16b0a4e3bae"
       },
       {
-        "videoId": "FxqGcrey9S8",
-        "hash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3"
+        "videoId": "C0reaRgJe8s",
+        "hash": "cd37dedead31a8497c31a591bab58c0e2086f5715a66d4b44e6cf337cfba9f40"
+      },
+      {
+        "videoId": "husKFGxAuGc",
+        "hash": "68944635d6dcc488866ef2ac873d157a6f43dea343e9a944a6e14773f1923177"
       }
     ]
   },
@@ -65,8 +80,9 @@
   "unknowns": [],
   "pageCandidates": [],
   "sourceUrls": [
-    "https://www.youtube.com/watch?v=BkGIa5V39-w",
-    "https://www.youtube.com/watch?v=FxqGcrey9S8"
+    "https://www.youtube.com/watch?v=FUBrQY5bRF8",
+    "https://www.youtube.com/watch?v=C0reaRgJe8s",
+    "https://www.youtube.com/watch?v=husKFGxAuGc"
   ],
   "boundaries": {
     "verifiedFacts": false,

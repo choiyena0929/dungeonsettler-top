@@ -6,9 +6,9 @@
 - 部署平台：cloudflare-worker
 - 部署目标：dungeonsettler-top
 - 构建产物：dist
-- 交接 ID：handoff-90ee65acdd42
+- 交接 ID：handoff-c94ddea503cd
 - 输入修订：input-59995249c82e
-- handoff-id：handoff-90ee65acdd42（机器兼容别名）
+- handoff-id：handoff-c94ddea503cd（机器兼容别名）
 - input-revision：input-59995249c82e（机器兼容别名）
 
 ## 首版范围

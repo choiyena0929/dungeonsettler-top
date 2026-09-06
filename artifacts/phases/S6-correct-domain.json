@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "phase": "S6",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 11,
+  "capturedAt": "2026-09-06T22:44:30+08:00",
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 1,
+      "changed": ["assumption", "approach"]
+    },
+    "note": "S6 已按修正后的正式目标重跑：部署版本已发布到 dungeonsettler-top，dungeonsettlers.top 与 www.dungeonsettlers.top 均由 Cloudflare production custom domain 提供服务；六项 HTTPS/路由检查和四个 URL 的生产 On-page SEO 均通过。",
+    "recordedAt": "2026-09-06T22:44:30+08:00"
+  },
+  "checks": [
+    {
+      "id": "homepage",
+      "status": "passed",
+      "evidence": ["artifacts/production/homepage.json"],
+      "note": "正式复数域名首页 HTTP 200。"
+    },
+    {
+      "id": "representative-page",
+      "status": "passed",
+      "evidence": ["artifacts/production/representative-page.json"],
+      "note": "代表页 /guides/beginner-guide HTTP 200。"
+    },
+    {
+      "id": "robots",
+      "status": "passed",
+      "evidence": ["artifacts/production/robots.json"],
+      "note": "正式 robots.txt HTTP 200 且包含 sitemap 指向。"
+    },
+    {
+      "id": "sitemap",
+      "status": "passed",
+      "evidence": ["artifacts/production/sitemap.json"],
+      "note": "正式 sitemap.xml HTTP 200 且为 XML urlset。"
+    },
+    {
+      "id": "not-found",
+      "status": "passed",
+      "evidence": ["artifacts/production/not-found.json"],
+      "note": "不存在路径返回 HTTP 404。"
+    },
+    {
+      "id": "https",
+      "status": "passed",
+      "evidence": ["artifacts/production/https.json"],
+      "note": "正式复数域名 HTTPS 首页 HTTP 200，TLS 检查通过。"
+    },
+    {
+      "id": "live-onpage-seo",
+      "status": "passed",
+      "evidence": ["artifacts/production/onpage-seo.json"],
+      "note": "生产环境逐 URL 审计 4 个页面，canonical、TDK、H1、正文、内链、图片 alt、JSON-LD 和关键词自然频率均通过。"
+    }
+  ],
+  "artifacts": [
+    "artifacts/release/cloudflare-production-receipt.json",
+    "artifacts/production/homepage.json",
+    "artifacts/production/representative-page.json",
+    "artifacts/production/robots.json",
+    "artifacts/production/sitemap.json",
+    "artifacts/production/not-found.json",
+    "artifacts/production/https.json",
+    "artifacts/production/onpage-seo.json",
+    "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
+  ],
+  "commands": [
+    {
+      "id": "deploy",
+      "command": "npm run deploy:cloudflare",
+      "exitCode": 0,
+      "logPath": "artifacts/release/cloudflare-production-receipt.json"
+    },
+    {
+      "id": "production-http",
+      "command": "npm run check:production -- --base-url https://dungeonsettlers.top --representative-path /guides/beginner-guide",
+      "exitCode": 0,
+      "logPath": "artifacts/production/homepage.json"
+    },
+    {
+      "id": "production-onpage",
+      "command": "npm run audit:onpage -- --base-url https://dungeonsettlers.top --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e --out artifacts/production/onpage-seo.json",
+      "exitCode": 0,
+      "logPath": "artifacts/production/onpage-seo.json"
+    }
+  ]
+}

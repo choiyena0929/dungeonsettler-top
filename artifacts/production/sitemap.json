@@ -1,9 +1,10 @@
 {
-  "url": "https://dungeonsettler.top/sitemap.xml",
+  "url": "https://dungeonsettlers.top/sitemap.xml",
   "schemaVersion": 1,
-  "status": "failed",
-  "statusCode": 0,
+  "status": "passed",
+  "statusCode": 200,
   "expectedStatus": 200,
-  "error": "fetch failed",
-  "capturedAt": "2026-09-06T14:22:34.139Z"
+  "contentLength": 667,
+  "capturedAt": "2026-09-06T14:43:16.862Z",
+  "containsXmlUrlset": true
 }

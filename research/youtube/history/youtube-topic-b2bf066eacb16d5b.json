@@ -1,0 +1,77 @@
+{
+  "type": "ai-web-youtube-topic-research",
+  "schemaVersion": 1,
+  "topicId": "topic-2",
+  "slug": "guides-how-to-get-clay",
+  "label": "How to get clay in Dungeon Settlers",
+  "path": "/guides/how-to-get-clay",
+  "query": "How to get clay in Dungeon Settlers",
+  "siteId": "steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "revision": "youtube-topic-b2bf066eacb16d5b",
+  "inputHash": "3d589c354aa7cd55f9c1f9bd3d000684d043fbf3a2a12da4b6c53e3b904f384d",
+  "contentHash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6",
+  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "status": "measured",
+  "searchStatus": "measured",
+  "analysisStatus": "unavailable",
+  "verificationStatus": "not-queried",
+  "videoIds": [
+    "BkGIa5V39-w",
+    "FxqGcrey9S8"
+  ],
+  "evidencePath": "research/youtube/topic-guides-how-to-get-clay.json",
+  "videos": [
+    {
+      "videoId": "BkGIa5V39-w",
+      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+      "title": null,
+      "evidencePath": "research/youtube/BkGIa5V39-w.json",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
+      "revision": "youtube-video-e6db2251e643dabb"
+    },
+    {
+      "videoId": "FxqGcrey9S8",
+      "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
+      "title": null,
+      "evidencePath": "research/youtube/FxqGcrey9S8.json",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3",
+      "revision": "youtube-video-8c8b59ac8ed7fe95"
+    }
+  ],
+  "semanticChildren": {
+    "videos": [
+      {
+        "videoId": "BkGIa5V39-w",
+        "hash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12"
+      },
+      {
+        "videoId": "FxqGcrey9S8",
+        "hash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3"
+      }
+    ]
+  },
+  "userTasks": [],
+  "commonQuestions": [],
+  "steps": [],
+  "facts": [],
+  "visualClues": [],
+  "conflicts": [],
+  "unknowns": [],
+  "pageCandidates": [],
+  "sourceUrls": [
+    "https://www.youtube.com/watch?v=BkGIa5V39-w",
+    "https://www.youtube.com/watch?v=FxqGcrey9S8"
+  ],
+  "boundaries": {
+    "verifiedFacts": false,
+    "directPublish": false,
+    "conflictsPreserved": true,
+    "pageWrites": false
+  }
+}

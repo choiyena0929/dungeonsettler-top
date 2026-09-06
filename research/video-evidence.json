@@ -1,20 +1,20 @@
 {
   "type": "youtube-video-evidence",
   "schemaVersion": 2,
-  "revision": "youtube-evidence-cfbb9ee3569c4f12",
-  "contentHash": "1bcee66957d6214c97f9d9fcbe6dd818c6130424ad2c5e22e7af42bc9c5c191f",
+  "revision": "youtube-evidence-8a556e1a0d70c8f1",
+  "contentHash": "764ad3a4d7db52ad04638fa122a8fffc0037dba8fb9ad1f940254b477f7c3a86",
   "status": "measured",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "generatedAt": "2026-09-06T14:50:51.524Z",
   "inputs": {
     "statePath": "D:\\Obsidian\\zwk-AI1\\20_项目\\AI Web\\07_自动化\\上站操作系统\\站点状态\\steam-2798330.md",
-    "stateHash": "8765df56ab23b82f13cd204c8b45666b42ce7ca35b20c7400adeaeada777c932",
-    "lockHash": "d6321fc426de4cedfcf43f05b4b73fb8bfd48e85d3fc2dabadc3ef024a1cccba",
-    "pageContractsHash": "2cacc6b17ac314a3b150a5be615d47b8476ec995ea872cb231f88def23fa6c3b",
-    "inputHash": "df825c53fef0e52204b3c8106e36147560f5ea0cdb2fc87b59c9df8a1b02a3d6",
+    "stateHash": "7636f5eef4d128260be98cea3cadfcebd054219e97ddce6bc29d004371fc3881",
+    "lockHash": "7628b29b233970bdbdcdee81dd28e285f806e533dca98b3d671382cfdabecab9",
+    "pageContractsHash": "019ad2dcec93298826174a0d4d321c56db6879b67157c436110a085b0492c351",
+    "inputHash": "d755a431969d71f71ee2cac75685c37dcfb45d7a0db47d9707503460a83abc58",
     "runtime": {
       "youtubeApiKey": "present",
       "analysisProvider": "antigravity-cli",
@@ -40,8 +40,8 @@
       "status": "measured",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "973f1c022aed73276c9d30e5108a2567d4026521e475ed94e963862d0c08eab2",
-      "revision": "youtube-topic-67bc9ab42c83ccec"
+      "contentHash": "fc62d753e8e0572d56b529ac19bf460eff74a6ee6b80a7711f4cafd15e7502f3",
+      "revision": "youtube-topic-c19e44f65526833a"
     },
     {
       "topicId": "topic-2",
@@ -52,8 +52,8 @@
       "status": "measured",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6",
-      "revision": "youtube-topic-b2bf066eacb16d5b"
+      "contentHash": "a81dd913dfec845b73a69e4a630ee4532748f5df81c6dba7435c224fb3af41bf",
+      "revision": "youtube-topic-142d85dfcbb21bb6"
     },
     {
       "topicId": "topic-3",
@@ -64,82 +64,225 @@
       "status": "measured",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "7aca9bda9592047ffed531180b61ebc7f41d8b135cf73bb85ecdd24ea2def738",
-      "revision": "youtube-topic-4b22ab836d332a58"
+      "contentHash": "e48792714ea799114fa1bfb46eddc1231b16bd50a3e4a5e130e0d968b91eff9d",
+      "revision": "youtube-topic-b8c24b7de2b225dc"
     }
   ],
   "items": [
     {
-      "videoId": "BkGIa5V39-w",
-      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
-      "title": null,
-      "channel": null,
-      "publishedAt": null,
-      "evidencePath": "research/youtube/BkGIa5V39-w.json",
+      "videoId": "IF11DG0QDGU",
+      "url": "https://www.youtube.com/watch?v=IF11DG0QDGU",
+      "title": "Dungeon Settlers - Game Review and Beginner&#39;s Guide",
+      "channel": "Forgotten Games",
+      "publishedAt": "2026-03-07T17:38:29Z",
+      "evidencePath": "research/youtube/IF11DG0QDGU.json",
       "topicIds": [
-        "topic-1",
-        "topic-2",
-        "topic-3"
+        "topic-1"
       ],
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
       "status": "not-queried",
       "source": "youtube",
-      "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
-      "revision": "youtube-video-e6db2251e643dabb"
+      "contentHash": "8d3cbf3f0a404ec04bd6423377805ba1c4ca3e53314536487cdee0e7ecd67690",
+      "revision": "youtube-video-f7417ae755d68a82"
+    },
+    {
+      "videoId": "_CE9Ousnepc",
+      "url": "https://www.youtube.com/watch?v=_CE9Ousnepc",
+      "title": "Colonizing a Dungeon in a New Settlement Survival Dungeon Crawler! | Dungeon Settlers Playtest",
+      "channel": "Voice in my Head",
+      "publishedAt": "2026-03-18T20:30:53Z",
+      "evidencePath": "research/youtube/_CE9Ousnepc.json",
+      "topicIds": [
+        "topic-1"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "71065fa9add7ddf6d182ac6fff3b88ac9f007a2d8760d3e3570908497745f940",
+      "revision": "youtube-video-2258e6d72bdd11fa"
     },
     {
       "videoId": "FxqGcrey9S8",
       "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
-      "title": null,
-      "channel": null,
-      "publishedAt": null,
+      "title": "DUNGEON SETTLERS But I Don&#39;t Waste Your Time (Before You Buy &amp; Features)",
+      "channel": "The Singleplayer Squad",
+      "publishedAt": "2026-09-01T12:35:11Z",
       "evidencePath": "research/youtube/FxqGcrey9S8.json",
       "topicIds": [
-        "topic-1",
-        "topic-2",
+        "topic-1"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "8f41d0702ef0d219bfba09b364244c440d79b99bd75ed491f46d5bf59cbbaa0f",
+      "revision": "youtube-video-702e07b1083efd07"
+    },
+    {
+      "videoId": "HCcTguW26_s",
+      "url": "https://www.youtube.com/watch?v=HCcTguW26_s",
+      "title": "Brand new pixel dungeon crawler! This is: Dungeon Settlers! 🪶",
+      "channel": "PlayinGG",
+      "publishedAt": "2026-03-17T18:28:55Z",
+      "evidencePath": "research/youtube/HCcTguW26_s.json",
+      "topicIds": [
+        "topic-2"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "bec7caa3aca8ad01d073982d411589e7ded4874dd49223980e3d7901ac31789a",
+      "revision": "youtube-video-345c7cce4801d2a2"
+    },
+    {
+      "videoId": "T1R-pAMc3gs",
+      "url": "https://www.youtube.com/watch?v=T1R-pAMc3gs",
+      "title": "Guide, Tips, Tricks, and Cheats for Dungeon settlers",
+      "channel": "Mythoe",
+      "publishedAt": "2026-06-26T21:56:30Z",
+      "evidencePath": "research/youtube/T1R-pAMc3gs.json",
+      "topicIds": [
+        "topic-2"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "24c30d56a3ba3d76697cef0a6cea4a4642fa28d4415cc3a7a1ab84ebe7825791",
+      "revision": "youtube-video-bf271691585d7b9f"
+    },
+    {
+      "videoId": "7QtkslpY20I",
+      "url": "https://www.youtube.com/watch?v=7QtkslpY20I",
+      "title": "Making a 3D Settlers board  - 6th Crafters log - Final Designs &amp; Mold making tutorial",
+      "channel": "The Dungeon",
+      "publishedAt": "2021-02-26T20:00:17Z",
+      "evidencePath": "research/youtube/7QtkslpY20I.json",
+      "topicIds": [
+        "topic-2"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "0ab159ce4ba2a16318a4830a1103a5eb49c21138c7975f77b214db427fdabf63",
+      "revision": "youtube-video-2f11a7c7340df546"
+    },
+    {
+      "videoId": "FUBrQY5bRF8",
+      "url": "https://www.youtube.com/watch?v=FUBrQY5bRF8",
+      "title": "Try to Build a Colony Inside A Dangerous Dungeon - Dungeon Settlers",
+      "channel": "AgentNumberOne VODs",
+      "publishedAt": "2026-09-05T14:00:28Z",
+      "evidencePath": "research/youtube/FUBrQY5bRF8.json",
+      "topicIds": [
         "topic-3"
       ],
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
       "status": "not-queried",
       "source": "youtube",
-      "contentHash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3",
-      "revision": "youtube-video-8c8b59ac8ed7fe95"
+      "contentHash": "0e46ddf93664947c2ebb74931668ec0121e1df37929c81a2f02fa16b0a4e3bae",
+      "revision": "youtube-video-ad4d5fc9247d6dda"
+    },
+    {
+      "videoId": "C0reaRgJe8s",
+      "url": "https://www.youtube.com/watch?v=C0reaRgJe8s",
+      "title": "The Expedition is Running Out of Food | Dungeon Settlers | Episode 2",
+      "channel": "Rough Pebble",
+      "publishedAt": "2026-09-03T22:30:31Z",
+      "evidencePath": "research/youtube/C0reaRgJe8s.json",
+      "topicIds": [
+        "topic-3"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "cd37dedead31a8497c31a591bab58c0e2086f5715a66d4b44e6cf337cfba9f40",
+      "revision": "youtube-video-8269f5ceb1e5b5e8"
+    },
+    {
+      "videoId": "husKFGxAuGc",
+      "url": "https://www.youtube.com/watch?v=husKFGxAuGc",
+      "title": "Build Your Colony. Enter the Dungeon. TRY NOT TO DIE! | Dungeon Settlers",
+      "channel": "Maddogema",
+      "publishedAt": "2026-08-20T18:00:15Z",
+      "evidencePath": "research/youtube/husKFGxAuGc.json",
+      "topicIds": [
+        "topic-3"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "68944635d6dcc488866ef2ac873d157a6f43dea343e9a944a6e14773f1923177",
+      "revision": "youtube-video-f41c3c5de7bd568e"
     }
   ],
   "semanticChildren": {
     "videos": [
       {
-        "videoId": "BkGIa5V39-w",
-        "hash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12"
+        "videoId": "IF11DG0QDGU",
+        "hash": "8d3cbf3f0a404ec04bd6423377805ba1c4ca3e53314536487cdee0e7ecd67690"
+      },
+      {
+        "videoId": "_CE9Ousnepc",
+        "hash": "71065fa9add7ddf6d182ac6fff3b88ac9f007a2d8760d3e3570908497745f940"
       },
       {
         "videoId": "FxqGcrey9S8",
-        "hash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3"
+        "hash": "8f41d0702ef0d219bfba09b364244c440d79b99bd75ed491f46d5bf59cbbaa0f"
+      },
+      {
+        "videoId": "HCcTguW26_s",
+        "hash": "bec7caa3aca8ad01d073982d411589e7ded4874dd49223980e3d7901ac31789a"
+      },
+      {
+        "videoId": "T1R-pAMc3gs",
+        "hash": "24c30d56a3ba3d76697cef0a6cea4a4642fa28d4415cc3a7a1ab84ebe7825791"
+      },
+      {
+        "videoId": "7QtkslpY20I",
+        "hash": "0ab159ce4ba2a16318a4830a1103a5eb49c21138c7975f77b214db427fdabf63"
+      },
+      {
+        "videoId": "FUBrQY5bRF8",
+        "hash": "0e46ddf93664947c2ebb74931668ec0121e1df37929c81a2f02fa16b0a4e3bae"
+      },
+      {
+        "videoId": "C0reaRgJe8s",
+        "hash": "cd37dedead31a8497c31a591bab58c0e2086f5715a66d4b44e6cf337cfba9f40"
+      },
+      {
+        "videoId": "husKFGxAuGc",
+        "hash": "68944635d6dcc488866ef2ac873d157a6f43dea343e9a944a6e14773f1923177"
       }
     ],
     "topics": [
       {
         "topicId": "topic-1",
-        "hash": "973f1c022aed73276c9d30e5108a2567d4026521e475ed94e963862d0c08eab2"
+        "hash": "fc62d753e8e0572d56b529ac19bf460eff74a6ee6b80a7711f4cafd15e7502f3"
       },
       {
         "topicId": "topic-2",
-        "hash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6"
+        "hash": "a81dd913dfec845b73a69e4a630ee4532748f5df81c6dba7435c224fb3af41bf"
       },
       {
         "topicId": "topic-3",
-        "hash": "7aca9bda9592047ffed531180b61ebc7f41d8b135cf73bb85ecdd24ea2def738"
+        "hash": "e48792714ea799114fa1bfb46eddc1231b16bd50a3e4a5e130e0d968b91eff9d"
       }
     ]
   },
   "summary": {
     "topicCount": 3,
-    "videoCount": 2,
+    "videoCount": 9,
     "measuredVideoCount": 0,
     "notQueriedVideoCount": 0,
-    "unavailableVideoCount": 2,
+    "unavailableVideoCount": 9,
     "conflictVideoCount": 0
   },
   "boundaries": {
@@ -161,6 +304,6 @@
       "changed": []
     },
     "note": "YouTube W3 研究证据已写入 research/；页面生成仍需独立页面合同。",
-    "recordedAt": "2026-09-06T13:22:23.963Z"
+    "recordedAt": "2026-09-06T14:51:19.172Z"
   }
 }

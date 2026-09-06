@@ -1,9 +1,9 @@
 {
-  "url": "https://dungeonsettler.top/__automation-not-found-check__",
+  "url": "https://dungeonsettlers.top/__automation-not-found-check__",
   "schemaVersion": 1,
-  "status": "failed",
-  "statusCode": 0,
+  "status": "passed",
+  "statusCode": 404,
   "expectedStatus": 404,
-  "error": "fetch failed",
-  "capturedAt": "2026-09-06T14:22:34.139Z"
+  "contentLength": 10093,
+  "capturedAt": "2026-09-06T14:43:16.862Z"
 }

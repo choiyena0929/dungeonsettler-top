@@ -1,0 +1,166 @@
+{
+  "type": "youtube-video-evidence",
+  "schemaVersion": 2,
+  "revision": "youtube-evidence-cfbb9ee3569c4f12",
+  "contentHash": "1bcee66957d6214c97f9d9fcbe6dd818c6130424ad2c5e22e7af42bc9c5c191f",
+  "status": "measured",
+  "siteId": "steam-2798330",
+  "siteName": "Dungeon Settlers",
+  "handoffId": "handoff-90ee65acdd42",
+  "inputRevision": "input-59995249c82e",
+  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "inputs": {
+    "statePath": "D:\\Obsidian\\zwk-AI1\\20_项目\\AI Web\\07_自动化\\上站操作系统\\站点状态\\steam-2798330.md",
+    "stateHash": "8765df56ab23b82f13cd204c8b45666b42ce7ca35b20c7400adeaeada777c932",
+    "lockHash": "d6321fc426de4cedfcf43f05b4b73fb8bfd48e85d3fc2dabadc3ef024a1cccba",
+    "pageContractsHash": "2cacc6b17ac314a3b150a5be615d47b8476ec995ea872cb231f88def23fa6c3b",
+    "inputHash": "df825c53fef0e52204b3c8106e36147560f5ea0cdb2fc87b59c9df8a1b02a3d6",
+    "runtime": {
+      "youtubeApiKey": "present",
+      "analysisProvider": "antigravity-cli",
+      "analysisCredential": "present",
+      "geminiApiKey": "missing",
+      "youtubeCredentialSource": "shared-youtube-workbench",
+      "geminiCredentialSource": "windows-keyring",
+      "geminiModel": "gemini-3.8-flash-high"
+    }
+  },
+  "firstReleaseScope": [
+    "Dungeon Settlers beginner guide",
+    "How to get clay in Dungeon Settlers",
+    "How to research in Dungeon Settlers"
+  ],
+  "topics": [
+    {
+      "topicId": "topic-1",
+      "slug": "guides-beginner-guide",
+      "label": "Dungeon Settlers beginner guide",
+      "path": "/guides/beginner-guide",
+      "evidencePath": "research/youtube/topic-guides-beginner-guide.json",
+      "status": "measured",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "973f1c022aed73276c9d30e5108a2567d4026521e475ed94e963862d0c08eab2",
+      "revision": "youtube-topic-67bc9ab42c83ccec"
+    },
+    {
+      "topicId": "topic-2",
+      "slug": "guides-how-to-get-clay",
+      "label": "How to get clay in Dungeon Settlers",
+      "path": "/guides/how-to-get-clay",
+      "evidencePath": "research/youtube/topic-guides-how-to-get-clay.json",
+      "status": "measured",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6",
+      "revision": "youtube-topic-b2bf066eacb16d5b"
+    },
+    {
+      "topicId": "topic-3",
+      "slug": "guides-how-to-research",
+      "label": "How to research in Dungeon Settlers",
+      "path": "/guides/how-to-research",
+      "evidencePath": "research/youtube/topic-guides-how-to-research.json",
+      "status": "measured",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "7aca9bda9592047ffed531180b61ebc7f41d8b135cf73bb85ecdd24ea2def738",
+      "revision": "youtube-topic-4b22ab836d332a58"
+    }
+  ],
+  "items": [
+    {
+      "videoId": "BkGIa5V39-w",
+      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+      "title": null,
+      "channel": null,
+      "publishedAt": null,
+      "evidencePath": "research/youtube/BkGIa5V39-w.json",
+      "topicIds": [
+        "topic-1",
+        "topic-2",
+        "topic-3"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
+      "revision": "youtube-video-e6db2251e643dabb"
+    },
+    {
+      "videoId": "FxqGcrey9S8",
+      "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
+      "title": null,
+      "channel": null,
+      "publishedAt": null,
+      "evidencePath": "research/youtube/FxqGcrey9S8.json",
+      "topicIds": [
+        "topic-1",
+        "topic-2",
+        "topic-3"
+      ],
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "status": "not-queried",
+      "source": "youtube",
+      "contentHash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3",
+      "revision": "youtube-video-8c8b59ac8ed7fe95"
+    }
+  ],
+  "semanticChildren": {
+    "videos": [
+      {
+        "videoId": "BkGIa5V39-w",
+        "hash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12"
+      },
+      {
+        "videoId": "FxqGcrey9S8",
+        "hash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3"
+      }
+    ],
+    "topics": [
+      {
+        "topicId": "topic-1",
+        "hash": "973f1c022aed73276c9d30e5108a2567d4026521e475ed94e963862d0c08eab2"
+      },
+      {
+        "topicId": "topic-2",
+        "hash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6"
+      },
+      {
+        "topicId": "topic-3",
+        "hash": "7aca9bda9592047ffed531180b61ebc7f41d8b135cf73bb85ecdd24ea2def738"
+      }
+    ]
+  },
+  "summary": {
+    "topicCount": 3,
+    "videoCount": 2,
+    "measuredVideoCount": 0,
+    "notQueriedVideoCount": 0,
+    "unavailableVideoCount": 2,
+    "conflictVideoCount": 0
+  },
+  "boundaries": {
+    "firstReleaseScopeOnly": true,
+    "pageCandidatesDoNotChangeScope": true,
+    "directPublish": false,
+    "directPageWrite": false,
+    "verificationRequiredBeforeFacts": true,
+    "conflictsPreserved": true
+  },
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "YouTube W3 研究证据已写入 research/；页面生成仍需独立页面合同。",
+    "recordedAt": "2026-09-06T13:22:23.963Z"
+  }
+}

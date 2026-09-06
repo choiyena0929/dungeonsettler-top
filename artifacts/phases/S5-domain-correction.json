@@ -4,7 +4,7 @@
   "result": "passed",
   "siteId": "steam-2798330",
   "registryId": "site-steam-2798330",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "expectedStateRevision": 10,
   "capturedAt": "2026-09-06T22:41:24+08:00",
@@ -66,7 +66,7 @@
     },
     {
       "id": "local-onpage",
-      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e",
+      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e",
       "exitCode": 0,
       "logPath": "artifacts/quality/seo-routes.json"
     },

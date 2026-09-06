@@ -7,52 +7,67 @@
   "path": "/guides/how-to-get-clay",
   "query": "How to get clay in Dungeon Settlers",
   "siteId": "steam-2798330",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "revision": "youtube-topic-b2bf066eacb16d5b",
-  "inputHash": "3d589c354aa7cd55f9c1f9bd3d000684d043fbf3a2a12da4b6c53e3b904f384d",
-  "contentHash": "e7b1b216c4dfb5c9214b252471c3c066c9fab40107c7a1b677491fee6cbda9d6",
-  "generatedAt": "2026-09-06T13:22:12.275Z",
+  "revision": "youtube-topic-142d85dfcbb21bb6",
+  "inputHash": "d844082a46369b83e6243bd3d153a541591fd529e157d671067e8c9c7e7e06a8",
+  "contentHash": "a81dd913dfec845b73a69e4a630ee4532748f5df81c6dba7435c224fb3af41bf",
+  "generatedAt": "2026-09-06T14:50:51.524Z",
   "status": "measured",
   "searchStatus": "measured",
   "analysisStatus": "unavailable",
   "verificationStatus": "not-queried",
   "videoIds": [
-    "BkGIa5V39-w",
-    "FxqGcrey9S8"
+    "HCcTguW26_s",
+    "T1R-pAMc3gs",
+    "7QtkslpY20I"
   ],
   "evidencePath": "research/youtube/topic-guides-how-to-get-clay.json",
   "videos": [
     {
-      "videoId": "BkGIa5V39-w",
-      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
-      "title": null,
-      "evidencePath": "research/youtube/BkGIa5V39-w.json",
+      "videoId": "HCcTguW26_s",
+      "url": "https://www.youtube.com/watch?v=HCcTguW26_s",
+      "title": "Brand new pixel dungeon crawler! This is: Dungeon Settlers! 🪶",
+      "evidencePath": "research/youtube/HCcTguW26_s.json",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12",
-      "revision": "youtube-video-e6db2251e643dabb"
+      "contentHash": "bec7caa3aca8ad01d073982d411589e7ded4874dd49223980e3d7901ac31789a",
+      "revision": "youtube-video-345c7cce4801d2a2"
     },
     {
-      "videoId": "FxqGcrey9S8",
-      "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
-      "title": null,
-      "evidencePath": "research/youtube/FxqGcrey9S8.json",
+      "videoId": "T1R-pAMc3gs",
+      "url": "https://www.youtube.com/watch?v=T1R-pAMc3gs",
+      "title": "Guide, Tips, Tricks, and Cheats for Dungeon settlers",
+      "evidencePath": "research/youtube/T1R-pAMc3gs.json",
       "analysisStatus": "unavailable",
       "verificationStatus": "not-queried",
-      "contentHash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3",
-      "revision": "youtube-video-8c8b59ac8ed7fe95"
+      "contentHash": "24c30d56a3ba3d76697cef0a6cea4a4642fa28d4415cc3a7a1ab84ebe7825791",
+      "revision": "youtube-video-bf271691585d7b9f"
+    },
+    {
+      "videoId": "7QtkslpY20I",
+      "url": "https://www.youtube.com/watch?v=7QtkslpY20I",
+      "title": "Making a 3D Settlers board  - 6th Crafters log - Final Designs &amp; Mold making tutorial",
+      "evidencePath": "research/youtube/7QtkslpY20I.json",
+      "analysisStatus": "unavailable",
+      "verificationStatus": "not-queried",
+      "contentHash": "0ab159ce4ba2a16318a4830a1103a5eb49c21138c7975f77b214db427fdabf63",
+      "revision": "youtube-video-2f11a7c7340df546"
     }
   ],
   "semanticChildren": {
     "videos": [
       {
-        "videoId": "BkGIa5V39-w",
-        "hash": "ea3d342f45fe853dd09abface234f8fa6ff751803fb09a98930bd9c644b4ec12"
+        "videoId": "HCcTguW26_s",
+        "hash": "bec7caa3aca8ad01d073982d411589e7ded4874dd49223980e3d7901ac31789a"
       },
       {
-        "videoId": "FxqGcrey9S8",
-        "hash": "61d460968b159304e2a4dc09c39d24175e4ec172b41ad5379b2a4cdae11313c3"
+        "videoId": "T1R-pAMc3gs",
+        "hash": "24c30d56a3ba3d76697cef0a6cea4a4642fa28d4415cc3a7a1ab84ebe7825791"
+      },
+      {
+        "videoId": "7QtkslpY20I",
+        "hash": "0ab159ce4ba2a16318a4830a1103a5eb49c21138c7975f77b214db427fdabf63"
       }
     ]
   },
@@ -65,8 +80,9 @@
   "unknowns": [],
   "pageCandidates": [],
   "sourceUrls": [
-    "https://www.youtube.com/watch?v=BkGIa5V39-w",
-    "https://www.youtube.com/watch?v=FxqGcrey9S8"
+    "https://www.youtube.com/watch?v=HCcTguW26_s",
+    "https://www.youtube.com/watch?v=T1R-pAMc3gs",
+    "https://www.youtube.com/watch?v=7QtkslpY20I"
   ],
   "boundaries": {
     "verifiedFacts": false,

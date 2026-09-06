@@ -4,7 +4,7 @@
   "result": "passed",
   "siteId": "steam-2798330",
   "registryId": "site-steam-2798330",
-  "handoffId": "handoff-90ee65acdd42",
+  "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "expectedStateRevision": 4,
   "capturedAt": "2026-09-06T14:05:22.050Z",
@@ -129,7 +129,7 @@
     },
     {
       "id": "public-copy",
-      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e",
+      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e",
       "exitCode": 0,
       "logPath": "artifacts/logs/public-copy.log"
     },
@@ -141,7 +141,7 @@
     },
     {
       "id": "onpage-seo",
-      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-90ee65acdd42 --input-revision input-59995249c82e",
+      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e",
       "exitCode": 0,
       "logPath": "artifacts/logs/audit-onpage.log"
     },
