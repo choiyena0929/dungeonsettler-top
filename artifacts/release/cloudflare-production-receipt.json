@@ -66,7 +66,7 @@
     "wrongTarget": "dungeonsettler.top",
     "failureEvidence": "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
   },
-  "sourceCommit": "37fcb1e",
+  "sourceCommit": "37fcb1e3243a4419fb150637da05e3ca8dd2b44c",
   "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
   "capturedAt": "2026-09-07T14:43:00.000Z"
 }
