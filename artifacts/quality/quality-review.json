@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-07T01:55:49.219Z",
-  "reviewedRoundId": "production-official-assets-r7",
+  "reviewedAt": "2026-09-07T02:38:49.267Z",
+  "reviewedRoundId": "warm-game-assets-final-r9",
   "reviewer": {
-    "id": "codex-fresh-4e354555f1ae",
+    "id": "codex-fresh-bb68a975d552",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面在桌面与移动端都建立了清晰的游戏身份、早期版本边界和新手主路径，首屏主动作突出，官方实机截图有效支撑具体玩法辨识；后续内容按问题、循环、已确认事实和来源组织，移动端标题、导航、按钮与长内容均保持可用。",
+  "summary": "页面以清晰的游戏身份和 Beginner Guide 主动作开场，桌面与移动端层级、图片、导航及长页面内容组织稳定，核心路径易于理解和继续操作。移动端标题、按钮与导航均保持可读和可触控，整体视觉也持续围绕具体游戏玩法展开。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "首屏以大标题、Early Access 标签和 Beginner Guide 主按钮为核心，官方截图承担身份强化；下方依次组织问题入口、玩法循环、已确认信息、来源路径，层级明确。"
+      "notes": "桌面首屏以大标题、官方实机图和单一金色主按钮建立主次，后续按问题入口、玩法循环、事实说明和来源路径分段组织；移动端顺序自然，核心操作先于图片与长内容。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "页面多处直接标识 Dungeon Settlers，并使用聚落、营地和地下城官方实机画面；即使遮住站名，画面与 settlement、Research、expedition 等具体玩法信息仍能辨认游戏身份。"
+      "notes": "顶部官方 capsule、Dungeon Settlers 明确标题及聚落和地下城实机截图共同建立具体游戏身份；即使遮住站点名称，仍能辨认这是该游戏的 Early Access 聚落经营与地下城远征指南。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面端采用标题与实机图并列布局，移动端改为纵向流；移动首屏长标题正常换行，四项导航和主要按钮均可见且具备足够触控尺寸，截图中未见横向溢出。"
+      "notes": "桌面端采用左右 Hero 布局，移动端转为单列；移动首屏长标题正常换行，四项导航均完整显示，主按钮和次按钮尺寸充足，截图未见横向溢出或遮挡。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "用户在首屏数秒内即可理解站点用途并点击 Start the Beginner Guide；Start here 区域提供 Beginner、Clay、Research 三个问题入口，后续内容和官方链接路径清楚。"
+      "notes": "首屏数秒内可确认站点用途并找到 Start the Beginner Guide；整页随后提供 Beginner、Clay、Research 三条问题导向入口、玩法循环和官方页面入口，主要任务路径明确。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "关键词自然融入标题和问题入口，没有展示搜索量、竞争度或内部流程信息；正文以 Early Access、版本日期、已确认与未确定边界及官方来源维持可信度。"
+      "notes": "页面文案围绕 Early Access、settlement、Clay、Research 和 expedition 等真实任务展开，来源边界与更新时间被放在辅助位置，关键词未以指标或内部研究形式打断阅读。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-4e354555f1ae"
+  "reviewRunId": "codex-fresh-bb68a975d552"
 }

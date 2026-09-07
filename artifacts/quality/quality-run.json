@@ -564,9 +564,149 @@
           }
         }
       }
+    },
+    {
+      "id": "warm-game-assets-r8",
+      "completedAt": "2026-09-07T02:37:26.725Z",
+      "route": "/",
+      "url": "http://127.0.0.1:4173/",
+      "desktopScreenshot": "artifacts/quality/warm-game-assets-r8-desktop.png",
+      "mobileScreenshot": "artifacts/quality/warm-game-assets-r8-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/warm-game-assets-r8-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/warm-game-assets-r8-mobile-viewport.png",
+      "desktopSha256": "d25d453bf4d87bffb957f083c3ab99d957f4bbc19215f71b2e6e421ca52462c1",
+      "mobileSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+      "desktopViewportSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+      "mobileViewportSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a",
+      "desktopDomSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+      "mobileDomSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://127.0.0.1:4173/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 4647,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4406,
+          "domSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+          "screenshotSha256": "d25d453bf4d87bffb957f083c3ab99d957f4bbc19215f71b2e6e421ca52462c1",
+          "viewportScreenshotSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "finalUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://127.0.0.1:4173/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 391,
+          "viewportHeight": 847,
+          "documentWidth": 391,
+          "documentHeight": 7272,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4400,
+          "domSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+          "screenshotSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+          "viewportScreenshotSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "finalUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        }
+      }
+    },
+    {
+      "id": "warm-game-assets-final-r9",
+      "completedAt": "2026-09-07T02:38:28.517Z",
+      "route": "/",
+      "url": "http://127.0.0.1:4173/",
+      "desktopScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop.png",
+      "mobileScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile-viewport.png",
+      "desktopSha256": "184aad8f1e279d481c89fededf3877dd9d92ed8c8070e3b9f6f26d5cd0e47cd0",
+      "mobileSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+      "desktopViewportSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+      "mobileViewportSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a",
+      "desktopDomSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+      "mobileDomSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://127.0.0.1:4173/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 4647,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4406,
+          "domSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+          "screenshotSha256": "184aad8f1e279d481c89fededf3877dd9d92ed8c8070e3b9f6f26d5cd0e47cd0",
+          "viewportScreenshotSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "finalUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://127.0.0.1:4173/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 391,
+          "viewportHeight": 847,
+          "documentWidth": 391,
+          "documentHeight": 7272,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4400,
+          "domSha256": "593e269e1157c266c9f914919bf858ef92dd9a480de32f46ddc7343f73a1cda1",
+          "screenshotSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+          "viewportScreenshotSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "finalUrl": "http://127.0.0.1:4173/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        }
+      }
     }
   ],
   "blockingOpen": 0,
   "majorOpen": 0,
-  "independentReviewRunId": "codex-fresh-4e354555f1ae"
+  "independentReviewRunId": "codex-fresh-bb68a975d552"
 }

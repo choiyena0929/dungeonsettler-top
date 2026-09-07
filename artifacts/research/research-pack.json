@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-07T01:49:02.870Z",
-  "packRevision": "research-pack-51046907cf88cd69",
+  "generatedAt": "2026-09-07T02:39:40.041Z",
+  "packRevision": "research-pack-4e2a0989d7d71a3f",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -19,14 +19,14 @@
     "source-manifest": {
       "path": "research/source-manifest.md",
       "status": "present",
-      "bytes": 5275,
-      "sha256": "87b3986db4bbe894ba00e9a25b5cee443653c26cedc3d502a91d9fe86f95a027"
+      "bytes": 5530,
+      "sha256": "af4dc3e04905445f8ee1d4abda93312372b8f631d239f00fa3e31523b42f5b10"
     },
     "content-status": {
       "path": "research/content-status.md",
       "status": "present",
-      "bytes": 733,
-      "sha256": "7cd6aafbf47c7b24c79a77bc52bdb8997e4d12c0b81b63eaeb285965ee4790b1"
+      "bytes": 820,
+      "sha256": "d72a5d06c9ad6c4b321a02adea228e9de1d40d84e6e2d1f4251f01f6d6ad9966"
     },
     "platform-questions": {
       "path": "research/platform-questions.md",
@@ -37,14 +37,14 @@
     "visual-benchmark": {
       "path": "research/visual-benchmark.md",
       "status": "present",
-      "bytes": 3905,
-      "sha256": "db1f5a502a93464941a3da8f124503ff78e6b17af5fa33b2095484102cccfec0"
+      "bytes": 4386,
+      "sha256": "cbcbc8e72994bb4829c65ac010fa92e2a933aa9773f012075ea29e717777cc3e"
     },
     "asset-manifest": {
       "path": "research/素材清单.json",
       "status": "present",
-      "bytes": 4363,
-      "sha256": "a047e14f902af7e79487ced6cd5ade8312a11a3f835c1b46caff6d1fd6dcb66c"
+      "bytes": 7291,
+      "sha256": "8a70b870c78ad81381572592456663f1540398564351c4cb067de8274d24a696"
     },
     "page-contracts": {
       "path": "research/page-contracts.json",
@@ -94,7 +94,7 @@
       "/"
     ],
     "pageCount": 4,
-    "assetCount": 3,
+    "assetCount": 5,
     "requiredAssetCount": 2,
     "videoItemCount": 9,
     "videoEvidenceStatus": "measured",

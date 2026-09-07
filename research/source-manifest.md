@@ -34,8 +34,9 @@
 ### S004 — CanOpener 官方 Gameplay Trailer
 
 - URL：<https://www.youtube.com/watch?v=BkGIa5V39-w>
-- 观察：2026-09-06；公开视频标题为 Dungeon Settlers - Official Gameplay Trailer，频道身份与开发者 CanOpener 相关。
+- 观察：2026-09-07；YouTube oEmbed 返回标题 `Dungeon Settlers – Official Gameplay Trailer`、作者 `CanOpener` 与频道入口；缩略图为 `https://i.ytimg.com/vi/BkGIa5V39-w/hqdefault.jpg`。
 - 用途：补充玩家对 settlement、expedition 和 dungeon loop 的理解；视频只作为补充证据，字幕/画面未核验的细节不能直接进页面。
+- 公开使用：可在首页放置缩略图和官方 YouTube 外链；不把未完成的视频分析改写成攻略事实。
 - W3 状态：首次运行被空白机器页面合同挡住，已记录失败收据；合同修复后已重跑，`research/video-evidence.json` 将该视频标为 `analysisStatus: unavailable`，不提供前台事实。
 
 ### S005 — 近期玩家向视频
@@ -60,6 +61,6 @@
 ## 权利和素材边界
 
 - 官方 Steam/YouTube 页面用于事实回查与官方入口链接；第三方文章截图、视频帧和带站点水印的图片不进入生产素材。
-- 首页使用 Steam App 2798330 官方商店接口返回的三张游戏截图，原始 CDN URL、本地文件、渲染位置和裁切规则逐项登记在 `research/素材清单.json`；生产页面使用本地副本，不依赖远程热链。
+- 首页使用 Steam App 2798330 官方商店接口返回的三张游戏截图与 capsule 图，并使用 CanOpener 官方 YouTube Trailer 缩略图作为视频入口；原始 URL、本地文件、渲染位置和裁切规则逐项登记在 `research/素材清单.json`，生产页面使用本地副本。
 - 游戏身份区禁止原创 SVG、AI 生图和抽象占位图。CSS 与通用图标只负责排版和交互状态。
 - Prima 图片、YouTube 缩略图和社区截图不进入本站 `public/`，只保留 URL 作为研究和视觉观察依据。

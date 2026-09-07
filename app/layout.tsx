@@ -32,14 +32,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body>
         <header className="site-header">
-          <a className="brand" href="/" aria-label="Dungeon Settlers Field Guide home"><span className="brand-mark">DS</span><span>{siteConfig.name}</span></a>
+          <a className="brand" href="/" aria-label="Dungeon Settlers Field Guide home"><span className="brand-mark"><img src="/game/official/capsule.jpg" alt="" width="231" height="87" /></span><span>Field Guide</span></a>
           <nav aria-label="Primary navigation">{siteConfig.navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
         </header>
         <main>{children}</main>
         <footer>
           <div className="footer-inner">
             <div><strong>{siteConfig.name}</strong><p>Independent guides for a changing Early Access game.</p></div>
-            <div className="footer-links"><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><a href="/updates">Guide updates</a></div>
+            <div className="footer-links"><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><a href="https://www.youtube.com/watch?v=BkGIa5V39-w" rel="noreferrer">Official trailer</a><a href="/updates">Guide updates</a></div>
           </div>
           <p className="footer-small">Guide details are dated. Check the official game pages after major updates.</p>
         </footer>

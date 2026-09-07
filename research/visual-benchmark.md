@@ -14,8 +14,10 @@
 
 | 区块 | 用户任务 | 资产 ID | 实现文件/组件 | 视觉职责 |
 |---|---|---|---|---|
+| 顶部导航 | 确认当前站点对应哪款游戏 | `dungeon-settlers-capsule` | `app/layout.tsx` | 用官方 capsule 代替抽象字母标记 |
 | 首屏 | 判断这里是否解决自己的 Dungeon Settlers 早期问题 | `dungeon-settlers-hero` | `app/page.tsx` | 用官方聚落实机画面直接建立游戏身份 |
-| Start here | 选择 Beginner、Clay 或 Research 入口 | `dungeon-settlers-research-loop`、`dungeon-settlers-dungeon-scene` | `app/components/game-loop-diagram.tsx` | 用官方营地和地下城画面解释“先准备 settlement，再进行 expedition”的阅读路径 |
+| Start here | 选择 Beginner、Clay 或 Research 入口 | `dungeon-settlers-research-loop`、`dungeon-settlers-dungeon-scene`、`dungeon-settlers-hero` | `app/page.tsx`、`app/components/game-loop-diagram.tsx` | 每个攻略入口使用不同的官方实机小图，并用营地与地下城画面解释阅读路径 |
+| 官方视频 | 先看游戏实际画面再选择攻略 | `dungeon-settlers-youtube-trailer` | `app/page.tsx` | 使用 CanOpener 官方 Trailer 缩略图链接到 YouTube，不从未核验视频中提取攻略事实 |
 
 ## 公开文案边界
 
@@ -26,7 +28,7 @@
 
 ## 资产来源
 
-本站已从 Steam App 2798330 官方商店接口登记三张官方游戏截图，并保存为本地生产资产。原始页面、精确 CDN URL、文件、使用位置和裁切规则见 `research/素材清单.json`。第三方站点只用于观察信息层级，不复制其品牌、组件皮肤、自制图片或水印素材；原创 SVG、AI 生图与抽象占位图不得承担游戏身份。
+本站已从 Steam App 2798330 官方商店接口登记三张官方游戏截图和一张 capsule，并登记 CanOpener 官方 YouTube Trailer 缩略图，全部保存为本地生产资产。原始页面、精确 URL、文件、使用位置和裁切规则见 `research/素材清单.json`。第三方站点只用于观察信息层级，不复制其品牌、组件皮肤、自制图片或水印素材；原创 SVG、AI 生图与抽象占位图不得承担游戏身份。
 
 ## 截图回查说明
 

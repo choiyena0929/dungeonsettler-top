@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "site-review",
   "status": "blocked",
-  "generatedAt": "2026-09-07T01:56:37.278Z",
+  "generatedAt": "2026-09-07T02:39:49.542Z",
   "site": {
     "siteId": "steam-2798330",
     "registryId": "site-steam-2798330",
@@ -228,13 +228,13 @@
         {
           "id": "quality-run",
           "status": "passed",
-          "detail": "最新质量轮次 production-official-assets-r7 含桌面/移动整页图和首屏视口图共四张真实截图。",
+          "detail": "最新质量轮次 warm-game-assets-final-r9 含桌面/移动整页图和首屏视口图共四张真实截图。",
           "evidence": [
             "artifacts/quality/quality-run.json",
-            "artifacts/quality/production-official-assets-r7-desktop.png",
-            "artifacts/quality/production-official-assets-r7-mobile.png",
-            "artifacts/quality/production-official-assets-r7-desktop-viewport.png",
-            "artifacts/quality/production-official-assets-r7-mobile-viewport.png"
+            "artifacts/quality/warm-game-assets-final-r9-desktop.png",
+            "artifacts/quality/warm-game-assets-final-r9-mobile.png",
+            "artifacts/quality/warm-game-assets-final-r9-desktop-viewport.png",
+            "artifacts/quality/warm-game-assets-final-r9-mobile-viewport.png"
           ]
         },
         {
@@ -264,7 +264,7 @@
         {
           "id": "quality-review",
           "status": "passed",
-          "detail": "独立审阅 codex-fresh-4e354555f1ae 已按五项标准通过。",
+          "detail": "独立审阅 codex-fresh-bb68a975d552 已按五项标准通过。",
           "evidence": [
             "artifacts/quality/quality-review.json"
           ]

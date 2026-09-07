@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "independent-quality-review-handoff",
   "status": "ready",
-  "createdAt": "2026-09-07T01:55:29.055Z",
+  "createdAt": "2026-09-07T02:38:29.339Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "implementerId": "codex-implementer-dungeonsettler-20260906",
@@ -20,17 +20,17 @@
     "qualityRun": "artifacts/quality/quality-run.json"
   },
   "latestRound": {
-    "id": "production-official-assets-r7",
-    "completedAt": "2026-09-07T01:55:28.311Z",
+    "id": "warm-game-assets-final-r9",
+    "completedAt": "2026-09-07T02:38:28.517Z",
     "route": "/",
-    "desktopScreenshot": "artifacts/quality/production-official-assets-r7-desktop.png",
-    "mobileScreenshot": "artifacts/quality/production-official-assets-r7-mobile.png",
-    "desktopViewportScreenshot": "artifacts/quality/production-official-assets-r7-desktop-viewport.png",
-    "mobileViewportScreenshot": "artifacts/quality/production-official-assets-r7-mobile-viewport.png",
-    "desktopSha256": "41a4dd1ad5135a6f0ae42bbb37414487d395df30598b8337184df12c26ccddb3",
-    "mobileSha256": "2e5153184520e088b3ec3aa5ca31da522b06fc976f3c76fe73d45404d946cf63",
-    "desktopViewportSha256": "7b83f39704eadb775c104179dbcf7579d5c5f7275639cae94a9d3a3440975e7c",
-    "mobileViewportSha256": "8e28cde0569990f067ffb4074fc7aaa4df313f5d7c75ff18d98fc0ede639cf5d"
+    "desktopScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop.png",
+    "mobileScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile.png",
+    "desktopViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop-viewport.png",
+    "mobileViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile-viewport.png",
+    "desktopSha256": "184aad8f1e279d481c89fededf3877dd9d92ed8c8070e3b9f6f26d5cd0e47cd0",
+    "mobileSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+    "desktopViewportSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+    "mobileViewportSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a"
   },
   "criteria": [
     {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-07T01:52:54.540Z",
+  "capturedAt": "2026-09-07T02:36:39.630Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "http://127.0.0.1:4173",
@@ -20,7 +20,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
-      "wordCount": 665,
+      "wordCount": 691,
       "internalLinkCount": 5,
       "keywordCount": 2,
       "checks": [
@@ -57,7 +57,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "665/650 words"
+          "detail": "691/650 words"
         },
         {
           "id": "internal-links",
@@ -119,7 +119,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
-      "wordCount": 1038,
+      "wordCount": 1037,
       "internalLinkCount": 5,
       "keywordCount": 3,
       "checks": [
@@ -156,7 +156,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1038/850 words"
+          "detail": "1037/850 words"
         },
         {
           "id": "internal-links",
@@ -218,7 +218,7 @@
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
-      "wordCount": 932,
+      "wordCount": 931,
       "internalLinkCount": 5,
       "keywordCount": 4,
       "checks": [
@@ -255,7 +255,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "932/750 words"
+          "detail": "931/750 words"
         },
         {
           "id": "internal-links",
@@ -317,7 +317,7 @@
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
-      "wordCount": 1019,
+      "wordCount": 1018,
       "internalLinkCount": 5,
       "keywordCount": 3,
       "checks": [
@@ -354,7 +354,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1019/750 words"
+          "detail": "1018/750 words"
         },
         {
           "id": "internal-links",

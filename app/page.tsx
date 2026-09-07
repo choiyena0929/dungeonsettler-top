@@ -9,6 +9,11 @@ export const metadata: Metadata = {
 };
 
 const guideBySlug = (slug: string) => guideEntries.find((entry) => entry.slug === slug)!;
+const guideVisuals = [
+  { src: "/game/official/settlement.jpg", alt: "Dungeon Settlers party and settlement preparation screen." },
+  { src: "/game/official/dungeon.jpg", alt: "Dungeon Settlers party exploring a dungeon shrine." },
+  { src: "/game/official/hero.jpg", alt: "Dungeon Settlers settlement rooms and central portal." },
+];
 
 export default function Home() {
   const beginner = guideBySlug("beginner-guide");
@@ -32,11 +37,18 @@ export default function Home() {
       <section className="section start-section" aria-labelledby="start-heading">
         <div className="section-heading"><div><p className="eyebrow">Start here</p><h2 id="start-heading">Choose the problem you actually have.</h2></div><p className="section-intro">The first release stays narrow on purpose. Each page gives the short answer first, then marks what comes from an official page, what comes from a dated secondary report, and what is still unknown.</p></div>
         <div className="guide-grid">
-          {[beginner, clay, research].map((entry, index) => <article className={`guide-card guide-card-${index + 1}`} key={entry.slug}><div className="card-topline"><span>0{index + 1}</span><span>{entry.label}</span></div><h3><a href={`/guides/${entry.slug}`}>{entry.title}</a></h3><p>{entry.summary}</p><a className="text-link" href={`/guides/${entry.slug}`}>Read the route <span aria-hidden="true">→</span></a></article>)}
+          {[beginner, clay, research].map((entry, index) => <article className={`guide-card guide-card-${index + 1}`} key={entry.slug}><div className="card-topline"><span className="card-identity"><img src={guideVisuals[index].src} alt={guideVisuals[index].alt} width="64" height="64" /><small>0{index + 1}</small></span><span>{entry.label}</span></div><h3><a href={`/guides/${entry.slug}`}>{entry.title}</a></h3><p>{entry.summary}</p><a className="text-link" href={`/guides/${entry.slug}`}>Read the route <span aria-hidden="true">→</span></a></article>)}
         </div>
       </section>
 
       <section className="section loop-section"><GameLoopDiagram /></section>
+
+      <section className="section trailer-section" aria-labelledby="trailer-heading">
+        <a className="trailer-card" href="https://www.youtube.com/watch?v=BkGIa5V39-w" target="_blank" rel="noreferrer">
+          <figure className="trailer-visual"><img src="/game/official/youtube-trailer.jpg" alt="Dungeon Settlers official gameplay trailer thumbnail from CanOpener." width="480" height="360" /><span className="trailer-play" aria-hidden="true">▶</span></figure>
+          <div><p className="eyebrow">Official video / CanOpener</p><h2 id="trailer-heading">Watch the official gameplay trailer.</h2><p>See the game&apos;s settlement building, party preparation, and dungeon exploration before choosing a guide.</p><span className="text-link">Open on YouTube <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </section>
 
       <section className="section confirmed-section" aria-labelledby="confirmed-heading">
         <div className="section-heading"><div><p className="eyebrow">What is confirmed right now</p><h2 id="confirmed-heading">Enough to start. Not enough to pretend the tree is fixed.</h2></div><p className="section-intro">The official store page establishes the broad loop. Dated update notes and a secondary Clay report add useful leads, but the site keeps their boundaries visible.</p></div>

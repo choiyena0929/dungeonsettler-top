@@ -8,8 +8,8 @@
       "dungeon-settlers-hero",
       "dungeon-settlers-research-loop"
     ],
-    "desktopScreenshot": "artifacts/visual/home-desktop.png",
-    "mobileScreenshot": "artifacts/visual/home-mobile.png"
+    "desktopScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop.png",
+    "mobileScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile.png"
   },
   "assets": [
     {
@@ -38,6 +38,11 @@
           "route": "/",
           "implementation": "app/page.tsx",
           "placement": "首页首屏右侧主视觉"
+        },
+        {
+          "route": "/",
+          "implementation": "app/page.tsx",
+          "placement": "Research 攻略入口的小型游戏画面"
         }
       ],
       "crop": "保持聚落中央传送门、房间布局和角色活动区域可见；移动端使用 16:9 完整画幅。",
@@ -69,6 +74,11 @@
           "route": "/",
           "implementation": "app/components/game-loop-diagram.tsx",
           "placement": "首页玩法循环区域"
+        },
+        {
+          "route": "/",
+          "implementation": "app/page.tsx",
+          "placement": "Beginner Guide 入口的小型游戏画面"
         }
       ],
       "crop": "保留队伍头像、任务栏、营地与建造控件，作为聚落到远征的玩法证据。",
@@ -100,10 +110,77 @@
           "route": "/",
           "implementation": "app/components/game-loop-diagram.tsx",
           "placement": "首页玩法循环区域"
+        },
+        {
+          "route": "/",
+          "implementation": "app/page.tsx",
+          "placement": "Clay 攻略入口的小型游戏画面"
         }
       ],
       "crop": "保留队伍、祭坛和战斗后的场景，强调地下城阶段。",
       "alt": "Dungeon Settlers party standing before a dungeon shrine after combat."
+    },
+    {
+      "id": "dungeon-settlers-capsule",
+      "role": "navigation-identity",
+      "kind": "official-logo",
+      "gameSpecific": true,
+      "originalOrGenerated": false,
+      "officialGameAsset": true,
+      "state": "in-use",
+      "required": false,
+      "source": {
+        "class": "official-cdn",
+        "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/a142dd72485c214b0fe0e6f2d631e73113450220/capsule_231x87.jpg?t=1788710401",
+        "originKind": "official-game-asset",
+        "evidence": "research/source-manifest.md#S001"
+      },
+      "rights": {
+        "status": "documented",
+        "basis": "Steam AppDetails 返回的 Dungeon Settlers 官方 capsule 图片。"
+      },
+      "localPath": "public/game/official/capsule.jpg",
+      "renderTargets": [
+        {
+          "route": "/",
+          "implementation": "app/layout.tsx",
+          "placement": "全站顶部品牌入口"
+        }
+      ],
+      "crop": "保持角色轮廓和 Dungeon Settlers 官方字标可读，使用原始 231:87 比例。",
+      "alt": "Dungeon Settlers official capsule art and wordmark."
+    },
+    {
+      "id": "dungeon-settlers-youtube-trailer",
+      "role": "official-video-entry",
+      "kind": "official-key-art",
+      "gameSpecific": true,
+      "originalOrGenerated": false,
+      "officialGameAsset": true,
+      "state": "in-use",
+      "required": false,
+      "source": {
+        "class": "official-page",
+        "pageUrl": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+        "assetUrl": "https://i.ytimg.com/vi/BkGIa5V39-w/hqdefault.jpg",
+        "originKind": "official-game-video-thumbnail",
+        "evidence": "research/source-manifest.md#S004"
+      },
+      "rights": {
+        "status": "documented",
+        "basis": "CanOpener 官方 YouTube Gameplay Trailer 的公开缩略图，页面仅作为官方视频入口。"
+      },
+      "localPath": "public/game/official/youtube-trailer.jpg",
+      "renderTargets": [
+        {
+          "route": "/",
+          "implementation": "app/page.tsx",
+          "placement": "首页官方 Gameplay Trailer 入口"
+        }
+      ],
+      "crop": "页面使用 16:9 中央裁切，保留官方标题和角色主体。",
+      "alt": "Dungeon Settlers official gameplay trailer thumbnail from CanOpener."
     }
   ]
 }
