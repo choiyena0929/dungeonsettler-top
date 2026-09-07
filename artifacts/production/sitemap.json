@@ -4,8 +4,8 @@
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 898,
-  "capturedAt": "2026-09-07T12:00:00.000Z",
-  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "contentLength": 1003,
+  "capturedAt": "2026-09-07T14:43:00.000Z",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
   "containsXmlUrlset": true
 }

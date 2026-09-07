@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
-  "capturedAt": "2026-09-07T12:00:00.000Z",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
+  "capturedAt": "2026-09-07T14:43:00.000Z",
   "timestampSource": "single migration acceptance run",
   "baseUrl": "https://dungeonsettlers.top",
   "status": "passed",
@@ -43,6 +43,10 @@
         },
         {
           "path": "/tools/first-expedition-planner",
+          "step": "history-compare"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
           "step": "return"
         }
       ],
@@ -67,6 +71,25 @@
         {
           "path": "/updates",
           "step": "updates"
+        }
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "journey": "database",
+      "viewport": "1440x900",
+      "steps": [
+        {
+          "path": "/database",
+          "step": "index"
+        },
+        {
+          "path": "/database",
+          "step": "items-search"
+        },
+        {
+          "path": "/database",
+          "step": "pagination"
         }
       ],
       "runtimeErrors": []
@@ -108,6 +131,10 @@
         },
         {
           "path": "/tools/first-expedition-planner",
+          "step": "history-compare"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
           "step": "return"
         }
       ],
@@ -132,6 +159,25 @@
         {
           "path": "/updates",
           "step": "updates"
+        }
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "journey": "database",
+      "viewport": "390x844",
+      "steps": [
+        {
+          "path": "/database",
+          "step": "index"
+        },
+        {
+          "path": "/database",
+          "step": "items-search"
+        },
+        {
+          "path": "/database",
+          "step": "pagination"
         }
       ],
       "runtimeErrors": []
@@ -165,6 +211,12 @@
     {
       "path": "/tools/first-expedition-planner",
       "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/database",
+      "url": "https://dungeonsettlers.top/database",
       "statusCode": 200,
       "location": ""
     },
@@ -204,6 +256,6 @@
       "status": "passed"
     }
   ],
-  "screenshots": "D:/WebProjects/sites/dungeonsettler.top/artifacts/quality/migration-repair/6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "screenshots": "D:/WebProjects/sites/dungeonsettler.top/artifacts/quality/migration-complete/44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
   "failures": []
 }

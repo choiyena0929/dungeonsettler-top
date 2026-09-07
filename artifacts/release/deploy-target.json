@@ -12,6 +12,6 @@
   "wranglerConfig": "dist/server/wrangler.json",
   "sourceOfTruth": "artifacts/release/deployment-contract.json",
   "publishCommand": "npm run deploy:cloudflare",
-  "sourceCommit": "85ee24cfb963edfa6ed2014f4ce0157be112ba10",
-  "cloudflareVersionId": "ec39460d-fb87-4fb6-b847-a41097d18005"
+  "sourceCommit": "37fcb1e",
+  "cloudflareVersionId": "2c2aef19-5826-4612-b534-cd36d70b480f"
 }

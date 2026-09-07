@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-07T12:00:00.000Z",
-  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "capturedAt": "2026-09-07T14:43:00.000Z",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "https://dungeonsettlers.top",
@@ -21,8 +21,8 @@
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
-      "wordCount": 773,
-      "internalLinkCount": 7,
+      "wordCount": 787,
+      "internalLinkCount": 9,
       "keywordCount": 2,
       "checks": [
         {
@@ -58,12 +58,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "773/650 words"
+          "detail": "787/650 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/3"
+          "detail": "9/3"
         },
         {
           "id": "image-alt",
@@ -120,8 +120,8 @@
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
-      "wordCount": 1153,
-      "internalLinkCount": 7,
+      "wordCount": 1172,
+      "internalLinkCount": 8,
       "keywordCount": 3,
       "checks": [
         {
@@ -157,12 +157,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1153/850 words"
+          "detail": "1172/850 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/2"
+          "detail": "8/2"
         },
         {
           "id": "image-alt",
@@ -219,8 +219,8 @@
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
-      "wordCount": 1049,
-      "internalLinkCount": 7,
+      "wordCount": 1068,
+      "internalLinkCount": 8,
       "keywordCount": 4,
       "checks": [
         {
@@ -256,12 +256,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1049/750 words"
+          "detail": "1068/750 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/2"
+          "detail": "8/2"
         },
         {
           "id": "image-alt",
@@ -301,7 +301,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "4 次，上限 21"
+          "detail": "4 次，上限 22"
         }
       ],
       "status": "passed"
@@ -318,8 +318,8 @@
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
-      "wordCount": 1424,
-      "internalLinkCount": 7,
+      "wordCount": 2715,
+      "internalLinkCount": 9,
       "keywordCount": 3,
       "checks": [
         {
@@ -355,12 +355,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1424/750 words"
+          "detail": "2715/750 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/2"
+          "detail": "9/2"
         },
         {
           "id": "image-alt",
@@ -400,7 +400,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "3 次，上限 29"
+          "detail": "3 次，上限 55"
         }
       ],
       "status": "passed"
@@ -417,8 +417,8 @@
       "h1s": [
         "Dungeon Settlers expedition planner: build a first-run checklist."
       ],
-      "wordCount": 544,
-      "internalLinkCount": 7,
+      "wordCount": 594,
+      "internalLinkCount": 8,
       "keywordCount": 2,
       "checks": [
         {
@@ -454,12 +454,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "544/300 words"
+          "detail": "594/300 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/3"
+          "detail": "8/3"
         },
         {
           "id": "image-alt",
@@ -499,7 +499,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 11"
+          "detail": "2 次，上限 12"
         }
       ],
       "status": "passed"
@@ -517,7 +517,7 @@
         "Dungeon Settlers guide library"
       ],
       "wordCount": 531,
-      "internalLinkCount": 7,
+      "internalLinkCount": 8,
       "keywordCount": 2,
       "checks": [
         {
@@ -558,7 +558,7 @@
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/3"
+          "detail": "8/3"
         },
         {
           "id": "image-alt",
@@ -615,8 +615,8 @@
       "h1s": [
         "Dungeon Settlers guide updates"
       ],
-      "wordCount": 596,
-      "internalLinkCount": 7,
+      "wordCount": 600,
+      "internalLinkCount": 8,
       "keywordCount": 2,
       "checks": [
         {
@@ -652,12 +652,12 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "596/500 words"
+          "detail": "600/500 words"
         },
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "7/3"
+          "detail": "8/3"
         },
         {
           "id": "image-alt",
@@ -701,6 +701,105 @@
         }
       ],
       "status": "passed"
+    },
+    {
+      "path": "/database",
+      "pageType": "database",
+      "primaryKeyword": "Dungeon Settlers database",
+      "url": "https://dungeonsettlers.top/database",
+      "statusCode": 200,
+      "title": "Dungeon Settlers database | DS_B.0.4.19 | DS Field Guide",
+      "description": "Browse the Dungeon Settlers database for the version-locked DS_B.0.4.19 Research, resources, items, units, buildings, drops and recipes.",
+      "canonical": "https://dungeonsettlers.top/database",
+      "h1s": [
+        "Dungeon Settlers database reference"
+      ],
+      "wordCount": 1150,
+      "internalLinkCount": 8,
+      "keywordCount": 2,
+      "checks": [
+        {
+          "id": "http-200",
+          "status": "passed",
+          "detail": "HTTP 200"
+        },
+        {
+          "id": "html-lang",
+          "status": "passed",
+          "detail": "lang=en"
+        },
+        {
+          "id": "title-length",
+          "status": "passed",
+          "detail": "56 chars"
+        },
+        {
+          "id": "description-length",
+          "status": "passed",
+          "detail": "136 chars"
+        },
+        {
+          "id": "single-h1",
+          "status": "passed",
+          "detail": "1 H1"
+        },
+        {
+          "id": "canonical",
+          "status": "passed",
+          "detail": "https://dungeonsettlers.top/database"
+        },
+        {
+          "id": "word-count",
+          "status": "passed",
+          "detail": "1150/650 words"
+        },
+        {
+          "id": "internal-links",
+          "status": "passed",
+          "detail": "8/4"
+        },
+        {
+          "id": "image-alt",
+          "status": "passed",
+          "detail": "0 images missing alt"
+        },
+        {
+          "id": "json-ld",
+          "status": "passed",
+          "detail": "JSON-LD present"
+        },
+        {
+          "id": "no-internal-research-copy",
+          "status": "passed",
+          "detail": "未公开内部研究术语"
+        },
+        {
+          "id": "keyword-title",
+          "status": "passed",
+          "detail": "Dungeon Settlers database"
+        },
+        {
+          "id": "keyword-description",
+          "status": "passed",
+          "detail": "Dungeon Settlers database"
+        },
+        {
+          "id": "keyword-h1",
+          "status": "passed",
+          "detail": "Dungeon Settlers database"
+        },
+        {
+          "id": "keyword-intro",
+          "status": "passed",
+          "detail": "前 120 词点题"
+        },
+        {
+          "id": "keyword-natural-frequency",
+          "status": "passed",
+          "detail": "2 次，上限 23"
+        }
+      ],
+      "status": "passed"
     }
   ],
   "redirects": [
@@ -734,7 +833,7 @@
     "duplicateMetadata": []
   },
   "summary": {
-    "routesChecked": 7,
+    "routesChecked": 8,
     "redirectsChecked": 3,
     "failedChecks": []
   }

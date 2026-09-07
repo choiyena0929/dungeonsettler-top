@@ -1,12 +1,12 @@
 {
-  "url": "https://dungeonsettlers.top/guides/how-to-get-clay",
+  "url": "https://dungeonsettlers.top/database",
   "schemaVersion": 1,
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 45746,
-  "capturedAt": "2026-09-07T12:00:00.000Z",
-  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
-  "title": "How to get clay in Dungeon Settlers | DS Field Guide",
-  "deploymentVersion": "45e60c9c-cd74-4952-ac3f-6d8cd649f372"
+  "contentLength": 38263,
+  "capturedAt": "2026-09-07T14:43:00.000Z",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
+  "title": "Dungeon Settlers database | DS_B.0.4.19 | DS Field Guide",
+  "deploymentVersion": "2c2aef19-5826-4612-b534-cd36d70b480f"
 }
