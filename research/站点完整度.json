@@ -125,7 +125,7 @@
     },
     {
       "id": "research-safe-check",
-      "task": "在完整 Research tree 尚未核验时，找到一个安全的下一步。",
+      "task": "在版本锁定的 Research tree 上找到一个可核验的下一步。",
       "entryRoute": "/guides/how-to-research",
       "status": "implemented",
       "repeatable": false,
