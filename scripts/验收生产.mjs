@@ -12,6 +12,8 @@ const contractsPath = resolve(arg("contracts", "research/page-contracts.json"));
 const notFoundPath = arg("not-found-path", "/__automation-not-found-check__");
 const outDir = resolve(arg("out-dir", "artifacts/production"));
 const deploymentVersion = arg("deployment-version");
+const runId = arg("run-id");
+const capturedAt = arg("captured-at", new Date().toISOString());
 if (!/^https:\/\//i.test(baseUrl)) throw new Error("必须通过 --base-url 提供 HTTPS 正式域名。");
 
 async function resolveRepresentativePath() {
@@ -26,7 +28,6 @@ async function resolveRepresentativePath() {
 }
 
 const representativePath = await resolveRepresentativePath();
-const capturedAt = new Date().toISOString();
 const targets = [
   { id: "homepage", path: "/", expectedStatus: 200 },
   { id: "representative-page", path: representativePath, expectedStatus: 200 },
@@ -55,6 +56,7 @@ async function fetchTarget(target) {
       expectedStatus: target.expectedStatus,
       contentLength: body.byteLength,
       capturedAt,
+      ...(runId ? { runId } : {}),
     };
     if (target.id === "homepage" || target.id === "representative-page") {
       receipt.title = text.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.replace(/\s+/g, " ").trim() || "";
@@ -97,6 +99,7 @@ const httpsReceipt = {
   customDomain: new URL(baseUrl).hostname,
   tlsCheck: "passed",
   ...(deploymentVersion ? { deploymentVersion } : {}),
+  ...(runId ? { runId } : {}),
   capturedAt,
 };
 

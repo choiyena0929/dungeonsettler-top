@@ -1,41 +1,209 @@
 {
   "schemaVersion": 1,
-  "status": "passed",
+  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "capturedAt": "2026-09-07T12:00:00.000Z",
+  "timestampSource": "single migration acceptance run",
   "baseUrl": "https://dungeonsettlers.top",
-  "deploymentVersion": "ec39460d-fb87-4fb6-b847-a41097d18005",
-  "capturedAt": "2026-09-07T09:31:00+08:00",
-  "viewport": "390x844",
-  "steps": [
+  "status": "passed",
+  "viewports": [
     {
-      "id": "home",
-      "url": "https://dungeonsettlers.top/",
-      "result": "首页入口可进入规划器"
+      "journey": "clay-search",
+      "viewport": "1440x900",
+      "steps": [
+        {
+          "path": "/library",
+          "step": "search"
+        },
+        {
+          "path": "/guides/how-to-get-clay",
+          "step": "guide"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "next"
+        }
+      ],
+      "runtimeErrors": []
     },
     {
-      "id": "planner",
-      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
-      "result": "规划器表单可见"
+      "journey": "planner",
+      "viewport": "1440x900",
+      "steps": [
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "empty-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "partial-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "ready-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "return"
+        }
+      ],
+      "runtimeErrors": []
     },
     {
-      "id": "hold",
-      "result": "未勾选四项时显示 hold 结果和缺少项目"
+      "journey": "research",
+      "viewport": "1440x900",
+      "steps": [
+        {
+          "path": "/guides/how-to-research",
+          "step": "guide"
+        },
+        {
+          "path": "/guides/how-to-research",
+          "step": "checklist"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "planner"
+        },
+        {
+          "path": "/updates",
+          "step": "updates"
+        }
+      ],
+      "runtimeErrors": []
     },
     {
-      "id": "ready",
-      "result": "勾选四项后显示四步可复查计划和 Beginner Guide 入口"
+      "journey": "clay-search",
+      "viewport": "390x844",
+      "steps": [
+        {
+          "path": "/library",
+          "step": "search"
+        },
+        {
+          "path": "/guides/how-to-get-clay",
+          "step": "guide"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "next"
+        }
+      ],
+      "runtimeErrors": []
     },
     {
-      "id": "related-guide",
-      "url": "https://dungeonsettlers.top/guides/beginner-guide",
-      "result": "相关页 H1 为 Dungeon Settlers beginner guide: the first expedition route"
+      "journey": "planner",
+      "viewport": "390x844",
+      "steps": [
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "empty-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "partial-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "ready-result"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "return"
+        }
+      ],
+      "runtimeErrors": []
     },
     {
-      "id": "return",
-      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
-      "result": "相关页返回入口可回到规划器"
+      "journey": "research",
+      "viewport": "390x844",
+      "steps": [
+        {
+          "path": "/guides/how-to-research",
+          "step": "guide"
+        },
+        {
+          "path": "/guides/how-to-research",
+          "step": "checklist"
+        },
+        {
+          "path": "/tools/first-expedition-planner",
+          "step": "planner"
+        },
+        {
+          "path": "/updates",
+          "step": "updates"
+        }
+      ],
+      "runtimeErrors": []
     }
   ],
-  "horizontalOverflow": false,
-  "sameOriginFailures": [],
-  "scopeNote": "同源 document、script、fetch、xhr 响应及请求失败均为零；当前采集环境的外部统计请求控制台噪声不作为站内闭环失败，GA4 后台仍需用户手动确认。"
+  "links": [
+    {
+      "path": "/",
+      "url": "https://dungeonsettlers.top/",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/guides/beginner-guide",
+      "url": "https://dungeonsettlers.top/guides/beginner-guide",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/guides/how-to-get-clay",
+      "url": "https://dungeonsettlers.top/guides/how-to-get-clay",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/guides/how-to-research",
+      "url": "https://dungeonsettlers.top/guides/how-to-research",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/tools/first-expedition-planner",
+      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/updates",
+      "url": "https://dungeonsettlers.top/updates",
+      "statusCode": 200,
+      "location": ""
+    },
+    {
+      "path": "/library",
+      "url": "https://dungeonsettlers.top/library",
+      "statusCode": 200,
+      "location": ""
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/library/beginner-guide",
+      "target": "/guides/beginner-guide",
+      "statusCode": 308,
+      "location": "/guides/beginner-guide",
+      "status": "passed"
+    },
+    {
+      "path": "/library/how-to-get-clay",
+      "target": "/guides/how-to-get-clay",
+      "statusCode": 308,
+      "location": "/guides/how-to-get-clay",
+      "status": "passed"
+    },
+    {
+      "path": "/library/how-to-research",
+      "target": "/guides/how-to-research",
+      "statusCode": 308,
+      "location": "/guides/how-to-research",
+      "status": "passed"
+    }
+  ],
+  "screenshots": "D:/WebProjects/sites/dungeonsettler.top/artifacts/quality/migration-repair/6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "failures": []
 }

@@ -1,7 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-07T09:26:33.587Z",
+  "capturedAt": "2026-09-07T12:00:00.000Z",
+  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "https://dungeonsettlers.top",
@@ -20,7 +21,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
-      "wordCount": 782,
+      "wordCount": 773,
       "internalLinkCount": 7,
       "keywordCount": 2,
       "checks": [
@@ -57,7 +58,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "782/650 words"
+          "detail": "773/650 words"
         },
         {
           "id": "internal-links",
@@ -119,7 +120,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
-      "wordCount": 1152,
+      "wordCount": 1153,
       "internalLinkCount": 7,
       "keywordCount": 3,
       "checks": [
@@ -156,7 +157,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1152/850 words"
+          "detail": "1153/850 words"
         },
         {
           "id": "internal-links",
@@ -218,7 +219,7 @@
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
-      "wordCount": 1048,
+      "wordCount": 1049,
       "internalLinkCount": 7,
       "keywordCount": 4,
       "checks": [
@@ -255,7 +256,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1048/750 words"
+          "detail": "1049/750 words"
         },
         {
           "id": "internal-links",
@@ -317,7 +318,7 @@
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
-      "wordCount": 1135,
+      "wordCount": 1424,
       "internalLinkCount": 7,
       "keywordCount": 3,
       "checks": [
@@ -354,7 +355,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1135/750 words"
+          "detail": "1424/750 words"
         },
         {
           "id": "internal-links",
@@ -399,7 +400,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "3 次，上限 23"
+          "detail": "3 次，上限 29"
         }
       ],
       "status": "passed"
@@ -416,7 +417,7 @@
       "h1s": [
         "Dungeon Settlers expedition planner: build a first-run checklist."
       ],
-      "wordCount": 546,
+      "wordCount": 544,
       "internalLinkCount": 7,
       "keywordCount": 2,
       "checks": [
@@ -453,7 +454,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "546/300 words"
+          "detail": "544/300 words"
         },
         {
           "id": "internal-links",
@@ -516,7 +517,7 @@
         "Dungeon Settlers guide library"
       ],
       "wordCount": 531,
-      "internalLinkCount": 10,
+      "internalLinkCount": 7,
       "keywordCount": 2,
       "checks": [
         {
@@ -557,7 +558,7 @@
         {
           "id": "internal-links",
           "status": "passed",
-          "detail": "10/3"
+          "detail": "7/3"
         },
         {
           "id": "image-alt",
@@ -614,7 +615,7 @@
       "h1s": [
         "Dungeon Settlers guide updates"
       ],
-      "wordCount": 515,
+      "wordCount": 596,
       "internalLinkCount": 7,
       "keywordCount": 2,
       "checks": [
@@ -651,7 +652,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "515/500 words"
+          "detail": "596/500 words"
         },
         {
           "id": "internal-links",
@@ -696,9 +697,35 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 11"
+          "detail": "2 次，上限 12"
         }
       ],
+      "status": "passed"
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/library/beginner-guide",
+      "target": "/guides/beginner-guide",
+      "expectedStatus": 308,
+      "statusCode": 308,
+      "location": "/guides/beginner-guide",
+      "status": "passed"
+    },
+    {
+      "path": "/library/how-to-get-clay",
+      "target": "/guides/how-to-get-clay",
+      "expectedStatus": 308,
+      "statusCode": 308,
+      "location": "/guides/how-to-get-clay",
+      "status": "passed"
+    },
+    {
+      "path": "/library/how-to-research",
+      "target": "/guides/how-to-research",
+      "expectedStatus": 308,
+      "statusCode": 308,
+      "location": "/guides/how-to-research",
       "status": "passed"
     }
   ],
@@ -708,6 +735,7 @@
   },
   "summary": {
     "routesChecked": 7,
+    "redirectsChecked": 3,
     "failedChecks": []
   }
 }

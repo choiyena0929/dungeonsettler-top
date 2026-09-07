@@ -1,11 +1,12 @@
 {
-  "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+  "url": "https://dungeonsettlers.top/guides/how-to-get-clay",
   "schemaVersion": 1,
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 33095,
-  "capturedAt": "2026-09-07T09:26:22.883Z",
-  "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
-  "deploymentVersion": "ec39460d-fb87-4fb6-b847-a41097d18005"
+  "contentLength": 45746,
+  "capturedAt": "2026-09-07T12:00:00.000Z",
+  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "title": "How to get clay in Dungeon Settlers | DS Field Guide",
+  "deploymentVersion": "45e60c9c-cd74-4952-ac3f-6d8cd649f372"
 }
