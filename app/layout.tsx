@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(`https://${siteConfig.domain}`),
   alternates: { canonical: absoluteUrl() },
+  icons: {
+    icon: [{ url: "/game/official/icons/party-portrait-01.jpg", type: "image/jpeg", sizes: "112x112" }],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
