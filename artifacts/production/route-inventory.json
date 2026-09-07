@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
-  "capturedAt": "2026-09-07T15:21:37.210Z",
+  "runId": "f4911a8d-ca10-4200-bc12-dbf9c1c64ca5",
+  "capturedAt": "2026-09-07T16:09:17.801Z",
   "timestampSource": "single migration acceptance run",
   "baseUrl": "https://dungeonsettlers.top",
   "method": "交叉核对源码 page.tsx、.next/types/routes.d.ts、正式 HTML href 与线上响应",

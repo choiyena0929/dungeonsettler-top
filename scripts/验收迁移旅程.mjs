@@ -131,7 +131,7 @@ async function runJourney(browser, viewport, journey) {
       const resumedContext = await browser.newContext({ viewport, storageState });
       const resumedPage = await resumedContext.newPage();
       await resumedPage.goto(pathUrl("/tools/first-expedition-planner"), { waitUntil: "domcontentloaded" });
-      await resumedPage.waitForTimeout(700);
+      await resumedPage.waitForFunction(() => document.querySelectorAll(".planner-history-item").length >= 3, { timeout: 5000 });
       expect(`${journey}/history-resume`, await resumedPage.locator(".planner-history-item").count() >= 3, "新浏览器会话没有恢复已保存历史");
       await resumedContext.close();
       await page.locator('.planner-result a[href="/guides/how-to-get-clay"]').click();
@@ -172,7 +172,8 @@ async function runJourney(browser, viewport, journey) {
       expect(`${journey}/index`, await page.locator(".database-tab").count() === 8, "资料页没有完整类别切换");
       await page.locator(".database-tab").filter({ hasText: "Items" }).click();
       await page.locator('.database-search input').fill("Clay");
-      expect(`${journey}/items`, await page.locator(".database-row").innerText().then((text) => /Clay/i.test(text)), "物品表搜索不到 Clay");
+      await page.waitForFunction(() => Array.from(document.querySelectorAll(".database-row")).some((row) => /Clay/i.test(row.textContent || "")), { timeout: 5000 });
+      expect(`${journey}/items`, await page.locator(".database-row").filter({ hasText: "Clay" }).count() >= 1, "物品表搜索不到 Clay");
       await inspectPage(page, context, journey, "items-search"); record("/database", "items-search");
       await page.locator(".database-tab").filter({ hasText: "Buildings" }).click();
       await page.locator('.database-search input').fill("");

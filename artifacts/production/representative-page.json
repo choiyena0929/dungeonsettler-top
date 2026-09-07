@@ -4,9 +4,9 @@
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 38263,
-  "capturedAt": "2026-09-07T15:21:37.210Z",
-  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
+  "contentLength": 38509,
+  "capturedAt": "2026-09-07T16:09:17.801Z",
+  "runId": "f4911a8d-ca10-4200-bc12-dbf9c1c64ca5",
   "title": "Dungeon Settlers database | DS_B.0.4.19 | DS Field Guide",
-  "deploymentVersion": "0e7b58e9-8330-4e73-a510-fde9c6b4cb59"
+  "deploymentVersion": "c2c39c43-7dd4-42b6-8e8c-fc17c09008be"
 }

@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-07T15:43:04.202Z",
-  "reviewedRoundId": "migration-acceptance-final-fe21",
+  "reviewedAt": "2026-09-07T16:03:14.888Z",
+  "reviewedRoundId": "migration-acceptance-final-f808-r2",
   "reviewer": {
-    "id": "codex-fresh-8d077f93dd87",
+    "id": "codex-fresh-7705f6fa1d55",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面以明确的第一次远征规划任务为核心，桌面端层级舒展，移动端导航、标题、表单和结果区域均保持可读与可操作；游戏截图、官方标识、版本边界和相关入口共同建立了可信的 Dungeon Settlers 身份与内容路径。",
+  "summary": "页面以 Dungeon Settlers 的具体聚落截图、远征清单和明确的 Review preparation 动作为核心，桌面与移动端均保持清晰层级。长标题、导航、表单卡片和后续说明在窄屏下可读且未见横向溢出，内容边界与 Early Access 语境自然融入整体体验。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "首屏先呈现页面身份、规划器主动作和简短说明，随后进入准备清单、结果、历史与证据说明，桌面端主次关系清晰。"
+      "notes": "首屏先呈现站点身份、页面任务与 Start planning 动作，随后进入检查工具、结果、历史和解释区域；桌面双栏与移动单栏顺序清晰。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "顶部官方 capsule、聚落实机截图、角色头像与 Workstations/Storage 标识均具体指向 Dungeon Settlers 及其聚落—远征玩法。"
+      "notes": "Dungeon Settlers 名称、官方 capsule、聚落实机截图、队伍头像和工作台/储存素材共同建立了明确的游戏与玩法身份。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "移动端导航折行为六个可见入口，长标题自然换行，规划器单列排列，无横向溢出；主要按钮和复选区域具备可触控尺寸。"
+      "notes": "桌面与 390px 移动视图均能容纳导航、长标题、表单和卡片；移动导航分两行排列，主要按钮和勾选项具有可操作尺寸，未见横向溢出。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "用户可在首屏快速理解规划目的，并通过 Run purpose、四项准备检查和 Review preparation 完成核心任务，结果与后续链接位置明确。"
+      "notes": "页面在首屏直接说明规划目的，并提供 Start planning、Run purpose、四项准备检查与 Review preparation，核心任务路径无需额外寻找。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "页面文案围绕第一次远征准备展开，来源边界和未核验范围被放在工具说明及证据区域，未见关键词堆砌或内部研究指标干扰体验。"
+      "notes": "标题和说明围绕 Dungeon Settlers 首次远征场景展开，版本、证据边界和相关指南入口以辅助信息呈现，没有明显关键词堆叠或破坏阅读的营销内容。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-8d077f93dd87"
+  "reviewRunId": "codex-fresh-7705f6fa1d55"
 }

@@ -1054,9 +1054,149 @@
           }
         }
       }
+    },
+    {
+      "id": "migration-acceptance-final-f808",
+      "completedAt": "2026-09-07T16:00:08.934Z",
+      "route": "/tools/first-expedition-planner",
+      "url": "http://localhost:4173/tools/first-expedition-planner",
+      "desktopScreenshot": "artifacts/quality/migration-acceptance-final-f808-desktop.png",
+      "mobileScreenshot": "artifacts/quality/migration-acceptance-final-f808-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/migration-acceptance-final-f808-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/migration-acceptance-final-f808-mobile-viewport.png",
+      "desktopSha256": "77fcb682c5897fd5262152d39342e33e96d1f2164125e311b73dbb582f5aa356",
+      "mobileSha256": "fffd9c445235c44a35c267a0f9e61da3a6862b2c48a19ccb7107cb519a67f1fb",
+      "desktopViewportSha256": "20dba629700ac02662f9c90319e5383d7260bb00262da725610229fe4fedcb14",
+      "mobileViewportSha256": "9aacfa77990353eadebac66eebe5c002050eaa33d0e1e7a1d9dac778d6914116",
+      "desktopDomSha256": "50c2c61464775b6b2f03dd3b3d7819b96ad77267c29d8ba6eaac4045c900b11e",
+      "mobileDomSha256": "50c2c61464775b6b2f03dd3b3d7819b96ad77267c29d8ba6eaac4045c900b11e",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:4173/tools/first-expedition-planner",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 2948,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 3735,
+          "domSha256": "50c2c61464775b6b2f03dd3b3d7819b96ad77267c29d8ba6eaac4045c900b11e",
+          "screenshotSha256": "77fcb682c5897fd5262152d39342e33e96d1f2164125e311b73dbb582f5aa356",
+          "viewportScreenshotSha256": "20dba629700ac02662f9c90319e5383d7260bb00262da725610229fe4fedcb14",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4173/",
+            "finalUrl": "http://localhost:4173/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:4173/tools/first-expedition-planner",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 4559,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 3735,
+          "domSha256": "50c2c61464775b6b2f03dd3b3d7819b96ad77267c29d8ba6eaac4045c900b11e",
+          "screenshotSha256": "fffd9c445235c44a35c267a0f9e61da3a6862b2c48a19ccb7107cb519a67f1fb",
+          "viewportScreenshotSha256": "9aacfa77990353eadebac66eebe5c002050eaa33d0e1e7a1d9dac778d6914116",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4173/",
+            "finalUrl": "http://localhost:4173/",
+            "runtimeErrors": []
+          }
+        }
+      }
+    },
+    {
+      "id": "migration-acceptance-final-f808-r2",
+      "completedAt": "2026-09-07T16:02:38.953Z",
+      "route": "/tools/first-expedition-planner",
+      "url": "http://localhost:4173/tools/first-expedition-planner",
+      "desktopScreenshot": "artifacts/quality/migration-acceptance-final-f808-r2-desktop.png",
+      "mobileScreenshot": "artifacts/quality/migration-acceptance-final-f808-r2-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/migration-acceptance-final-f808-r2-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/migration-acceptance-final-f808-r2-mobile-viewport.png",
+      "desktopSha256": "77fcb682c5897fd5262152d39342e33e96d1f2164125e311b73dbb582f5aa356",
+      "mobileSha256": "4e1968f152eb4996dbfa999cd061f78b26c0800d1f70f4b160d03bab7d0a953a",
+      "desktopViewportSha256": "20dba629700ac02662f9c90319e5383d7260bb00262da725610229fe4fedcb14",
+      "mobileViewportSha256": "85fa9127800f43e81bdd314d9b1e0170dc08b1fdf22df05b349bdadf6fcfb94f",
+      "desktopDomSha256": "0a422cfc75b75fced130125b9c22a100eb84a4fe974e526abe05b8ec25ca47b1",
+      "mobileDomSha256": "0a422cfc75b75fced130125b9c22a100eb84a4fe974e526abe05b8ec25ca47b1",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:4173/tools/first-expedition-planner",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 2948,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 3735,
+          "domSha256": "0a422cfc75b75fced130125b9c22a100eb84a4fe974e526abe05b8ec25ca47b1",
+          "screenshotSha256": "77fcb682c5897fd5262152d39342e33e96d1f2164125e311b73dbb582f5aa356",
+          "viewportScreenshotSha256": "20dba629700ac02662f9c90319e5383d7260bb00262da725610229fe4fedcb14",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4173/",
+            "finalUrl": "http://localhost:4173/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:4173/tools/first-expedition-planner",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 4565,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 3735,
+          "domSha256": "0a422cfc75b75fced130125b9c22a100eb84a4fe974e526abe05b8ec25ca47b1",
+          "screenshotSha256": "4e1968f152eb4996dbfa999cd061f78b26c0800d1f70f4b160d03bab7d0a953a",
+          "viewportScreenshotSha256": "85fa9127800f43e81bdd314d9b1e0170dc08b1fdf22df05b349bdadf6fcfb94f",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4173/",
+            "finalUrl": "http://localhost:4173/",
+            "runtimeErrors": []
+          }
+        }
+      }
     }
   ],
   "blockingOpen": 0,
   "majorOpen": 0,
-  "independentReviewRunId": "codex-fresh-8d077f93dd87"
+  "independentReviewRunId": "codex-fresh-7705f6fa1d55"
 }

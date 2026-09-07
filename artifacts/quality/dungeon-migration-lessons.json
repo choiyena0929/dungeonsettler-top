@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "site": "Dungeon Settlers",
   "purpose": "记录本次完整度迁移中已由源码、构建、正式 HTML、截图和生产收据验证的经验；共享规则与游戏专属事实分开。",
-  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
-  "generatedAt": "2026-09-07T15:21:37.210Z",
-  "productionDeployment": "0e7b58e9-8330-4e73-a510-fde9c6b4cb59",
+  "runId": "f4911a8d-ca10-4200-bc12-dbf9c1c64ca5",
+  "generatedAt": "2026-09-07T16:09:17.801Z",
+  "productionDeployment": "c2c39c43-7dd4-42b6-8e8c-fc17c09008be",
   "rules": [
     {
       "id": "route-inventory-before-contract",
@@ -58,7 +58,7 @@
       "evidence": [
         "app/components/expedition-planner.tsx：结果分支、historyKey 同步写入、加载/比较动作",
         "artifacts/production/migration-journey.json：empty-result、partial-result、ready-result、history-compare、return 均通过桌面/移动",
-        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：planner 六类桌面/移动截图"
+        "artifacts/quality/migration-final/f4911a8d-ca10-4200-bc12-dbf9c1c64ca5/：planner 六类桌面/移动截图"
       ],
       "appliesToAllGameSites": true,
       "dungeonOnly": false,
@@ -103,7 +103,7 @@
       "evidence": [
         "research/素材清单.json：6 个 entityAssetIds 均 originalOrGenerated=false、source.class=official-cdn 且列出 renderTargets",
         "npm run check:assets：素材使用合同通过",
-        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：攻略、planner、database 的实体素材截图"
+        "artifacts/quality/migration-final/f4911a8d-ca10-4200-bc12-dbf9c1c64ca5/：攻略、planner、database 的实体素材截图"
       ],
       "appliesToAllGameSites": true,
       "dungeonOnly": false,
@@ -117,7 +117,7 @@
       "afterHandling": "三条核心旅程同时覆盖桌面/移动、空/部分/完整/返回分支，真实点击可见链接，捕获脚本错误、横向溢出和 PNG 证据。",
       "evidence": [
         "artifacts/production/migration-journey.json：8 个 viewport journey，runtimeErrors 为空，链接/redirects 全通过",
-        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：Clay、Planner、Research、Database 桌面/移动截图",
+        "artifacts/quality/migration-final/f4911a8d-ca10-4200-bc12-dbf9c1c64ca5/：Clay、Planner、Research、Database 桌面/移动截图",
         "npm run check:complete-site：导航、返回和页面家族门通过"
       ],
       "appliesToAllGameSites": true,
@@ -131,8 +131,8 @@
       "beforeProblem": "代码、SEO、截图和发布收据出现不同时间或时区，无法判断哪一轮证据对应当前部署。",
       "afterHandling": "由一次验收运行生成 runId/capturedAt/observedAt，并将同一 UTC 时间写入生产检查、SEO、截图目录、更新证据和 Cloudflare 收据；源码提交和部署版本另行绑定。",
       "evidence": [
-        "runId fe21f53f-3b70-4698-9c6a-183e3a0910d9 / capturedAt 2026-09-07T15:21:37.210Z 出现在 12 个当前收据",
-        "artifacts/release/cloudflare-production-receipt.json：deploymentVersion 0e7b58e9-8330-4e73-a510-fde9c6b4cb59 与完整 sourceCommit 绑定",
+        "runId f4911a8d-ca10-4200-bc12-dbf9c1c64ca5 / capturedAt 2026-09-07T16:09:17.801Z 出现在 12 个当前收据",
+        "artifacts/release/cloudflare-production-receipt.json：deploymentVersion c2c39c43-7dd4-42b6-8e8c-fc17c09008be 与完整 sourceCommit 绑定",
         "artifacts/production/route-inventory.json：timestampSource=single migration acceptance run"
       ],
       "appliesToAllGameSites": true,
@@ -178,13 +178,43 @@
       "evidence": [
         "research/素材清单.json：六个实体资产的 derivedFrom、crop、renderTargets、rights basis",
         "npm run check:assets：6 个 entityIconCount 通过",
-        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：实体图出现在 planner、guide、library、database"
+        "artifacts/quality/migration-final/f4911a8d-ca10-4200-bc12-dbf9c1c64ca5/：实体图出现在 planner、guide、library、database"
       ],
       "appliesToAllGameSites": false,
       "dungeonOnly": true,
       "interceptStageForNewSites": "不适用；只在 Dungeon 素材维护和后续版本复查时使用。",
       "legacyMigrationCheck": "资产来源 URL、截图坐标和职责改变时重新跑素材检查与截图；不能把裁切图扩写成独立官方 icon。",
       "notGeneralRule": "四枚头像及两个分类图标的名称、裁切坐标和路由映射只属于 Dungeon。"
+    },
+    {
+      "id": "observable-state-before-assertion",
+      "beforeProblem": "固定等待后立即断言异步筛选、客户端 hydration 或持久化状态，网络或渲染延迟会把真实功能误报成死按钮或丢状态。",
+      "afterHandling": "E2E 在断言前等待可观察的 DOM、URL 或 storage 条件；搜索等待结果行出现，跨会话等待历史条目恢复，再检查错误和溢出。",
+      "evidence": [
+        "scripts/验收迁移旅程.mjs：等待 planner-history-item 与包含 Clay 的 database-row 后再断言",
+        "artifacts/production/migration-journey.json：8 个 viewport journey、empty/partial/ready/history/return 与 database 搜索/分页均通过",
+        "npm test：15/15 通过"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S3/S4 旅程脚本；异步分支没有条件等待和失败收据时不得进入完整度门。",
+      "legacyMigrationCheck": "在旧站的搜索、筛选、hydration、localStorage/跨会话路径中用状态条件复跑，移除只靠固定 sleep 的假绿灯。",
+      "notGeneralRule": "具体 selector、5 秒超时和本站历史 key 是实现细节，不能复制成其他站的产品合同。"
+    },
+    {
+      "id": "identity-asset-fallback",
+      "beforeProblem": "页面或浏览器会请求缺失的 favicon，或用通用图标/原创 SVG 冒充游戏身份，导致资源 404 和身份证据断裂。",
+      "afterHandling": "为站点元数据声明已核验的身份素材，并提供同一来源的可访问回退；线上检查页面、favicon 状态和素材来源，禁止新增 AI/原创/通用图标承担游戏身份。",
+      "evidence": [
+        "app/layout.tsx 与 public/favicon.ico：使用已登记的官方角色头像及其 ICO 回退",
+        "research/素材清单.json：party-portrait-01 的全站浏览器元数据落点与来源",
+        "线上浏览器复验：三页同源 console/request 错误为 0，/favicon.ico HTTP 200 image/vnd.microsoft.icon"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S1 素材/身份闭环与 S4 线上 smoke；发布前必须确认 favicon/identity asset 200 且来源可回查。",
+      "legacyMigrationCheck": "检查历史页面的 favicon 请求、元数据 icon、响应 MIME 和来源；把 404、默认模板 SVG 或无来源图标修复后再验收。",
+      "notGeneralRule": "party portrait、ICO 封装方式和具体 favicon 路径是 Dungeon 的实现选择，不是所有站的固定素材。"
     }
   ]
 }
