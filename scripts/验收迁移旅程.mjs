@@ -119,6 +119,14 @@ async function runJourney(browser, viewport, journey) {
       await compareInputs.nth(1).check();
       expect(`${journey}/history`, await page.locator(".planner-compare").count() === 1, "两次准备状态不能比较");
       await inspectPage(page, context, journey, "history-compare"); record("/tools/first-expedition-planner", "history-compare");
+      await page.waitForFunction(() => {
+        try {
+          const history = JSON.parse(window.localStorage.getItem("ds-first-expedition-planner-history-v1") || "[]");
+          return Array.isArray(history) && history.length >= 3;
+        } catch {
+          return false;
+        }
+      });
       const storageState = await context.storageState();
       const resumedContext = await browser.newContext({ viewport, storageState });
       const resumedPage = await resumedContext.newPage();

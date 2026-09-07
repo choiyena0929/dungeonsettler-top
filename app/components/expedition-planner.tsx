@@ -124,7 +124,13 @@ export function ExpeditionPlanner() {
       selected: [...nextResult.selected],
       missing: [...nextResult.missing],
     };
-    setSavedPlans((current) => [saved, ...current].slice(0, maxSavedPlans));
+    const nextSavedPlans = [saved, ...savedPlans].slice(0, maxSavedPlans);
+    setSavedPlans(nextSavedPlans);
+    try {
+      window.localStorage.setItem(historyKey, JSON.stringify(nextSavedPlans));
+    } catch {
+      // History is optional; the current plan still works when storage is unavailable.
+    }
     setCompareIds((current) => current.filter((id) => id !== saved.id).slice(0, 2));
   }
 
@@ -229,7 +235,7 @@ export function ExpeditionPlanner() {
           <button className="text-button" type="button" onClick={() => loadPlan(saved)}>Load</button>
         </div>)}</div> : <p className="planner-history-empty">No saved runs yet. Submit a result and it will remain available in this browser for a later comparison.</p>}
         {compareIds.length >= 2 ? <div className="planner-compare" aria-live="polite"><p className="eyebrow">Comparison</p><div className="planner-compare-grid">{compareIds.map((id) => { const saved = savedPlans.find((item) => item.id === id); if (!saved) return null; return <article key={saved.id}><h3>{statusLabel(saved.status)}</h3><p>{purposeFor(saved.purpose).label}</p><strong>{saved.selected.length}/4 confirmed</strong><ul>{saved.missing.length ? saved.missing.map((item) => <li key={item}>{item}</li>) : <li>All visible checks confirmed.</li>}</ul></article>; })}</div></div> : null}
-        {savedPlans.length ? <button className="text-button planner-history-clear" type="button" onClick={() => { setSavedPlans([]); setCompareIds([]); }}>Clear saved runs</button> : null}
+        {savedPlans.length ? <button className="text-button planner-history-clear" type="button" onClick={() => { setSavedPlans([]); setCompareIds([]); try { window.localStorage.removeItem(historyKey); } catch { /* optional history */ } }}>Clear saved runs</button> : null}
       </section>
     </div>
   );
