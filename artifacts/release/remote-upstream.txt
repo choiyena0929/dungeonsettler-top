@@ -3,7 +3,8 @@ GitHub upstream 发布收据
 仓库：https://github.com/choiyena0929/dungeonsettler-top
 远端：https://github.com/choiyena0929/dungeonsettler-top.git
 分支：main
-已验证提交：9b6cde0982dadfa0b70af32afa2b8408cd73601c
-远端核验：refs/heads/main 指向 9b6cde0982dadfa0b70af32afa2b8408cd73601c
+实际部署源提交：85ee24cfb963edfa6ed2014f4ce0157be112ba10
+当前证据汇总提交：0b7a26c7c113497aa2b402e531893b574c27ca38
+远端核验：refs/heads/main 指向 0b7a26c7c113497aa2b402e531893b574c27ca38
 核验命令：git ls-remote --heads origin main
-核验结果：GitHub upstream 已真实接收发布源提交。
+核验结果：GitHub upstream 已真实接收应用发布及其生产证据提交；Cloudflare Worker 版本绑定实际部署源提交。
