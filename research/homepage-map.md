@@ -12,4 +12,4 @@
 
 首页公开边界：不展示 Semrush、Autocomplete、KD、SERP、内部阶段、抓取结果或未核验视频信息。
 
-迁移样板的返回路径：规划器 ready 结果默认进入 Beginner Guide；攻略页的 Next run 模块返回规划器；planner 的 related guide 和 footer 分别连接攻略、library、updates。Clay 和 Research 作为下一阶段旅程登记，当前不伪装成已完成闭环。
+迁移样板的返回路径：规划器空、部分、完整结果均有文字差异；完整结果进入对应攻略，攻略页的 Next run 模块返回 planner 并保留当前会话状态；Clay 搜索和 Research 主按钮分别进入 canonical 攻略与 checklist。planner、library、updates 互相有真实入口，历史 library 详情 URL 只做 308 兼容。

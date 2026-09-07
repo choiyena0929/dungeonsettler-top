@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { LibraryEntry } from "../content";
 import { evidenceLabels } from "../content";
+import { entityIconVisuals } from "./entity-icon-strip";
 
 export function LibrarySearch({ entries }: { entries: LibraryEntry[] }) {
   const [query, setQuery] = useState("");
@@ -19,10 +20,14 @@ export function LibrarySearch({ entries }: { entries: LibraryEntry[] }) {
       <label><span>Filter by category</span><select value={category} onChange={(event) => setCategory(event.target.value)}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
     </div>
     <p className="result-count">{filtered.length} guide{filtered.length === 1 ? "" : "s"} available</p>
-    <div className="entry-grid">{filtered.map((entry) => <article className="entry-card" key={entry.slug}>
+    <div className="entry-grid">{filtered.map((entry) => {
+      const icon = entityIconVisuals.find((item) => item.id === entry.iconAssetId) || entityIconVisuals[0];
+      return <article className="entry-card" key={entry.slug}>
+      <div className="entry-card-visual"><img src={icon.src} alt={icon.alt} width="112" height="112" /></div>
       <div className="entry-meta"><span>{entry.category}</span><span>{evidenceLabels[entry.evidence]}</span></div>
-      <h2><a href={`/library/${entry.slug}`}>{entry.title}</a></h2><p>{entry.summary}</p>
+      <h2><a href={`/guides/${entry.slug}`}>{entry.title}</a></h2><p>{entry.summary}</p>
       <div className="tag-row">{entry.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
-    </article>)}</div>
+    </article>;
+    })}</div>
   </section>;
 }

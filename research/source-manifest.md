@@ -2,7 +2,7 @@
 
 本文件沿用 data-to-decision-site-starter template 的来源字段合同；内容已替换为本站真实来源与证据状态。
 
-状态：S1 资料已整理，公开事实按来源和版本边界使用。核验日期：2026-09-06（Asia/Shanghai）。
+状态：S1 资料已整理，公开事实按来源和版本边界使用。核验日期：2026-09-07（Asia/Shanghai）。
 
 ## 身份与官方玩法
 
@@ -17,8 +17,9 @@
 ### S002 — Steam Community Hub / 官方更新
 
 - URL：<https://steamcommunity.com/app/2798330/>
-- 观察：2026-09-06；官方更新区显示 v0.4.17（2026-09-05），包括招募肖像锁定、背景静音、保存版本提示、战斗改动、研究层级显示修正和 Inventory guide 控制补充。
-- 支持事实：游戏在 Early Access 发售后仍有快速修订；版本敏感的攻略需要保留补丁日期，不能把旧 Demo 资料当作当前规则。
+- 观察：2026-09-07；官方更新区显示 v0.4.19（2026-09-06）和 v0.4.17（2026-09-05）。v0.4.19 移除 Very Hard 与 Devastation Management 的物品掉落数量惩罚，并降低 armor、helmets、bones、stone、clay 等物品重量；v0.4.17 包括研究层级显示修正和 Inventory guide 控制补充。
+- 支持事实：高难度掉落数量和携带重量的公开行为已发生版本变化；研究显示也有官方修订。版本敏感的攻略需要保留补丁日期，不能把旧 Demo 资料当作当前规则。
+- 不支持的结论：这条官方更新没有给出新的 Clay 敌人、楼层或数量，也没有证明任何固定 Research 前置；这些内容继续保持日期敏感或 pending_verification。
 - 可公开使用：是；只总结更新边界和官方入口。
 
 ### S003 — Prima Games Clay 指南

@@ -37,7 +37,10 @@ export const entityIconVisuals = [
   },
 ] as const;
 
-export function EntityIconStrip({ compact = false }: { compact?: boolean }) {
+export function EntityIconStrip({ compact = false, assetIds }: { compact?: boolean; assetIds?: readonly string[] }) {
+  const visibleAssets = assetIds?.length
+    ? entityIconVisuals.filter((item) => assetIds.includes(item.id))
+    : entityIconVisuals;
   return (
     <section className={`entity-strip${compact ? " entity-strip-compact" : ""}`} aria-label="Visible game markers from official screenshots">
       <div className="entity-strip-heading">
@@ -45,7 +48,7 @@ export function EntityIconStrip({ compact = false }: { compact?: boolean }) {
         <span>Official screenshot crops</span>
       </div>
       <div className="entity-icons">
-        {entityIconVisuals.map((item) => (
+        {visibleAssets.map((item) => (
           <figure className="entity-icon" key={item.id}>
             <img src={item.src} alt={item.alt} width="112" height="112" />
             <figcaption>{item.label}</figcaption>

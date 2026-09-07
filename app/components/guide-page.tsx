@@ -22,6 +22,7 @@ const guideVisuals = {
     eyebrow: "Settlement to party",
     title: "Read the first route from the screen you actually have.",
     text: "The official screenshot shows the settlement toolbar, building categories, and a party ready to be considered together. Use the guide to turn that visible setup into one question for the next run.",
+    assetIds: ["dungeon-settlers-party-portrait-03", "dungeon-settlers-workstations-icon"],
   },
   "how-to-get-clay": {
     src: "/game/official/dungeon.jpg",
@@ -29,6 +30,7 @@ const guideVisuals = {
     eyebrow: "Expedition evidence",
     title: "Keep the material lead tied to a route.",
     text: "Clay evidence is dated and partial. This dungeon image is a real game context marker, not proof of a universal drop table; use the page to compare the currently reported paths and recheck them in your build.",
+    assetIds: ["dungeon-settlers-party-portrait-04", "dungeon-settlers-storage-icon"],
   },
   "how-to-research": {
     src: "/game/official/hero.jpg",
@@ -36,6 +38,7 @@ const guideVisuals = {
     eyebrow: "Settlement question",
     title: "Research starts with what the settlement needs next.",
     text: "The official store page confirms Research as part of the broader loop. The exact technology tree and best order remain bounded, so this page gives you a safe way to record the next question without inventing prerequisites.",
+    assetIds: ["dungeon-settlers-party-portrait-02", "dungeon-settlers-workstations-icon"],
   },
 } as const;
 
@@ -49,7 +52,7 @@ export function GuidePage({ entry }: { entry: GuideEntry }) {
         <h1>{entry.title}</h1>
         <p className="lead">{entry.description}</p>
         <div className="tag-row"><span>{entry.label}</span><span>Early Access</span><span>Dated guide</span></div>
-        <div className="article-actions"><a className="button primary" href="#quick-answer">{entry.slug === "beginner-guide" ? "Follow the first expedition route" : entry.slug === "how-to-get-clay" ? "Compare the current Clay routes" : "Use the safe research checklist"} <span aria-hidden="true">↓</span></a><a className="button" href="/">Choose another problem</a></div>
+        <div className="article-actions"><a className="button primary" href={entry.slug === "how-to-research" ? "#research-checklist" : "#quick-answer"}>{entry.slug === "beginner-guide" ? "Follow the first expedition route" : entry.slug === "how-to-get-clay" ? "Compare the current Clay routes" : "Use the safe research checklist"} <span aria-hidden="true">↓</span></a><a className="button" href="/">Choose another problem</a></div>
       </div>
       <div className="article-visual-band">
         <figure className="article-visual-image"><img src={guideVisuals[entry.slug as keyof typeof guideVisuals].src} alt={guideVisuals[entry.slug as keyof typeof guideVisuals].alt} width="1920" height="1080" /><figcaption>Traceable game screenshot / official Steam source</figcaption></figure>
@@ -57,16 +60,16 @@ export function GuidePage({ entry }: { entry: GuideEntry }) {
           <p className="eyebrow">{guideVisuals[entry.slug as keyof typeof guideVisuals].eyebrow}</p>
           <h2>{guideVisuals[entry.slug as keyof typeof guideVisuals].title}</h2>
           <p>{guideVisuals[entry.slug as keyof typeof guideVisuals].text}</p>
-          <EntityIconStrip compact />
+          <EntityIconStrip compact assetIds={guideVisuals[entry.slug as keyof typeof guideVisuals].assetIds} />
         </div>
       </div>
       <div className="article-body">
         {entry.sections.map((section, index) => (
-          <section className="article-section" id={index === 0 ? "quick-answer" : undefined} key={section.heading}>
+          <section className="article-section" id={index === 0 ? "quick-answer" : entry.slug === "how-to-research" && section.heading === "A safe early checklist" ? "research-checklist" : undefined} key={section.heading}>
             <h2>{section.heading}</h2>
             {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
-            {entry.slug === "how-to-research" && index === 2 ? <GameLoopDiagram /> : null}
+            {entry.slug === "how-to-research" && section.heading === "How it fits the expedition loop" ? <GameLoopDiagram /> : null}
           </section>
         ))}
         <section className="planner-bridge" aria-labelledby="planner-bridge-heading">

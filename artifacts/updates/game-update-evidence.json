@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
+  "observedAt": "2026-09-07T12:00:00.000Z",
+  "timezone": "UTC (2026-09-07 Asia/Shanghai review)",
+  "queryStatus": "changes-found",
+  "source": {
+    "label": "Steam Community Hub / official update path",
+    "url": "https://steamcommunity.com/app/2798330/"
+  },
+  "changes": [
+    {
+      "version": "v0.4.19",
+      "status": "confirmed",
+      "fact": "The official note removes the item-drop quantity penalty on Very Hard and Devastation Management.",
+      "impact": "High-difficulty collection context changes; this does not prove a new Clay enemy, floor, or quantity route."
+    },
+    {
+      "version": "v0.4.19",
+      "status": "confirmed",
+      "fact": "The official note reduces the weight of armor, helmets, bones, stone, clay, and other listed items.",
+      "impact": "Clay carry context is lighter in the updated build; the guide keeps route and quantity claims version-sensitive."
+    },
+    {
+      "version": "v0.4.17",
+      "status": "confirmed",
+      "fact": "The official note corrects the displayed Research tier for Carapace Processing among other Research display changes.",
+      "impact": "The Research checklist now asks visitors to copy the visible label and tier and does not infer a hidden prerequisite or order."
+    },
+    {
+      "status": "not-asserted",
+      "fact": "No direct Clay route, enemy, floor, quantity, or fixed Research prerequisite is stated in the reviewed official update notes.",
+      "impact": "The Prima Clay report remains a dated secondary observation and the complete Research tree remains pending_verification."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Dungeon Settlers 视觉基准与公开文案边界
 
-观察日期：2026-09-07。本站选择“攻略 + 现场手册 + 一条决策工具纵向切片”原型：首屏先给新玩家一个明确的 First Expedition Planner 入口，再用 Beginner、Clay、Research 三个具体任务页承接问题。搜索量、难度、抓取状态和内部优先级不出现在页面。
+观察日期：2026-09-07。本站选择“攻略 + 现场手册 + 一条决策工具纵向切片”原型：首屏先给新玩家一个明确的 First Expedition Planner 入口，再用 Beginner、Clay、Research 三个具体任务页承接问题。三条旅程已在桌面和 390×844 移动 viewport 实测；搜索量、难度、抓取状态和内部优先级不出现在页面。
 
 ## 对标页面
 
@@ -18,7 +18,7 @@
 | 首屏 | 判断这里是否解决自己的 Dungeon Settlers 早期问题 | `dungeon-settlers-hero` | `app/page.tsx` | 用官方聚落实机画面直接建立游戏身份 |
 | Start here | 选择 Beginner、Clay 或 Research 入口 | `dungeon-settlers-research-loop`、`dungeon-settlers-dungeon-scene`、`dungeon-settlers-hero` | `app/page.tsx`、`app/components/game-loop-diagram.tsx` | 每个攻略入口使用不同的官方实机小图，并用营地与地下城画面解释阅读路径 |
 | 官方视频 | 先看游戏实际画面再选择攻略 | `dungeon-settlers-youtube-trailer` | `app/page.tsx` | 使用 CanOpener 官方 Trailer 缩略图链接到 YouTube，不从未核验视频中提取攻略事实 |
-| 第一次远征规划器 | 让目的、准备和返回观察点有视觉锚点 | `dungeon-settlers-party-portrait-01`、`02`、`03`、`04`、`dungeon-settlers-workstations-icon`、`dungeon-settlers-storage-icon` | `app/components/entity-icon-strip.tsx`、`app/components/expedition-planner.tsx` | 从官方 settlement 截图裁切真实 party portrait 和游戏内分类图标；不把裁切图当作独立官方素材 |
+| 第一次远征规划器 | 让目的、准备和返回观察点有视觉锚点 | `dungeon-settlers-party-portrait-01`、`02`、`03`、`04`、`dungeon-settlers-workstations-icon`、`dungeon-settlers-storage-icon` | `app/components/entity-icon-strip.tsx`、`app/components/expedition-planner.tsx`、`app/tools/first-expedition-planner/page.tsx` | settlement/party/Research/return 四项各有对应裁切图；规划器侧栏只显示额外 party、工作台和储存标识，不整排重复；不把裁切图当作独立官方素材 |
 
 ## 公开文案边界
 
@@ -34,5 +34,6 @@
 ## 截图回查说明
 
 - `dungeon-settlers-site.png` 是 2026-09-06 使用 Edge headless + 本机显式代理对公开页面的真实渲染截图。
+- `artifacts/quality/migration-repair/6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1/` 保存本轮六个 viewport journey 的关键状态截图；`artifacts/production/migration-journey.json` 记录同一 runId、桌面/移动 overflow、内链和脚本错误结果。
 - `steam-header.jpg` 是早期构图观察文件；生产页面实际使用的三张官方截图及其精确来源记录在 `research/素材清单.json`。
 - Steam HTML 页和 Prima HTML 页的本地截图尝试分别留下了真实连接关闭/Cloudflare 阻断画面；这些文件不作为设计绿灯，只保留在 `artifacts/visual-benchmark/` 供回查。

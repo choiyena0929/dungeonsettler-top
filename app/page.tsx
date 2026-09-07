@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <div className="planner-preview">
           <div className="planner-preview-route"><span>Settlement</span><span aria-hidden="true">→</span><span>Research question</span><span aria-hidden="true">→</span><span>Party</span><span aria-hidden="true">→</span><span>Return with an observation</span></div>
-          <EntityIconStrip compact />
+          <EntityIconStrip compact assetIds={["dungeon-settlers-party-portrait-01", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"]} />
         </div>
       </section>
 

@@ -28,10 +28,11 @@ export type LibraryEntry = {
   tags: string[];
   evidence: EvidenceLevel;
   updatedAt: string;
+  iconAssetId: string;
   body: string[];
 };
 
-const sourceNote = "Source boundary: official Steam information is the baseline. Community updates and the Clay report are useful, version-sensitive references; they do not establish a permanent rule for every build.";
+const sourceNote = "Source boundary: official Steam information is the baseline. The official v0.4.19 update changes high-difficulty drop handling and item weight, while community reports and the Clay report remain version-sensitive references; none establishes a permanent rule for every build.";
 
 export const guideEntries: GuideEntry[] = [
   {
@@ -43,7 +44,7 @@ export const guideEntries: GuideEntry[] = [
     label: "First route",
     primaryKeyword: "Dungeon Settlers beginner guide",
     evidence: "official",
-    updatedAt: "2026-09-06",
+    updatedAt: "2026-09-07",
     sections: [
       {
         heading: "Quick answer",
@@ -111,7 +112,7 @@ export const guideEntries: GuideEntry[] = [
     label: "Clay answer",
     primaryKeyword: "How to get clay in Dungeon Settlers",
     evidence: "reviewed",
-    updatedAt: "2026-09-06",
+    updatedAt: "2026-09-07",
     sections: [
       {
         heading: "Quick answer",
@@ -168,7 +169,7 @@ export const guideEntries: GuideEntry[] = [
     label: "Research answer",
     primaryKeyword: "How to research in Dungeon Settlers",
     evidence: "official",
-    updatedAt: "2026-09-06",
+    updatedAt: "2026-09-07",
     sections: [
       {
         heading: "What Research is confirmed to do",
@@ -178,16 +179,30 @@ export const guideEntries: GuideEntry[] = [
         ],
       },
       {
-        heading: "A safe early checklist",
+        heading: "Verified starting conditions",
         paragraphs: [
-          "First, name the bottleneck in plain language. ‘I cannot prepare the next expedition’ is more useful than ‘I need the strongest technology’. Second, identify the proposed Research choice and the result you expect. Third, note the resource, building, or party change that would show whether the choice helped. Finally, keep a dated note of what happened after the research was used.",
-          "This method is intentionally conservative. It works when the interface is changing, when a guide was written for an earlier patch, and when the complete tree is not available. It also prevents an attractive but unverified prerequisite from becoming a fact through repetition. If the proposed path cannot be tied to an observable settlement or expedition result, mark it as pending and do not present it as a finished answer.",
+          "The official store page confirms the current Early Access loop: build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. It also describes up to four party members, permadeath, and the first two dungeon regions. These broad facts support a preparation check; they do not expose a complete Research tree.",
+          "Before choosing a Research item, write down the visible settlement bottleneck, the exact label and tier shown in your current build, and the change you expect to observe. The latest official Steam Community update path includes a v0.4.17 correction to the displayed tier for Carapace Processing and a v0.4.19 patch on September 6, 2026. Keep the build date beside your note so an older display is not mistaken for a current prerequisite.",
+          "The exact node cost, prerequisite chain, unlock order, and relationship to a particular material remain pending verification. If the game does not show one of those values directly, leave it unknown rather than filling the gap from a generic technology tree.",
         ],
         bullets: [
-          "State the current bottleneck.",
-          "Record the Research choice and the expected result.",
-          "Observe the settlement or expedition change.",
-          "Keep the date and build context beside the result.",
+          "Visible bottleneck: what settlement or expedition decision is blocked?",
+          "Current display: what exact Research label and tier does the build show?",
+          "Observable result: what building, equipment, resource, or party change would confirm the choice helped?",
+        ],
+      },
+      {
+        heading: "A safe early checklist",
+        paragraphs: [
+          "First, name the bottleneck in plain language. ‘I cannot prepare the next expedition’ is more useful than ‘I need the strongest technology’. Open the in-game Research panel, copy the displayed choice and tier into your note, and record the build date. Do not infer a hidden prerequisite from the position of a node or from a screenshot made on another patch.",
+          "Next, check the displayed description against the result you expect. Select one choice only when you can name the observable change: a new settlement option, an equipment option, a resource step, or a party preparation change. After using it, compare the before and after screens and record what actually changed. If there is no visible result, keep the choice pending and do not call it a finished route.",
+          "Example: if Clay is the current bottleneck, use the dated Clay route for the resource lead, then check whether the current Research display changes a production or preparation option. The official update notes do not establish a Clay node or a fixed Clay prerequisite, so that relationship stays unknown until the game shows it in your build.",
+        ],
+        bullets: [
+          "State the current bottleneck and copy the displayed Research label and tier.",
+          "Name one expected settlement, equipment, resource, or party change.",
+          "Use the choice, compare the before and after screens, and record the result.",
+          "Keep the date and build context beside the result; unknown values stay pending verification.",
         ],
       },
       {
@@ -202,7 +217,7 @@ export const guideEntries: GuideEntry[] = [
         heading: "What remains unverified",
         paragraphs: [
           "The public material reviewed for this launch does not prove a complete Research tree, a fixed best-first route, every prerequisite, or a permanent relationship between one technology and one resource. It also does not prove that a dated community correction applies to every later build. Treat those details as pending until a current, direct source confirms them.",
-          "The Steam Community update path is still useful because it shows where version-sensitive corrections may appear. A September 5, 2026 official update mentions a research-tier display correction among other changes. That is a reason to recheck the interface after updates, not evidence of a particular research order.",
+          "The Steam Community update path is still useful because it shows where version-sensitive corrections may appear. The v0.4.17 official note mentions a Research-tier display correction, while v0.4.19 changes item weights and high-difficulty drop-quantity handling. Those notes are reasons to recheck the interface and preparation context after updates, not evidence of a particular research order.",
         ],
       },
       {
@@ -231,15 +246,30 @@ export const libraryEntries: LibraryEntry[] = guideEntries.map((entry) => ({
   tags: [entry.label, "Early Access", "dated guide"],
   evidence: entry.evidence,
   updatedAt: entry.updatedAt,
+  iconAssetId: entry.slug === "beginner-guide"
+    ? "dungeon-settlers-party-portrait-01"
+    : entry.slug === "how-to-get-clay"
+      ? "dungeon-settlers-storage-icon"
+      : "dungeon-settlers-workstations-icon",
   body: entry.sections.flatMap((section) => section.paragraphs),
 }));
 
 export const updates = [
   {
-    version: "Field Guide 0.1",
+    version: "Official Steam v0.4.19",
     date: "2026-09-06",
+    summary: "The official update removed the item-drop quantity penalty on Very Hard and Devastation Management and reduced the weight of several items, including Clay. These changes affect high-difficulty collection and carry context; they do not establish a new Clay route or a Research prerequisite.",
+    affectedRoutes: ["/guides/how-to-get-clay", "/guides/how-to-research", "/tools/first-expedition-planner"],
+    sourceLabel: "Steam Community update path",
+    sourceHref: "https://steamcommunity.com/app/2798330/",
+  },
+  {
+    version: "Field Guide 0.1",
+    date: "2026-09-07",
     summary: "The first release covers the first expedition route, Clay routes, and a conservative Research checklist for the current Early Access context.",
     affectedRoutes: ["/", "/guides/beginner-guide", "/guides/how-to-get-clay", "/guides/how-to-research"],
+    sourceLabel: "Dungeon Settlers Field Guide release",
+    sourceHref: "/",
   },
 ];
 

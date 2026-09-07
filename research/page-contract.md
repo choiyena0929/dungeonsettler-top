@@ -11,11 +11,11 @@
 ## 第一次远征规划器 `/tools/first-expedition-planner`
 
 - 用户任务：把本次远征的目的、可见准备和返回观察点整理成一条能复查的路线。
-- 首要动作：Build my route。
-- 真实交互：选择目的并勾选四项准备；提交后显示缺项 hold 或四步 ready 结果；结果进入对应攻略，再从 planner link 返回。
+- 首要动作：Review preparation。
+- 真实交互：选择目的并勾选四项准备；提交后显示空、部分或完整的准备结果；完整结果进入对应攻略，再从 planner link 返回并保留当前会话状态。
 - 证据边界：S001/S002 只支持宽泛循环、Early Access 和版本提醒。规划器不生成掉落率、科技前置、完整数据库或最佳顺序。
 - 移动端优先级：目的选择、四项 checklist、结果标题、相关攻略按钮、返回入口。
-- 通过条件：按钮有真实表单行为；ready/hold 两种结果都可读；结果页和下一页都存在；不依赖登录、不保存虚构数据。
+- 通过条件：按钮有真实表单行为；空/部分/完整结果都可读；结果页和下一页都存在；返回时保留会话勾选；不依赖登录、不保存虚构数据。
 
 ## 查找与更新中心 `/library`、`/updates`
 
@@ -43,5 +43,9 @@
 
 - 用户任务：使用 Research 回答当前 settlement bottleneck，避免假设完整科技树。
 - 首要动作：Use the safe research checklist。
-- 允许事实：S001 官方 Research 与循环、S002 版本提醒；节点、前置和最佳顺序保持未知。
-- 通过条件：机制图和文字都把可证实事实与 pending 边界分开。
+- 允许事实：S001 官方 Research 与循环、S002 v0.4.17 Research-tier 显示修正和 v0.4.19 版本提醒；节点、前置和最佳顺序保持未知。
+- 通过条件：主按钮进入 `#research-checklist`；页面补充已核验 starting conditions、具体操作和 Clay/Carapace Processing 示例，机制图和文字都把可证实事实与 pending 边界分开。
+
+## 历史 URL 兼容
+
+`/library/beginner-guide`、`/library/how-to-get-clay`、`/library/how-to-research` 统一 308 到对应 `/guides/...`，不进入 sitemap，也不保留错误首页 canonical。

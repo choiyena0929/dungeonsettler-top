@@ -10,6 +10,8 @@ function arg(name, fallback = "") {
 const baseUrl = arg("base-url");
 const handoffId = arg("handoff-id");
 const inputRevision = arg("input-revision");
+const runId = arg("run-id");
+const capturedAt = arg("captured-at", new Date().toISOString());
 const contractsPath = resolve(arg("contracts", "research/page-contracts.json"));
 const sourceManifestPath = resolve(arg("source-manifest", resolve(dirname(contractsPath), "source-manifest.md")));
 const outPath = resolve(arg("out", "artifacts/quality/seo-routes.json"));
@@ -136,6 +138,26 @@ for (const field of ["title", "description"]) {
   for (const paths of groups.values()) if (paths.length > 1) duplicateChecks.push({ field, paths });
 }
 
+const normalizePath = (value) => {
+  try { return new URL(value, baseUrl).pathname.replace(/\/+$/, "") || "/"; } catch { return clean(value).replace(/\/+$/, "") || "/"; }
+};
+const redirectResults = [];
+for (const redirect of Array.isArray(contracts.redirects) ? contracts.redirects : []) {
+  const path = clean(redirect?.path);
+  const target = clean(redirect?.target);
+  const expectedStatus = Number(redirect?.status) || 308;
+  let statusCode = 0;
+  let location = "";
+  try {
+    const response = await fetch(new URL(path, baseUrl), { redirect: "manual" });
+    statusCode = response.status;
+    location = response.headers.get("location") || "";
+  } catch (error) {
+    location = error instanceof Error ? error.message : String(error);
+  }
+  redirectResults.push({ path, target, expectedStatus, statusCode, location, status: statusCode === expectedStatus && normalizePath(location) === normalizePath(target) ? "passed" : "failed" });
+}
+
 let faviconOk = false;
 try {
   for (const path of ["/favicon.ico", "/favicon.svg"]) {
@@ -147,18 +169,21 @@ try {
 const failedChecks = routeResults.flatMap((route) => route.checks.filter((check) => check.status === "failed").map((check) => `${route.path}:${check.id}`));
 if (!faviconOk) failedChecks.push("site:favicon");
 if (duplicateChecks.length) failedChecks.push(...duplicateChecks.map((item) => `site:duplicate-${item.field}`));
+if (redirectResults.some((redirect) => redirect.status !== "passed")) failedChecks.push(...redirectResults.filter((redirect) => redirect.status !== "passed").map((redirect) => `redirect:${redirect.path}`));
 const report = {
   schemaVersion: 2,
   status: failedChecks.length ? "failed" : "passed",
-  capturedAt: new Date().toISOString(),
+  capturedAt,
+  ...(runId ? { runId } : {}),
   handoffId,
   inputRevision,
   baseUrl,
   canonicalOrigin: contracts.canonicalOrigin,
   contractPath: contractsPath.replaceAll("\\", "/"),
   routes: routeResults,
+  redirects: redirectResults,
   siteChecks: { favicon: faviconOk ? "passed" : "failed", duplicateMetadata: duplicateChecks },
-  summary: { routesChecked: routeResults.length, failedChecks },
+  summary: { routesChecked: routeResults.length, redirectsChecked: redirectResults.length, failedChecks },
 };
 
 await mkdir(dirname(outPath), { recursive: true });

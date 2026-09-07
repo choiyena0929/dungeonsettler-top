@@ -31,7 +31,7 @@ export default function FirstExpeditionPlannerPage() {
           <h2>Keep the loop visible.</h2>
           <p>The official store page describes a settlement-to-dungeon loop with building, gathering, crafting, research, party preparation, and real-time combat with pause. The planner stays at that evidence level.</p>
           <p>It does not fill in hidden values. If the current build shows a different prerequisite, quantity, or route, keep that observation separate and check the dated update path.</p>
-          <EntityIconStrip compact />
+          <EntityIconStrip compact assetIds={["dungeon-settlers-party-portrait-03", "dungeon-settlers-party-portrait-04", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"]} />
           <div className="tool-route-links"><a className="text-link" href="/guides/beginner-guide">Need the first route? Read Beginner <span aria-hidden="true">→</span></a><a className="text-link" href="/updates">Check dated guide updates <span aria-hidden="true">→</span></a></div>
         </aside>
       </div>

@@ -205,7 +205,8 @@
       "localPath": "public/game/official/icons/party-portrait-01.jpg",
       "renderTargets": [
         { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 party 视觉标记" }
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 party 视觉标记" },
+        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Beginner 搜索结果卡片实体标识" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1238, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图裁切第一枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
@@ -233,8 +234,8 @@
       },
       "localPath": "public/game/official/icons/party-portrait-02.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 Research 视觉标记" }
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 Research 视觉标记" },
+        { "route": "/guides/how-to-research", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Research 攻略 party 视觉标记" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1330, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图裁切第二枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
@@ -262,7 +263,7 @@
       },
       "localPath": "public/game/official/icons/party-portrait-03.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器侧栏 party 视觉标记" },
         { "route": "/guides/beginner-guide", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Beginner 攻略 party 视觉标记" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1410, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
@@ -291,7 +292,7 @@
       },
       "localPath": "public/game/official/icons/party-portrait-04.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器侧栏 party 视觉标记" },
         { "route": "/guides/how-to-get-clay", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Clay 攻略远征视觉标记" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1498, "y": 26, "width": 86, "height": 100 }, "transform": "local crop, scaled to 112x112" },
@@ -321,7 +322,10 @@
       "localPath": "public/game/official/icons/workstations.jpg",
       "renderTargets": [
         { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 settlement 视觉标记" }
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 settlement 视觉标记" },
+        { "route": "/guides/beginner-guide", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Beginner 攻略 settlement 视觉标记" },
+        { "route": "/guides/how-to-research", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Research 攻略 settlement 视觉标记" },
+        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Research 搜索结果卡片实体标识" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 8, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Workstations 图标，保留游戏内边框和像素图形。",
@@ -350,7 +354,9 @@
       "localPath": "public/game/official/icons/storage.jpg",
       "renderTargets": [
         { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器返程观察视觉标记" }
+        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器返程观察视觉标记" },
+        { "route": "/guides/how-to-get-clay", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Clay 攻略资源视觉标记" },
+        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Clay 搜索结果卡片实体标识" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 178, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Storage 图标，保留游戏内边框和像素图形。",

@@ -20,7 +20,7 @@
       "pageType": "guide",
       "primaryKeyword": "Dungeon Settlers beginner guide",
       "intent": "A first-time player wants to understand what to prepare in the settlement before committing a party to the dungeon.",
-      "acceptance": "The page gives a direct first-route answer, separates official facts from cautious guidance, covers settlement needs, party size, research, expedition preparation, version limits, and links to both task guides.",
+      "acceptance": "The page gives a direct first-route answer, separates official facts from cautious guidance, covers settlement needs, party size, research, expedition preparation, version limits, and links to both task guides and the preparation planner.",
       "primaryAction": "Follow the first expedition route",
       "requiredSections": ["Quick answer", "Build the settlement loop", "Prepare the party", "Research before the expedition", "When to return and what can change", "Sources"],
       "sourceRefs": ["S001", "S002", "S004", "S005"],
@@ -32,7 +32,7 @@
       "pageType": "guide",
       "primaryKeyword": "How to get clay in Dungeon Settlers",
       "intent": "A player is blocked by early Clay costs and wants the current enemy, merchant, and deeper-region routes.",
-      "acceptance": "The page answers the Clay question before background, cites the current secondary report, labels quantities and floors as version-sensitive, explains early versus later routes, and links to the beginner and research guides.",
+      "acceptance": "The page answers the Clay question before background, cites the current secondary report, labels quantities and floors as version-sensitive, explains early versus later routes, links to the beginner and research guides, and sends old library URLs to this canonical guide.",
       "primaryAction": "Compare the current Clay routes",
       "requiredSections": ["Quick answer", "Early dungeon sources", "Merchant and Region 2 fallback", "What Clay is used for", "Version and evidence note", "Sources"],
       "sourceRefs": ["S001", "S002", "S003", "S005"],
@@ -44,9 +44,9 @@
       "pageType": "guide",
       "primaryKeyword": "How to research in Dungeon Settlers",
       "intent": "A player wants to understand what Research unlocks without trusting an unverified or outdated tech order.",
-      "acceptance": "The page states what the official store confirms, gives a conservative early decision method, marks unverified research-tree details as pending, and links to the beginner and Clay guides.",
+      "acceptance": "The page states what the official store confirms, gives verified starting conditions plus concrete checklist actions and an example, marks unverified research-tree details as pending, and links to the beginner, Clay, and preparation routes.",
       "primaryAction": "Use the safe research checklist",
-      "requiredSections": ["What Research is confirmed to do", "A safe early checklist", "How it fits the expedition loop", "What remains unverified", "Version note", "Sources"],
+      "requiredSections": ["What Research is confirmed to do", "Verified starting conditions", "A safe early checklist", "How it fits the expedition loop", "What remains unverified", "Version note", "Sources"],
       "sourceRefs": ["S001", "S002", "S004", "S005"],
       "minWords": 750,
       "minInternalLinks": 2
@@ -56,8 +56,8 @@
       "pageType": "tool",
       "primaryKeyword": "Dungeon Settlers expedition planner",
       "intent": "A new player wants to turn the settlement, party, Research question, and return observation into a repeatable first-run checklist.",
-      "acceptance": "The tool accepts a run purpose and four visible preparation checks, returns either missing items or an ordered plan, links to the matching guide, and clearly states that hidden values and best orders remain unverified.",
-      "primaryAction": "Build my route",
+      "acceptance": "The tool accepts a run purpose and four visible preparation checks, returns distinct empty, partial, or complete preparation results, preserves the session while a visitor follows a guide handoff, and clearly states that hidden values and best orders remain unverified.",
+      "primaryAction": "Review preparation",
       "requiredSections": ["Run purpose", "Preparation checklist", "Result", "Related guide handoff", "Evidence boundary"],
       "sourceRefs": ["S001", "S002"],
       "minWords": 300,
@@ -68,7 +68,7 @@
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers guide library",
       "intent": "A returning player wants to filter the currently published guides by the settlement or expedition problem they need to solve.",
-      "acceptance": "The library explains its dated evidence boundary, exposes every current guide as a real searchable entry, and offers a route into the first-expedition planner and update record.",
+      "acceptance": "The library explains its dated evidence boundary, exposes every current guide as a real searchable entry linking to canonical guide pages, and offers a route into the first-expedition planner, update record, and legacy-path compatibility redirects.",
       "primaryAction": "Search the guide library",
       "requiredSections": ["Guide library", "Problem and category search", "Dated evidence boundary", "First expedition handoff", "Guide update path"],
       "sourceRefs": ["S001", "S002", "S003"],
@@ -80,12 +80,17 @@
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers guide updates",
       "intent": "A player wants to see which guide conclusions are dated and which routes should be rechecked after an Early Access change.",
-      "acceptance": "The update page records the current guide revision, names the affected routes, links back to the planner and guide library, and explains what remains pending rather than inventing a changelog.",
+      "acceptance": "The update page records the official v0.4.19 impact and current guide revision, names affected routes, links back to the planner and guide library, and explains what remains pending rather than inventing a changelog.",
       "primaryAction": "Recheck a first run",
       "requiredSections": ["Dated guide changes", "Affected routes", "Version boundary", "First expedition recheck", "Source limits"],
       "sourceRefs": ["S001", "S002", "S003"],
       "minWords": 500,
       "minInternalLinks": 3
     }
+  ],
+  "redirects": [
+    { "path": "/library/beginner-guide", "target": "/guides/beginner-guide", "status": 308 },
+    { "path": "/library/how-to-get-clay", "target": "/guides/how-to-get-clay", "status": 308 },
+    { "path": "/library/how-to-research", "target": "/guides/how-to-research", "status": 308 }
   ]
 }

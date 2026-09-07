@@ -105,13 +105,13 @@
     {
       "id": "clay-route-comparison",
       "task": "从首页进入 Clay 问题，比较当前公开报告的早期和后续路线。",
-      "entryRoute": "/",
-      "status": "planned",
+      "entryRoute": "/library",
+      "status": "implemented",
       "repeatable": false,
       "steps": [
-        { "route": "/", "action": "从 Start here 选择 Clay 问题。" },
+        { "route": "/library", "action": "搜索 Clay，并从结果卡片进入 canonical /guides/how-to-get-clay。" },
         { "route": "/guides/how-to-get-clay", "action": "阅读 Quick answer、路径差异和日期边界。" },
-        { "route": "/library", "action": "返回 Guide library 选择另一个相关问题。" }
+        { "route": "/guides/how-to-get-clay", "action": "沿来源链接复查报告，再点击 planner bridge 进入准备清单。" }
       ],
       "outcome": "在有足够来源支撑的情况下比较 Clay 路线，并知道哪些数量必须在当前版本复查。",
       "evidenceRefs": ["S001", "S002", "S003"]
@@ -119,20 +119,20 @@
     {
       "id": "research-safe-check",
       "task": "在完整 Research tree 尚未核验时，找到一个安全的下一步。",
-      "entryRoute": "/",
-      "status": "planned",
+      "entryRoute": "/guides/how-to-research",
+      "status": "implemented",
       "repeatable": false,
       "steps": [
-        { "route": "/", "action": "从首页选择 Research 问题。" },
-        { "route": "/guides/how-to-research", "action": "沿安全 checklist 记录 settlement bottleneck 和待核验前置。" },
-        { "route": "/updates", "action": "回查日期更新，再返回规划器重新定义一次 expedition 问题。" }
+        { "route": "/guides/how-to-research", "action": "点击主按钮跳到 research-checklist，阅读已核验前置条件和具体操作示例。" },
+        { "route": "/guides/how-to-research", "action": "沿 planner bridge 进入准备清单，保留 Research 选择和待核验前置边界。" },
+        { "route": "/updates", "action": "回查 v0.4.19 与 v0.4.17 官方更新，再返回规划器重新定义一次 expedition 问题。" }
       ],
       "outcome": "访客能区分官方确认、日期敏感观察和 pending_verification，而不把未知科技树写成最佳顺序。",
       "evidenceRefs": ["S001", "S002", "S007"]
     }
   ],
   "valueUnits": [
-    { "id": "first-expedition-planner", "type": "decision-tool", "status": "implemented", "route": "/tools/first-expedition-planner", "userOutcome": "用一次会话清单得到第一次远征的缺项或四步计划。" },
+    { "id": "first-expedition-planner", "type": "decision-tool", "status": "implemented", "route": "/tools/first-expedition-planner", "userOutcome": "用一次会话清单得到空、部分或完整准备结果，并进入相应攻略。" },
     { "id": "beginner-route", "type": "guide", "status": "implemented", "route": "/guides/beginner-guide", "userOutcome": "把 settlement、party、Research 和第一次 expedition 串成起步路线。" },
     { "id": "clay-route", "type": "comparison", "status": "implemented", "route": "/guides/how-to-get-clay", "userOutcome": "比较当前 Clay 报告中的早期、商人和 Region 2 路线，并看到日期限制。" },
     { "id": "research-checklist", "type": "checklist", "status": "implemented", "route": "/guides/how-to-research", "userOutcome": "在研究树未完整核验时记录一个可观察的下一步。" },
@@ -154,8 +154,9 @@
     "representativeRoutes": [
       { "route": "/", "assetIds": ["dungeon-settlers-hero", "dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-01"] },
       { "route": "/tools/first-expedition-planner", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-02", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"] },
-      { "route": "/guides/beginner-guide", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-03"] },
-      { "route": "/guides/how-to-get-clay", "assetIds": ["dungeon-settlers-dungeon-scene", "dungeon-settlers-party-portrait-04"] }
+      { "route": "/guides/beginner-guide", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-03", "dungeon-settlers-workstations-icon"] },
+      { "route": "/guides/how-to-get-clay", "assetIds": ["dungeon-settlers-dungeon-scene", "dungeon-settlers-party-portrait-04", "dungeon-settlers-storage-icon"] },
+      { "route": "/guides/how-to-research", "assetIds": ["dungeon-settlers-hero", "dungeon-settlers-party-portrait-02"] }
     ]
   },
   "navigation": {
@@ -190,7 +191,7 @@
       "category": "product",
       "severity": "major",
       "status": "open",
-      "description": "规划器只保存当前会话的第一次远征清单，没有跨局保存、比较或更多已核验查询。",
+      "description": "规划器只保存当前浏览会话的准备清单，没有跨局保存、比较或更多已核验查询。",
       "evidenceRefs": ["S006", "S007"]
     }
   ]

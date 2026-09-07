@@ -46,6 +46,8 @@ const handoffId = lockValue("交接 ID");
 const inputRevision = lockValue("输入修订");
 const pages = Array.isArray(contracts.pages) ? contracts.pages : [];
 const routes = Array.isArray(report.routes) ? report.routes : [];
+const redirects = Array.isArray(contracts.redirects) ? contracts.redirects : [];
+const redirectResults = Array.isArray(report.redirects) ? report.redirects : [];
 const contractOrigin = normalizeOrigin(contracts.canonicalOrigin);
 const reportOrigin = normalizeOrigin(report.canonicalOrigin);
 
@@ -65,6 +67,13 @@ if (pages.length < 2 || !pages.some((page) => clean(page.path) === "/")) fail("�
 if (routes.length !== pages.length) fail(`SEO 报告没有逐页覆盖页面合同：报告 ${routes.length} 页，合同 ${pages.length} 页。`);
 if (report.summary?.routesChecked !== routes.length || !Array.isArray(report.summary?.failedChecks) || report.summary.failedChecks.length) fail("SEO 报告 summary 与 routes 不一致，或仍有失败项。");
 if (report.siteChecks?.favicon !== "passed" || !Array.isArray(report.siteChecks?.duplicateMetadata) || report.siteChecks.duplicateMetadata.length) fail("SEO 报告站点级 favicon/重复元信息检查未通过。");
+if (redirectResults.length !== redirects.length || report.summary?.redirectsChecked !== redirectResults.length) fail(`SEO 报告没有覆盖合同中的旧路径重定向：报告 ${redirectResults.length} 条，合同 ${redirects.length} 条。`);
+const redirectByPath = new Map(redirectResults.map((item) => [clean(item?.path), item]));
+for (const redirect of redirects) {
+  const path = clean(redirect?.path);
+  const result = redirectByPath.get(path);
+  if (!result || result.status !== "passed" || Number(result.statusCode) !== Number(redirect.status || 308) || normalizePath(result.location) !== normalizePath(redirect.target)) fail(`${path} legacy redirect 未通过。`);
+}
 
 const contractByPath = new Map(pages.map((page) => [clean(page.path), page]));
 if (contractByPath.size !== pages.length) fail("页面合同存在重复 path。");
