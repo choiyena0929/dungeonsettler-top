@@ -4,7 +4,7 @@
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 667,
-  "capturedAt": "2026-09-07T02:41:53.108Z",
+  "contentLength": 898,
+  "capturedAt": "2026-09-07T09:26:22.883Z",
   "containsXmlUrlset": true
 }

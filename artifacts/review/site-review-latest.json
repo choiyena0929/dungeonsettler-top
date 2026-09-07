@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "site-review",
   "status": "blocked",
-  "generatedAt": "2026-09-07T08:21:55.243Z",
+  "generatedAt": "2026-09-07T01:35:00.000Z",
   "site": {
     "siteId": "steam-2798330",
     "registryId": "site-steam-2798330",
@@ -16,7 +16,7 @@
     "qualityStatus": "PASSED",
     "handoffId": "handoff-c94ddea503cd",
     "inputRevision": "input-59995249c82e",
-    "stateRevision": "12",
+    "stateRevision": "17",
     "nextAllowedAction": "由用户完成 GSC/GA4/Clarity 后台确认并登记证据"
   },
   "summary": {
@@ -195,7 +195,7 @@
         {
           "id": "本地-onpage-result",
           "status": "passed",
-          "detail": "本地 On-page 报告 4 个 URL 全部通过。",
+          "detail": "本地 On-page 报告 7 个 URL 全部通过。",
           "evidence": [
             "artifacts/quality/seo-routes.json"
           ]
@@ -203,7 +203,7 @@
         {
           "id": "生产-onpage-result",
           "status": "passed",
-          "detail": "生产 On-page 报告 4 个 URL 全部通过。",
+          "detail": "生产 On-page 报告 7 个 URL 全部通过。",
           "evidence": [
             "artifacts/production/onpage-seo.json"
           ]
@@ -228,13 +228,13 @@
         {
           "id": "quality-run",
           "status": "passed",
-          "detail": "最新质量轮次 production-warm-game-assets-r10 含桌面/移动整页图和首屏视口图共四张真实截图。",
+          "detail": "最新质量轮次 migration-final 含桌面/移动整页图和首屏视口图共四张真实截图。",
           "evidence": [
             "artifacts/quality/quality-run.json",
-            "artifacts/quality/production-warm-game-assets-r10-desktop.png",
-            "artifacts/quality/production-warm-game-assets-r10-mobile.png",
-            "artifacts/quality/production-warm-game-assets-r10-desktop-viewport.png",
-            "artifacts/quality/production-warm-game-assets-r10-mobile-viewport.png"
+            "artifacts/quality/migration-final-desktop.png",
+            "artifacts/quality/migration-final-mobile.png",
+            "artifacts/quality/migration-final-desktop-viewport.png",
+            "artifacts/quality/migration-final-mobile-viewport.png"
           ]
         },
         {
@@ -264,7 +264,7 @@
         {
           "id": "quality-review",
           "status": "passed",
-          "detail": "独立审阅 codex-fresh-4c8e966e6415 已按五项标准通过。",
+          "detail": "独立审阅 codex-fresh-c4e0013abf79 已按五项标准通过。",
           "evidence": [
             "artifacts/quality/quality-review.json"
           ]

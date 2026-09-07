@@ -5,7 +5,7 @@
   "workerName": "dungeonsettler-top",
   "deploymentCommand": "npm run deploy:cloudflare",
   "wranglerVersion": "4.92.0",
-  "deploymentVersion": "c9d78619-c2a1-4883-9ac7-522bc6f521a5",
+  "deploymentVersion": "ec39460d-fb87-4fb6-b847-a41097d18005",
   "workerPreviewUrl": "https://dungeonsettler-top.apiskpai-fe0.workers.dev",
   "customDomains": [
     {
@@ -42,7 +42,7 @@
   "productionAcceptance": {
     "status": "passed",
     "baseUrl": "https://dungeonsettlers.top",
-    "representativePath": "/guides/beginner-guide",
+    "representativePath": "/tools/first-expedition-planner",
     "checks": [
       "homepage",
       "representative-page",
@@ -59,5 +59,6 @@
     "wrongTarget": "dungeonsettler.top",
     "failureEvidence": "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
   },
-  "capturedAt": "2026-09-06T16:37:55.638Z"
+  "sourceCommit": "85ee24cfb963edfa6ed2014f4ce0157be112ba10",
+  "capturedAt": "2026-09-07T09:26:33.587Z"
 }

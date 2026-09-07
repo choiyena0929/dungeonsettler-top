@@ -6,8 +6,8 @@
   "registryId": "site-steam-2798330",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "expectedStateRevision": 11,
-  "capturedAt": "2026-09-06T22:44:30+08:00",
+  "expectedStateRevision": 16,
+  "capturedAt": "2026-09-07T09:31:00+08:00",
   "executionContractVersion": 1,
   "execution": {
     "schemaVersion": 1,
@@ -16,14 +16,11 @@
     "evidenceLevel": null,
     "rootCauseConfirmed": false,
     "retry": {
-      "attempt": 1,
-      "changed": [
-        "assumption",
-        "approach"
-      ]
+      "attempt": 0,
+      "changed": []
     },
-    "note": "S6 已按修正后的正式目标重跑：部署版本已发布到 dungeonsettler-top，dungeonsettlers.top 与 www.dungeonsettlers.top 均由 Cloudflare production custom domain 提供服务；六项 HTTPS/路由检查和四个 URL 的生产 On-page SEO 均通过。",
-    "recordedAt": "2026-09-06T22:44:30+08:00"
+    "note": "迁移样板已部署到 dungeonsettler-top，dungeonsettlers.top 与 www.dungeonsettlers.top 均由 Cloudflare production custom domain 提供服务；六项 HTTPS/路由检查、七个 URL 的生产 On-page SEO 和真实浏览器首条闭环均通过。",
+    "recordedAt": "2026-09-07T09:31:00+08:00"
   },
   "checks": [
     {
@@ -40,7 +37,7 @@
       "evidence": [
         "artifacts/production/representative-page.json"
       ],
-      "note": "代表页 /guides/beginner-guide HTTP 200。"
+      "note": "代表页 /tools/first-expedition-planner HTTP 200。"
     },
     {
       "id": "robots",
@@ -80,7 +77,7 @@
       "evidence": [
         "artifacts/production/onpage-seo.json"
       ],
-      "note": "生产环境逐 URL 审计 4 个页面，canonical、TDK、H1、正文、内链、图片 alt、JSON-LD 和关键词自然频率均通过。"
+      "note": "生产环境逐 URL 审计 7 个页面，canonical、TDK、H1、正文、内链、图片 alt、JSON-LD 和关键词自然频率均通过。"
     }
   ],
   "artifacts": [
@@ -92,6 +89,7 @@
     "artifacts/production/not-found.json",
     "artifacts/production/https.json",
     "artifacts/production/onpage-seo.json",
+    "artifacts/production/migration-journey.json",
     "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
   ],
   "commands": [
@@ -103,7 +101,7 @@
     },
     {
       "id": "production-http",
-      "command": "npm run check:production -- --base-url https://dungeonsettlers.top --representative-path /guides/beginner-guide",
+      "command": "npm run check:production -- --base-url https://dungeonsettlers.top --representative-path /tools/first-expedition-planner --deployment-version ec39460d-fb87-4fb6-b847-a41097d18005",
       "exitCode": 0,
       "logPath": "artifacts/production/homepage.json"
     },
@@ -112,7 +110,13 @@
       "command": "npm run audit:onpage -- --base-url https://dungeonsettlers.top --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e --out artifacts/production/onpage-seo.json",
       "exitCode": 0,
       "logPath": "artifacts/production/onpage-seo.json"
+    },
+    {
+      "id": "production-journey",
+      "command": "真实浏览器 390x844：首页 → 规划器 → hold → ready → Beginner Guide → 返回规划器",
+      "exitCode": 0,
+      "logPath": "artifacts/production/migration-journey.json"
     }
   ],
-  "evidenceId": "phase-s6-6403c42f0949dad6"
+  "evidenceId": "phase-s6-e838050fac047adc"
 }

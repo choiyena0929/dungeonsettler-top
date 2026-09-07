@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "baseUrl": "https://dungeonsettlers.top",
+  "deploymentVersion": "ec39460d-fb87-4fb6-b847-a41097d18005",
+  "capturedAt": "2026-09-07T09:31:00+08:00",
+  "viewport": "390x844",
+  "steps": [
+    {
+      "id": "home",
+      "url": "https://dungeonsettlers.top/",
+      "result": "首页入口可进入规划器"
+    },
+    {
+      "id": "planner",
+      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "result": "规划器表单可见"
+    },
+    {
+      "id": "hold",
+      "result": "未勾选四项时显示 hold 结果和缺少项目"
+    },
+    {
+      "id": "ready",
+      "result": "勾选四项后显示四步可复查计划和 Beginner Guide 入口"
+    },
+    {
+      "id": "related-guide",
+      "url": "https://dungeonsettlers.top/guides/beginner-guide",
+      "result": "相关页 H1 为 Dungeon Settlers beginner guide: the first expedition route"
+    },
+    {
+      "id": "return",
+      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "result": "相关页返回入口可回到规划器"
+    }
+  ],
+  "horizontalOverflow": false,
+  "sameOriginFailures": [],
+  "scopeNote": "同源 document、script、fetch、xhr 响应及请求失败均为零；当前采集环境的外部统计请求控制台噪声不作为站内闭环失败，GA4 后台仍需用户手动确认。"
+}
