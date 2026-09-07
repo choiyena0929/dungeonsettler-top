@@ -4,6 +4,6 @@
   "status": "passed",
   "statusCode": 404,
   "expectedStatus": 404,
-  "contentLength": 11259,
-  "capturedAt": "2026-09-06T16:37:55.638Z"
+  "contentLength": 10036,
+  "capturedAt": "2026-09-07T01:55:06.183Z"
 }

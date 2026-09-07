@@ -4,8 +4,8 @@
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 43412,
-  "capturedAt": "2026-09-06T16:37:55.638Z",
+  "contentLength": 41354,
+  "capturedAt": "2026-09-07T01:55:06.183Z",
   "title": "Dungeon Settlers beginner guide | DS Field Guide",
-  "deploymentVersion": "c9d78619-c2a1-4883-9ac7-522bc6f521a5"
+  "deploymentVersion": "bf61b8af-c3d6-45f7-b4ae-259c0f5f7310"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "site-review",
   "status": "blocked",
-  "generatedAt": "2026-09-07T01:53:30.883Z",
+  "generatedAt": "2026-09-07T01:56:37.278Z",
   "site": {
     "siteId": "steam-2798330",
     "registryId": "site-steam-2798330",
@@ -21,9 +21,9 @@
   },
   "summary": {
     "sectionCount": 6,
-    "readySections": 2,
+    "readySections": 3,
     "attentionSections": 0,
-    "blockedSections": 3,
+    "blockedSections": 2,
     "notQueriedSections": 1,
     "actionCount": 7
   },
@@ -31,8 +31,8 @@
     {
       "id": "technical",
       "title": "技术与发布",
-      "status": "blocked",
-      "summary": "16/17 项技术与发布检查通过。",
+      "status": "ready",
+      "summary": "17/17 项技术与发布检查通过。",
       "checks": [
         {
           "id": "file-AGENTS.md",
@@ -76,8 +76,8 @@
         },
         {
           "id": "deploy-target",
-          "status": "blocked",
-          "detail": "缺少部署目标收据。",
+          "status": "passed",
+          "detail": "正式目标为 dungeonsettlers.top / dungeonsettler-top。",
           "evidence": [
             "artifacts/release/deploy-target.json"
           ]
@@ -228,13 +228,13 @@
         {
           "id": "quality-run",
           "status": "passed",
-          "detail": "最新质量轮次 official-assets-r6 含桌面/移动整页图和首屏视口图共四张真实截图。",
+          "detail": "最新质量轮次 production-official-assets-r7 含桌面/移动整页图和首屏视口图共四张真实截图。",
           "evidence": [
             "artifacts/quality/quality-run.json",
-            "artifacts/quality/official-assets-r6-desktop.png",
-            "artifacts/quality/official-assets-r6-mobile.png",
-            "artifacts/quality/official-assets-r6-desktop-viewport.png",
-            "artifacts/quality/official-assets-r6-mobile-viewport.png"
+            "artifacts/quality/production-official-assets-r7-desktop.png",
+            "artifacts/quality/production-official-assets-r7-mobile.png",
+            "artifacts/quality/production-official-assets-r7-desktop-viewport.png",
+            "artifacts/quality/production-official-assets-r7-mobile-viewport.png"
           ]
         },
         {
@@ -264,7 +264,7 @@
         {
           "id": "quality-review",
           "status": "passed",
-          "detail": "独立审阅 codex-fresh-aaa3f573bf4e 已按五项标准通过。",
+          "detail": "独立审阅 codex-fresh-4e354555f1ae 已按五项标准通过。",
           "evidence": [
             "artifacts/quality/quality-review.json"
           ]

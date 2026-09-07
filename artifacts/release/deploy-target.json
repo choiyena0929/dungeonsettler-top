@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "platform": "cloudflare-worker",
+  "domain": "dungeonsettlers.top",
+  "domains": [
+    "dungeonsettlers.top",
+    "www.dungeonsettlers.top"
+  ],
+  "workerName": "dungeonsettler-top",
+  "repository": "https://github.com/choiyena0929/dungeonsettler-top.git",
+  "branch": "main",
+  "wranglerConfig": "dist/server/wrangler.json",
+  "sourceOfTruth": "artifacts/release/deployment-contract.json",
+  "publishCommand": "npm run deploy:cloudflare",
+  "sourceCommit": "b8160603c7db35c228a5a628eaa7c0775276ed77",
+  "cloudflareVersionId": "bf61b8af-c3d6-45f7-b4ae-259c0f5f7310"
+}

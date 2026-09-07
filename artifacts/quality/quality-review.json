@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-07T01:50:25.126Z",
-  "reviewedRoundId": "official-assets-r6",
+  "reviewedAt": "2026-09-07T01:55:49.219Z",
+  "reviewedRoundId": "production-official-assets-r7",
   "reviewer": {
-    "id": "codex-fresh-aaa3f573bf4e",
+    "id": "codex-fresh-4e354555f1ae",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面在桌面与移动端都建立了清晰的游戏身份、早期访问边界和首要行动，官方实机截图有效支撑具体玩法辨识；移动端标题、导航、按钮与内容纵向布局均保持可读和可操作，整体信息层级与攻略入口组织自然。",
+  "summary": "页面在桌面与移动端都建立了清晰的游戏身份、早期版本边界和新手主路径，首屏主动作突出，官方实机截图有效支撑具体玩法辨识；后续内容按问题、循环、已确认事实和来源组织，移动端标题、导航、按钮与长内容均保持可用。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "首屏以游戏标题和 Beginner Guide 主按钮为核心，官方截图承担身份识别，后续按问题入口、玩法循环、已确认信息和来源路径递进。"
+      "notes": "首屏以大标题、Early Access 标签和 Beginner Guide 主按钮为核心，官方截图承担身份强化；下方依次组织问题入口、玩法循环、已确认信息、来源路径，层级明确。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "即使遮住站名，聚落、传送门、地下城战斗和 settlement-to-expedition 语境仍能明确指向 Dungeon Settlers 及其玩法。"
+      "notes": "页面多处直接标识 Dungeon Settlers，并使用聚落、营地和地下城官方实机画面；即使遮住站名，画面与 settlement、Research、expedition 等具体玩法信息仍能辨认游戏身份。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面端双栏首屏稳定，移动端转为单列；长标题未溢出，导航按钮和主要 CTA 均具备清晰触控区域，未见横向溢出。"
+      "notes": "桌面端采用标题与实机图并列布局，移动端改为纵向流；移动首屏长标题正常换行，四项导航和主要按钮均可见且具备足够触控尺寸，截图中未见横向溢出。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "首屏数秒内可识别目标用户和下一步，Beginner Guide 主动作突出，三条问题导向入口与官方页面入口均易于继续浏览。"
+      "notes": "用户在首屏数秒内即可理解站点用途并点击 Start the Beginner Guide；Start here 区域提供 Beginner、Clay、Research 三个问题入口，后续内容和官方链接路径清楚。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "页面内容围绕 settlement、Clay、Research 和 expedition 展开，Early Access 与更新日期可见，文案保持攻略导向且未呈现内部研究指标或堆砌关键词。"
+      "notes": "关键词自然融入标题和问题入口，没有展示搜索量、竞争度或内部流程信息；正文以 Early Access、版本日期、已确认与未确定边界及官方来源维持可信度。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-aaa3f573bf4e"
+  "reviewRunId": "codex-fresh-4e354555f1ae"
 }
