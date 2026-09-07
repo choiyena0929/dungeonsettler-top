@@ -6,8 +6,8 @@
   "registryId": "site-steam-2798330",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "expectedStateRevision": 10,
-  "capturedAt": "2026-09-06T22:41:24+08:00",
+  "expectedStateRevision": 15,
+  "capturedAt": "2026-09-07T10:50:00+08:00",
   "executionContractVersion": 1,
   "execution": {
     "schemaVersion": 1,
@@ -16,14 +16,11 @@
     "evidenceLevel": null,
     "rootCauseConfirmed": false,
     "retry": {
-      "attempt": 1,
-      "changed": [
-        "assumption",
-        "approach"
-      ]
+      "attempt": 0,
+      "changed": []
     },
-    "note": "S5 责任阶段已按用户纠正重验：正式域名锁定为 dungeonsettlers.top，Worker/仓库目标仍为 dungeonsettler-top，并用 Cloudflare active zone 与复数 custom domain 实时回执核对发布目标。verify:release、页面合同、GitHub main upstream 和发布合同均通过。",
-    "recordedAt": "2026-09-06T22:41:24+08:00"
+    "note": "迁移样板已绑定当前 GitHub main 提交、远程 upstream、Cloudflare Worker 发布目标和可回滚计划。",
+    "recordedAt": "2026-09-07T10:50:00+08:00"
   },
   "checks": [
     {
@@ -32,7 +29,7 @@
       "evidence": [
         "artifacts/release/git-diff.txt"
       ],
-      "note": "域名合同修正提交 65b1a8a9b524f30709c9ebbfac3691981bb0c4de 已推送；当前发布源无已跟踪代码改动。"
+      "note": "发布源提交已完成提交，工作树无未提交改动。"
     },
     {
       "id": "release-plan",
@@ -40,7 +37,7 @@
       "evidence": [
         "artifacts/release/release-plan.md"
       ],
-      "note": "发布链已明确为 GitHub main upstream → Cloudflare Worker dungeonsettler-top → dungeonsettlers.top，并包含 HTTPS 验收和回滚方式。"
+      "note": "计划包含本次 launch-slice 范围、真实闭环、生产验收和 Cloudflare 回滚路径。"
     },
     {
       "id": "remote-upstream",
@@ -48,15 +45,16 @@
       "evidence": [
         "artifacts/release/remote-upstream.txt"
       ],
-      "note": "GitHub 仓库 main 已真实接收域名修正发布源。"
+      "note": "GitHub origin/main 已核验指向 9b6cde0982dadfa0b70af32afa2b8408cd73601c。"
     },
     {
       "id": "deploy-target",
       "status": "passed",
       "evidence": [
-        "artifacts/release/deployment-contract.json"
+        "artifacts/release/deployment-contract.json",
+        "artifacts/release/deploy-target.json"
       ],
-      "note": "Cloudflare Worker dungeonsettler-top 与 dungeonsettlers.top、www.dungeonsettlers.top 的发布合同一致，deploy:cloudflare 强制先执行 verify:release。"
+      "note": "发布目标为 dungeonsettler-top Worker 和 dungeonsettlers.top 正式域名。"
     }
   ],
   "artifacts": [
@@ -64,29 +62,7 @@
     "artifacts/release/release-plan.md",
     "artifacts/release/remote-upstream.txt",
     "artifacts/release/deployment-contract.json",
-    "artifacts/quality/seo-routes.json",
-    "artifacts/failures/S5-domain-name-correction-2026-09-06.json",
-    "artifacts/phases/S5-domain-correction-reopen.json"
+    "artifacts/release/deploy-target.json"
   ],
-  "commands": [
-    {
-      "id": "verify-release",
-      "command": "npm run verify:release",
-      "exitCode": 0,
-      "logPath": "artifacts/logs/verify-release.log"
-    },
-    {
-      "id": "local-onpage",
-      "command": "npm run audit:onpage -- --base-url http://localhost:3000 --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e",
-      "exitCode": 0,
-      "logPath": "artifacts/quality/seo-routes.json"
-    },
-    {
-      "id": "git-upstream",
-      "command": "git remote get-url origin; git ls-remote --heads origin main",
-      "exitCode": 0,
-      "logPath": "artifacts/release/remote-upstream.txt"
-    }
-  ],
-  "evidenceId": "phase-s5-28240336dc5699a1"
+  "evidenceId": "phase-s5-c62409e93a1d38e1"
 }
