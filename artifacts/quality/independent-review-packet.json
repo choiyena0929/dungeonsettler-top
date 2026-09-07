@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "independent-quality-review-handoff",
   "status": "ready",
-  "createdAt": "2026-09-07T02:38:29.339Z",
+  "createdAt": "2026-09-07T02:42:26.685Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "implementerId": "codex-implementer-dungeonsettler-20260906",
@@ -20,17 +20,17 @@
     "qualityRun": "artifacts/quality/quality-run.json"
   },
   "latestRound": {
-    "id": "warm-game-assets-final-r9",
-    "completedAt": "2026-09-07T02:38:28.517Z",
+    "id": "production-warm-game-assets-r10",
+    "completedAt": "2026-09-07T02:42:22.054Z",
     "route": "/",
-    "desktopScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop.png",
-    "mobileScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile.png",
-    "desktopViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-desktop-viewport.png",
-    "mobileViewportScreenshot": "artifacts/quality/warm-game-assets-final-r9-mobile-viewport.png",
-    "desktopSha256": "184aad8f1e279d481c89fededf3877dd9d92ed8c8070e3b9f6f26d5cd0e47cd0",
-    "mobileSha256": "7a7fe09c963d3d8ac6e4302c228c086a9f07dbd84214fe591b06456b85dab746",
+    "desktopScreenshot": "artifacts/quality/production-warm-game-assets-r10-desktop.png",
+    "mobileScreenshot": "artifacts/quality/production-warm-game-assets-r10-mobile.png",
+    "desktopViewportScreenshot": "artifacts/quality/production-warm-game-assets-r10-desktop-viewport.png",
+    "mobileViewportScreenshot": "artifacts/quality/production-warm-game-assets-r10-mobile-viewport.png",
+    "desktopSha256": "87491c4b94e4058fe518ba2db413e6254e6a124484a5a9ec0a1ebcddaf37a165",
+    "mobileSha256": "33ff6c2f13e05584f372af247601241ea5f8a45fadb5cb735d15bc97ffee7c82",
     "desktopViewportSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
-    "mobileViewportSha256": "a920633851fe7b1c9163fa838f70ae6850d9c13160c484061bcadc0b52f1287a"
+    "mobileViewportSha256": "eb374e571a801ba66d684cac2f2a343a84f8271f6d9e6b3da97d9ce3de14b0d4"
   },
   "criteria": [
     {

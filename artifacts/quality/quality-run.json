@@ -704,9 +704,79 @@
           }
         }
       }
+    },
+    {
+      "id": "production-warm-game-assets-r10",
+      "completedAt": "2026-09-07T02:42:22.054Z",
+      "route": "/",
+      "url": "https://dungeonsettlers.top/",
+      "desktopScreenshot": "artifacts/quality/production-warm-game-assets-r10-desktop.png",
+      "mobileScreenshot": "artifacts/quality/production-warm-game-assets-r10-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/production-warm-game-assets-r10-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/production-warm-game-assets-r10-mobile-viewport.png",
+      "desktopSha256": "87491c4b94e4058fe518ba2db413e6254e6a124484a5a9ec0a1ebcddaf37a165",
+      "mobileSha256": "33ff6c2f13e05584f372af247601241ea5f8a45fadb5cb735d15bc97ffee7c82",
+      "desktopViewportSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+      "mobileViewportSha256": "eb374e571a801ba66d684cac2f2a343a84f8271f6d9e6b3da97d9ce3de14b0d4",
+      "desktopDomSha256": "2da31bbba87b0067da2dd7366ee4ddb597c6d464d8fd371c9106ef0bed43ca9c",
+      "mobileDomSha256": "2da31bbba87b0067da2dd7366ee4ddb597c6d464d8fd371c9106ef0bed43ca9c",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "https://dungeonsettlers.top/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 4647,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4406,
+          "domSha256": "2da31bbba87b0067da2dd7366ee4ddb597c6d464d8fd371c9106ef0bed43ca9c",
+          "screenshotSha256": "87491c4b94e4058fe518ba2db413e6254e6a124484a5a9ec0a1ebcddaf37a165",
+          "viewportScreenshotSha256": "aa699e31c287f7884d09756a88526340675f0d735a8c91a5474f19e91e885f48",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "https://dungeonsettlers.top/guides/beginner-guide",
+            "finalUrl": "https://dungeonsettlers.top/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "https://dungeonsettlers.top/",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
+          "viewportWidth": 391,
+          "viewportHeight": 847,
+          "documentWidth": 391,
+          "documentHeight": 7272,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4400,
+          "domSha256": "2da31bbba87b0067da2dd7366ee4ddb597c6d464d8fd371c9106ef0bed43ca9c",
+          "screenshotSha256": "33ff6c2f13e05584f372af247601241ea5f8a45fadb5cb735d15bc97ffee7c82",
+          "viewportScreenshotSha256": "eb374e571a801ba66d684cac2f2a343a84f8271f6d9e6b3da97d9ce3de14b0d4",
+          "interaction": {
+            "status": "passed",
+            "href": "/guides/beginner-guide",
+            "expectedUrl": "https://dungeonsettlers.top/guides/beginner-guide",
+            "finalUrl": "https://dungeonsettlers.top/guides/beginner-guide",
+            "runtimeErrors": []
+          }
+        }
+      }
     }
   ],
   "blockingOpen": 0,
   "majorOpen": 0,
-  "independentReviewRunId": "codex-fresh-bb68a975d552"
+  "independentReviewRunId": "codex-fresh-4c8e966e6415"
 }
