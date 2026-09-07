@@ -9,6 +9,7 @@ const files = [
   "README.md",
   "research/素材清单.json",
   "scripts/检查素材使用.mjs",
+  "scripts/check-public-copy.mjs",
   "前端系统.md",
   "设计合同模板.md",
   "AGENTS.md",

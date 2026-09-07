@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { GameLoopDiagram } from "./game-loop-diagram";
 import { evidenceLabels, getGuide, guideEntries, type GuideEntry } from "../content";
 import { JsonLd, guideStructuredData } from "../structured-data";
@@ -20,12 +19,12 @@ export function GuidePage({ entry }: { entry: GuideEntry }) {
     <article className="article-shell">
       <JsonLd value={guideStructuredData(entry)} />
       <div className="article-header">
-        <Link className="back-link" href="/">← Back to the Field Guide</Link>
+        <a className="back-link" href="/">← Back to the Field Guide</a>
         <p className="eyebrow">{entry.category} / {evidenceLabels[entry.evidence]} / updated {entry.updatedAt}</p>
         <h1>{entry.title}</h1>
         <p className="lead">{entry.description}</p>
-        <div className="tag-row"><span>{entry.label}</span><span>Early Access</span><span>Source-bounded</span></div>
-        <div className="article-actions"><Link className="button primary" href="#quick-answer">{entry.slug === "beginner-guide" ? "Follow the first expedition route" : entry.slug === "how-to-get-clay" ? "Compare the current Clay routes" : "Use the safe research checklist"} <span aria-hidden="true">↓</span></Link><Link className="button" href="/">Choose another problem</Link></div>
+        <div className="tag-row"><span>{entry.label}</span><span>Early Access</span><span>Dated guide</span></div>
+        <div className="article-actions"><a className="button primary" href="#quick-answer">{entry.slug === "beginner-guide" ? "Follow the first expedition route" : entry.slug === "how-to-get-clay" ? "Compare the current Clay routes" : "Use the safe research checklist"} <span aria-hidden="true">↓</span></a><a className="button" href="/">Choose another problem</a></div>
       </div>
       <div className="article-body">
         {entry.sections.map((section, index) => (
@@ -40,13 +39,13 @@ export function GuidePage({ entry }: { entry: GuideEntry }) {
         <section className="article-sources" aria-labelledby="sources-heading">
           <p className="eyebrow">Evidence path</p>
           <h2 id="sources-heading">Sources and limits</h2>
-          <p>The official pages are the baseline. Secondary pages are leads that need a current-build check. The YouTube references were attempted for this launch but were unavailable for verified analysis, so they are listed as references only and do not supply steps, timestamps, or opinions in this article.</p>
+          <p>Start with the official game and update pages. Treat secondary guides as dated leads, and verify exact routes or quantities in the current build.</p>
           <ul>{sourceLinks.map((source) => <li key={source.href}><a href={source.href} rel="noreferrer">{source.label} ↗</a></li>)}</ul>
         </section>
         <section className="related-section" aria-labelledby="related-heading">
           <p className="eyebrow">Keep going</p>
           <h2 id="related-heading">Related routes</h2>
-          <div className="related-links">{entry.related.map((slug) => { const related = relatedEntry(slug); return <Link className="related-link" href={`/guides/${related.slug}`} key={related.slug}><small>{related.label}</small><strong>{related.title}</strong></Link>; })}</div>
+          <div className="related-links">{entry.related.map((slug) => { const related = relatedEntry(slug); return <a className="related-link" href={`/guides/${related.slug}`} key={related.slug}><small>{related.label}</small><strong>{related.title}</strong></a>; })}</div>
         </section>
       </div>
     </article>

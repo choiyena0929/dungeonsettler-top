@@ -38,7 +38,7 @@ export const guideEntries: GuideEntry[] = [
     slug: "beginner-guide",
     title: "Dungeon Settlers beginner guide: the first expedition route",
     summary: "A cautious starting route for the settlement, the first party, Research, and the first dungeon commitment.",
-    description: "This Dungeon Settlers beginner guide gives new Early Access players a source-bounded route from settlement setup to the first dungeon expedition.",
+    description: "This Dungeon Settlers beginner guide gives new Early Access players a practical route from settlement setup to the first dungeon expedition.",
     category: "Start here",
     label: "First route",
     primaryKeyword: "Dungeon Settlers beginner guide",
@@ -96,7 +96,7 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Sources",
         paragraphs: [
-          "The official Steam page is the identity and system baseline for this guide. Steam Community is the dated update path. The two YouTube references were attempted as part of the research pass but were unavailable for verified analysis, so no step, timestamp, title, or opinion from those videos is used as a fact here.",
+          "Use the official Steam page for the current game overview and Steam Community for dated update notes. Recheck exact interface details after major patches.",
         ],
       },
     ],
@@ -146,7 +146,7 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Version and evidence note",
         paragraphs: [
-          "Dungeon Settlers is in Early Access. The Steam Community update path should be checked after a combat, save, research-display, or inventory change. This page intentionally keeps the dated Clay observations separate from the official system description. The two YouTube references were unavailable for verified analysis during this research pass, so they are not used to fill in missing enemy behavior or route details.",
+          "Dungeon Settlers is in Early Access. Check Steam Community after combat, save, research-display, or inventory changes, and verify exact Clay routes in the current build.",
           sourceNote,
         ],
       },
@@ -209,7 +209,7 @@ export const guideEntries: GuideEntry[] = [
         heading: "Version note",
         paragraphs: [
           "Dungeon Settlers is an Early Access title. A safe Research guide should make its date visible and should keep the official system description separate from observations, community explanations, and reports that may age quickly. When a choice no longer produces the expected result, pause the route, record the difference, and check the official update path before expanding the claim.",
-          "The two YouTube references were attempted in the research pass but were unavailable for verified analysis. This page therefore contains no video-derived order, timestamp, UI wording, or opinion presented as fact.",
+          "When the Research interface changes, compare the result in your current build with the latest official update notes before following an older route.",
         ],
       },
       {
@@ -228,7 +228,7 @@ export const libraryEntries: LibraryEntry[] = guideEntries.map((entry) => ({
   title: entry.title,
   summary: entry.summary,
   category: entry.category,
-  tags: [entry.label, "Early Access", "source-bounded"],
+  tags: [entry.label, "Early Access", "dated guide"],
   evidence: entry.evidence,
   updatedAt: entry.updatedAt,
   body: entry.sections.flatMap((section) => section.paragraphs),

@@ -13,6 +13,10 @@ export function GameLoopDiagram() {
         <span className="eyebrow">A useful mental model</span>
         <h2>Prepare the camp. Ask one research question. Then take the route.</h2>
       </div>
+      <div className="game-loop-gallery">
+        <figure><img src="/game/official/settlement.jpg" alt="Dungeon Settlers expedition camp with party portraits, building controls, and a quest panel." width="1920" height="1080" /><figcaption>Prepare the party and settlement.</figcaption></figure>
+        <figure><img src="/game/official/dungeon.jpg" alt="Dungeon Settlers party standing before a dungeon shrine after combat." width="1920" height="1080" /><figcaption>Take the prepared party into the dungeon.</figcaption></figure>
+      </div>
       <div className="game-loop-track">
         {nodes.map((node, index) => (
           <div className="game-loop-step" key={node.title}>
@@ -25,7 +29,7 @@ export function GameLoopDiagram() {
           </div>
         ))}
       </div>
-      <p className="loop-note">The order is a reading aid, not a promise of a fixed tech tree. Detailed research prerequisites remain version-sensitive.</p>
+      <p className="loop-note">Use this loop to decide what the next expedition must accomplish. Exact research prerequisites can change during Early Access.</p>
     </div>
   );
 }

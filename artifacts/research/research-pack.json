@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-06T14:51:23.087Z",
-  "packRevision": "research-pack-4eb2228af765477e",
+  "generatedAt": "2026-09-07T01:49:02.870Z",
+  "packRevision": "research-pack-51046907cf88cd69",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -19,8 +19,8 @@
     "source-manifest": {
       "path": "research/source-manifest.md",
       "status": "present",
-      "bytes": 5088,
-      "sha256": "cd8bd65e750d4a60d4382528892dfbfa6d32d9e52592718e977f9a92251e4615"
+      "bytes": 5275,
+      "sha256": "87b3986db4bbe894ba00e9a25b5cee443653c26cedc3d502a91d9fe86f95a027"
     },
     "content-status": {
       "path": "research/content-status.md",
@@ -37,14 +37,14 @@
     "visual-benchmark": {
       "path": "research/visual-benchmark.md",
       "status": "present",
-      "bytes": 3731,
-      "sha256": "081230c1f201650d178ef6d855aba6800feb75bc76e08b72ff810b370ab8e9b3"
+      "bytes": 3905,
+      "sha256": "db1f5a502a93464941a3da8f124503ff78e6b17af5fa33b2095484102cccfec0"
     },
     "asset-manifest": {
       "path": "research/素材清单.json",
       "status": "present",
-      "bytes": 2922,
-      "sha256": "55717baaff793c947d846200b73c600136fc2e8503c2101e27d2109ab276eea4"
+      "bytes": 4363,
+      "sha256": "a047e14f902af7e79487ced6cd5ade8312a11a3f835c1b46caff6d1fd6dcb66c"
     },
     "page-contracts": {
       "path": "research/page-contracts.json",
@@ -94,7 +94,7 @@
       "/"
     ],
     "pageCount": 4,
-    "assetCount": 2,
+    "assetCount": 3,
     "requiredAssetCount": 2,
     "videoItemCount": 9,
     "videoEvidenceStatus": "measured",

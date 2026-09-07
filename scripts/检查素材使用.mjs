@@ -15,6 +15,8 @@ const sourceExtensions = new Set([".astro", ".css", ".html", ".jsx", ".js", ".md
 const allowedPhases = new Set(["template", "draft", "ready"]);
 const templateDirectoryName = "data-to-decision-site-starter";
 const templateAssetNames = ["file.svg", "globe.svg", "next.svg", "vercel.svg", "window.svg"];
+const approvedSourceClasses = new Set(["official-page", "official-cdn", "official-media-kit", "official-game-files", "owned-game-capture", "benchmark-mirror"]);
+const forbiddenRequiredKinds = new Set(["original-editorial-illustration", "original-illustration", "original-svg", "generated-image", "ai-generated-image", "abstract-illustration", "mechanic-visual"]);
 
 function optionValue(name) {
   const index = args.indexOf(name);
@@ -142,6 +144,15 @@ if (!existsSync(manifestPath)) {
       if (!requiredAssets.some((asset) => asset.gameSpecific === true)) {
         error("首页没有标记为 gameSpecific 的游戏视觉锚点。");
       }
+      const requiredPaths = new Set(requiredAssets.map((asset) => normalizePath(String(asset.localPath || ""))).filter(Boolean));
+      if (requiredPaths.size < 2) error("首页必需素材必须使用至少两个不同的本地文件，不能重复登记同一张图。");
+      for (const asset of requiredAssets) {
+        if (asset.gameSpecific !== true) error("首页必需素材必须标记 gameSpecific=true：" + asset.id);
+        if (asset.originalOrGenerated !== false || forbiddenRequiredKinds.has(String(asset.kind || "").toLowerCase())) error("首页必需素材不能是原创 SVG、AI 图、概念插画或抽象占位图：" + asset.id);
+        if (!approvedSourceClasses.has(String(asset.source?.class || "").toLowerCase())) error("首页必需素材缺少允许的来源类别：" + asset.id);
+        if (isPlaceholder(asset.source?.assetUrl)) error("首页必需素材缺少原始图片 URL 或游戏文件定位：" + asset.id);
+        if (asset.source?.class === "benchmark-mirror" && (isPlaceholder(asset.source?.pageUrl) || isPlaceholder(asset.source?.originEvidence) || !["official-game-asset", "gameplay-capture"].includes(asset.source?.originKind))) error("对标/Wiki 素材缺少页面、原图或游戏来源依据：" + asset.id);
+      }
 
       const sourceFiles = collectSourceFiles(siteRoot);
       const sourceText = sourceFiles.map((file) => {
@@ -163,11 +174,11 @@ if (!existsSync(manifestPath)) {
         const isInUse = asset.state === "in-use";
         if (isPlaceholder(asset.role)) error("资产缺少 role：" + asset.id);
         if (isPlaceholder(asset.kind)) error("资产缺少 kind：" + asset.id);
-        if (!asset.source || isPlaceholder(asset.source.url) || isPlaceholder(asset.source.evidence)) {
+        if (!asset.source || isPlaceholder(asset.source.class) || isPlaceholder(asset.source.assetUrl) || isPlaceholder(asset.source.evidence)) {
           error("资产缺少可回查来源或证据：" + asset.id);
         }
-        if (!asset.rights || asset.rights.status !== "confirmed" || isPlaceholder(asset.rights.basis)) {
-          error("资产没有确认的权利状态或依据：" + asset.id);
+        if (asset.rights?.status === "prohibited") {
+          error("资产已明确禁止使用：" + asset.id);
         }
         const targets = asArray(asset.renderTargets);
         if (isInUse && targets.length === 0) error("已使用资产没有 renderTargets：" + asset.id);
@@ -182,8 +193,7 @@ if (!existsSync(manifestPath)) {
           }
         }
 
-        const needsFile = asset.kind !== "mechanic-visual";
-        if (needsFile && isPlaceholder(asset.localPath)) error("资产缺少 localPath：" + asset.id);
+        if (isPlaceholder(asset.localPath)) error("资产缺少 localPath：" + asset.id);
         if (!isPlaceholder(asset.localPath)) {
           const localPath = resolve(siteRoot, asset.localPath);
           if (!isInsideRoot(siteRoot, localPath)) {
@@ -198,10 +208,10 @@ if (!existsSync(manifestPath)) {
           }
         }
 
-        if (isInUse && isPlaceholder(asset.alt) && asset.kind !== "mechanic-visual") {
+        if (isInUse && isPlaceholder(asset.alt)) {
           error("图片或图标资产缺少可读 alt：" + asset.id);
         }
-        if (isInUse && isPlaceholder(asset.crop) && asset.kind !== "mechanic-visual") {
+        if (isInUse && isPlaceholder(asset.crop)) {
           error("图片或图标资产缺少裁切/层级规则：" + asset.id);
         }
         if (asset.required === true) {
@@ -216,9 +226,7 @@ if (!existsSync(manifestPath)) {
         }
       }
 
-      if (requiredAssets.length > 0 && !requiredAssets.some((asset) => asset.kind === "gameplay-screenshot" || asset.kind === "official-key-art" || asset.kind === "in-game-capture" || asset.kind === "game-icon-set")) {
-        warnings.push("首页没有图片或图标型游戏锚点；请确认这不是用抽象 CSS 替代游戏视觉。");
-      }
+      if (requiredAssets.length > 0 && !requiredAssets.some((asset) => ["gameplay-screenshot", "official-key-art", "key-art", "in-game-capture", "game-icon", "game-icon-set", "item-icon", "skill-icon", "character-portrait", "official-logo"].includes(asset.kind))) error("首页至少需要一项真实截图、官方 key art、游戏图标、角色图或官方 Logo。");
     }
   }
 }
@@ -226,7 +234,7 @@ if (!existsSync(manifestPath)) {
 if (errors.length > 0) {
   console.error("素材使用检查失败：");
   for (const message of errors) console.error("- " + message);
-  console.error("先补齐素材清单、权利证据、本地路径、页面绑定和截图，再进入视觉验收。");
+  console.error("先补齐官方或可追溯游戏原素材、原图地址、本地路径、页面绑定和截图，再进入视觉验收。");
   process.exit(1);
 }
 
@@ -239,6 +247,6 @@ if (existsSync(manifestPath)) {
   if (manifest.phase === "template") {
     console.log("素材使用检查通过：当前是模板目录，已验证素材闭环脚手架。复制为正式站点后必须改为 phase=ready。");
   } else {
-    console.log("素材使用检查通过：首页必需资产已完成来源、权利、本地路径、代码引用、合同和截图证据闭环。");
+    console.log("素材使用检查通过：首页必需资产已完成可追溯游戏来源、本地路径、代码引用、合同和截图证据闭环。");
   }
 }

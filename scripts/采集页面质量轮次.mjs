@@ -62,6 +62,18 @@ const browser = await chromium.launch({
 async function capture(name, viewport, outputPath, viewportOutputPath, isMobile = false) {
   const context = await browser.newContext({ viewport, deviceScaleFactor: 1, isMobile });
   const page = await context.newPage();
+  const targetOrigin = new URL(baseUrl).origin;
+  const isSameOrigin = (candidate) => {
+    try { return new URL(candidate).origin === targetOrigin; } catch { return false; }
+  };
+  const runtimeErrors = [];
+  page.on("pageerror", (error) => runtimeErrors.push(`pageerror: ${error.message}`));
+  page.on("response", (response) => {
+    if (isSameOrigin(response.url()) && response.status() >= 400 && ["document", "script", "fetch", "xhr"].includes(response.request().resourceType())) runtimeErrors.push(`http ${response.status()}: ${response.url()}`);
+  });
+  page.on("requestfailed", (request) => {
+    if (isSameOrigin(request.url()) && ["document", "script", "fetch", "xhr"].includes(request.resourceType())) runtimeErrors.push(`requestfailed: ${request.url()} (${request.failure()?.errorText || "unknown"})`);
+  });
   try {
     const url = new URL(route, baseUrl).toString();
     const response = await page.goto(url, { waitUntil: "networkidle", timeout: 45000 });
@@ -109,7 +121,39 @@ async function capture(name, viewport, outputPath, viewportOutputPath, isMobile 
     await page.screenshot({ path: viewportOutputPath, fullPage: false });
     const screenshot = await readFile(outputPath);
     const viewportScreenshot = await readFile(viewportOutputPath);
-    return { name, url, viewport, ...metrics, domSha256: sha256(html), screenshotSha256: sha256(screenshot), viewportScreenshotSha256: sha256(viewportScreenshot) };
+    const linkCandidate = await page.evaluate(() => {
+      const current = new URL(location.href);
+      return [...document.querySelectorAll("a[href]")].map((link, index) => {
+        const rect = link.getBoundingClientRect();
+        const style = getComputedStyle(link);
+        let target;
+        try { target = new URL(link.href, location.href); } catch { return null; }
+        const visible = rect.width > 0 && rect.height > 0 && style.visibility !== "hidden" && style.display !== "none";
+        const differentRoute = target.pathname !== current.pathname || target.search !== current.search;
+        return visible && target.origin === current.origin && differentRoute && !link.hasAttribute("download") && link.target !== "_blank"
+          ? { index, href: link.getAttribute("href"), expected: target.toString() }
+          : null;
+      }).find(Boolean) || null;
+    });
+    if (!linkCandidate) throw new Error(`${name} 页面没有可用于交互验证的可见站内子页链接。`);
+    const beforeClick = page.url();
+    await page.locator("a[href]").nth(linkCandidate.index).click({ timeout: 10000 });
+    await page.waitForTimeout(500);
+    await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => undefined);
+    const afterClick = page.url();
+    if (afterClick === beforeClick) throw new Error(`${name} 站内链接点击后 URL 没有变化：${linkCandidate.href}`);
+    if (new URL(afterClick).origin !== new URL(url).origin) throw new Error(`${name} 交互验证意外离开站点：${afterClick}`);
+    if (runtimeErrors.length) throw new Error(`${name} 页面或站内跳转出现脚本错误：${runtimeErrors.slice(0, 3).join(" | ")}`);
+    return {
+      name,
+      url,
+      viewport,
+      ...metrics,
+      domSha256: sha256(html),
+      screenshotSha256: sha256(screenshot),
+      viewportScreenshotSha256: sha256(viewportScreenshot),
+      interaction: { status: "passed", href: linkCandidate.href, expectedUrl: linkCandidate.expected, finalUrl: afterClick, runtimeErrors: [] },
+    };
   } finally {
     await context.close();
   }

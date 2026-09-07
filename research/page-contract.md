@@ -4,7 +4,7 @@
 
 - 用户任务：判断本站能否解决当前 Early Access 的起步、Clay 或 Research 问题。
 - 首要动作：进入 `Beginner Guide`。
-- 视觉重点：原创 settlement / dungeon field-map 建立身份；机制图连接三条问题入口。
+- 视觉重点：Steam 官方聚落、营地与地下城截图建立身份；玩法循环连接三条问题入口。
 - 移动端优先级：标题、Beginner Guide、三条入口、Early Access 边界和官方链接。
 - 通过条件：首屏说明游戏和下一步；三条入口都是真实页面；不展示内部关键词、抓取状态或未核验事实。
 

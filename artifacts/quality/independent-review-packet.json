@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "independent-quality-review-handoff",
   "status": "ready",
-  "createdAt": "2026-09-06T14:01:36.250Z",
+  "createdAt": "2026-09-07T01:50:07.036Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "implementerId": "codex-implementer-dungeonsettler-20260906",
@@ -20,17 +20,17 @@
     "qualityRun": "artifacts/quality/quality-run.json"
   },
   "latestRound": {
-    "id": "representative-final-r3",
-    "completedAt": "2026-09-06T14:01:30.552Z",
-    "route": "/guides/beginner-guide",
-    "desktopScreenshot": "artifacts/quality/representative-final-r3-desktop.png",
-    "mobileScreenshot": "artifacts/quality/representative-final-r3-mobile.png",
-    "desktopViewportScreenshot": "artifacts/quality/representative-final-r3-desktop-viewport.png",
-    "mobileViewportScreenshot": "artifacts/quality/representative-final-r3-mobile-viewport.png",
-    "desktopSha256": "d0bd3181e3ad13c968191b784f1e5187bffe16025ce9f7da677c5e1093aca6cf",
-    "mobileSha256": "4444e8a95bbea5f436fdc3ac35a4f0893bc3401b071a54482d0b041eb22bb2ff",
-    "desktopViewportSha256": "21f5094dffa343ea3f6401672e11c86d6fe2263104a5ea498e934a14c7dc93a1",
-    "mobileViewportSha256": "0b7f2d93c7807415bf5a8a49848d26e2d15db557e255f1e0a8a58d2b317b2c3f"
+    "id": "official-assets-r6",
+    "completedAt": "2026-09-07T01:50:05.543Z",
+    "route": "/",
+    "desktopScreenshot": "artifacts/quality/official-assets-r6-desktop.png",
+    "mobileScreenshot": "artifacts/quality/official-assets-r6-mobile.png",
+    "desktopViewportScreenshot": "artifacts/quality/official-assets-r6-desktop-viewport.png",
+    "mobileViewportScreenshot": "artifacts/quality/official-assets-r6-mobile-viewport.png",
+    "desktopSha256": "7769d5bde04072c0228098429371086616e284419a221758f190c34f32078360",
+    "mobileSha256": "3987fca19b2cce9cf791320e6e2244bd2190b07b874927ece6848adc1c55c6f6",
+    "desktopViewportSha256": "c90102f3461c6dbdcfa73ce78fcf8c89f0b59f5b3fb07c695ce2524a592998ad",
+    "mobileViewportSha256": "8e28cde0569990f067ffb4074fc7aaa4df313f5d7c75ff18d98fc0ede639cf5d"
   },
   "criteria": [
     {

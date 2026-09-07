@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-06T14:51:30.983Z",
+  "capturedAt": "2026-09-07T01:52:54.540Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://127.0.0.1:4173",
   "canonicalOrigin": "https://dungeonsettlers.top",
   "contractPath": "D:/WebProjects/sites/dungeonsettler.top/research/page-contracts.json",
   "routes": [
@@ -12,15 +12,15 @@
       "path": "/",
       "pageType": "homepage",
       "primaryKeyword": "Dungeon Settlers beginner guide",
-      "url": "http://localhost:3000/",
+      "url": "http://127.0.0.1:4173/",
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
-      "description": "Start with a source-bounded Dungeon Settlers beginner guide for the settlement, first expedition, Clay questions, and Research choices.",
+      "description": "Start with a practical Dungeon Settlers beginner guide for the settlement, first expedition, Clay questions, and Research choices.",
       "canonical": "https://dungeonsettlers.top",
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
-      "wordCount": 676,
+      "wordCount": 665,
       "internalLinkCount": 5,
       "keywordCount": 2,
       "checks": [
@@ -42,7 +42,7 @@
         {
           "id": "description-length",
           "status": "passed",
-          "detail": "135 chars"
+          "detail": "130 chars"
         },
         {
           "id": "single-h1",
@@ -57,7 +57,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "676/650 words"
+          "detail": "665/650 words"
         },
         {
           "id": "internal-links",
@@ -111,15 +111,15 @@
       "path": "/guides/beginner-guide",
       "pageType": "guide",
       "primaryKeyword": "Dungeon Settlers beginner guide",
-      "url": "http://localhost:3000/guides/beginner-guide",
+      "url": "http://127.0.0.1:4173/guides/beginner-guide",
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide | DS Field Guide",
-      "description": "This Dungeon Settlers beginner guide gives new Early Access players a source-bounded route from settlement setup to the first dungeon expedition.",
+      "description": "This Dungeon Settlers beginner guide gives new Early Access players a practical route from settlement setup to the first dungeon expedition.",
       "canonical": "https://dungeonsettlers.top/guides/beginner-guide",
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
-      "wordCount": 1090,
+      "wordCount": 1038,
       "internalLinkCount": 5,
       "keywordCount": 3,
       "checks": [
@@ -141,7 +141,7 @@
         {
           "id": "description-length",
           "status": "passed",
-          "detail": "145 chars"
+          "detail": "140 chars"
         },
         {
           "id": "single-h1",
@@ -156,7 +156,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1090/850 words"
+          "detail": "1038/850 words"
         },
         {
           "id": "internal-links",
@@ -201,7 +201,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "3 次，上限 22"
+          "detail": "3 次，上限 21"
         }
       ],
       "status": "passed"
@@ -210,7 +210,7 @@
       "path": "/guides/how-to-get-clay",
       "pageType": "guide",
       "primaryKeyword": "How to get clay in Dungeon Settlers",
-      "url": "http://localhost:3000/guides/how-to-get-clay",
+      "url": "http://127.0.0.1:4173/guides/how-to-get-clay",
       "statusCode": 200,
       "title": "How to get clay in Dungeon Settlers | DS Field Guide",
       "description": "Learn how to get Clay in Dungeon Settlers through early dungeon encounters, merchants, and later regions while keeping version-sensitive quantities clearly labelled.",
@@ -218,7 +218,7 @@
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
-      "wordCount": 992,
+      "wordCount": 932,
       "internalLinkCount": 5,
       "keywordCount": 4,
       "checks": [
@@ -255,7 +255,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "992/750 words"
+          "detail": "932/750 words"
         },
         {
           "id": "internal-links",
@@ -300,7 +300,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "4 次，上限 20"
+          "detail": "4 次，上限 19"
         }
       ],
       "status": "passed"
@@ -309,7 +309,7 @@
       "path": "/guides/how-to-research",
       "pageType": "guide",
       "primaryKeyword": "How to research in Dungeon Settlers",
-      "url": "http://localhost:3000/guides/how-to-research",
+      "url": "http://127.0.0.1:4173/guides/how-to-research",
       "statusCode": 200,
       "title": "How to research in Dungeon Settlers | DS Field Guide",
       "description": "This guide explains how to research in Dungeon Settlers using a cautious checklist grounded in the official loop and clear version boundaries.",
@@ -317,7 +317,7 @@
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
-      "wordCount": 1037,
+      "wordCount": 1019,
       "internalLinkCount": 5,
       "keywordCount": 3,
       "checks": [
@@ -354,7 +354,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1037/750 words"
+          "detail": "1019/750 words"
         },
         {
           "id": "internal-links",

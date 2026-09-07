@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": "ready",
   "site": "Dungeon Settlers Field Guide",
-  "visualStrategy": "original-settlement-field-map-plus-mechanic-diagram",
+  "visualStrategy": "official-steam-gameplay-screenshots",
   "homepage": {
     "requiredAssetIds": [
       "dungeon-settlers-hero",
@@ -15,20 +15,24 @@
     {
       "id": "dungeon-settlers-hero",
       "role": "hero-identity",
-      "kind": "original-editorial-illustration",
+      "kind": "gameplay-screenshot",
       "gameSpecific": true,
-      "officialGameAsset": false,
+      "originalOrGenerated": false,
+      "officialGameAsset": true,
       "state": "in-use",
       "required": true,
       "source": {
-        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "class": "official-cdn",
+        "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/f2770dcdb4fc1716e2bd73259293e15468c3f79e/ss_f2770dcdb4fc1716e2bd73259293e15468c3f79e.1920x1080.jpg?t=1788710401",
+        "originKind": "official-game-asset",
         "evidence": "research/source-manifest.md#S001"
       },
       "rights": {
-        "status": "confirmed",
-        "basis": "本站原创 SVG 编辑插画；只依据 S001 已核验的 settlement、dungeon expedition 与 research 主题绘制，不复制官方角色、Logo、UI 或截图。"
+        "status": "documented",
+        "basis": "Steam 官方商店接口返回的 Dungeon Settlers 截图 URL。"
       },
-      "localPath": "public/game/dungeon-settlers-hero.svg",
+      "localPath": "public/game/official/hero.jpg",
       "renderTargets": [
         {
           "route": "/",
@@ -36,40 +40,70 @@
           "placement": "首页首屏右侧主视觉"
         }
       ],
-      "crop": "宽幅画面保留左下 settlement 灯火、右侧 dungeon 门和中间路径；标题置于左侧留白，不覆盖地标。",
-      "alt": "An original editorial field-map illustration of a torchlit settlement preparing a four-person dungeon expedition."
+      "crop": "保持聚落中央传送门、房间布局和角色活动区域可见；移动端使用 16:9 完整画幅。",
+      "alt": "Dungeon Settlers settlement with rooms, work areas, crops, and a central portal."
     },
     {
       "id": "dungeon-settlers-research-loop",
-      "role": "mechanic/icon-system",
-      "kind": "mechanic-visual",
+      "role": "mechanic-gameplay",
+      "kind": "gameplay-screenshot",
       "gameSpecific": true,
-      "officialGameAsset": false,
+      "originalOrGenerated": false,
+      "officialGameAsset": true,
       "state": "in-use",
       "required": true,
       "source": {
-        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "class": "official-cdn",
+        "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
+        "originKind": "official-game-asset",
         "evidence": "research/source-manifest.md#S001"
       },
       "rights": {
-        "status": "confirmed",
-        "basis": "本站原创内联 SVG 机制图；只表达官方页面确认的 settlement → research → expedition → resources 关系，不描摹游戏内图标。"
+        "status": "documented",
+        "basis": "Steam 官方商店接口返回的 Dungeon Settlers 截图 URL。"
       },
-      "localPath": "app/components/game-loop-diagram.tsx",
+      "localPath": "public/game/official/settlement.jpg",
       "renderTargets": [
         {
           "route": "/",
           "implementation": "app/components/game-loop-diagram.tsx",
-          "placement": "首页 Start here 区域与研究入口"
-        },
-        {
-          "route": "/guides/how-to-research",
-          "implementation": "app/guides/[slug]/page.tsx",
-          "placement": "Research 页面事实边界说明"
+          "placement": "首页玩法循环区域"
         }
       ],
-      "crop": "保持四节点完整可读；移动端改为单列，图标与文字始终并置，不冒充官方 UI。",
-      "alt": "Original diagram showing the verified Dungeon Settlers loop from settlement to research, expedition, and resources."
+      "crop": "保留队伍头像、任务栏、营地与建造控件，作为聚落到远征的玩法证据。",
+      "alt": "Dungeon Settlers expedition camp with party portraits, building controls, and a quest panel."
+    },
+    {
+      "id": "dungeon-settlers-dungeon-scene",
+      "role": "dungeon-gameplay",
+      "kind": "gameplay-screenshot",
+      "gameSpecific": true,
+      "originalOrGenerated": false,
+      "officialGameAsset": true,
+      "state": "in-use",
+      "required": false,
+      "source": {
+        "class": "official-cdn",
+        "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/bbbdb81369854f132117bf19d8ecc53c1624beaa/ss_bbbdb81369854f132117bf19d8ecc53c1624beaa.1920x1080.jpg?t=1788710401",
+        "originKind": "official-game-asset",
+        "evidence": "research/source-manifest.md#S001"
+      },
+      "rights": {
+        "status": "documented",
+        "basis": "Steam 官方商店接口返回的 Dungeon Settlers 截图 URL。"
+      },
+      "localPath": "public/game/official/dungeon.jpg",
+      "renderTargets": [
+        {
+          "route": "/",
+          "implementation": "app/components/game-loop-diagram.tsx",
+          "placement": "首页玩法循环区域"
+        }
+      ],
+      "crop": "保留队伍、祭坛和战斗后的场景，强调地下城阶段。",
+      "alt": "Dungeon Settlers party standing before a dungeon shrine after combat."
     }
   ]
 }

@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-06T14:01:56.273Z",
-  "reviewedRoundId": "representative-final-r3",
+  "reviewedAt": "2026-09-07T01:50:25.126Z",
+  "reviewedRoundId": "official-assets-r6",
   "reviewer": {
-    "id": "codex-fresh-25d7907624e9",
+    "id": "codex-fresh-aaa3f573bf4e",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面以清晰的攻略标题、快速答案、分段正文、来源边界和相关路线组织信息，桌面与移动端均能快速识别游戏及首条远征任务，主要按钮和导航可操作，长标题与正文布局没有明显溢出或遮挡。",
+  "summary": "页面在桌面与移动端都建立了清晰的游戏身份、早期访问边界和首要行动，官方实机截图有效支撑具体玩法辨识；移动端标题、导航、按钮与内容纵向布局均保持可读和可操作，整体信息层级与攻略入口组织自然。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "首屏标题和主按钮最突出，正文按 Quick answer、准备、研究、版本变化、来源和相关路线递进，信息层级清楚。"
+      "notes": "首屏以游戏标题和 Beginner Guide 主按钮为核心，官方截图承担身份识别，后续按问题入口、玩法循环、已确认信息和来源路径递进。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "标题、Early Access 标识、settlement、party、research 和 dungeon expedition 等具体语境足以辨认 Dungeon Settlers 及其玩法身份。"
+      "notes": "即使遮住站名，聚落、传送门、地下城战斗和 settlement-to-expedition 语境仍能明确指向 Dungeon Settlers 及其玩法。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面端内容宽度和长标题可读，移动端标题自然换行，导航折行后仍完整可见，主按钮纵向排列且没有横向溢出。"
+      "notes": "桌面端双栏首屏稳定，移动端转为单列；长标题未溢出，导航按钮和主要 CTA 均具备清晰触控区域，未见横向溢出。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "移动端首屏即可看到返回入口、页面定位、核心答案入口和主动作；桌面端主动作与 Quick answer 同样位于首屏主要阅读路径。"
+      "notes": "首屏数秒内可识别目标用户和下一步，Beginner Guide 主动作突出，三条问题导向入口与官方页面入口均易于继续浏览。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "内容围绕新手远征准备展开，关键词融入标题和正文自然，来源与限制单独说明，没有看到内部指标或明显堆砌。"
+      "notes": "页面内容围绕 settlement、Clay、Research 和 expedition 展开，Early Access 与更新日期可见，文案保持攻略导向且未呈现内部研究指标或堆砌关键词。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-25d7907624e9"
+  "reviewRunId": "codex-fresh-aaa3f573bf4e"
 }

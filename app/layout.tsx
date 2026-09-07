@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig, absoluteUrl } from "./site-config";
@@ -33,16 +32,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body>
         <header className="site-header">
-          <Link className="brand" href="/" aria-label="Dungeon Settlers Field Guide home"><span className="brand-mark">DS</span><span>{siteConfig.name}</span></Link>
-          <nav aria-label="Primary navigation">{siteConfig.navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</nav>
+          <a className="brand" href="/" aria-label="Dungeon Settlers Field Guide home"><span className="brand-mark">DS</span><span>{siteConfig.name}</span></a>
+          <nav aria-label="Primary navigation">{siteConfig.navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
         </header>
         <main>{children}</main>
         <footer>
           <div className="footer-inner">
             <div><strong>{siteConfig.name}</strong><p>Independent guides for a changing Early Access game.</p></div>
-            <div className="footer-links"><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><Link href="/updates">Guide updates</Link></div>
+            <div className="footer-links"><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><a href="/updates">Guide updates</a></div>
           </div>
-          <p className="footer-small">Facts are dated and source-bounded. Check the official game pages after updates.</p>
+          <p className="footer-small">Guide details are dated. Check the official game pages after major updates.</p>
         </footer>
       </body>
     </html>

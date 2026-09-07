@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "type": "site-review",
+  "status": "blocked",
+  "generatedAt": "2026-09-07T01:53:30.883Z",
+  "site": {
+    "siteId": "steam-2798330",
+    "registryId": "site-steam-2798330",
+    "name": "Dungeon Settlers",
+    "domain": "dungeonsettlers.top",
+    "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top"
+  },
+  "state": {
+    "currentPhase": "S7",
+    "phaseStatus": "IN_PROGRESS",
+    "qualityStatus": "PASSED",
+    "handoffId": "handoff-c94ddea503cd",
+    "inputRevision": "input-59995249c82e",
+    "stateRevision": "12",
+    "nextAllowedAction": "由用户完成 GSC/GA4/Clarity 后台确认并登记证据"
+  },
+  "summary": {
+    "sectionCount": 6,
+    "readySections": 2,
+    "attentionSections": 0,
+    "blockedSections": 3,
+    "notQueriedSections": 1,
+    "actionCount": 7
+  },
+  "sections": [
+    {
+      "id": "technical",
+      "title": "技术与发布",
+      "status": "blocked",
+      "summary": "16/17 项技术与发布检查通过。",
+      "checks": [
+        {
+          "id": "file-AGENTS.md",
+          "status": "passed",
+          "detail": "AGENTS.md 存在。",
+          "evidence": [
+            "AGENTS.md"
+          ]
+        },
+        {
+          "id": "file-PROJECT_LOCK.md",
+          "status": "passed",
+          "detail": "PROJECT_LOCK.md 存在。",
+          "evidence": [
+            "PROJECT_LOCK.md"
+          ]
+        },
+        {
+          "id": "file-package.json",
+          "status": "passed",
+          "detail": "package.json 存在。",
+          "evidence": [
+            "package.json"
+          ]
+        },
+        {
+          "id": "cloudflare-contract",
+          "status": "passed",
+          "detail": "发布平台为 Cloudflare Worker：dungeonsettler-top。",
+          "evidence": [
+            "artifacts/release/deployment-contract.json"
+          ]
+        },
+        {
+          "id": "release-quality-gate",
+          "status": "passed",
+          "detail": "deploy:cloudflare 已绑定 verify:release 发布前质量闸门。",
+          "evidence": [
+            "package.json"
+          ]
+        },
+        {
+          "id": "deploy-target",
+          "status": "blocked",
+          "detail": "缺少部署目标收据。",
+          "evidence": [
+            "artifacts/release/deploy-target.json"
+          ]
+        },
+        {
+          "id": "github-upstream",
+          "status": "passed",
+          "detail": "GitHub 远程和 upstream 证据存在。",
+          "evidence": [
+            "artifacts/release/remote-upstream.txt"
+          ]
+        },
+        {
+          "id": "no-chatgpt-sites-residue",
+          "status": "passed",
+          "detail": "未发现已登记的 ChatGPT Sites 残留。",
+          "evidence": [
+            ".openai/hosting.json",
+            "build/sites-vite-plugin.ts",
+            "app/chatgpt-auth.ts",
+            "dist/.openai/hosting.json",
+            "dist/build/sites-vite-plugin.ts",
+            "dist/app/chatgpt-auth.ts"
+          ]
+        },
+        {
+          "id": "lock-domain",
+          "status": "passed",
+          "detail": "PROJECT_LOCK.md 与注册表域名可对上。",
+          "evidence": [
+            "PROJECT_LOCK.md"
+          ]
+        },
+        {
+          "id": "research-pack",
+          "status": "passed",
+          "detail": "W3 research-pack 已绑定当前站点和交接修订。",
+          "evidence": [
+            "artifacts/research/research-pack.json"
+          ]
+        },
+        {
+          "id": "historical-s2-gate",
+          "status": "passed",
+          "detail": "历史 S2 已包含当前完整门禁。",
+          "evidence": [
+            "artifacts/phases/S2.json"
+          ]
+        },
+        {
+          "id": "production-homepage",
+          "status": "passed",
+          "detail": "生产收据 homepage 通过（200）。",
+          "evidence": [
+            "artifacts/production/homepage.json"
+          ]
+        },
+        {
+          "id": "production-representative-page",
+          "status": "passed",
+          "detail": "生产收据 representative-page 通过（200）。",
+          "evidence": [
+            "artifacts/production/representative-page.json"
+          ]
+        },
+        {
+          "id": "production-robots",
+          "status": "passed",
+          "detail": "生产收据 robots 通过（200）。",
+          "evidence": [
+            "artifacts/production/robots.json"
+          ]
+        },
+        {
+          "id": "production-sitemap",
+          "status": "passed",
+          "detail": "生产收据 sitemap 通过（200）。",
+          "evidence": [
+            "artifacts/production/sitemap.json"
+          ]
+        },
+        {
+          "id": "production-not-found",
+          "status": "passed",
+          "detail": "生产收据 not-found 通过（404）。",
+          "evidence": [
+            "artifacts/production/not-found.json"
+          ]
+        },
+        {
+          "id": "production-https",
+          "status": "passed",
+          "detail": "生产收据 https 通过（200）。",
+          "evidence": [
+            "artifacts/production/https.json"
+          ]
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "onpage",
+      "title": "页面 SEO",
+      "status": "ready",
+      "summary": "2 份可用报告；按报告中的逐 URL 结果判断，不把缺失页面数据写成通过。",
+      "checks": [
+        {
+          "id": "local-onpage",
+          "status": "passed",
+          "detail": "本地 On-page 报告存在：artifacts/quality/seo-routes.json。",
+          "evidence": [
+            "artifacts/quality/seo-routes.json"
+          ]
+        },
+        {
+          "id": "本地-onpage-result",
+          "status": "passed",
+          "detail": "本地 On-page 报告 4 个 URL 全部通过。",
+          "evidence": [
+            "artifacts/quality/seo-routes.json"
+          ]
+        },
+        {
+          "id": "生产-onpage-result",
+          "status": "passed",
+          "detail": "生产 On-page 报告 4 个 URL 全部通过。",
+          "evidence": [
+            "artifacts/production/onpage-seo.json"
+          ]
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "visual",
+      "title": "视觉与质量",
+      "status": "ready",
+      "summary": "只认官方或可追溯游戏原素材、真实截图、当前交接包和 fresh 独立审阅；原创 SVG、AI 图和实现者自评不能单独通过。",
+      "checks": [
+        {
+          "id": "game-asset-policy",
+          "status": "passed",
+          "detail": "2 项必需素材均来自允许的可追溯游戏素材来源。",
+          "evidence": [
+            "research/素材清单.json"
+          ]
+        },
+        {
+          "id": "quality-run",
+          "status": "passed",
+          "detail": "最新质量轮次 official-assets-r6 含桌面/移动整页图和首屏视口图共四张真实截图。",
+          "evidence": [
+            "artifacts/quality/quality-run.json",
+            "artifacts/quality/official-assets-r6-desktop.png",
+            "artifacts/quality/official-assets-r6-mobile.png",
+            "artifacts/quality/official-assets-r6-desktop-viewport.png",
+            "artifacts/quality/official-assets-r6-mobile-viewport.png"
+          ]
+        },
+        {
+          "id": "internal-link-interaction",
+          "status": "passed",
+          "detail": "桌面和移动端均已真实点击可见站内链接，并且跳转过程中没有脚本错误。",
+          "evidence": [
+            "artifacts/quality/quality-run.json"
+          ]
+        },
+        {
+          "id": "quality-round-complete",
+          "status": "passed",
+          "detail": "质量轮次状态为 passed。",
+          "evidence": [
+            "artifacts/quality/quality-run.json"
+          ]
+        },
+        {
+          "id": "independent-review-packet",
+          "status": "passed",
+          "detail": "独立质量审阅交接包已绑定当前状态卡。",
+          "evidence": [
+            "artifacts/quality/independent-review-packet.json"
+          ]
+        },
+        {
+          "id": "quality-review",
+          "status": "passed",
+          "detail": "独立审阅 codex-fresh-aaa3f573bf4e 已按五项标准通过。",
+          "evidence": [
+            "artifacts/quality/quality-review.json"
+          ]
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "integrations",
+      "title": "来源接入",
+      "status": "blocked",
+      "summary": "必需来源 0/2 已有成功快照；可选来源 0/2 已有成功快照。",
+      "checks": [
+        {
+          "id": "source-gsc",
+          "status": "needs-attention",
+          "detail": "必需来源 GSC 尚未登记可验证接入。",
+          "evidence": []
+        },
+        {
+          "id": "source-ga4",
+          "status": "needs-attention",
+          "detail": "必需来源 GA4 尚未登记可验证接入。",
+          "evidence": []
+        },
+        {
+          "id": "source-clarity",
+          "status": "not-queried",
+          "detail": "可选来源 CLARITY 接口或代码已登记，但尚无成功数值快照。",
+          "evidence": [
+            "source-clarity"
+          ]
+        },
+        {
+          "id": "source-adsterra",
+          "status": "not-queried",
+          "detail": "可选来源 ADSTERRA 接口或代码已登记，但尚无成功数值快照。",
+          "evidence": [
+            "source-adsterra"
+          ]
+        },
+        {
+          "id": "postlaunch-s7",
+          "status": "blocked",
+          "detail": "S7 缺少标准 postlaunch 产物。",
+          "evidence": [
+            "artifacts/postlaunch/S7-integrations.json"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "source-gsc-next",
+          "priority": "P0",
+          "action": "登记并核验 GSC 的只读接入路径",
+          "reason": "GSC 缺口不能被当成 0；必需来源当前状态为 not_configured。",
+          "evidence": []
+        },
+        {
+          "id": "source-ga4-next",
+          "priority": "P0",
+          "action": "登记并核验 GA4 的只读接入路径",
+          "reason": "GA4 缺口不能被当成 0；必需来源当前状态为 not_configured。",
+          "evidence": []
+        },
+        {
+          "id": "source-clarity-next",
+          "priority": "P1",
+          "action": "补采并导入 CLARITY 成功数据快照",
+          "reason": "CLARITY 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
+          "evidence": [
+            "source-clarity"
+          ]
+        },
+        {
+          "id": "source-adsterra-next",
+          "priority": "P1",
+          "action": "补采并导入 ADSTERRA 成功数据快照",
+          "reason": "ADSTERRA 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
+          "evidence": [
+            "source-adsterra"
+          ]
+        },
+        {
+          "id": "repair-postlaunch-s7",
+          "priority": "P0",
+          "action": "补齐并重新验收 S7 postlaunch 产物",
+          "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
+          "evidence": [
+            "artifacts/postlaunch/S7-integrations.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "游戏更新与页面影响",
+      "status": "not-queried",
+      "summary": "本轮未把未查询的更新写成无更新。",
+      "checks": [
+        {
+          "id": "update-delta",
+          "status": "not-queried",
+          "detail": "本轮没有可回查的游戏更新证据；这不代表没有更新。",
+          "evidence": [
+            "artifacts/updates/update-delta.json"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "query-official-updates",
+          "priority": "P1",
+          "action": "需要更新复查时先采集官方更新证据，再生成 update-delta",
+          "reason": "未查询、无更新和已确认无影响是三种不同状态。",
+          "evidence": [
+            "artifacts/updates/update-delta.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": "数据与组合决策",
+      "status": "blocked",
+      "summary": "站点身份未进入工作台。",
+      "checks": [
+        {
+          "id": "site-data-registration",
+          "status": "blocked",
+          "detail": "工作台中找不到站点 steam-2798330。",
+          "evidence": [
+            "data/workbench.json"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "reconcile-site-data",
+          "priority": "P0",
+          "action": "将当前站点按机器注册表幂等同步到工作台",
+          "reason": "没有站点身份绑定就不能解释任何数据。",
+          "evidence": [
+            "data/workbench.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "priorityActions": [
+    {
+      "id": "data:reconcile-site-data",
+      "priority": "P0",
+      "action": "将当前站点按机器注册表幂等同步到工作台",
+      "reason": "没有站点身份绑定就不能解释任何数据。",
+      "evidence": [
+        "data/workbench.json"
+      ]
+    },
+    {
+      "id": "integrations:repair-postlaunch-s7",
+      "priority": "P0",
+      "action": "补齐并重新验收 S7 postlaunch 产物",
+      "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
+      "evidence": [
+        "artifacts/postlaunch/S7-integrations.json"
+      ]
+    },
+    {
+      "id": "integrations:source-ga4-next",
+      "priority": "P0",
+      "action": "登记并核验 GA4 的只读接入路径",
+      "reason": "GA4 缺口不能被当成 0；必需来源当前状态为 not_configured。",
+      "evidence": []
+    },
+    {
+      "id": "integrations:source-gsc-next",
+      "priority": "P0",
+      "action": "登记并核验 GSC 的只读接入路径",
+      "reason": "GSC 缺口不能被当成 0；必需来源当前状态为 not_configured。",
+      "evidence": []
+    },
+    {
+      "id": "integrations:source-adsterra-next",
+      "priority": "P1",
+      "action": "补采并导入 ADSTERRA 成功数据快照",
+      "reason": "ADSTERRA 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
+      "evidence": [
+        "source-adsterra"
+      ]
+    },
+    {
+      "id": "integrations:source-clarity-next",
+      "priority": "P1",
+      "action": "补采并导入 CLARITY 成功数据快照",
+      "reason": "CLARITY 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
+      "evidence": [
+        "source-clarity"
+      ]
+    },
+    {
+      "id": "updates:query-official-updates",
+      "priority": "P1",
+      "action": "需要更新复查时先采集官方更新证据，再生成 update-delta",
+      "reason": "未查询、无更新和已确认无影响是三种不同状态。",
+      "evidence": [
+        "artifacts/updates/update-delta.json"
+      ]
+    }
+  ],
+  "safety": {
+    "readOnly": true,
+    "codeChanged": false,
+    "urlChanged": false,
+    "directPublish": false,
+    "directExternalWrite": false,
+    "rule": "site-review 只读取站点、状态卡、工作台和既有证据；不会修改代码、URL、广告、外部后台或部署。"
+  },
+  "limitations": [
+    "没有 update-delta 不等于确认游戏没有更新；本报告会标成 not-queried。",
+    "GSC、GA4、Clarity、Adsterra 缺少快照时保留为缺口，不当作数值 0。",
+    "真实截图证据存在不等于视觉审阅已通过；必须有实现者之外的 fresh reviewer。",
+    "复查器生成动作清单，不代替用户登录后台、购买域名、启用广告或进行高风险删除/迁移。"
+  ]
+}

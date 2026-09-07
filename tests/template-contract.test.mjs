@@ -6,7 +6,7 @@ const root = new URL("../", import.meta.url);
 const text = (path) => readFile(new URL(path, root), "utf8");
 
 test("模板保留内容合同、搜索、结构化 SEO、发布与素材闭环门禁", async () => {
-  const [content, search, structured, sitemap, packageJson, manifest, assetAudit] = await Promise.all([
+  const [content, search, structured, sitemap, packageJson, manifest, assetAudit, publicCopyAudit] = await Promise.all([
     text("app/content.ts"),
     text("app/components/library-search.tsx"),
     text("app/structured-data.tsx"),
@@ -14,6 +14,7 @@ test("模板保留内容合同、搜索、结构化 SEO、发布与素材闭环�
     text("package.json"),
     text("research/素材清单.json"),
     text("scripts/检查素材使用.mjs"),
+    text("scripts/check-public-copy.mjs"),
   ]);
   assert.match(content, /EvidenceLevel/);
   assert.match(search, /useMemo/);
@@ -25,8 +26,11 @@ test("模板保留内容合同、搜索、结构化 SEO、发布与素材闭环�
   assert.match(packageJson, /check:onpage/);
   assert.match(packageJson, /verify:release/);
   assert.match(packageJson, /check:assets/);
+  assert.match(packageJson, /check:public-copy/);
   assert.match(manifest, /schemaVersion/);
   assert.match(assetAudit, /requiredAssetIds/);
+  assert.match(assetAudit, /originalOrGenerated/);
+  assert.match(publicCopyAudit, /google trends/i);
 });
 
 test("模板内置新站治理、来源、阶段证据与页面质量交接文件", async () => {
