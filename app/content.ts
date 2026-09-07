@@ -32,7 +32,7 @@ export type LibraryEntry = {
   body: string[];
 };
 
-const sourceNote = "Source boundary: official Steam information is the baseline. The official v0.4.19 update changes high-difficulty drop handling and item weight, while community reports and the Clay report remain version-sensitive references; none establishes a permanent rule for every build.";
+const sourceNote = "Source boundary: official Steam information is the baseline. The official v0.4.19 update changes high-difficulty drop handling and item weight, while the Clay report and the DS_B.0.4.19 table extraction remain version-sensitive reviewed references; none establishes a permanent rule for every build.";
 
 export const guideEntries: GuideEntry[] = [
   {
@@ -163,7 +163,7 @@ export const guideEntries: GuideEntry[] = [
   {
     slug: "how-to-research",
     title: "How to research in Dungeon Settlers",
-    summary: "A safe way to use the Research layer when the complete technology tree and prerequisites are not yet publicly confirmed.",
+    summary: "A version-locked Research reference with a complete current-build table and a cautious way to apply it.",
     description: "This guide explains how to research in Dungeon Settlers using a cautious checklist grounded in the official loop and clear version boundaries.",
     category: "System guide",
     label: "Research answer",
@@ -181,9 +181,9 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Verified starting conditions",
         paragraphs: [
-          "The official store page confirms the current Early Access loop: build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. It also describes up to four party members, permadeath, and the first two dungeon regions. These broad facts support a preparation check; they do not expose a complete Research tree.",
+          "The official store page confirms the current Early Access loop: build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. It also describes up to four party members, permadeath, and the first two dungeon regions. These broad facts support a preparation check; the version-locked table below supplies the current-build node rows separately from those official claims.",
           "Before choosing a Research item, write down the visible settlement bottleneck, the exact label and tier shown in your current build, and the change you expect to observe. The latest official Steam Community update path includes a v0.4.17 correction to the displayed tier for Carapace Processing and a v0.4.19 patch on September 6, 2026. Keep the build date beside your note so an older display is not mistaken for a current prerequisite.",
-          "The exact node cost, prerequisite chain, unlock order, and relationship to a particular material remain pending verification. If the game does not show one of those values directly, leave it unknown rather than filling the gap from a generic technology tree.",
+          "The current-build ResearchTable snapshot records node cost, prerequisite links, Tech Book requirements, and unlock references. It is a reviewed secondary extraction, not an official patch note; if the game or a newer official build disagrees, record the difference and defer the claim until the source is refreshed.",
         ],
         bullets: [
           "Visible bottleneck: what settlement or expedition decision is blocked?",
@@ -196,7 +196,7 @@ export const guideEntries: GuideEntry[] = [
         paragraphs: [
           "First, name the bottleneck in plain language. ‘I cannot prepare the next expedition’ is more useful than ‘I need the strongest technology’. Open the in-game Research panel, copy the displayed choice and tier into your note, and record the build date. Do not infer a hidden prerequisite from the position of a node or from a screenshot made on another patch.",
           "Next, check the displayed description against the result you expect. Select one choice only when you can name the observable change: a new settlement option, an equipment option, a resource step, or a party preparation change. After using it, compare the before and after screens and record what actually changed. If there is no visible result, keep the choice pending and do not call it a finished route.",
-          "Example: if Clay is the current bottleneck, use the dated Clay route for the resource lead, then check whether the current Research display changes a production or preparation option. The official update notes do not establish a Clay node or a fixed Clay prerequisite, so that relationship stays unknown until the game shows it in your build.",
+          "Example: if Clay is the current bottleneck, use the dated Clay route for the resource lead, then check the current Research table for the production or preparation unlock you intend to test. The official update notes do not establish a Clay node; the data snapshot only reports the item and unlock references present in DS_B.0.4.19, so a newer build still needs a fresh check.",
         ],
         bullets: [
           "State the current bottleneck and copy the displayed Research label and tier.",
@@ -216,7 +216,7 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "What remains unverified",
         paragraphs: [
-          "The public material reviewed for this launch does not prove a complete Research tree, a fixed best-first route, every prerequisite, or a permanent relationship between one technology and one resource. It also does not prove that a dated community correction applies to every later build. Treat those details as pending until a current, direct source confirms them.",
+          "The table below resolves the current DS_B.0.4.19 node and prerequisite snapshot, but it does not prove a universal best-first route, a permanent relationship between one technology and one resource, or behavior in a later build. Treat those forward-looking claims as pending until the current game and update path agree.",
           "The Steam Community update path is still useful because it shows where version-sensitive corrections may appear. The v0.4.17 official note mentions a Research-tier display correction, while v0.4.19 changes item weights and high-difficulty drop-quantity handling. Those notes are reasons to recheck the interface and preparation context after updates, not evidence of a particular research order.",
         ],
       },
@@ -230,7 +230,7 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Sources",
         paragraphs: [
-          "The official Steam page is the baseline for the Research system and the settlement-to-expedition loop. Steam Community is the version-sensitive update path. The Clay guide is linked because resource and research decisions often meet at the same settlement bottleneck, but it should not be read as a Research tree.",
+          "The official Steam page is the baseline for the Research system and the settlement-to-expedition loop. Steam Community is the version-sensitive update path. The version-locked DungeonSettlers.wiki table is a reviewed secondary extraction of the stock game files for DS_B.0.4.19; it is linked for auditability and must be rechecked after a build change. The Clay guide is linked because resource and research decisions often meet at the same settlement bottleneck.",
         ],
       },
     ],

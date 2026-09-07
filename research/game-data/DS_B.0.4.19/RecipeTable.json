@@ -1,0 +1,3044 @@
+[
+ {
+  "Key": "RECIPE_GrilledMeat",
+  "DevComment1": "고기 구이",
+  "OutputItem": "ITEM_GrilledMeat",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CampFire",
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_ToughRawMeat"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MonsterBarbecue",
+  "DevComment1": "괴물 통구이",
+  "OutputItem": "ITEM_MonsterBarbecue",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CampFire",
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_DisgustingMonsterMeat"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_GrilledTurnip",
+  "DevComment1": "순무 구이",
+  "OutputItem": "ITEM_GrilledTurnip",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Turnip"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_TurnipSalad",
+  "DevComment1": "순무 샐러드",
+  "OutputItem": "ITEM_TurnipSalad",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Turnip"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MeatPorridge",
+  "DevComment1": "고기 죽",
+  "OutputItem": "ITEM_MeatPorridge",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_ToughRawMeat"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_TurnipPorridge",
+  "DevComment1": "순무 죽",
+  "OutputItem": "ITEM_TurnipPorridge",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Turnip"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_GrassPorridge",
+  "DevComment1": "풀 죽",
+  "OutputItem": "ITEM_GrassPorridge",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_WildLongGrass"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_ImprovedGrassPorridge",
+  "DevComment1": "개량된 풀 죽",
+  "OutputItem": "ITEM_ImprovedGrassPorridge",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_WildLongGrass",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   5,
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_SlimePudding",
+  "DevComment1": "슬라임 푸딩",
+  "OutputItem": "ITEM_SlimePudding",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_SlimeJelly"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodPlank",
+  "DevComment1": "판자 ",
+  "OutputItem": "ITEM_WoodPlank",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_StoneBrick",
+  "DevComment1": "벽돌 ",
+  "OutputItem": "ITEM_StoneBrick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_MasonWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_Stone"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_Ointment",
+  "DevComment1": "소모품_연고 ",
+  "OutputItem": "ITEM_Ointment",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 500.0,
+  "IngredientKeys": [
+   "ITEM_WildHerb",
+   "ITEM_BoneMeal"
+  ],
+  "IngredientAmounts": [
+   2,
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_SilverIngot",
+  "DevComment1": "은 주괴 ",
+  "OutputItem": "ITEM_SilverIngot",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_Kiln"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_SilverOre"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodStick",
+  "DevComment1": "나무 막대기 ",
+  "OutputItem": "ITEM_WoodStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodStick",
+  "DevComment1": "혈목 막대기 ",
+  "OutputItem": "ITEM_BloodWoodStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneStick",
+  "DevComment1": "뼈 막대기",
+  "OutputItem": "ITEM_BoneStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceStick",
+  "DevComment1": "갑각 막대기",
+  "OutputItem": "ITEM_CarapaceStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_Textile",
+  "DevComment1": "천 ",
+  "OutputItem": "ITEM_Textile",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 300.0,
+  "IngredientKeys": [
+   "ITEM_WildLongGrass"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_Straw",
+  "DevComment1": "짚",
+  "OutputItem": "ITEM_Straw",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 200.0,
+  "IngredientKeys": [
+   "ITEM_WildLongGrass"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_ThickTextile",
+  "DevComment1": "두꺼운 천 ",
+  "OutputItem": "ITEM_ThickTextile",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Textile"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeFireElementalStone",
+  "DevComment1": "하급 화염의 정령석 ",
+  "OutputItem": "ITEM_LowGradeFireElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_FireEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   14
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeFireElementalStoneByExchange",
+  "DevComment1": "하급 화염의 정령석 (물 2개로 교환)",
+  "OutputItem": "ITEM_LowGradeFireElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_LowGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeWaterElementalStone",
+  "DevComment1": "하급 물의 정령석 ",
+  "OutputItem": "ITEM_LowGradeWaterElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_WaterEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   14
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeWaterElementalStoneByExchange",
+  "DevComment1": "하급 물의 정령석 (자연 2개로  교환)",
+  "OutputItem": "ITEM_LowGradeWaterElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_LowGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeNatureElementalStone",
+  "DevComment1": "하급 자연의 정령석 ",
+  "OutputItem": "ITEM_LowGradeNatureElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_NatureEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   14
+  ]
+ },
+ {
+  "Key": "RECIPE_LowGradeNatureElementalStoneByExchange",
+  "DevComment1": "하급 자연의 정령석 (화염 2개로  교환)",
+  "OutputItem": "ITEM_LowGradeNatureElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_LowGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_RefinedRedCrystal",
+  "DevComment1": "세공된 적수정",
+  "OutputItem": "ITEM_RefinedRedCrystal",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_RedCrystalOre"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_RefinedBlueCrystal",
+  "DevComment1": "세공된 청수정",
+  "OutputItem": "ITEM_RefinedBlueCrystal",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_BlueCrystalOre"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_RefinedGreenCrystal",
+  "DevComment1": "세공된 녹수정",
+  "OutputItem": "ITEM_RefinedGreenCrystal",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_GreenCrystalOre"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodSword",
+  "DevComment1": "나무 검",
+  "OutputItem": "ITEM_WoodSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation",
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1300.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodSword",
+  "DevComment1": "혈목 검",
+  "OutputItem": "ITEM_BloodWoodSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneSword",
+  "DevComment1": "뼈 검",
+  "OutputItem": "ITEM_BoneSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceSword",
+  "DevComment1": "갑각 검",
+  "OutputItem": "ITEM_CarapaceSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1900.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodGreatSword",
+  "DevComment1": "나무 대검",
+  "OutputItem": "ITEM_WoodGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodGreatSword",
+  "DevComment1": "혈목 대검",
+  "OutputItem": "ITEM_BloodWoodGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneGreatSword",
+  "DevComment1": "뼈 대검",
+  "OutputItem": "ITEM_BoneGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceGreatSword",
+  "DevComment1": "갑각 대검",
+  "OutputItem": "ITEM_CarapaceGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireWoodStaff",
+  "DevComment1": "화염 정령 나무 스태프",
+  "OutputItem": "ITEM_FireWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_LowGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireBloodWoodStaff",
+  "DevComment1": "화염 정령 혈목 스태프",
+  "OutputItem": "ITEM_FireBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_LowGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireBoneStaff",
+  "DevComment1": "화염 정령 뼈 스태프",
+  "OutputItem": "ITEM_FireBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_LowGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireCarapaceStaff",
+  "DevComment1": "화염 정령 갑각 스태프",
+  "OutputItem": "ITEM_FireCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_LowGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterWoodStaff",
+  "DevComment1": "물 정령 나무 스태프",
+  "OutputItem": "ITEM_WaterWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_LowGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterBloodWoodStaff",
+  "DevComment1": "물 정령 혈목 스태프",
+  "OutputItem": "ITEM_WaterBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_LowGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterBoneStaff",
+  "DevComment1": "물 정령 뼈 스태프",
+  "OutputItem": "ITEM_WaterBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_LowGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterCarapaceStaff",
+  "DevComment1": "물 정령 갑각 스태프",
+  "OutputItem": "ITEM_WaterCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_LowGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureWoodStaff",
+  "DevComment1": "자연 정령 나무 스태프",
+  "OutputItem": "ITEM_NatureWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_LowGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureBloodWoodStaff",
+  "DevComment1": "자연 정령 혈목 스태프",
+  "OutputItem": "ITEM_NatureBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_LowGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureBoneStaff",
+  "DevComment1": "자연 정령 뼈 스태프",
+  "OutputItem": "ITEM_NatureBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_LowGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureCarapaceStaff",
+  "DevComment1": "자연 정령 갑각 스태프",
+  "OutputItem": "ITEM_NatureCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_LowGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalWoodStaff",
+  "DevComment1": "적수정 나무 스태프",
+  "OutputItem": "ITEM_RedCrystalWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalBloodWoodStaff",
+  "DevComment1": "적수정 혈목 스태프",
+  "OutputItem": "ITEM_RedCrystalBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalBoneStaff",
+  "DevComment1": "적수정 뼈 스태프",
+  "OutputItem": "ITEM_RedCrystalBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalCarapaceStaff",
+  "DevComment1": "적수정 갑각 스태프",
+  "OutputItem": "ITEM_RedCrystalCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalWoodStaff",
+  "DevComment1": "청수정 나무 스태프",
+  "OutputItem": "ITEM_BlueCrystalWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalBloodWoodStaff",
+  "DevComment1": "청수정 혈목 스태프",
+  "OutputItem": "ITEM_BlueCrystalBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalBoneStaff",
+  "DevComment1": "청수정 뼈 스태프",
+  "OutputItem": "ITEM_BlueCrystalBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalCarapaceStaff",
+  "DevComment1": "청수정 갑각 스태프",
+  "OutputItem": "ITEM_BlueCrystalCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalWoodStaff",
+  "DevComment1": "녹수정 나무 스태프",
+  "OutputItem": "ITEM_GreenCrystalWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalBloodWoodStaff",
+  "DevComment1": "녹수정 혈목 스태프",
+  "OutputItem": "ITEM_GreenCrystalBloodWoodStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalBoneStaff",
+  "DevComment1": "녹수정 뼈 스태프",
+  "OutputItem": "ITEM_GreenCrystalBoneStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalCarapaceStaff",
+  "DevComment1": "녹수정 갑각 스태프",
+  "OutputItem": "ITEM_GreenCrystalCarapaceStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodClub",
+  "DevComment1": "나무 곤봉",
+  "OutputItem": "ITEM_WoodClub",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation",
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1300.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodClub",
+  "DevComment1": "혈목 곤봉",
+  "OutputItem": "ITEM_BloodWoodClub",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneClub",
+  "DevComment1": "뼈 곤봉",
+  "OutputItem": "ITEM_BoneClub",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceClub",
+  "DevComment1": "갑각 곤봉",
+  "OutputItem": "ITEM_CarapaceClub",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1900.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodSpear",
+  "DevComment1": "나무 창",
+  "OutputItem": "ITEM_WoodSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_WoodStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodSpear",
+  "DevComment1": "혈목 창",
+  "OutputItem": "ITEM_BloodWoodSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWoodStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneSpear",
+  "DevComment1": "뼈 창",
+  "OutputItem": "ITEM_BoneSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2400.0,
+  "IngredientKeys": [
+   "ITEM_BoneStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceSpear",
+  "DevComment1": "갑각 창",
+  "OutputItem": "ITEM_CarapaceSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_CarapaceStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodBow",
+  "DevComment1": "나무 활",
+  "OutputItem": "ITEM_WoodBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation",
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1300.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodBow",
+  "DevComment1": "혈목 활",
+  "OutputItem": "ITEM_BloodWoodBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneBow",
+  "DevComment1": "뼈 활",
+  "OutputItem": "ITEM_BoneBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceBow",
+  "DevComment1": "갑각 활",
+  "OutputItem": "ITEM_CarapaceBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1900.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodArrow",
+  "DevComment1": "나무 화살",
+  "OutputItem": "ITEM_WoodArrow",
+  "OutputItemAmount": 30,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation",
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 650.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodArrow",
+  "DevComment1": "혈목 화살",
+  "OutputItem": "ITEM_BloodWoodArrow",
+  "OutputItemAmount": 30,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 700.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneArrow",
+  "DevComment1": "뼈 화살",
+  "OutputItem": "ITEM_BoneArrow",
+  "OutputItemAmount": 30,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 700.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceArrow",
+  "DevComment1": "갑각 화살",
+  "OutputItem": "ITEM_CarapaceArrow",
+  "OutputItemAmount": 30,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 950.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_ClothCoif",
+  "DevComment1": "천 두건",
+  "OutputItem": "ITEM_ClothCoif",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Textile"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_ThickClothCoif",
+  "DevComment1": "두꺼운 천 두건",
+  "OutputItem": "ITEM_ThickClothCoif",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 900.0,
+  "IngredientKeys": [
+   "ITEM_ThickTextile"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodHelmet",
+  "DevComment1": "나무 투구",
+  "OutputItem": "ITEM_WoodHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodHelmet",
+  "DevComment1": "혈목 투구",
+  "OutputItem": "ITEM_BloodWoodHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_HideHelmet",
+  "DevComment1": "생가죽 투구",
+  "OutputItem": "ITEM_HideHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_RawHide"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneHelmet",
+  "DevComment1": "뼈 투구",
+  "OutputItem": "ITEM_BoneHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_FortifiedBoneHelmet",
+  "DevComment1": "보강된 뼈 투구",
+  "OutputItem": "ITEM_FortifiedBoneHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   12
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceHelmet",
+  "DevComment1": "갑각 투구",
+  "OutputItem": "ITEM_CarapaceHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1300.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_ClothArmor",
+  "DevComment1": "천 갑옷",
+  "OutputItem": "ITEM_ClothArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1100.0,
+  "IngredientKeys": [
+   "ITEM_Textile"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_ThickClothArmor",
+  "DevComment1": "두꺼운 천 갑옷",
+  "OutputItem": "ITEM_ThickClothArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_ThickTextile"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodArmor",
+  "DevComment1": "나무 갑옷",
+  "OutputItem": "ITEM_WoodArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodArmor",
+  "DevComment1": "혈목 갑옷",
+  "OutputItem": "ITEM_BloodWoodArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1700.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_HideArmor",
+  "DevComment1": "생가죽 갑옷",
+  "OutputItem": "ITEM_HideArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_RawHide"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneArmor",
+  "DevComment1": "뼈 갑옷",
+  "OutputItem": "ITEM_BoneArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1700.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_FortifiedBoneArmor",
+  "DevComment1": "보강된 뼈 갑옷",
+  "OutputItem": "ITEM_FortifiedBoneArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2550.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   20
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceArmor",
+  "DevComment1": "갑각 갑옷",
+  "OutputItem": "ITEM_CarapaceArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2300.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_Torch",
+  "DevComment1": "횃불",
+  "OutputItem": "ITEM_Torch",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog",
+   "ITEM_Textile"
+  ],
+  "IngredientAmounts": [
+   2,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_WoodShield",
+  "DevComment1": "나무 방패",
+  "OutputItem": "ITEM_WoodShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingWood",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1300.0,
+  "IngredientKeys": [
+   "ITEM_LumaLog"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BloodWoodShield",
+  "DevComment1": "혈목 방패",
+  "OutputItem": "ITEM_BloodWoodShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CarpenterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_BloodWood"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneShield",
+  "DevComment1": "뼈 방패",
+  "OutputItem": "ITEM_BoneShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_FortifiedBoneShield",
+  "DevComment1": "보강된 뼈 방패",
+  "OutputItem": "ITEM_FortifiedBoneShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   12
+  ]
+ },
+ {
+  "Key": "RECIPE_CarapaceShield",
+  "DevComment1": "갑각 방패",
+  "OutputItem": "ITEM_CarapaceShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_HunterWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1900.0,
+  "IngredientKeys": [
+   "ITEM_HardShell"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_FlowerNecklace",
+  "DevComment1": "꽃 목걸이",
+  "OutputItem": "ITEM_FlowerNecklace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Petal"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_SilverNecklace",
+  "DevComment1": "은 목걸이",
+  "OutputItem": "ITEM_SilverNecklace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_SilverIngot"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_SilverRing",
+  "DevComment1": "은 반지",
+  "OutputItem": "ITEM_SilverRing",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 900.0,
+  "IngredientKeys": [
+   "ITEM_SilverIngot"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalNecklace",
+  "DevComment1": "적수정 목걸이",
+  "OutputItem": "ITEM_RedCrystalNecklace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3000.0,
+  "IngredientKeys": [
+   "ITEM_SilverNecklace",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalNecklace",
+  "DevComment1": "청수정 목걸이",
+  "OutputItem": "ITEM_BlueCrystalNecklace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3000.0,
+  "IngredientKeys": [
+   "ITEM_SilverNecklace",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalNecklace",
+  "DevComment1": "녹수정 목걸이",
+  "OutputItem": "ITEM_GreenCrystalNecklace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3000.0,
+  "IngredientKeys": [
+   "ITEM_SilverNecklace",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_RedCrystalRing",
+  "DevComment1": "적수정 반지",
+  "OutputItem": "ITEM_RedCrystalRing",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_SilverRing",
+   "ITEM_RefinedRedCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_BlueCrystalRing",
+  "DevComment1": "청수정 반지",
+  "OutputItem": "ITEM_BlueCrystalRing",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_SilverRing",
+   "ITEM_RefinedBlueCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GreenCrystalRing",
+  "DevComment1": "녹수정 반지",
+  "OutputItem": "ITEM_GreenCrystalRing",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AccessoriesWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_SilverRing",
+   "ITEM_RefinedGreenCrystal"
+  ],
+  "IngredientAmounts": [
+   1,
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_ClothBag",
+  "DevComment1": "천 가방",
+  "OutputItem": "ITEM_ClothBag",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_Textile"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_BlackSerum",
+  "DevComment1": "검은 혈청",
+  "OutputItem": "ITEM_BlackSerum",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   30
+  ]
+ },
+ {
+  "Key": "RECIPE_AshOfSolace",
+  "DevComment1": "안식의 재",
+  "OutputItem": "ITEM_AshOfSolace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   20
+  ]
+ },
+ {
+  "Key": "RECIPE_ReturnScroll",
+  "DevComment1": "귀환 스크롤",
+  "OutputItem": "ITEM_ReturnScroll",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2000.0,
+  "IngredientKeys": [
+   "ITEM_Textile",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   5,
+   60
+  ]
+ },
+ {
+  "Key": "RECIPE_ManaStonePowderByLow",
+  "DevComment1": "마석 가루 (소량)",
+  "OutputItem": "ITEM_ManaStonePowder",
+  "OutputItemAmount": 2,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_LowGradeManaStone"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_ManaStonePowderByMid",
+  "DevComment1": "마석 가루 (중량)",
+  "OutputItem": "ITEM_ManaStonePowder",
+  "OutputItemAmount": 5,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1200.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeManaStone"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BoneMeal",
+  "DevComment1": "뼛가루",
+  "OutputItem": "ITEM_BoneMeal",
+  "OutputItemAmount": 2,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_Bone"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_BasicCampingKit",
+  "DevComment1": "기초 야영 키트",
+  "OutputItem": "ITEM_BasicCampingKit",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_BasicWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1800.0,
+  "IngredientKeys": [
+   "ITEM_Textile",
+   "ITEM_LumaLog",
+   "ITEM_Stone",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   24,
+   12,
+   6,
+   20
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronStick",
+  "DevComment1": "아크론 막대기",
+  "OutputItem": "ITEM_ArcronStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 900.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronSword",
+  "DevComment1": "아크론 검",
+  "OutputItem": "ITEM_ArcronSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronGreatSword",
+  "DevComment1": "아크론 대검",
+  "OutputItem": "ITEM_ArcronGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_ArcronStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireArcronStaff",
+  "DevComment1": "화염 정령 아크론 스태프",
+  "OutputItem": "ITEM_FireArcronStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_ArcronStick",
+   "ITEM_MidGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterArcronStaff",
+  "DevComment1": "물 정령 아크론 스태프",
+  "OutputItem": "ITEM_WaterArcronStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_ArcronStick",
+   "ITEM_MidGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureArcronStaff",
+  "DevComment1": "자연 정령 아크론 스태프",
+  "OutputItem": "ITEM_NatureArcronStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_ArcronStick",
+   "ITEM_MidGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronMace",
+  "DevComment1": "아크론 곤봉",
+  "OutputItem": "ITEM_ArcronMace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronSpear",
+  "DevComment1": "아크론 창",
+  "OutputItem": "ITEM_ArcronSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 3200.0,
+  "IngredientKeys": [
+   "ITEM_ArcronStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronBow",
+  "DevComment1": "아크론 활",
+  "OutputItem": "ITEM_ArcronBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronArrow",
+  "DevComment1": "아크론 화살",
+  "OutputItem": "ITEM_ArcronArrow",
+  "OutputItemAmount": 20,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 1050.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronHelmet",
+  "DevComment1": "아크론 투구",
+  "OutputItem": "ITEM_ArcronHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronArmor",
+  "DevComment1": "아크론 갑옷",
+  "OutputItem": "ITEM_ArcronArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2500.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   10
+  ]
+ },
+ {
+  "Key": "RECIPE_ArcronShield",
+  "DevComment1": "아크론 방패",
+  "OutputItem": "ITEM_ArcronShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Arcron"
+  ],
+  "IngredientAmounts": [
+   6
+  ]
+ },
+ {
+  "Key": "RECIPE_Ceramics",
+  "DevComment1": "도자기",
+  "OutputItem": "ITEM_Ceramics",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_Kiln"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_Clay"
+  ],
+  "IngredientAmounts": [
+   4
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperIngot",
+  "DevComment1": "구리 주괴",
+  "OutputItem": "ITEM_CopperIngot",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_Kiln"
+  ],
+  "CraftingWorkloadRequired": 600.0,
+  "IngredientKeys": [
+   "ITEM_CopperOre"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperStick",
+  "DevComment1": "구리 막대기",
+  "OutputItem": "ITEM_CopperStick",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperSword",
+  "DevComment1": "구리 검",
+  "OutputItem": "ITEM_CopperSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperGreatSword",
+  "DevComment1": "구리 대검",
+  "OutputItem": "ITEM_CopperGreatSword",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_CopperStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_FireCopperStaff",
+  "DevComment1": "화염 정령 구리 스태프",
+  "OutputItem": "ITEM_FireCopperStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_CopperStick",
+   "ITEM_MidGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_WaterCopperStaff",
+  "DevComment1": "물 정령 구리 스태프",
+  "OutputItem": "ITEM_WaterCopperStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_CopperStick",
+   "ITEM_MidGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_NatureCopperStaff",
+  "DevComment1": "자연 정령 구리 스태프",
+  "OutputItem": "ITEM_NatureCopperStaff",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_StaffWorkstation"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_CopperStick",
+   "ITEM_MidGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperMace",
+  "DevComment1": "구리 곤봉",
+  "OutputItem": "ITEM_CopperMace",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperSpear",
+  "DevComment1": "구리 창",
+  "OutputItem": "ITEM_CopperSpear",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_CopperStick"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperBow",
+  "DevComment1": "구리 활",
+  "OutputItem": "ITEM_CopperBow",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperArrow",
+  "DevComment1": "구리 화살",
+  "OutputItem": "ITEM_CopperArrow",
+  "OutputItemAmount": 20,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 1050.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperHelmet",
+  "DevComment1": "구리 투구",
+  "OutputItem": "ITEM_CopperHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperArmor",
+  "DevComment1": "구리 갑옷",
+  "OutputItem": "ITEM_CopperArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2500.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_CopperShield",
+  "DevComment1": "구리 방패",
+  "OutputItem": "ITEM_CopperShield",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CastingWorkbench"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_CopperIngot"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_OatPorridge",
+  "DevComment1": "귀리죽",
+  "OutputItem": "ITEM_OatPorridge",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_CookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_Oats"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_Leather",
+  "DevComment1": "가죽",
+  "OutputItem": "ITEM_Leather",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_LeatherWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1000.0,
+  "IngredientKeys": [
+   "ITEM_RawHide"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_LeatherHelmet",
+  "DevComment1": "가죽 투구",
+  "OutputItem": "ITEM_LeatherHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_LeatherWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1500.0,
+  "IngredientKeys": [
+   "ITEM_Leather"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_LeatherArmor",
+  "DevComment1": "가죽 갑옷",
+  "OutputItem": "ITEM_LeatherArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_LeatherWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2100.0,
+  "IngredientKeys": [
+   "ITEM_Leather"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ },
+ {
+  "Key": "RECIPE_GoddessTears",
+  "DevComment1": "여신의 눈물",
+  "OutputItem": "ITEM_GoddessTears",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 2500.0,
+  "IngredientKeys": [
+   "ITEM_Ceramics",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   5,
+   60
+  ]
+ },
+ {
+  "Key": "RECIPE_Jerky",
+  "DevComment1": "육포",
+  "OutputItem": "ITEM_Jerky",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFabric",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_DryingRack"
+  ],
+  "CraftingWorkloadRequired": 800.0,
+  "IngredientKeys": [
+   "ITEM_ToughRawMeat"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MeatSkewer",
+  "DevComment1": "고기 꼬치",
+  "OutputItem": "ITEM_MeatSkewer",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_FineRawMeat"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MeatStew",
+  "DevComment1": "고기 스튜",
+  "OutputItem": "ITEM_MeatStew",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_FineRawMeat"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MushroomSkewer",
+  "DevComment1": "버섯 꼬치",
+  "OutputItem": "ITEM_MushroomSkewer",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Mushroom"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MushroomStew",
+  "DevComment1": "버섯 스튜",
+  "OutputItem": "ITEM_MushroomStew",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_Mushroom"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_GlothEggOmelet",
+  "DevComment1": "글로트 에그 오믈렛",
+  "OutputItem": "ITEM_GlothEggOmelet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingFood",
+  "WorkType": "Cooking",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1700.0,
+  "IngredientKeys": [
+   "ITEM_GlothEgg",
+   "ITEM_DustBulb"
+  ],
+  "IngredientAmounts": [
+   1,
+   1
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeFireElementalStone",
+  "DevComment1": "중급 화염의 정령석 ",
+  "OutputItem": "ITEM_MidGradeFireElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeFireEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   60
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeFireElementalStoneByExchange",
+  "DevComment1": "중급 화염의 정령석 (물 2개로 교환)",
+  "OutputItem": "ITEM_MidGradeFireElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeWaterElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeWaterElementalStone",
+  "DevComment1": "중급 물의 정령석 ",
+  "OutputItem": "ITEM_MidGradeWaterElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeWaterEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   60
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeWaterElementalStoneByExchange",
+  "DevComment1": "중급 물의 정령석 (자연 2개로  교환)",
+  "OutputItem": "ITEM_MidGradeWaterElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeNatureElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeNatureElementalStone",
+  "DevComment1": "중급 자연의 정령석 ",
+  "OutputItem": "ITEM_MidGradeNatureElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeNatureEssence",
+   "ITEM_ManaStonePowder"
+  ],
+  "IngredientAmounts": [
+   3,
+   60
+  ]
+ },
+ {
+  "Key": "RECIPE_MidGradeNatureElementalStoneByExchange",
+  "DevComment1": "중급 자연의 정령석 (화염 2개로  교환)",
+  "OutputItem": "ITEM_MidGradeNatureElementalStone",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingDefault",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "BUILDING_AlchemistWorkstation"
+  ],
+  "CraftingWorkloadRequired": 1400.0,
+  "IngredientKeys": [
+   "ITEM_MidGradeFireElementalStone"
+  ],
+  "IngredientAmounts": [
+   2
+  ]
+ },
+ {
+  "Key": "RECIPE_IronHelmet",
+  "DevComment1": "연철 투구",
+  "OutputItem": "ITEM_IronHelmet",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "NULL"
+  ],
+  "CraftingWorkloadRequired": 1900.0,
+  "IngredientKeys": [
+   "ITEM_IronIngot"
+  ],
+  "IngredientAmounts": [
+   3
+  ]
+ },
+ {
+  "Key": "RECIPE_IronArmor",
+  "DevComment1": "연철 갑옷",
+  "OutputItem": "ITEM_IronArmor",
+  "OutputItemAmount": 1,
+  "RecipeSFX": "SFX_CraftingMetal",
+  "WorkType": "Crafting",
+  "RecipeAvailableBuildings": [
+   "NULL"
+  ],
+  "CraftingWorkloadRequired": 3500.0,
+  "IngredientKeys": [
+   "ITEM_IronIngot"
+  ],
+  "IngredientAmounts": [
+   5
+  ]
+ }
+]

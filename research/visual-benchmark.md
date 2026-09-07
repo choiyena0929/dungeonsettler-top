@@ -24,7 +24,7 @@
 
 - 可写：Steam 官方确认的 settlement、food/shelter、四人 party、research unlock、resource gathering、crafting、real-time-with-pause combat 和 Early Access 前两个 dungeon regions。
 - 可写但须标来源/日期：Prima Games 报告的 Clay 敌人来源、商人和 Region 2 观察。
-- 暂不写：完整研究树、所有节点前置、永久掉落概率、最佳 build、完整配方、GSC/GA4 流量结果，以及未经 W3 核验的视频逐步操作。
+- 版本锁定资料库现在展示 DS_B.0.4.19 的完整 Research、资源、实体、掉落和配方表行；仍不写未来版本永久概率、universal best build、GSC/GA4 流量结果，以及未经 W3 核验的视频逐步操作。
 - 首页不展示 raw keyword、Semrush volume、KD、SERP 竞争、抓取状态、AI 分析日志或内部阶段名。
 
 ## 资产来源

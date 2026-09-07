@@ -59,6 +59,14 @@
 - 观察：机会阶段 Steam/itch 自动采集有失败，公开 Web 回退保留了可用证据，整体状态为 `partial`。
 - 使用边界：记录资料缺口和责任阶段，不把 `partial` 改写成 `success`；需要重新核验的具体机制标为 `pending_verification`。
 
+### S008 — DungeonSettlers.wiki 版本锁定资料快照
+
+- URL：<https://dungeonsettlers.wiki/>；Research：<https://dungeonsettlers.wiki/research>；机器可读清单：<https://dungeonsettlers.wiki/dbdata/index.json>。
+- 观察：2026-09-07；页面标明 `DS_B.0.4.19`、Steam build `25154317`，提取日期为 2026-09-06，来源为未修改游戏文件的 byte-exact table parser。ResearchTable 31 行、ItemTable 244 行（其中 62 行 Resource）、UnitTable 111 行、BuildingTable 559 行、DropTable 244 行、RecipeTable 163 行、TradePoolTable 8 行已保存到 `research/game-data/DS_B.0.4.19/`，并由 `app/data/dungeon-settlers-db.ts` 记录 SHA-256。
+- 支持事实：当前构建的 Research 节点、前置、Tech Book、workload、解锁引用，以及资源、物品、单位、建筑、掉落池、配方和商人池的表行可逐项检索。
+- 证据等级：reviewed / secondary；它不是开发者官方更新公告，也不替代当前游戏画面。页面必须显示构建号、提取日期和来源链接；未来版本或实机冲突时暂停扩展结论。
+- 可公开使用：是；只展示事实表字段和版本边界，不复制游戏图像，不把表格解析改写成官方背书或 universal best order。
+
 ## 权利和素材边界
 
 - 官方 Steam/YouTube 页面用于事实回查与官方入口链接；第三方文章截图、视频帧和带站点水印的图片不进入生产素材。

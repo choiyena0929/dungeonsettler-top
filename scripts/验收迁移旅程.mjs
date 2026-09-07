@@ -113,6 +113,19 @@ async function runJourney(browser, viewport, journey) {
       await page.locator('button[type="submit"]').click();
       expect(`${journey}/ready`, await page.locator("#planner-result-heading").innerText().then((text) => /complete/i.test(text)), "完整选择没有完整结果");
       await inspectPage(page, context, journey, "ready-result"); record("/tools/first-expedition-planner", "ready-result");
+      expect(`${journey}/history`, await page.locator(".planner-history-item").count() >= 3, "提交结果没有进入本地历史");
+      const compareInputs = page.locator('.planner-history-item input[type="checkbox"]');
+      await compareInputs.nth(0).check();
+      await compareInputs.nth(1).check();
+      expect(`${journey}/history`, await page.locator(".planner-compare").count() === 1, "两次准备状态不能比较");
+      await inspectPage(page, context, journey, "history-compare"); record("/tools/first-expedition-planner", "history-compare");
+      const storageState = await context.storageState();
+      const resumedContext = await browser.newContext({ viewport, storageState });
+      const resumedPage = await resumedContext.newPage();
+      await resumedPage.goto(pathUrl("/tools/first-expedition-planner"), { waitUntil: "domcontentloaded" });
+      await resumedPage.waitForTimeout(700);
+      expect(`${journey}/history-resume`, await resumedPage.locator(".planner-history-item").count() >= 3, "新浏览器会话没有恢复已保存历史");
+      await resumedContext.close();
       await page.locator('.planner-result a[href="/guides/how-to-get-clay"]').click();
       await page.waitForURL("**/guides/how-to-get-clay");
       await page.waitForTimeout(350);
@@ -143,6 +156,22 @@ async function runJourney(browser, viewport, journey) {
       expect(`${journey}/updates`, await page.locator("body").innerText().then((text) => /v0\.4\.19/i.test(text)), "Research 回查没有 v0.4.19 更新事实");
       await inspectPage(page, context, journey, "updates"); record("/updates", "updates");
     }
+
+    if (journey === "database") {
+      await goto(page, context, journey, "/database", "index"); record("/database", "index");
+      expect(`${journey}/index`, await page.locator("h1").innerText().then((text) => /database reference/i.test(text)), "资料页缺少标题");
+      expect(`${journey}/index`, await page.locator(".database-row").count() > 0, "资料页没有首屏 Research 数据行");
+      expect(`${journey}/index`, await page.locator(".database-tab").count() === 8, "资料页没有完整类别切换");
+      await page.locator(".database-tab").filter({ hasText: "Items" }).click();
+      await page.locator('.database-search input').fill("Clay");
+      expect(`${journey}/items`, await page.locator(".database-row").innerText().then((text) => /Clay/i.test(text)), "物品表搜索不到 Clay");
+      await inspectPage(page, context, journey, "items-search"); record("/database", "items-search");
+      await page.locator(".database-tab").filter({ hasText: "Buildings" }).click();
+      await page.locator('.database-search input').fill("");
+      await page.getByRole("button", { name: "Next" }).click();
+      expect(`${journey}/pagination`, await page.locator(".database-result-count").innerText().then((text) => /of 559/.test(text)), "建筑表分页没有进入下一页");
+      await inspectPage(page, context, journey, "pagination"); record("/database", "pagination");
+    }
   } catch (error) {
     fail(`${journey}/${viewport.width}`, error instanceof Error ? error.message : String(error));
   }
@@ -153,7 +182,7 @@ async function runJourney(browser, viewport, journey) {
 const browser = await chromium.launch({ headless: true, executablePath, args: ["--no-first-run", "--no-default-browser-check"] });
 const viewports = [{ id: "desktop", width: 1440, height: 900 }, { id: "mobile", width: 390, height: 844 }];
 const results = [];
-for (const viewport of viewports) for (const journey of ["clay-search", "planner", "research"]) {
+for (const viewport of viewports) for (const journey of ["clay-search", "planner", "research", "database"]) {
   const result = await runJourney(browser, viewport, journey);
   if (result.runtimeErrors.length) fail(`${result.journey}/${result.viewport}`, result.runtimeErrors.join(" | "));
   results.push(result);

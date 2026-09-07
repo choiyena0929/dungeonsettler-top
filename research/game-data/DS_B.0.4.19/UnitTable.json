@@ -1,0 +1,5108 @@
+[
+ {
+  "Key": "UNIT_None",
+  "DevComment1": "디폴트 유닛 키 (지정하지 않으면 다 이것으로 취급)",
+  "Dev_Art": "Not needed",
+  "Dev_CopseArt": "Not needed",
+  "Faction": 1,
+  "FactionName": "Player",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "NULL"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 0,
+  "BehaviourTypeName": "None",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 0.0,
+  "PhysicalAttackPower": 0.0,
+  "MagicAttackPower": 0.0,
+  "AttackSpeed": 0.0,
+  "CriticalChance": 0.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 0.0,
+  "VisionRange": 0.0
+ },
+ {
+  "Key": "UNIT_PlayerUnit",
+  "DevComment1": "플레이어 유닛",
+  "Dev_Art": "Not needed",
+  "Dev_CopseArt": "Not needed",
+  "Faction": 1,
+  "FactionName": "Player",
+  "SubFaction": 1,
+  "SubFactionName": "Player",
+  "DefaultTraits": [
+   "AFFECTER_Vigorous",
+   "AFFECTER_Human"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicPunchAttack",
+   "SKILL_EmergencyEscape"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 1,
+  "BehaviourTypeName": "Player",
+  "CombatPattern": "Player",
+  "OnDeathExp": 6.5,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 0.0,
+  "PhysicalAttackPower": 0.0,
+  "MagicAttackPower": 0.0,
+  "AttackSpeed": 0.0,
+  "CriticalChance": 0.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 0.0,
+  "VisionRange": 0.0
+ },
+ {
+  "Key": "UNIT_Bubbleling",
+  "DevComment1": "버블링",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 2,
+  "FactionName": "Ally",
+  "SubFaction": 1,
+  "SubFactionName": "Player",
+  "DefaultTraits": [
+   "AFFECTER_SummonedCreature",
+   "AFFECTER_BubbleSplash"
+  ],
+  "DefaultSkills": [
+   "SKILL_BubbleTackle"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 3,
+  "BehaviourTypeName": "Summon",
+  "CombatPattern": "WaterSummoned",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 300.0,
+  "PhysicalAttackPower": 16.9,
+  "MagicAttackPower": 50.7,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 100.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_BubbleToad",
+  "DevComment1": "버블토드",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 2,
+  "FactionName": "Ally",
+  "SubFaction": 1,
+  "SubFactionName": "Player",
+  "DefaultTraits": [
+   "AFFECTER_SummonedCreature"
+  ],
+  "DefaultSkills": [
+   "SKILL_TongueThrust"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 3,
+  "BehaviourTypeName": "Summon",
+  "CombatPattern": "WaterSummoned",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 300.0,
+  "PhysicalAttackPower": 16.9,
+  "MagicAttackPower": 50.7,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 100.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GuildMerchant",
+  "DevComment1": "길드 상인",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_Invincibility",
+   "AFFECTER_GuildTrade"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicPunchAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 4,
+  "BehaviourTypeName": "GuildMerchant",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_VeilSilenceMerchant",
+  "DevComment1": "1지역 상인",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_VeilSilenceMerchant"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicPunchAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_VeilSilenceMerchantFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 5,
+  "BehaviourTypeName": "DungeonMerchant",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 12000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 1.0,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_FesteringBurrowMerchant",
+  "DevComment1": "2지역 상인",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_FesteringBurrowMerchant"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicPunchAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_VeilSilenceMerchantFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 5,
+  "BehaviourTypeName": "DungeonMerchant",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 24000.0,
+  "PhysicalAttackPower": 250.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 1.0,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 50.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Xenon",
+  "DevComment1": "곤충학자 제논",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_SpellPreheat10",
+   "AFFECTER_SymbioticInsect"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMagicMissile",
+   "SKILL_SummonLadybug"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_SymbioticInsect"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "Xenon",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 12000.0,
+  "PhysicalAttackPower": 20.0,
+  "MagicAttackPower": 140.0,
+  "AttackSpeed": 0.7,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Perion",
+  "DevComment1": "페리온",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMagicMissile"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 356.0,
+  "PhysicalAttackPower": 20.0,
+  "MagicAttackPower": 140.0,
+  "AttackSpeed": 0.7,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Endrossi",
+  "DevComment1": "엔도르시",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_Endrossi"
+  ],
+  "DefaultSkills": [
+   "SKILL_NPCBasicBowAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_EndrossiFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 356.0,
+  "PhysicalAttackPower": 70.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.5,
+  "CriticalChance": 20.0,
+  "PhysicalResistance": 3.0,
+  "MagicResistance": 3.0,
+  "MovementSpeed": 82.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GuardArcher",
+  "DevComment1": "1지역 안전계층 궁수",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_GuildGuard"
+  ],
+  "DefaultSkills": [
+   "SKILL_NPCBasicBowAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 6,
+  "BehaviourTypeName": "GuildGuard",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 12000.0,
+  "PhysicalAttackPower": 200.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.5,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GuardCaptain",
+  "DevComment1": "1지역 안전계층 대장",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_GuildGuard"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicSwordAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_IronArmor",
+   "ITEM_IronHelmet"
+  ],
+  "BehaviourType": 6,
+  "BehaviourTypeName": "GuildGuard",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 24000.0,
+  "PhysicalAttackPower": 300.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.5,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GuardSpearman",
+  "DevComment1": "1지역 안전계층 병사",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_GuildGuard"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicSpearAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 6,
+  "BehaviourTypeName": "GuildGuard",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 18000.0,
+  "PhysicalAttackPower": 200.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.5,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_ChainKnightSentinelNPC",
+  "DevComment1": "체인 센티넬 나이트 NPC",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 0,
+  "FactionName": "Neutral",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "AFFECTER_Invincibility"
+  ],
+  "DefaultSkills": [
+   "SKILL_ChainHit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   2,
+   2
+  ],
+  "SpriteHeight": 2.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 34000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 180.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 50.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GreyRat",
+  "DevComment1": "회색쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power1",
+   "DROP_GreyRatRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 8.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 500.0,
+  "PhysicalAttackPower": 30.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_WeakGreyRat",
+  "DevComment1": "허약한 회색쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 300.0,
+  "PhysicalAttackPower": 12.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_RedStoneGolem",
+  "DevComment1": "붉은 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 7,
+  "SubFactionName": "Artifact",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfFury",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_RedStoneGolemRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 24.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1200.0,
+  "PhysicalAttackPower": 76.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Tadpole",
+  "DevComment1": "숲 올챙이",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_SwallowCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Swallow",
+   "SKILL_Evolve"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_TadpoleRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "Tadpole",
+  "OnDeathExp": 24.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1400.0,
+  "PhysicalAttackPower": 76.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_TadpoleEvolve",
+  "DevComment1": "올챙이 진화체",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_SwallowCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_TadpoleStomp"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power4",
+   "DROP_TadpoleEvolveRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "TadpoleEvolve",
+  "OnDeathExp": 24.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3000.0,
+  "PhysicalAttackPower": 99.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AcidInsect",
+  "DevComment1": "산성충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "AFFECTER_ExplosiveCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_Spit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power2",
+   "DROP_AcidInsectRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 12.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 450.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 60.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_WeakAcidInsect",
+  "DevComment1": "허약한 산성충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "AFFECTER_ExplosiveCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_Spit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 450.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 18.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_SmallSlime",
+  "DevComment1": "소형 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power1",
+   "DROP_SmallSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 4.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 450.0,
+  "PhysicalAttackPower": 45.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MediumSlime",
+  "DevComment1": "중형 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_MediumSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SlimeCombat",
+  "OnDeathExp": 8.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 780.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Mawmurk",
+  "DevComment1": "머모크",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_MawmurkRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 20.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1080.0,
+  "PhysicalAttackPower": 44.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 15.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MetalScarab",
+  "DevComment1": "철갑충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_MetalCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_MetalScarabRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SimpleCombat",
+  "OnDeathExp": 20.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1500.0,
+  "PhysicalAttackPower": 54.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.2,
+  "CriticalChance": 2.0,
+  "PhysicalResistance": 40.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_RedMonsterRat",
+  "DevComment1": "붉은괴물쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_RedMane",
+   "AFFECTER_Rodent",
+   "AFFECTER_EliteMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicRedMonsterRatAttack",
+   "SKILL_BloodyScratch",
+   "SKILL_RatSwarm"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_RedMonsterRatRandom",
+   "DROP_RedMonsterRatFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_RedMonsterRatSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "RedMonsterRat",
+  "OnDeathExp": 90.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4500.0,
+  "PhysicalAttackPower": 144.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_RedRat",
+  "DevComment1": "붉은쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power2",
+   "DROP_RedRatRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 12.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 800.0,
+  "PhysicalAttackPower": 63.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AcidSlogel",
+  "DevComment1": "산성 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_AcidSpit",
+   "SKILL_Run"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power2",
+   "DROP_AcidSlogelRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AcidSlogel",
+  "OnDeathExp": 16.0,
+  "BloodType": 5,
+  "BloodTypeName": "Blue_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 540.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 40.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_BlueStoneGolem",
+  "DevComment1": "푸른 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 7,
+  "SubFactionName": "Artifact",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfDefense",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power5",
+   "DROP_BlueStoneGolemRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 36.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2000.0,
+  "PhysicalAttackPower": 126.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_WhiteMawmurk",
+  "DevComment1": "흰 머모크",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_SpellPreheat",
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_MagicMissile",
+   "SKILL_ArcaneEco"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power10",
+   "DROP_WhiteMawmurkRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "WhiteMawmurk",
+  "OnDeathExp": 80.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1800.0,
+  "PhysicalAttackPower": 20.0,
+  "MagicAttackPower": 108.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 25.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 30.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_SmallSporeSlime",
+  "DevComment1": "소형 포자 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_InfectiousSpores",
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power2",
+   "DROP_SmallSporeSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 18.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 900.0,
+  "PhysicalAttackPower": 81.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MediumSporeSlime",
+  "DevComment1": "중형 포자 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_InfectiousSpores",
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power5",
+   "DROP_MediumSporeSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SporeSlimeCombat",
+  "OnDeathExp": 36.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1040.0,
+  "PhysicalAttackPower": 142.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GreyMonsterRat",
+  "DevComment1": "회색괴물쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicRedMonsterRatAttack",
+   "SKILL_DoubleScratch"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power4",
+   "DROP_GreyMonsterRatRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GreyMonsterRat",
+  "OnDeathExp": 32.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1500.0,
+  "PhysicalAttackPower": 121.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_SporeInsect",
+  "DevComment1": "포자충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "AFFECTER_SporeExplosive"
+  ],
+  "DefaultSkills": [
+   "SKILL_SporeSpit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_SporeInsectRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 24.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 900.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 63.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_SpikeTurtle",
+  "DevComment1": "가시 거북",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_SpinyCarapace"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power7",
+   "DROP_SpikeTurtleRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 56.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3000.0,
+  "PhysicalAttackPower": 126.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 60.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AlphaAcidSlogel",
+  "DevComment1": "알파 산성 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Ambivalence",
+   "AFFECTER_EliteMonster",
+   "AFFECTER_Fortitude"
+  ],
+  "DefaultSkills": [
+   "SKILL_AcidSpread",
+   "SKILL_ShellHardening"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_AlphaAcidSlogelRandom",
+   "DROP_AlphaAcidSlogelFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_AlphaAcidSlogelSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AlphaAcidSlogel",
+  "OnDeathExp": 141.0,
+  "BloodType": 5,
+  "BloodTypeName": "Blue_Small",
+  "Size": [
+   3,
+   2
+  ],
+  "SpriteHeight": 2.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 6000.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 75.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 12.0
+ },
+ {
+  "Key": "UNIT_YellowStoneGolem",
+  "DevComment1": "노란 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 7,
+  "SubFactionName": "Artifact",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfRush",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_StoneCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power5",
+   "DROP_BlueStoneGolemRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "YellowStoneGolem",
+  "OnDeathExp": 36.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1600.0,
+  "PhysicalAttackPower": 86.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GiantStoneGolem",
+  "DevComment1": "거대 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 7,
+  "SubFactionName": "Artifact",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfThrow",
+   "AFFECTER_Fortitude",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune",
+   "AFFECTER_BossMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_StoneStomp",
+   "SKILL_StoneThrow",
+   "SKILL_StoneRaise",
+   "SKILL_EarthCrash"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_GiantStoneGolemRandom",
+   "DROP_GiantStoneGolemFixed",
+   "DROP_GiantStoneGolemFixed2"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_GiantStoneGolemSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GiantStoneGolem",
+  "OnDeathExp": 196.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   3,
+   2
+  ],
+  "SpriteHeight": 3.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 18000.0,
+  "PhysicalAttackPower": 121.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 30.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Bee",
+  "DevComment1": "벌",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power1",
+   "DROP_BeeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 8.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 500.0,
+  "PhysicalAttackPower": 42.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Ladybug",
+  "DevComment1": "무당벌레",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 2,
+  "SubFactionName": "NPC",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_LadyBugCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power1",
+   "DROP_BeeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "Ladybug",
+  "OnDeathExp": 8.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2000.0,
+  "PhysicalAttackPower": 144.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinWorker",
+  "DevComment1": "고블린 일꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_GoblinRun",
+   "SKILL_EatHerb"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power3",
+   "DROP_GoblinWorkerRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinWorker",
+  "OnDeathExp": 24.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1800.0,
+  "PhysicalAttackPower": 80.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinBrawler",
+  "DevComment1": "고블린 싸움꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward",
+   "AFFECTER_Meanness"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_GoblinRun",
+   "SKILL_UseOintment"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power10",
+   "DROP_GoblinBrawlerRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinBrawler",
+  "OnDeathExp": 80.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3060.0,
+  "PhysicalAttackPower": 102.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 15.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 140.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinThrower",
+  "DevComment1": "고블린 투척꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinThrowerRangedAttack",
+   "SKILL_ThrowNet",
+   "SKILL_GoblinRun"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power7",
+   "DROP_GoblinThrowerRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "LowHealthFirstAvoidMelee",
+  "OnDeathExp": 56.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2400.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.7,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinShaman",
+  "DevComment1": "고블린 주술사",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin"
+  ],
+  "DefaultSkills": [
+   "SKILL_MagicMissile",
+   "SKILL_GoblinRun",
+   "SKILL_GoblinCurse"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power8",
+   "DROP_GoblinShamanRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinShaman",
+  "OnDeathExp": 60.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2800.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 135.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinChiefShaman",
+  "DevComment1": "고블린 치프 주술사",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Meanness",
+   "AFFECTER_EliteMonster",
+   "AFFECTER_GoblinChiefShaman"
+  ],
+  "DefaultSkills": [
+   "SKILL_BlazingEchoGoblin",
+   "SKILL_GoblinRun",
+   "SKILL_ResurrectionGoblin"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_GoblinChiefShamanRandom",
+   "DROP_GoblinChiefShamanFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_GoblinChiefShamanSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinChiefShaman",
+  "OnDeathExp": 120.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 8000.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 135.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 10.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GoblinRider",
+  "DevComment1": "고블린 라이더",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward",
+   "AFFECTER_Meanness"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_DistractingBlow",
+   "SKILL_GlothLash",
+   "SKILL_GoblinRun",
+   "SKILL_UseOintment"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power13",
+   "DROP_GoblinRiderRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinRider",
+  "OnDeathExp": 104.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3300.0,
+  "PhysicalAttackPower": 115.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 140.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MudSlogel",
+  "DevComment1": "진흙 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_MudSpit",
+   "SKILL_Run"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power6",
+   "DROP_MudSlogelRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AcidSlogel",
+  "OnDeathExp": 48.0,
+  "BloodType": 5,
+  "BloodTypeName": "Blue_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2600.0,
+  "PhysicalAttackPower": 8.0,
+  "MagicAttackPower": 80.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 10.0,
+  "MagicResistance": 10.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MudSmallSlime",
+  "DevComment1": "소형 진흙 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster",
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power6",
+   "DROP_MudSmallSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 24.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1700.0,
+  "PhysicalAttackPower": 72.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MudMediumSlime",
+  "DevComment1": "중형 진흙 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster",
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power6",
+   "DROP_MudMediumSlimeRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SlimeCombat",
+  "OnDeathExp": 48.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2600.0,
+  "PhysicalAttackPower": 130.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_CrystalTurtle",
+  "DevComment1": "수정 거북",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_CrystalCarapace"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power15",
+   "DROP_CrystalTurtleRandom1",
+   "DROP_CrystalTurtleRandom2"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 120.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 6750.0,
+  "PhysicalAttackPower": 151.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 60.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_GlothPup",
+  "DevComment1": "새끼 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power6",
+   "DROP_GlothPupRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GlothPup",
+  "OnDeathExp": 44.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2400.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 10.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 4.0
+ },
+ {
+  "Key": "UNIT_MaleGloth",
+  "DevComment1": "수컷 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_GlothCharge",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power9",
+   "DROP_MaleGlothRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "MaleGloth",
+  "OnDeathExp": 68.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3400.0,
+  "PhysicalAttackPower": 117.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 15.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_FemaleGloth",
+  "DevComment1": "암컷 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_DocileGloth"
+  ],
+  "DefaultSkills": [
+   "SKILL_GlothSpit",
+   "SKILL_Run",
+   "SKILL_CheeringHowl",
+   "SKILL_NoneAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power10",
+   "DROP_FemaleGlothRandom1",
+   "DROP_FemaleGlothRandom2"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "FemaleGloth",
+  "OnDeathExp": 80.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3200.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 58.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 10.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 60.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_ChallengerGloth",
+  "DevComment1": "도전자 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm",
+   "AFFECTER_Ferocity"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_GlothCharge",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_Power11",
+   "DROP_ChallengerGlothRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "MaleGloth",
+  "OnDeathExp": 88.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4400.0,
+  "PhysicalAttackPower": 130.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_ElderGloth",
+  "DevComment1": "장로 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm",
+   "AFFECTER_EliteMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_ElderGlothCharge",
+   "SKILL_CallFemaleGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_ElderGlothRandom",
+   "DROP_ElderGlothFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_ElderGlothSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "ElderGloth",
+  "OnDeathExp": 171.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   2,
+   2
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 10000.0,
+  "PhysicalAttackPower": 170.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 50.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_EyeBall",
+  "DevComment1": "눈알",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_EliteMonster",
+   "AFFECTER_Fortitude",
+   "AFFECTER_Hyperopia",
+   "AFFECTER_Congestion"
+  ],
+  "DefaultSkills": [
+   "SKILL_BloodTear",
+   "SKILL_BloodRain"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_EyeBallFixed",
+   "DROP_EyeBallRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_EyeBallSoulStone"
+  ],
+  "BehaviourType": 7,
+  "BehaviourTypeName": "BuildingEnemy",
+  "CombatPattern": "EyeBall",
+  "OnDeathExp": 171.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   3,
+   2
+  ],
+  "SpriteHeight": 3.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 16000.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 60.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 0.0,
+  "VisionRange": 16.0
+ },
+ {
+  "Key": "UNIT_BlueGoblin",
+  "DevComment1": "청고블린",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_BlueGoblin",
+   "AFFECTER_BlueBlood"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_BlueGoblinFixed",
+   "DROP_BlueGoblinRandom"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 24.0,
+  "BloodType": 5,
+  "BloodTypeName": "Blue_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 6000.0,
+  "PhysicalAttackPower": 150.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.6,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 120.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_ChainKnightSentinel",
+  "DevComment1": "체인 나이트 센티넬",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 6,
+  "SubFactionName": "Anomaly",
+  "DefaultTraits": [
+   "AFFECTER_BossMonster",
+   "AFFECTER_Fortitude",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_SentinelWarning",
+   "AFFECTER_EnsnaringChains",
+   "AFFECTER_SoulChain",
+   "AFFECTER_MaintainOrder"
+  ],
+  "DefaultSkills": [
+   "SKILL_SentinelWarning",
+   "SKILL_ChainHit",
+   "SKILL_ChainGrap",
+   "SKILL_SentinelSmite",
+   "SKILL_PhantomChain",
+   "SKILL_AutoRepair"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_ChainKnightSentinelRandom",
+   "DROP_ChainKnightSentinelFixed"
+  ],
+  "FirstKillItemsAndDrops": [
+   "ITEM_ChainKnightSentinelSoulStone"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "ChainKnight",
+  "OnDeathExp": 388.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   2,
+   2
+  ],
+  "SpriteHeight": 2.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 34000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 180.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 50.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_MushBiter",
+  "DevComment1": "이빨 버섯",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterPierce"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 52.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_HedgeHog",
+  "DevComment1": "고슴도치",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_WeirdScarecrow",
+  "DevComment1": "기묘한 허수아비",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_Heosuabi",
+  "DevComment1": "허수아비",
+  "Dev_Art": "Not needed",
+  "Dev_CopseArt": "Not needed",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "NULL"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 0,
+  "BehaviourTypeName": "None",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_OldDragonClawWarrior",
+  "DevComment1": "낡은 용조병",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_FireDragonClawWarrior",
+  "DevComment1": "화염 용조병",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_NeedleSpider",
+  "DevComment1": "바늘 거미",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterPierce",
+   "SKILL_PiercingThrust"
+  ],
+  "OnDeathItemsAndDrops": [
+   "DROP_Common_R1P1_Power1"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 156.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 5.0
+ },
+ {
+  "Key": "UNIT_Staghare",
+  "DevComment1": "사슴토",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 40.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_WildDog",
+  "DevComment1": "들개",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 4,
+  "SubFactionName": "Beast",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_LargeSlime",
+  "DevComment1": "대형 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 0,
+  "SubFactionName": "None",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 1,
+  "BloodTypeName": "Red_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 40.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_Cordyceps",
+  "DevComment1": "동충하초",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 5,
+  "SubFactionName": "Insect",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 13.0,
+  "BloodType": 4,
+  "BloodTypeName": "Green_Small",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 250.0,
+  "PhysicalAttackPower": 41.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.2,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 40.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGreyRat",
+  "DevComment1": "회색쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 750.0,
+  "PhysicalAttackPower": 68.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssWeakGreyRat",
+  "DevComment1": "허약한 회색쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 450.0,
+  "PhysicalAttackPower": 12.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssRedStoneGolem",
+  "DevComment1": "붉은 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfFury",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3600.0,
+  "PhysicalAttackPower": 84.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssTadpole",
+  "DevComment1": "숲 올챙이",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_SwallowCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Swallow",
+   "SKILL_Evolve"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "Tadpole",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3600.0,
+  "PhysicalAttackPower": 84.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssTadpoleEvolve",
+  "DevComment1": "올챙이 진화체",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_SwallowCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_TadpoleStomp"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "TadpoleEvolve",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 6000.0,
+  "PhysicalAttackPower": 144.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssAcidInsect",
+  "DevComment1": "산성충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ExplosiveCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_Spit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1800.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 80.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssWeakAcidInsect",
+  "DevComment1": "허약한 산성충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ExplosiveCorpse"
+  ],
+  "DefaultSkills": [
+   "SKILL_Spit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1800.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 18.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssSmallSlime",
+  "DevComment1": "소형 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1800.0,
+  "PhysicalAttackPower": 72.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMediumSlime",
+  "DevComment1": "중형 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SlimeCombat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2400.0,
+  "PhysicalAttackPower": 96.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMawmurk",
+  "DevComment1": "머모크",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3200.0,
+  "PhysicalAttackPower": 80.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMetalScarab",
+  "DevComment1": "철갑충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_MetalCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SimpleCombat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4000.0,
+  "PhysicalAttackPower": 120.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.2,
+  "CriticalChance": 2.0,
+  "PhysicalResistance": 40.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssRedMonsterRat",
+  "DevComment1": "붉은괴물쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_RedMane",
+   "AFFECTER_Rodent",
+   "AFFECTER_EliteMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicRedMonsterRatAttack",
+   "SKILL_BloodyScratch",
+   "SKILL_RatSwarm"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "RedMonsterRat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 10000.0,
+  "PhysicalAttackPower": 124.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssRedRat",
+  "DevComment1": "붉은쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 1580.0,
+  "PhysicalAttackPower": 70.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssAcidSlogel",
+  "DevComment1": "산성 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_AcidSpit",
+   "SKILL_Run"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AcidSlogel",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2000.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 45.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssBlueStoneGolem",
+  "DevComment1": "푸른 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfDefense",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3000.0,
+  "PhysicalAttackPower": 100.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssWhiteMawmurk",
+  "DevComment1": "흰 머모크",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_SpellPreheat",
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_MagicMissile",
+   "SKILL_ArcaneEco"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "WhiteMawmurk",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2700.0,
+  "PhysicalAttackPower": 20.0,
+  "MagicAttackPower": 120.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 30.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssSmallSporeSlime",
+  "DevComment1": "소형 포자 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_InfectiousSpores",
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2700.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMediumSporeSlime",
+  "DevComment1": "중형 포자 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_InfectiousSpores",
+   "AFFECTER_LiquidMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SporeSlimeCombat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3600.0,
+  "PhysicalAttackPower": 120.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGreyMonsterRat",
+  "DevComment1": "회색괴물쥐",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Rodent"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicRedMonsterRatAttack",
+   "SKILL_DoubleScratch"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GreyMonsterRat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4800.0,
+  "PhysicalAttackPower": 100.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssSporeInsect",
+  "DevComment1": "포자충",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_SporeExplosive"
+  ],
+  "DefaultSkills": [
+   "SKILL_SporeSpit"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2700.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 70.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 4.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssSpikeTurtle",
+  "DevComment1": "가시 거북",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_SpinyCarapace"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4000.0,
+  "PhysicalAttackPower": 110.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 60.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssAlphaAcidSlogel",
+  "DevComment1": "알파 산성 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Ambivalence",
+   "AFFECTER_EliteMonster",
+   "AFFECTER_Fortitude"
+  ],
+  "DefaultSkills": [
+   "SKILL_AcidSpread",
+   "SKILL_ShellHardening"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AlphaAcidSlogel",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   3,
+   2
+  ],
+  "SpriteHeight": 2.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 15000.0,
+  "PhysicalAttackPower": 10.0,
+  "MagicAttackPower": 85.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 12.0
+ },
+ {
+  "Key": "UNIT_AbyssYellowStoneGolem",
+  "DevComment1": "노란 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfRush",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_StoneCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "YellowStoneGolem",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4800.0,
+  "PhysicalAttackPower": 96.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 50.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGiantStoneGolem",
+  "DevComment1": "거대 스톤 골렘",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_ArtOfThrow",
+   "AFFECTER_Fortitude",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_BurnImmune",
+   "AFFECTER_BossMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_StoneStomp",
+   "SKILL_StoneThrow",
+   "SKILL_StoneRaise",
+   "SKILL_EarthCrash"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GiantStoneGolem",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   3,
+   2
+  ],
+  "SpriteHeight": 3.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 25000.0,
+  "PhysicalAttackPower": 188.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 30.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 30.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssBee",
+  "DevComment1": "벌",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2000.0,
+  "PhysicalAttackPower": 42.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssLadybug",
+  "DevComment1": "무당벌레",
+  "Dev_Art": "X",
+  "Dev_CopseArt": "X",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "NULL"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_LadyBugCharge"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "Ladybug",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 20.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 5.0,
+  "PhysicalResistance": 20.0,
+  "MagicResistance": 20.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinWorker",
+  "DevComment1": "고블린 일꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_GoblinRun",
+   "SKILL_EatHerb"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinWorker",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2400.0,
+  "PhysicalAttackPower": 80.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinBrawler",
+  "DevComment1": "고블린 싸움꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward",
+   "AFFECTER_Meanness"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_GoblinRun",
+   "SKILL_UseOintment"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinBrawler",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3600.0,
+  "PhysicalAttackPower": 102.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 140.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinThrower",
+  "DevComment1": "고블린 투척꾼",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinThrowerRangedAttack",
+   "SKILL_ThrowNet",
+   "SKILL_GoblinRun"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "LowHealthFirstAvoidMelee",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2800.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.5,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinShaman",
+  "DevComment1": "고블린 주술사",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin"
+  ],
+  "DefaultSkills": [
+   "SKILL_MagicMissile",
+   "SKILL_GoblinRun",
+   "SKILL_GoblinCurse"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinShaman",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3000.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 135.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinChiefShaman",
+  "DevComment1": "고블린 치프 주술사",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_EliteMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BlazingEchoGoblin",
+   "SKILL_GoblinRun",
+   "SKILL_ResurrectionGoblin"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinChiefShaman",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.3,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 16000.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 135.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 30.0,
+  "MovementSpeed": 90.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGoblinRider",
+  "DevComment1": "고블린 라이더",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Goblin",
+   "AFFECTER_Coward",
+   "AFFECTER_Meanness"
+  ],
+  "DefaultSkills": [
+   "SKILL_GoblinAttack",
+   "SKILL_DistractingBlow",
+   "SKILL_GlothLash",
+   "SKILL_GoblinRun",
+   "SKILL_UseOintment"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GoblinRider",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4800.0,
+  "PhysicalAttackPower": 115.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 140.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMudSlogel",
+  "DevComment1": "진흙 슬로겔",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_MudSpit",
+   "SKILL_Run"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "AcidSlogel",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2600.0,
+  "PhysicalAttackPower": 8.0,
+  "MagicAttackPower": 80.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 130.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMudSmallSlime",
+  "DevComment1": "소형 진흙 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster",
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2600.0,
+  "PhysicalAttackPower": 92.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssMudMediumSlime",
+  "DevComment1": "중형 진흙 슬라임",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_LiquidMonster",
+   "AFFECTER_Muddy"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_Split"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "SlimeCombat",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4000.0,
+  "PhysicalAttackPower": 130.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssCrystalTurtle",
+  "DevComment1": "수정 거북",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_CrystalCarapace"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "OnlyBasicAttack",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 6750.0,
+  "PhysicalAttackPower": 151.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 60.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssGlothPup",
+  "DevComment1": "새끼 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "GlothPup",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 2400.0,
+  "PhysicalAttackPower": 90.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 4.0
+ },
+ {
+  "Key": "UNIT_AbyssMaleGloth",
+  "DevComment1": "수컷 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_GlothCharge",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "MaleGloth",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3400.0,
+  "PhysicalAttackPower": 117.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssFemaleGloth",
+  "DevComment1": "암컷 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_DocileGloth"
+  ],
+  "DefaultSkills": [
+   "SKILL_GlothSpit",
+   "SKILL_Run",
+   "SKILL_CheeringHowl",
+   "SKILL_NoneAttack"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "FemaleGloth",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 3200.0,
+  "PhysicalAttackPower": 16.0,
+  "MagicAttackPower": 58.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 60.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssChallengerGloth",
+  "DevComment1": "도전자 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm",
+   "AFFECTER_Ferocity"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_GlothCharge",
+   "SKILL_CallGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "MaleGloth",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   1,
+   1
+  ],
+  "SpriteHeight": 1.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 4400.0,
+  "PhysicalAttackPower": 130.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.3,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 80.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssElderGloth",
+  "DevComment1": "장로 글로트",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_GlothSwarm",
+   "AFFECTER_EliteMonster"
+  ],
+  "DefaultSkills": [
+   "SKILL_BasicMonsterBlunt",
+   "SKILL_ElderGlothCharge",
+   "SKILL_CallFemaleGloth"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "ElderGloth",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   2,
+   2
+  ],
+  "SpriteHeight": 1.5,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 20000.0,
+  "PhysicalAttackPower": 170.0,
+  "MagicAttackPower": 16.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 0.0,
+  "MagicResistance": 0.0,
+  "MovementSpeed": 60.0,
+  "VisionRange": 8.0
+ },
+ {
+  "Key": "UNIT_AbyssChainKnightSentinel",
+  "DevComment1": "체인 나이트 센티넬",
+  "Dev_Art": "O",
+  "Dev_CopseArt": "O",
+  "Faction": 3,
+  "FactionName": "Enemy",
+  "SubFaction": 8,
+  "SubFactionName": "Abyss",
+  "DefaultTraits": [
+   "AFFECTER_BossMonster",
+   "AFFECTER_Fortitude",
+   "AFFECTER_BleedImmune",
+   "AFFECTER_SentinelWarning",
+   "AFFECTER_EnsnaringChains",
+   "AFFECTER_SoulChain",
+   "AFFECTER_MaintainOrder"
+  ],
+  "DefaultSkills": [
+   "SKILL_SentinelWarning",
+   "SKILL_ChainHit",
+   "SKILL_ChainGrap",
+   "SKILL_SentinelSmite",
+   "SKILL_PhantomChain",
+   "SKILL_AutoRepair"
+  ],
+  "OnDeathItemsAndDrops": [
+   "NULL"
+  ],
+  "FirstKillItemsAndDrops": [
+   "NULL"
+  ],
+  "BehaviourType": 2,
+  "BehaviourTypeName": "DefaultEnemy",
+  "CombatPattern": "ChainKnight",
+  "OnDeathExp": 0.0,
+  "BloodType": 0,
+  "BloodTypeName": "None",
+  "Size": [
+   2,
+   2
+  ],
+  "SpriteHeight": 2.0,
+  "BodyHealthRatio_Head": 0.5,
+  "BodyHealthRatio_Body": 0.5,
+  "MaxHealthTotal": 38000.0,
+  "PhysicalAttackPower": 140.0,
+  "MagicAttackPower": 180.0,
+  "AttackSpeed": 0.4,
+  "CriticalChance": 8.0,
+  "PhysicalResistance": 50.0,
+  "MagicResistance": 50.0,
+  "MovementSpeed": 110.0,
+  "VisionRange": 8.0
+ }
+]

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "runId": "6f3a3c0f-6c72-4c13-9c11-2b2f6a7cbcd1",
-  "observedAt": "2026-09-07T12:00:00.000Z",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
+  "observedAt": "2026-09-07T14:43:00.000Z",
   "timezone": "UTC (2026-09-07 Asia/Shanghai review)",
   "queryStatus": "changes-found",
   "source": {
@@ -30,7 +30,7 @@
     {
       "status": "not-asserted",
       "fact": "No direct Clay route, enemy, floor, quantity, or fixed Research prerequisite is stated in the reviewed official update notes.",
-      "impact": "The Prima Clay report remains a dated secondary observation and the complete Research tree remains pending_verification."
+      "impact": "The Prima Clay report remains a dated secondary observation. A separate S008 snapshot now covers the current-build Research rows, while future-build behavior and universal order remain unverified."
     }
   ]
 }

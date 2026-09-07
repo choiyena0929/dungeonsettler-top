@@ -17,12 +17,22 @@ const purposes = [
 ] as const;
 
 type CheckId = (typeof preparationChecks)[number]["id"];
+type PurposeValue = (typeof purposes)[number]["value"];
 type PlannerStatus = "empty" | "partial" | "ready";
 type PlannerResult = {
   status: PlannerStatus;
   selected: string[];
   missing: string[];
   purpose: (typeof purposes)[number];
+};
+type SavedPlan = {
+  id: string;
+  savedAt: string;
+  purpose: PurposeValue;
+  checks: Record<CheckId, boolean>;
+  status: PlannerStatus;
+  selected: string[];
+  missing: string[];
 };
 
 const initialChecks: Record<CheckId, boolean> = {
@@ -32,11 +42,32 @@ const initialChecks: Record<CheckId, boolean> = {
   return: false,
 };
 const storageKey = "ds-first-expedition-planner-v2";
+const historyKey = "ds-first-expedition-planner-history-v1";
+const maxSavedPlans = 12;
+
+function isStatus(value: unknown): value is PlannerStatus {
+  return value === "empty" || value === "partial" || value === "ready";
+}
+
+function purposeFor(value: unknown) {
+  return purposes.find((item) => item.value === value) || purposes[0];
+}
+
+function newPlanId() {
+  if (typeof window !== "undefined" && window.crypto?.randomUUID) return window.crypto.randomUUID();
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function statusLabel(status: PlannerStatus) {
+  return status === "empty" ? "Empty" : status === "partial" ? "Partial" : "Ready";
+}
 
 export function ExpeditionPlanner() {
-  const [purpose, setPurpose] = useState<(typeof purposes)[number]["value"]>(purposes[0].value);
+  const [purpose, setPurpose] = useState<PurposeValue>(purposes[0].value);
   const [checks, setChecks] = useState<Record<CheckId, boolean>>(initialChecks);
   const [result, setResult] = useState<PlannerResult | null>(null);
+  const [savedPlans, setSavedPlans] = useState<SavedPlan[]>([]);
+  const [compareIds, setCompareIds] = useState<string[]>([]);
   const [hasHydrated, setHasHydrated] = useState(false);
 
   useEffect(() => {
@@ -45,14 +76,13 @@ export function ExpeditionPlanner() {
       if (!active) return;
       try {
         const saved = JSON.parse(window.sessionStorage.getItem(storageKey) || "null") as { purpose?: string; checks?: Partial<Record<CheckId, boolean>>; result?: PlannerResult | null } | null;
-        if (saved?.purpose && purposes.some((item) => item.value === saved.purpose)) setPurpose(saved.purpose as typeof purpose);
+        if (saved?.purpose && purposes.some((item) => item.value === saved.purpose)) setPurpose(saved.purpose as PurposeValue);
         if (saved?.checks) setChecks({ ...initialChecks, ...Object.fromEntries(preparationChecks.map((item) => [item.id, saved.checks?.[item.id] === true])) } as Record<CheckId, boolean>);
-        if (saved?.result?.status && ["empty", "partial", "ready"].includes(saved.result.status)) {
-          const savedPurpose = purposes.find((item) => item.value === saved.result?.purpose?.value) || purposes[0];
-          setResult({ ...saved.result, purpose: savedPurpose });
-        }
+        if (saved?.result?.status && isStatus(saved.result.status)) setResult({ ...saved.result, purpose: purposeFor(saved.result.purpose?.value) });
+        const history = JSON.parse(window.localStorage.getItem(historyKey) || "[]") as SavedPlan[];
+        if (Array.isArray(history)) setSavedPlans(history.filter((item) => item && typeof item.id === "string" && isStatus(item.status) && purposes.some((purposeItem) => purposeItem.value === item.purpose)).slice(0, maxSavedPlans));
       } catch {
-        // Session storage is a convenience; the checklist remains usable when it is unavailable.
+        // Browser storage is a convenience; the checklist remains usable when it is unavailable.
       } finally {
         setHasHydrated(true);
       }
@@ -69,22 +99,58 @@ export function ExpeditionPlanner() {
     }
   }, [checks, hasHydrated, purpose, result]);
 
+  useEffect(() => {
+    if (!hasHydrated) return;
+    try {
+      window.localStorage.setItem(historyKey, JSON.stringify(savedPlans));
+    } catch {
+      // History is optional; the current plan still works when storage is unavailable.
+    }
+  }, [hasHydrated, savedPlans]);
+
   function toggleCheck(id: CheckId) {
     setChecks((current) => ({ ...current, [id]: !current[id] }));
     setResult(null);
   }
 
+  function rememberPlan(nextResult: PlannerResult, nextChecks: Record<CheckId, boolean>) {
+    if (!hasHydrated) return;
+    const saved: SavedPlan = {
+      id: newPlanId(),
+      savedAt: new Date().toISOString(),
+      purpose: nextResult.purpose.value,
+      checks: { ...nextChecks },
+      status: nextResult.status,
+      selected: [...nextResult.selected],
+      missing: [...nextResult.missing],
+    };
+    setSavedPlans((current) => [saved, ...current].slice(0, maxSavedPlans));
+    setCompareIds((current) => current.filter((id) => id !== saved.id).slice(0, 2));
+  }
+
   function reviewPreparation(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const selectedPurpose = purposes.find((item) => item.value === purpose) || purposes[0];
+    const selectedPurpose = purposeFor(purpose);
     const selected = preparationChecks.filter((item) => checks[item.id]).map((item) => item.label);
     const missing = preparationChecks.filter((item) => !checks[item.id]).map((item) => item.label);
-    setResult({ status: selected.length === 0 ? "empty" : missing.length === 0 ? "ready" : "partial", selected, missing, purpose: selectedPurpose });
+    const nextResult: PlannerResult = { status: selected.length === 0 ? "empty" : missing.length === 0 ? "ready" : "partial", selected, missing, purpose: selectedPurpose };
+    setResult(nextResult);
+    rememberPlan(nextResult, checks);
   }
 
   function clearPlan() {
     setChecks({ ...initialChecks });
     setResult(null);
+  }
+
+  function loadPlan(saved: SavedPlan) {
+    setPurpose(saved.purpose);
+    setChecks({ ...initialChecks, ...saved.checks });
+    setResult({ status: saved.status, selected: [...saved.selected], missing: [...saved.missing], purpose: purposeFor(saved.purpose) });
+  }
+
+  function toggleCompare(id: string) {
+    setCompareIds((current) => current.includes(id) ? current.filter((value) => value !== id) : current.length < 2 ? [...current, id] : [current[1], id]);
   }
 
   return (
@@ -96,7 +162,7 @@ export function ExpeditionPlanner() {
           <p>Pick one purpose, then mark the four things you can actually check before leaving the settlement.</p>
         </div>
         <label className="planner-purpose" htmlFor="planner-purpose">Run purpose
-          <select id="planner-purpose" value={purpose} onChange={(event) => { setPurpose(event.target.value as typeof purpose); setResult(null); }}>
+          <select id="planner-purpose" value={purpose} onChange={(event) => { setPurpose(event.target.value as PurposeValue); setResult(null); }}>
             {purposes.map((item) => <option value={item.value} key={item.value}>{item.label}</option>)}
           </select>
         </label>
@@ -133,7 +199,7 @@ export function ExpeditionPlanner() {
             <>
               <p><strong>{result.selected.length} of {preparationChecks.length}</strong> preparation checks are confirmed for “{result.purpose.label}”. Resolve the remaining visible questions before treating the run as ready.</p>
               <ul>{result.missing.map((item) => <li key={item}>{item}</li>)}</ul>
-              <a className="text-link" href="/guides/beginner-guide">Use the Beginner Guide for the first question <span aria-hidden="true">→</span></a>
+              <a className="text-link" href={result.purpose.href}>Open the related route <span aria-hidden="true">→</span></a>
             </>
           ) : (
             <>
@@ -155,6 +221,16 @@ export function ExpeditionPlanner() {
           <p>Nothing has been submitted yet. Choose a purpose, mark what you can check, then select Review preparation. The result distinguishes an empty, partial, or complete checklist and hands you to a related guide.</p>
         </section>
       )}
+
+      <section className="planner-history" aria-labelledby="planner-history-heading">
+        <div className="planner-history-heading"><div><p className="eyebrow">Across sessions</p><h2 id="planner-history-heading">Saved preparation runs</h2></div><p>Select up to two saved runs to compare what was confirmed and what was still missing.</p></div>
+        {savedPlans.length ? <div className="planner-history-list">{savedPlans.map((saved) => <div className="planner-history-item" key={saved.id}>
+          <input aria-label={`Compare ${statusLabel(saved.status)} preparation run from ${saved.savedAt.slice(0, 10)}`} type="checkbox" checked={compareIds.includes(saved.id)} onChange={() => toggleCompare(saved.id)} /><span className="planner-history-copy"><strong>{statusLabel(saved.status)} · {purposeFor(saved.purpose).label}</strong><small>{saved.savedAt.slice(0, 10)} · {saved.selected.length}/4 confirmed</small></span>
+          <button className="text-button" type="button" onClick={() => loadPlan(saved)}>Load</button>
+        </div>)}</div> : <p className="planner-history-empty">No saved runs yet. Submit a result and it will remain available in this browser for a later comparison.</p>}
+        {compareIds.length >= 2 ? <div className="planner-compare" aria-live="polite"><p className="eyebrow">Comparison</p><div className="planner-compare-grid">{compareIds.map((id) => { const saved = savedPlans.find((item) => item.id === id); if (!saved) return null; return <article key={saved.id}><h3>{statusLabel(saved.status)}</h3><p>{purposeFor(saved.purpose).label}</p><strong>{saved.selected.length}/4 confirmed</strong><ul>{saved.missing.length ? saved.missing.map((item) => <li key={item}>{item}</li>) : <li>All visible checks confirmed.</li>}</ul></article>; })}</div></div> : null}
+        {savedPlans.length ? <button className="text-button planner-history-clear" type="button" onClick={() => { setSavedPlans([]); setCompareIds([]); }}>Clear saved runs</button> : null}
+      </section>
     </div>
   );
 }

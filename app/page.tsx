@@ -65,11 +65,11 @@ export default function Home() {
       </section>
 
       <section className="section confirmed-section" aria-labelledby="confirmed-heading">
-        <div className="section-heading"><div><p className="eyebrow">What is confirmed right now</p><h2 id="confirmed-heading">Enough to start. Not enough to pretend the tree is fixed.</h2></div><p className="section-intro">The official store page establishes the broad loop. Dated update notes and a secondary Clay report add useful leads, but the site keeps their boundaries visible.</p></div>
+        <div className="section-heading"><div><p className="eyebrow">What is confirmed right now</p><h2 id="confirmed-heading">Enough to start, with a build-locked reference.</h2></div><p className="section-intro">The official store page establishes the broad loop. A version-locked table now exposes the current Research, resource, building, unit, drop and recipe rows while dated update notes keep future changes visible.</p></div>
         <div className="confirmed-grid">
           <article><span className="status-pill official">Official baseline</span><h3>Settlement to expedition is the core shape.</h3><p>Build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. The store page also describes real-time action with pause, a party of up to four, and permadeath.</p></article>
           <article><span className="status-pill dated">Version-sensitive</span><h3>Updates can change how a guide reads.</h3><p>A Steam Community update dated September 5, 2026 mentions combat, save compatibility, research-tier display, and inventory guide changes. Recheck dated routes after an update.</p></article>
-          <article><span className="status-pill pending">Still bounded</span><h3>Exact research order is not published here.</h3><p>The current public evidence does not prove a complete technology tree or universal best order. Guides use a safe checklist and mark unverified prerequisites as pending.</p></article>
+          <article><span className="status-pill pending">Version locked</span><h3>Research rows are available for the current build.</h3><p>The database exposes the DS_B.0.4.19 node rows and prerequisites. It remains a dated reference, so a newer build still needs a fresh comparison before a route is treated as universal.</p><a className="text-link" href="/database?tab=research">Browse the data reference <span aria-hidden="true">→</span></a></article>
         </div>
       </section>
 

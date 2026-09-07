@@ -1,8 +1,8 @@
 import { access, readFile } from "node:fs/promises";
 import { assertPageContracts, extractSourceIds } from "./page-contract-rules.mjs";
 
-const DEFAULT_MIN_WORDS = { homepage: 600, guide: 700, tool: 250, hub: 500, legal: 250 };
-const DEFAULT_MIN_INTERNAL_LINKS = { homepage: 2, guide: 2, tool: 2, hub: 2, legal: 1 };
+const DEFAULT_MIN_WORDS = { homepage: 600, guide: 700, tool: 250, hub: 500, database: 650, legal: 250 };
+const DEFAULT_MIN_INTERNAL_LINKS = { homepage: 2, guide: 2, tool: 2, hub: 2, database: 4, legal: 1 };
 const BASE_CHECKS = [
   "http-200", "html-lang", "title-length", "description-length", "single-h1", "canonical", "word-count",
   "internal-links", "image-alt", "json-ld", "no-internal-research-copy",

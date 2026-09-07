@@ -20,7 +20,7 @@ export default function FirstExpeditionPlannerPage() {
         <h1>Dungeon Settlers expedition planner: build a first-run checklist.</h1>
         <p className="lead">Use this Dungeon Settlers expedition planner when the settlement, the party, and the next dungeon question are pulling in different directions. It turns the next run into a short list you can observe and review.</p>
         <div className="tool-header-actions"><a className="button primary" href="#planner-form">Start planning <span aria-hidden="true">↓</span></a></div>
-        <div className="tag-row"><span>Session tool</span><span>Early Access</span><span>Updated 07 Sep 2026</span></div>
+        <div className="tag-row"><span>Session + history</span><span>Early Access</span><span>Updated 07 Sep 2026</span></div>
       </div>
 
       <div className="tool-layout">
@@ -41,7 +41,7 @@ export default function FirstExpeditionPlannerPage() {
         <h2 id="planner-notes-heading">A small plan is useful when it can be checked.</h2>
         <p>Start with the question that is blocking the next decision. If the settlement is missing a visible preparation step, write that down before asking the party to solve a dungeon problem. If the party is ready but the purpose is unclear, select one observation that would make the return meaningful.</p>
         <p>The result page gives you a related guide instead of pretending that one checklist answers every build. Beginner covers the first route, Clay covers a dated material lead, and Research explains how to hold an unknown technology order at the right boundary.</p>
-        <p>Run the planner again after an update or after a failed expedition. The page does not save a profile or compare runs yet. That limitation is part of the current migration slice and remains visible until a stronger data source supports a larger tool.</p>
+        <p>Each submitted result is saved in this browser, so you can return after an update or a failed expedition and compare up to two earlier preparation states. The history records the visible checks and missing items only; it does not pretend to be a save-file profile or a generated route.</p>
       </section>
     </section>
   );

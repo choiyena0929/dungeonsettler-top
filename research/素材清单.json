@@ -325,7 +325,8 @@
         { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 settlement 视觉标记" },
         { "route": "/guides/beginner-guide", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Beginner 攻略 settlement 视觉标记" },
         { "route": "/guides/how-to-research", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Research 攻略 settlement 视觉标记" },
-        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Research 搜索结果卡片实体标识" }
+        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Research 搜索结果卡片实体标识" },
+        { "route": "/database", "implementation": "app/components/database-browser.tsx", "placement": "版本锁定资料页证据卡片实体标识" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 8, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Workstations 图标，保留游戏内边框和像素图形。",
@@ -356,7 +357,8 @@
         { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
         { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器返程观察视觉标记" },
         { "route": "/guides/how-to-get-clay", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Clay 攻略资源视觉标记" },
-        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Clay 搜索结果卡片实体标识" }
+        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Clay 搜索结果卡片实体标识" },
+        { "route": "/database", "implementation": "app/components/database-browser.tsx", "placement": "版本锁定资料页证据卡片实体标识" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 178, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Storage 图标，保留游戏内边框和像素图形。",

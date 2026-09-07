@@ -44,10 +44,10 @@
       "pageType": "guide",
       "primaryKeyword": "How to research in Dungeon Settlers",
       "intent": "A player wants to understand what Research unlocks without trusting an unverified or outdated tech order.",
-      "acceptance": "The page states what the official store confirms, gives verified starting conditions plus concrete checklist actions and an example, marks unverified research-tree details as pending, and links to the beginner, Clay, and preparation routes.",
+      "acceptance": "The page states what the official store confirms, gives verified starting conditions plus concrete checklist actions and an example, exposes the complete DS_B.0.4.19 Research table as a dated secondary snapshot, marks future-build or universal-order claims as pending, and links to the beginner, Clay, database and preparation routes.",
       "primaryAction": "Use the safe research checklist",
       "requiredSections": ["What Research is confirmed to do", "Verified starting conditions", "A safe early checklist", "How it fits the expedition loop", "What remains unverified", "Version note", "Sources"],
-      "sourceRefs": ["S001", "S002", "S004", "S005"],
+      "sourceRefs": ["S001", "S002", "S004", "S005", "S008"],
       "minWords": 750,
       "minInternalLinks": 2
     },
@@ -56,7 +56,7 @@
       "pageType": "tool",
       "primaryKeyword": "Dungeon Settlers expedition planner",
       "intent": "A new player wants to turn the settlement, party, Research question, and return observation into a repeatable first-run checklist.",
-      "acceptance": "The tool accepts a run purpose and four visible preparation checks, returns distinct empty, partial, or complete preparation results, preserves the session while a visitor follows a guide handoff, and clearly states that hidden values and best orders remain unverified.",
+      "acceptance": "The tool accepts a run purpose and four visible preparation checks, returns distinct empty, partial, or complete preparation results, preserves the session while a visitor follows a guide handoff, saves submitted states across browser sessions, supports comparison of two saved states, and clearly states that hidden values and best orders remain unverified.",
       "primaryAction": "Review preparation",
       "requiredSections": ["Run purpose", "Preparation checklist", "Result", "Related guide handoff", "Evidence boundary"],
       "sourceRefs": ["S001", "S002"],
@@ -86,6 +86,18 @@
       "sourceRefs": ["S001", "S002", "S003"],
       "minWords": 500,
       "minInternalLinks": 3
+    },
+    {
+      "path": "/database",
+      "pageType": "database",
+      "primaryKeyword": "Dungeon Settlers database",
+      "intent": "A player wants to look up current-build Research, resources, items, units, buildings, drop pools and recipes before making a settlement or expedition decision.",
+      "acceptance": "The page exposes every row in the version-locked DS_B.0.4.19 snapshot through category tabs, search and pagination, records the source manifest and hashes, links to official updates and the relevant guide routes, and labels the extraction as a reviewed secondary source.",
+      "primaryAction": "Browse the data reference",
+      "requiredSections": ["Version-locked data", "Evidence boundary", "Research", "Resources", "Items", "Units and enemies", "Buildings", "Drop pools", "Recipes"],
+      "sourceRefs": ["S001", "S002", "S008"],
+      "minWords": 650,
+      "minInternalLinks": 4
     }
   ],
   "redirects": [

@@ -25,7 +25,7 @@ if (contracts.schemaVersion !== 1 || !Array.isArray(contracts.pages)) throw new 
 if (!/^https:\/\//i.test(String(contracts.canonicalOrigin || ""))) throw new Error("page-contracts.json 必须填写 HTTPS canonicalOrigin。");
 if (contracts.pages.length < 2 || !contracts.pages.some((page) => page.path === "/")) throw new Error("页面合同至少包含首页和一个承接页。");
 
-const defaults = { homepage: 600, guide: 700, tool: 250, hub: 500, legal: 250 };
+const defaults = { homepage: 600, guide: 700, tool: 250, hub: 500, database: 650, legal: 250 };
 const clean = (value) => String(value ?? "").trim();
 const compact = (value) => clean(value).normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "");
 const decode = (value) => clean(value)

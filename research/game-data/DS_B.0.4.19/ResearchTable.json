@@ -1,0 +1,612 @@
+[
+ {
+  "Key": "RESEARCH_WoodProcessing1",
+  "DevComment1": "목재 가공1",
+  "GridX": 0,
+  "GridY": 6,
+  "Prerequisites": [
+   "NULL"
+  ],
+  "RequiredWorkload": 10,
+  "UnlockRequiredItem": [
+   "NULL"
+  ],
+  "ResearchResult": [
+   "BUILDING_WoodGodnessStatue",
+   "ITEM_WoodPlank",
+   "ITEM_WoodArmor",
+   "ITEM_WoodHelmet"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BasicStorage",
+  "DevComment1": "기초 보관",
+  "GridX": 0,
+  "GridY": 11,
+  "Prerequisites": [
+   "NULL"
+  ],
+  "RequiredWorkload": 20,
+  "UnlockRequiredItem": [
+   "NULL"
+  ],
+  "ResearchResult": [
+   "BUILDING_EquipmentStorage",
+   "ITEM_ClothBag"
+  ]
+ },
+ {
+  "Key": "RESEARCH_WoodProcessing2",
+  "DevComment1": "목재 가공2",
+  "GridX": 1,
+  "GridY": 4,
+  "Prerequisites": [
+   "RESEARCH_WoodProcessing1"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "ITEM_WoodGreatSword",
+   "ITEM_WoodSpear",
+   "ITEM_WoodShield",
+   "ITEM_BloodWoodGreatSword",
+   "ITEM_BloodWoodSpear",
+   "ITEM_BloodWoodShield"
+  ]
+ },
+ {
+  "Key": "RESEARCH_WoodHousing",
+  "DevComment1": "목재 하우징",
+  "GridX": 1,
+  "GridY": 6,
+  "Prerequisites": [
+   "RESEARCH_WoodProcessing1"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "BUILDING_LogFloor",
+   "BUILDING_WoodBed",
+   "BUILDING_WoodTable",
+   "BUILDING_WoodenRoundTable",
+   "BUILDING_WoodChair",
+   "BUILDING_WoodenRoundChair",
+   "BUILDING_WoodSideTable",
+   "BUILDING_WoodCloset",
+   "BUILDING_WoodBarrel",
+   "BUILDING_WoodenCratePile"
+  ]
+ },
+ {
+  "Key": "RESEARCH_HuntProcessing",
+  "DevComment1": "수렵 가공",
+  "GridX": 1,
+  "GridY": 8,
+  "Prerequisites": [
+   "RESEARCH_WoodProcessing1"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "BUILDING_HunterWorkstation",
+   "BUILDING_Repairstand",
+   "BUILDING_HideRug"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BasicAlchemy",
+  "DevComment1": "기초 연금술",
+  "GridX": 1,
+  "GridY": 11,
+  "Prerequisites": [
+   "RESEARCH_BasicStorage"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "BUILDING_AlchemistWorkstation",
+   "BUILDING_WoodBookShelf1",
+   "BUILDING_WoodBookShelf2",
+   "BUILDING_CelestialSphere"
+  ]
+ },
+ {
+  "Key": "RESEARCH_WeaveProcessing",
+  "DevComment1": "직조 가공",
+  "GridX": 1,
+  "GridY": 17,
+  "Prerequisites": [
+   "RESEARCH_BasicStorage"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "BUILDING_ClothRug",
+   "BUILDING_Banner",
+   "BUILDING_BannerStand",
+   "ITEM_ThickTextile",
+   "ITEM_ThickClothCoif",
+   "ITEM_ThickClothArmor"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BasicCuisine",
+  "DevComment1": "기초 요리",
+  "GridX": 1,
+  "GridY": 14,
+  "Prerequisites": [
+   "RESEARCH_BasicStorage"
+  ],
+  "RequiredWorkload": 100,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_2"
+  ],
+  "ResearchResult": [
+   "BUILDING_CookingWorkstation"
+  ]
+ },
+ {
+  "Key": "RESEARCH_Bonfire",
+  "DevComment1": "화톳불",
+  "GridX": 2,
+  "GridY": 6,
+  "Prerequisites": [
+   "RESEARCH_WoodHousing"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "BUILDING_Bonfire",
+   "BUILDING_CardPlayTable"
+  ]
+ },
+ {
+  "Key": "RESEARCH_Campsite",
+  "DevComment1": "야영지",
+  "GridX": 2,
+  "GridY": 7,
+  "Prerequisites": [
+   "RESEARCH_HuntProcessing"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "BUILDING_BasicCampsite",
+   "ITEM_BasicCampingKit"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BoneProcessing1",
+  "DevComment1": "뼈 가공1",
+  "GridX": 2,
+  "GridY": 8,
+  "Prerequisites": [
+   "RESEARCH_HuntProcessing"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "ITEM_BoneStick",
+   "ITEM_BoneGreatSword",
+   "ITEM_BoneSpear",
+   "ITEM_FireBoneStaff",
+   "ITEM_RedCrystalBoneStaff",
+   "ITEM_WaterBoneStaff",
+   "ITEM_BlueCrystalBoneStaff",
+   "ITEM_NatureBoneStaff",
+   "ITEM_GreenCrystalBoneStaff"
+  ]
+ },
+ {
+  "Key": "RESEARCH_CarapaceProcessing1",
+  "DevComment1": "갑각 가공",
+  "GridX": 2,
+  "GridY": 9,
+  "Prerequisites": [
+   "RESEARCH_HuntProcessing"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "ITEM_CarapaceHelmet",
+   "ITEM_CarapaceArmor",
+   "ITEM_CarapaceSword",
+   "ITEM_CarapaceClub",
+   "ITEM_CarapaceBow",
+   "ITEM_CarapaceArrow"
+  ]
+ },
+ {
+  "Key": "RESEARCH_StaffCrafting",
+  "DevComment1": "지팡이 제작",
+  "GridX": 2,
+  "GridY": 11,
+  "Prerequisites": [
+   "RESEARCH_BasicAlchemy"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "BUILDING_StaffWorkstation",
+   "ITEM_LowGradeFireElementalStone",
+   "ITEM_LowGradeWaterElementalStone",
+   "ITEM_LowGradeNatureElementalStone"
+  ]
+ },
+ {
+  "Key": "RESEARCH_RelifFood",
+  "DevComment1": "구호 식량",
+  "GridX": 2,
+  "GridY": 13,
+  "Prerequisites": [
+   "RESEARCH_BasicCuisine"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "ITEM_MeatPorridge",
+   "ITEM_TurnipPorridge"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BasicFarming",
+  "DevComment1": "기초 농업",
+  "GridX": 2,
+  "GridY": 16,
+  "Prerequisites": [
+   "RESEARCH_BasicCuisine"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "BUILDING_Farm",
+   "BUILDING_WoodFence"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BasicMonsterCusine",
+  "DevComment1": "초급 몬스터 요리",
+  "GridX": 2,
+  "GridY": 19,
+  "Prerequisites": [
+   "RESEARCH_BasicCuisine"
+  ],
+  "RequiredWorkload": 400,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_3"
+  ],
+  "ResearchResult": [
+   "ITEM_MonsterBarbecue",
+   "ITEM_SlimePudding"
+  ]
+ },
+ {
+  "Key": "RESEARCH_MetalProcessing1",
+  "DevComment1": "금속 가공1",
+  "GridX": 3,
+  "GridY": 4,
+  "Prerequisites": [
+   "RESEARCH_WoodProcessing2",
+   "RESEARCH_Bonfire"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "BUILDING_Kiln",
+   "BUILDING_AccessoriesWorkstation",
+   "BUILDING_PotPile",
+   "BUILDING_WoodenCabinet",
+   "BUILDING_WoodenLargeCabinet",
+   "BUILDING_WoodWallShelf",
+   "BUILDING_PottedPlant"
+  ]
+ },
+ {
+  "Key": "RESEARCH_AdvancedWoodHousing",
+  "DevComment1": "고급 목재 하우징",
+  "GridX": 3,
+  "GridY": 6,
+  "Prerequisites": [
+   "RESEARCH_Bonfire"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "BUILDING_LumberWall",
+   "BUILDING_LumberDoor",
+   "BUILDING_WoodFloor",
+   "BUILDING_WoodFloor2",
+   "BUILDING_WoodFloor3",
+   "BUILDING_WoodLargeTable",
+   "BUILDING_WoodDiningChair",
+   "BUILDING_WoodLongChair",
+   "BUILDING_DartPlayBoard",
+   "BUILDING_WoodPillar"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BoneProcessing2",
+  "DevComment1": "뼈 가공2",
+  "GridX": 3,
+  "GridY": 8,
+  "Prerequisites": [
+   "RESEARCH_BoneProcessing1"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "ITEM_FortifiedBoneHelmet",
+   "ITEM_FortifiedBoneArmor",
+   "ITEM_FortifiedBoneShield"
+  ]
+ },
+ {
+  "Key": "RESEARCH_CarapaceProcessing2",
+  "DevComment1": "갑각 가공2",
+  "GridX": 3,
+  "GridY": 9,
+  "Prerequisites": [
+   "RESEARCH_CarapaceProcessing1"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "ITEM_CarapaceShield",
+   "ITEM_CarapaceStick",
+   "ITEM_CarapaceGreatSword",
+   "ITEM_CarapaceSpear",
+   "ITEM_FireCarapaceStaff",
+   "ITEM_RedCrystalCarapaceStaff",
+   "ITEM_WaterCarapaceStaff",
+   "ITEM_BlueCrystalCarapaceStaff",
+   "ITEM_NatureCarapaceStaff",
+   "ITEM_GreenCrystalCarapaceStaff"
+  ]
+ },
+ {
+  "Key": "RESEARCH_ThornPurification",
+  "DevComment1": "가시 정화",
+  "GridX": 3,
+  "GridY": 11,
+  "Prerequisites": [
+   "RESEARCH_StaffCrafting"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "ITEM_GoddessTears"
+  ]
+ },
+ {
+  "Key": "RESEARCH_ArcronProcessing",
+  "DevComment1": "아크론 가공",
+  "GridX": 3,
+  "GridY": 12,
+  "Prerequisites": [
+   "RESEARCH_StaffCrafting"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "ITEM_ArcronStick",
+   "ITEM_ArcronSword",
+   "ITEM_ArcronGreatSword",
+   "ITEM_ArcronSpear",
+   "ITEM_FireArcronStaff",
+   "ITEM_WaterArcronStaff",
+   "ITEM_NatureArcronStaff",
+   "ITEM_ArcronMace",
+   "ITEM_ArcronBow",
+   "ITEM_ArcronArrow",
+   "ITEM_ArcronHelmet",
+   "ITEM_ArcronArmor",
+   "ITEM_ArcronShield"
+  ]
+ },
+ {
+  "Key": "RESEARCH_ImprovedGrassPorridge",
+  "DevComment1": "개량된 풀죽",
+  "GridX": 3,
+  "GridY": 13,
+  "Prerequisites": [
+   "RESEARCH_StaffCrafting",
+   "RESEARCH_RelifFood"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "ITEM_ImprovedGrassPorridge"
+  ]
+ },
+ {
+  "Key": "RESEARCH_Drying",
+  "DevComment1": "건조",
+  "GridX": 3,
+  "GridY": 14,
+  "Prerequisites": [
+   "RESEARCH_BasicCuisine"
+  ],
+  "RequiredWorkload": 1000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_4"
+  ],
+  "ResearchResult": [
+   "BUILDING_DryingRack",
+   "ITEM_Jerky"
+  ]
+ },
+ {
+  "Key": "RESEARCH_CastingProcessing",
+  "DevComment1": "주조 가공",
+  "GridX": 4,
+  "GridY": 4,
+  "Prerequisites": [
+   "RESEARCH_MetalProcessing1"
+  ],
+  "RequiredWorkload": 2500,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_CastingWorkbench"
+  ]
+ },
+ {
+  "Key": "RESEARCH_StoneHousing",
+  "DevComment1": "석재 하우징",
+  "GridX": 4,
+  "GridY": 6,
+  "Prerequisites": [
+   "RESEARCH_AdvancedWoodHousing"
+  ],
+  "RequiredWorkload": 2500,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_MasonWorkstation",
+   "BUILDING_StoneWall",
+   "BUILDING_StoneDoor",
+   "BUILDING_StoneFloor",
+   "BUILDING_StoneFloor2",
+   "BUILDING_StoneBed",
+   "BUILDING_StoneTable",
+   "BUILDING_StoneRoundTable",
+   "BUILDING_StoneChair",
+   "BUILDING_StoneSideTable",
+   "BUILDING_StoneCloset"
+  ]
+ },
+ {
+  "Key": "RESEARCH_LeatherProcessing1",
+  "DevComment1": "가죽 가공1",
+  "GridX": 4,
+  "GridY": 7,
+  "Prerequisites": [
+   "RESEARCH_Campsite"
+  ],
+  "RequiredWorkload": 2500,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_LeatherWorkstation"
+  ]
+ },
+ {
+  "Key": "RESEARCH_AdvancedStorage",
+  "DevComment1": "중급 보관",
+  "GridX": 4,
+  "GridY": 11,
+  "Prerequisites": [
+   "RESEARCH_ThornPurification"
+  ],
+  "RequiredWorkload": 2500,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_StoneConsumableStorage",
+   "BUILDING_StoneResourceStorage",
+   "BUILDING_StoneEquipmentStorage",
+   "BUILDING_PotteryFoodStorage",
+   "BUILDING_StoneProjectileStorage"
+  ]
+ },
+ {
+  "Key": "RESEARCH_AdvancedCusine",
+  "DevComment1": "중급 요리",
+  "GridX": 4,
+  "GridY": 14,
+  "Prerequisites": [
+   "RESEARCH_Drying"
+  ],
+  "RequiredWorkload": 3300,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_AdvancedCookingWorkstation"
+  ]
+ },
+ {
+  "Key": "RESEARCH_BurrowMonsterCusine",
+  "DevComment1": "땅굴 몬스터 요리",
+  "GridX": 4,
+  "GridY": 19,
+  "Prerequisites": [
+   "RESEARCH_BasicMonsterCusine"
+  ],
+  "RequiredWorkload": 2500,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "ITEM_GlothEggOmelet"
+  ]
+ },
+ {
+  "Key": "RESEARCH_AdvancedStoneHousing",
+  "DevComment1": "고급 석재 하우징",
+  "GridX": 5,
+  "GridY": 6,
+  "Prerequisites": [
+   "RESEARCH_StoneHousing"
+  ],
+  "RequiredWorkload": 4000,
+  "UnlockRequiredItem": [
+   "ITEM_TechBook_5"
+  ],
+  "ResearchResult": [
+   "BUILDING_RedCarpetA",
+   "BUILDING_StoneFireplace",
+   "BUILDING_StoneLargeTable",
+   "BUILDING_StoneDiningChair",
+   "BUILDING_StoneLongChair",
+   "BUILDING_DicePlayTable",
+   "BUILDING_CandleStand",
+   "BUILDING_LanternStand",
+   "BUILDING_StonePillar",
+   "BUILDING_FlowerBed1",
+   "BUILDING_FlowerBed2"
+  ]
+ }
+]

@@ -1,5 +1,6 @@
 import { GameLoopDiagram } from "./game-loop-diagram";
 import { EntityIconStrip } from "./entity-icon-strip";
+import { ResearchTree } from "./research-tree";
 import { evidenceLabels, getGuide, guideEntries, type GuideEntry } from "../content";
 import { JsonLd, guideStructuredData } from "../structured-data";
 
@@ -9,6 +10,7 @@ const sourceLinks = [
   { label: "Prima Games Clay report", href: "https://primagames.com/tips/how-to-get-clay-in-dungeon-settlers" },
   { label: "Official trailer reference", href: "https://www.youtube.com/watch?v=BkGIa5V39-w" },
   { label: "Recent review reference", href: "https://www.youtube.com/watch?v=FxqGcrey9S8" },
+  { label: "Version-locked data reference (DS_B.0.4.19)", href: "https://dungeonsettlers.wiki/" },
 ];
 
 function relatedEntry(slug: string) {
@@ -70,6 +72,7 @@ export function GuidePage({ entry }: { entry: GuideEntry }) {
             {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
             {entry.slug === "how-to-research" && section.heading === "How it fits the expedition loop" ? <GameLoopDiagram /> : null}
+            {entry.slug === "how-to-research" && section.heading === "A safe early checklist" ? <ResearchTree /> : null}
           </section>
         ))}
         <section className="planner-bridge" aria-labelledby="planner-bridge-heading">

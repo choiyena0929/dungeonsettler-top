@@ -1,10 +1,10 @@
 export const PAGE_CONTRACT_RULES_VERSION = 1;
 
-export const PAGE_TYPES = Object.freeze(["homepage", "guide", "tool", "hub", "legal"]);
+export const PAGE_TYPES = Object.freeze(["homepage", "guide", "tool", "hub", "database", "legal"]);
 
 export const PAGE_CONTRACT_LIMITS = Object.freeze({
-  minWords: Object.freeze({ homepage: 600, guide: 700, tool: 250, hub: 500, legal: 250 }),
-  minInternalLinks: Object.freeze({ homepage: 2, guide: 2, tool: 2, hub: 2, legal: 1 }),
+  minWords: Object.freeze({ homepage: 600, guide: 700, tool: 250, hub: 500, database: 650, legal: 250 }),
+  minInternalLinks: Object.freeze({ homepage: 2, guide: 2, tool: 2, hub: 2, database: 4, legal: 1 }),
 });
 
 const MIN_WORDS = PAGE_CONTRACT_LIMITS.minWords;

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "game": "Dungeon Settlers",
+  "steamAppId": "2798330",
+  "build": "DS_B.0.4.19",
+  "steamBuildId": "25154317",
+  "extractedAt": "2026-09-06",
+  "reviewedAt": "2026-09-07",
+  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
+  "capturedAt": "2026-09-07T14:43:00.000Z",
+  "source": {
+    "home": "https://dungeonsettlers.wiki/",
+    "research": "https://dungeonsettlers.wiki/research",
+    "manifest": "https://dungeonsettlers.wiki/dbdata/index.json",
+    "method": "byte-exact parse of stock, unmodded game files (reviewed secondary source)"
+  },
+  "counts": {
+    "research": 31,
+    "resources": 62,
+    "items": 244,
+    "units": 111,
+    "buildings": 559,
+    "drops": 244,
+    "recipes": 163,
+    "tradePools": 8
+  },
+  "localSnapshot": "app/data/dungeon-settlers-db.ts",
+  "sourceFiles": "research/game-data/DS_B.0.4.19",
+  "sha256": {
+    "index": "1a1fa68dfdaa294737a3b98d8124d52a34c20b099a45258ee5558d928be99150",
+    "TextKeyTable_en": "879e8810a656409ba235b649b6c2ea284ae82c2b70d968c8a3d7710d2d1a969a",
+    "ResearchTable": "bf95242ecb27768b8c1b56116a5cf71cdd076c2f739a2bec29b0c6e8b7a386e9",
+    "ItemTable": "5f09c64d2081b6e1c49ba7fc24b4f099d56f7c1dc91f5821cb4d377039620c49",
+    "UnitTable": "6da10aff19366fa2c257422ef0b83c83bdbdea30bd2959deb562bd5964a8ba46",
+    "BuildingTable": "b6815ba8ccbbb2d0b59b9dd07e6e3773e671b65c0e3bdae892f315390cecc1b0",
+    "DropTable": "1741265be74340a2b2ac9bf3a5ff2c29fe58d2db42cf36dfc89353aa36bad3ff",
+    "RecipeTable": "e0cfefd3a451c57f44487e0f9655baebafc2f966e1343cd8f7ae8ce081b80e2a",
+    "TradePoolTable": "612b0f0cfb4db123a81c7c113e8ab6a0671bf2b61394ce48b95e65f0535bfc77"
+  },
+  "claims": {
+    "currentBuildRows": "resolved",
+    "futureBuildBehavior": "pending",
+    "universalBestResearchOrder": "pending",
+    "officialPatchAuthority": "Steam Community official update path"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "phase": "ready",
-  "maturity": "launch-slice",
+  "maturity": "visitor-complete",
   "siteType": "hybrid",
   "baselineAt": "2026-09-07",
-  "claim": "本站目前能把 Dungeon Settlers Early Access 的起步、Clay 和 Research 问题交给有来源边界的攻略，并用一次可重复的第一次远征清单把问题、准备、结果和下一页连接起来。",
+  "claim": "本站现在覆盖 Dungeon Settlers Early Access 的起步、Clay 和 Research 任务，提供版本锁定的当前构建资料索引，并用可保存/比较的第一次远征清单把问题、准备、结果和下一页连接起来。",
   "demandCoverage": [
     {
       "id": "first-expedition",
@@ -83,6 +83,12 @@
       "role": "update",
       "status": "implemented",
       "routes": ["/updates"]
+    },
+    {
+      "id": "version-locked-database",
+      "role": "database",
+      "status": "implemented",
+      "routes": ["/database"]
     }
   ],
   "userJourneys": [
@@ -97,9 +103,10 @@
         { "route": "/tools/first-expedition-planner", "action": "选择本次目的并勾选 settlement、party、Research 和返程观察项。" },
         { "route": "/tools/first-expedition-planner", "action": "提交清单，得到缺项 hold 结果或四步 ready 结果。" },
         { "route": "/guides/beginner-guide", "action": "从默认第一次远征结果进入 Beginner Guide 承接页。" },
-        { "route": "/tools/first-expedition-planner", "action": "点击 related planner 入口返回并重新规划下一局。" }
+        { "route": "/tools/first-expedition-planner", "action": "点击 related planner 入口返回并重新规划下一局，当前会话状态保持。" },
+        { "route": "/tools/first-expedition-planner", "action": "在另一个浏览器会话加载已保存结果，选择两次状态进行比较。" }
       ],
-      "outcome": "访客得到当前缺项，或得到一条 settlement → Research question → party → return observation 的可检查计划。",
+      "outcome": "访客得到当前缺项，或得到一条 settlement → Research question → party → return observation 的可检查计划，并可在后续浏览器会话加载和比较已保存状态。",
       "evidenceRefs": ["S001", "S002"]
     },
     {
@@ -124,10 +131,11 @@
       "repeatable": false,
       "steps": [
         { "route": "/guides/how-to-research", "action": "点击主按钮跳到 research-checklist，阅读已核验前置条件和具体操作示例。" },
+        { "route": "/database", "action": "按当前构建检索完整 Research 行，核对前置、Tech Book、workload 和解锁引用。" },
         { "route": "/guides/how-to-research", "action": "沿 planner bridge 进入准备清单，保留 Research 选择和待核验前置边界。" },
         { "route": "/updates", "action": "回查 v0.4.19 与 v0.4.17 官方更新，再返回规划器重新定义一次 expedition 问题。" }
       ],
-      "outcome": "访客能区分官方确认、日期敏感观察和 pending_verification，而不把未知科技树写成最佳顺序。",
+      "outcome": "访客能区分官方确认、DS_B.0.4.19 版本锁定表行和未来版本未知边界，而不把一个构建写成 universal best order。",
       "evidenceRefs": ["S001", "S002", "S007"]
     }
   ],
@@ -135,9 +143,10 @@
     { "id": "first-expedition-planner", "type": "decision-tool", "status": "implemented", "route": "/tools/first-expedition-planner", "userOutcome": "用一次会话清单得到空、部分或完整准备结果，并进入相应攻略。" },
     { "id": "beginner-route", "type": "guide", "status": "implemented", "route": "/guides/beginner-guide", "userOutcome": "把 settlement、party、Research 和第一次 expedition 串成起步路线。" },
     { "id": "clay-route", "type": "comparison", "status": "implemented", "route": "/guides/how-to-get-clay", "userOutcome": "比较当前 Clay 报告中的早期、商人和 Region 2 路线，并看到日期限制。" },
-    { "id": "research-checklist", "type": "checklist", "status": "implemented", "route": "/guides/how-to-research", "userOutcome": "在研究树未完整核验时记录一个可观察的下一步。" },
+    { "id": "research-checklist", "type": "checklist", "status": "implemented", "route": "/guides/how-to-research", "userOutcome": "在版本锁定的 Research 表上核对当前节点，再记录一个可观察的下一步。" },
     { "id": "guide-library", "type": "lookup", "status": "implemented", "route": "/library", "userOutcome": "按问题或分类找到当前已发布的真实攻略。" },
-    { "id": "dated-updates", "type": "update-feed", "status": "implemented", "route": "/updates", "userOutcome": "知道哪些攻略需要在 Early Access 更新后重新检查。" }
+    { "id": "dated-updates", "type": "update-feed", "status": "implemented", "route": "/updates", "userOutcome": "知道哪些攻略需要在 Early Access 更新后重新检查。" },
+    { "id": "entity-database", "type": "database", "status": "implemented", "route": "/database", "userOutcome": "按版本和类别检索完整的 Research、资源、物品、单位、建筑、掉落、配方和商人表行。" }
   ],
   "visualVocabulary": {
     "identityAssetIds": ["dungeon-settlers-hero", "dungeon-settlers-capsule"],
@@ -156,11 +165,12 @@
       { "route": "/tools/first-expedition-planner", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-02", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"] },
       { "route": "/guides/beginner-guide", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-03", "dungeon-settlers-workstations-icon"] },
       { "route": "/guides/how-to-get-clay", "assetIds": ["dungeon-settlers-dungeon-scene", "dungeon-settlers-party-portrait-04", "dungeon-settlers-storage-icon"] },
-      { "route": "/guides/how-to-research", "assetIds": ["dungeon-settlers-hero", "dungeon-settlers-party-portrait-02"] }
+      { "route": "/guides/how-to-research", "assetIds": ["dungeon-settlers-hero", "dungeon-settlers-party-portrait-02"] },
+      { "route": "/database", "assetIds": ["dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"] }
     ]
   },
   "navigation": {
-    "primaryRoutes": ["/", "/tools/first-expedition-planner", "/guides/beginner-guide", "/library", "/updates"],
+    "primaryRoutes": ["/", "/tools/first-expedition-planner", "/guides/beginner-guide", "/library", "/database", "/updates"],
     "deadEndsReviewed": true,
     "hasReturnPaths": true
   },
@@ -174,25 +184,25 @@
       "id": "complete-research-tree",
       "category": "facts",
       "severity": "major",
-      "status": "open",
-      "description": "完整 Research tree、节点前置和最佳顺序仍为 pending_verification。",
-      "evidenceRefs": ["S001", "S002", "S007"]
+      "status": "resolved",
+      "description": "DS_B.0.4.19 的 31 条 ResearchTable 行已保存、带前置/Tech Book/workload/解锁引用并可检索；未来版本和 universal best order 仍需重验。",
+      "evidenceRefs": ["S001", "S002", "S008"]
     },
     {
       "id": "entity-database",
       "category": "data",
       "severity": "major",
-      "status": "open",
-      "description": "本轮实体视觉来自官方截图裁切，尚无完整资源、建筑、敌人和掉落资料库。",
-      "evidenceRefs": ["S001", "S007"]
+      "status": "resolved",
+      "description": "DS_B.0.4.19 的资源、物品、单位、建筑、掉落、配方和商人表已做版本锁定快照，页面逐行检索并记录来源哈希。",
+      "evidenceRefs": ["S001", "S008"]
     },
     {
       "id": "repeatable-depth",
       "category": "product",
       "severity": "major",
-      "status": "open",
-      "description": "规划器只保存当前浏览会话的准备清单，没有跨局保存、比较或更多已核验查询。",
-      "evidenceRefs": ["S006", "S007"]
+      "status": "resolved",
+      "description": "规划器现在用 localStorage 保存最多 12 次已提交状态，支持加载和比较两次可见准备结果；不会伪装成存档或生成完整远征路线。",
+      "evidenceRefs": ["S008"]
     }
   ]
 }

@@ -6,7 +6,7 @@ import { absoluteUrl } from "./site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-09-07T00:00:00.000Z");
-  return ["/", "/library", "/updates", "/tools/first-expedition-planner", ...guideEntries.map((entry) => `/guides/${entry.slug}`)].map((path) => ({
+  return ["/", "/library", "/updates", "/database", "/tools/first-expedition-planner", ...guideEntries.map((entry) => `/guides/${entry.slug}`)].map((path) => ({
     url: absoluteUrl(path),
     lastModified,
   }));
