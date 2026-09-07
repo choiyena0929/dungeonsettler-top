@@ -207,7 +207,7 @@
         { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
         { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 party 视觉标记" },
         { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Beginner 搜索结果卡片实体标识" },
-        { "route": "全站浏览器元数据", "implementation": "app/layout.tsx、public/favicon.ico", "placement": "使用真实角色头像作为站点图标与 ICO 回退，避免默认 /favicon.ico 404" }
+        { "route": "全站浏览器元数据", "implementation": "app/layout.tsx", "placement": "使用真实角色头像作为站点图标；public/favicon.ico 为同素材的 ICO 回退，避免默认 /favicon.ico 404" }
       ],
       "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1238, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
       "crop": "从官方 settlement 截图裁切第一枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
