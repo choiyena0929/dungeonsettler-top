@@ -1,0 +1,5 @@
+2026-09-07 migration sample
+command: npm run build
+result: exit 0
+routes: /, /guides/:slug, /library, /library/:slug, /tools/first-expedition-planner, /updates
+note: vinext build completed; only the existing static-analysis classification warning remains.

@@ -1,0 +1,4 @@
+2026-09-07 migration sample
+command: npm run check:assets
+result: exit 0
+result detail: official game source, local paths, render targets, crop rules, design contract, benchmark, and screenshot evidence are bound.

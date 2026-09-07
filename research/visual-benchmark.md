@@ -1,6 +1,6 @@
 # Dungeon Settlers 视觉基准与公开文案边界
 
-观察日期：2026-09-06。本站选择“攻略优先 + 现场手册”原型：首屏先给新玩家一个明确的 Beginner Guide 入口，再用两个具体任务页承接资源和研究问题。搜索量、难度、抓取状态和内部优先级不出现在页面。
+观察日期：2026-09-07。本站选择“攻略 + 现场手册 + 一条决策工具纵向切片”原型：首屏先给新玩家一个明确的 First Expedition Planner 入口，再用 Beginner、Clay、Research 三个具体任务页承接问题。搜索量、难度、抓取状态和内部优先级不出现在页面。
 
 ## 对标页面
 
@@ -18,6 +18,7 @@
 | 首屏 | 判断这里是否解决自己的 Dungeon Settlers 早期问题 | `dungeon-settlers-hero` | `app/page.tsx` | 用官方聚落实机画面直接建立游戏身份 |
 | Start here | 选择 Beginner、Clay 或 Research 入口 | `dungeon-settlers-research-loop`、`dungeon-settlers-dungeon-scene`、`dungeon-settlers-hero` | `app/page.tsx`、`app/components/game-loop-diagram.tsx` | 每个攻略入口使用不同的官方实机小图，并用营地与地下城画面解释阅读路径 |
 | 官方视频 | 先看游戏实际画面再选择攻略 | `dungeon-settlers-youtube-trailer` | `app/page.tsx` | 使用 CanOpener 官方 Trailer 缩略图链接到 YouTube，不从未核验视频中提取攻略事实 |
+| 第一次远征规划器 | 让目的、准备和返回观察点有视觉锚点 | `dungeon-settlers-party-portrait-01`、`02`、`03`、`04`、`dungeon-settlers-workstations-icon`、`dungeon-settlers-storage-icon` | `app/components/entity-icon-strip.tsx`、`app/components/expedition-planner.tsx` | 从官方 settlement 截图裁切真实 party portrait 和游戏内分类图标；不把裁切图当作独立官方素材 |
 
 ## 公开文案边界
 
@@ -28,7 +29,7 @@
 
 ## 资产来源
 
-本站已从 Steam App 2798330 官方商店接口登记三张官方游戏截图和一张 capsule，并登记 CanOpener 官方 YouTube Trailer 缩略图，全部保存为本地生产资产。原始页面、精确 URL、文件、使用位置和裁切规则见 `research/素材清单.json`。第三方站点只用于观察信息层级，不复制其品牌、组件皮肤、自制图片或水印素材；原创 SVG、AI 生图与抽象占位图不得承担游戏身份。
+本站已从 Steam App 2798330 官方商店接口登记三张官方游戏截图和一张 capsule，并登记 CanOpener 官方 YouTube Trailer 缩略图，全部保存为本地生产资产。本轮新增实体小图标全部是 `settlement.jpg` 的本地裁切，裁切坐标和来源也已登记。原始页面、精确 URL、文件、使用位置和裁切规则见 `research/素材清单.json`。第三方站点只用于观察信息层级，不复制其品牌、组件皮肤、自制图片或水印素材；原创 SVG、AI 生图与抽象占位图不得承担游戏身份。
 
 ## 截图回查说明
 

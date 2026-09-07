@@ -1,0 +1,4 @@
+2026-09-07 migration sample
+command: npm run audit:onpage -- --base-url http://127.0.0.1:3000 --handoff-id handoff-c94ddea503cd --input-revision input-59995249c82e --out artifacts/quality/seo-routes.json
+result: exit 0
+result detail: 7 pages, 0 failed checks.

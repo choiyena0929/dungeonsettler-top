@@ -44,3 +44,17 @@ export function guideStructuredData(entry: GuideEntry) {
     mainEntityOfPage: absoluteUrl(`/guides/${entry.slug}`),
   };
 }
+
+export function toolStructuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Dungeon Settlers first expedition planner",
+    url: absoluteUrl("/tools/first-expedition-planner"),
+    applicationCategory: "GameApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    description: "A session checklist for making a Dungeon Settlers Early Access expedition question visible before leaving the settlement.",
+    featureList: ["Purpose selection", "Preparation checklist", "Related guide handoff"],
+  };
+}

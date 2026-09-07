@@ -1,0 +1,4 @@
+2026-09-07 migration sample
+command: npm run check:onpage
+result: exit 0
+result detail: SEO artifact contract passed for 7 URLs; content, keyword, and page-contract metrics are bound.

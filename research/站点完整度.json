@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "phase": "ready",
+  "maturity": "launch-slice",
+  "siteType": "hybrid",
+  "baselineAt": "2026-09-07",
+  "claim": "本站目前能把 Dungeon Settlers Early Access 的起步、Clay 和 Research 问题交给有来源边界的攻略，并用一次可重复的第一次远征清单把问题、准备、结果和下一页连接起来。",
+  "demandCoverage": [
+    {
+      "id": "first-expedition",
+      "question": "第一次准备 settlement 和 party 后，下一步远征应该检查什么？",
+      "priority": "P0",
+      "status": "implemented",
+      "route": "/tools/first-expedition-planner",
+      "evidenceRefs": ["S001", "S002"]
+    },
+    {
+      "id": "clay-route",
+      "question": "Clay 当前有哪些可以比较的获得路径？",
+      "priority": "P1",
+      "status": "implemented",
+      "route": "/guides/how-to-get-clay",
+      "evidenceRefs": ["S001", "S002", "S003"]
+    },
+    {
+      "id": "research-next-step",
+      "question": "Research 如何帮助我决定下一次 expedition？",
+      "priority": "P1",
+      "status": "implemented",
+      "route": "/guides/how-to-research",
+      "evidenceRefs": ["S001", "S002"]
+    },
+    {
+      "id": "level-up",
+      "question": "角色 level up 后应该优先看什么？",
+      "priority": "P2",
+      "status": "planned",
+      "reason": "目前只有内部 Autocomplete 信号，没有足够的公开、可追溯规则支持前台页面。",
+      "evidenceRefs": ["S006", "S007"]
+    },
+    {
+      "id": "gold-food-bone",
+      "question": "Gold、Food 或 Bone 的稳定来源和用途是什么？",
+      "priority": "P2",
+      "status": "deferred-evidence-gap",
+      "reason": "现有来源没有完整资源表、掉落表或实机复核；本轮保留缺口，不用猜测补成页面。",
+      "evidenceRefs": ["S001", "S006", "S007"]
+    }
+  ],
+  "pageFamilies": [
+    {
+      "id": "field-guide-hubs",
+      "role": "hub",
+      "status": "implemented",
+      "routes": ["/", "/library"]
+    },
+    {
+      "id": "problem-guides",
+      "role": "guide",
+      "status": "implemented",
+      "routes": ["/guides/beginner-guide", "/guides/how-to-get-clay", "/guides/how-to-research"]
+    },
+    {
+      "id": "guide-details",
+      "role": "detail",
+      "status": "implemented",
+      "routes": ["/guides/beginner-guide", "/guides/how-to-get-clay", "/guides/how-to-research"]
+    },
+    {
+      "id": "first-expedition-checklist",
+      "role": "checklist",
+      "status": "implemented",
+      "routes": ["/tools/first-expedition-planner"]
+    },
+    {
+      "id": "guide-lookup",
+      "role": "lookup",
+      "status": "implemented",
+      "routes": ["/library"]
+    },
+    {
+      "id": "dated-update-path",
+      "role": "update",
+      "status": "implemented",
+      "routes": ["/updates"]
+    }
+  ],
+  "userJourneys": [
+    {
+      "id": "first-expedition-plan",
+      "task": "把第一次远征的准备状态整理成下一步可检查的计划。",
+      "entryRoute": "/",
+      "status": "implemented",
+      "repeatable": true,
+      "steps": [
+        { "route": "/", "action": "点击首页的 Build a first expedition plan 入口。" },
+        { "route": "/tools/first-expedition-planner", "action": "选择本次目的并勾选 settlement、party、Research 和返程观察项。" },
+        { "route": "/tools/first-expedition-planner", "action": "提交清单，得到缺项 hold 结果或四步 ready 结果。" },
+        { "route": "/guides/beginner-guide", "action": "从默认第一次远征结果进入 Beginner Guide 承接页。" },
+        { "route": "/tools/first-expedition-planner", "action": "点击 related planner 入口返回并重新规划下一局。" }
+      ],
+      "outcome": "访客得到当前缺项，或得到一条 settlement → Research question → party → return observation 的可检查计划。",
+      "evidenceRefs": ["S001", "S002"]
+    },
+    {
+      "id": "clay-route-comparison",
+      "task": "从首页进入 Clay 问题，比较当前公开报告的早期和后续路线。",
+      "entryRoute": "/",
+      "status": "planned",
+      "repeatable": false,
+      "steps": [
+        { "route": "/", "action": "从 Start here 选择 Clay 问题。" },
+        { "route": "/guides/how-to-get-clay", "action": "阅读 Quick answer、路径差异和日期边界。" },
+        { "route": "/library", "action": "返回 Guide library 选择另一个相关问题。" }
+      ],
+      "outcome": "在有足够来源支撑的情况下比较 Clay 路线，并知道哪些数量必须在当前版本复查。",
+      "evidenceRefs": ["S001", "S002", "S003"]
+    },
+    {
+      "id": "research-safe-check",
+      "task": "在完整 Research tree 尚未核验时，找到一个安全的下一步。",
+      "entryRoute": "/",
+      "status": "planned",
+      "repeatable": false,
+      "steps": [
+        { "route": "/", "action": "从首页选择 Research 问题。" },
+        { "route": "/guides/how-to-research", "action": "沿安全 checklist 记录 settlement bottleneck 和待核验前置。" },
+        { "route": "/updates", "action": "回查日期更新，再返回规划器重新定义一次 expedition 问题。" }
+      ],
+      "outcome": "访客能区分官方确认、日期敏感观察和 pending_verification，而不把未知科技树写成最佳顺序。",
+      "evidenceRefs": ["S001", "S002", "S007"]
+    }
+  ],
+  "valueUnits": [
+    { "id": "first-expedition-planner", "type": "decision-tool", "status": "implemented", "route": "/tools/first-expedition-planner", "userOutcome": "用一次会话清单得到第一次远征的缺项或四步计划。" },
+    { "id": "beginner-route", "type": "guide", "status": "implemented", "route": "/guides/beginner-guide", "userOutcome": "把 settlement、party、Research 和第一次 expedition 串成起步路线。" },
+    { "id": "clay-route", "type": "comparison", "status": "implemented", "route": "/guides/how-to-get-clay", "userOutcome": "比较当前 Clay 报告中的早期、商人和 Region 2 路线，并看到日期限制。" },
+    { "id": "research-checklist", "type": "checklist", "status": "implemented", "route": "/guides/how-to-research", "userOutcome": "在研究树未完整核验时记录一个可观察的下一步。" },
+    { "id": "guide-library", "type": "lookup", "status": "implemented", "route": "/library", "userOutcome": "按问题或分类找到当前已发布的真实攻略。" },
+    { "id": "dated-updates", "type": "update-feed", "status": "implemented", "route": "/updates", "userOutcome": "知道哪些攻略需要在 Early Access 更新后重新检查。" }
+  ],
+  "visualVocabulary": {
+    "identityAssetIds": ["dungeon-settlers-hero", "dungeon-settlers-capsule"],
+    "mechanicAssetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-dungeon-scene"],
+    "entityAssetIds": [
+      "dungeon-settlers-party-portrait-01",
+      "dungeon-settlers-party-portrait-02",
+      "dungeon-settlers-party-portrait-03",
+      "dungeon-settlers-party-portrait-04",
+      "dungeon-settlers-workstations-icon",
+      "dungeon-settlers-storage-icon"
+    ],
+    "entityIconCount": 6,
+    "representativeRoutes": [
+      { "route": "/", "assetIds": ["dungeon-settlers-hero", "dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-01"] },
+      { "route": "/tools/first-expedition-planner", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-02", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"] },
+      { "route": "/guides/beginner-guide", "assetIds": ["dungeon-settlers-research-loop", "dungeon-settlers-party-portrait-03"] },
+      { "route": "/guides/how-to-get-clay", "assetIds": ["dungeon-settlers-dungeon-scene", "dungeon-settlers-party-portrait-04"] }
+    ]
+  },
+  "navigation": {
+    "primaryRoutes": ["/", "/tools/first-expedition-planner", "/guides/beginner-guide", "/library", "/updates"],
+    "deadEndsReviewed": true,
+    "hasReturnPaths": true
+  },
+  "trust": {
+    "officialEntry": true,
+    "versionBoundary": true,
+    "updatePath": "/updates"
+  },
+  "gaps": [
+    {
+      "id": "complete-research-tree",
+      "category": "facts",
+      "severity": "major",
+      "status": "open",
+      "description": "完整 Research tree、节点前置和最佳顺序仍为 pending_verification。",
+      "evidenceRefs": ["S001", "S002", "S007"]
+    },
+    {
+      "id": "entity-database",
+      "category": "data",
+      "severity": "major",
+      "status": "open",
+      "description": "本轮实体视觉来自官方截图裁切，尚无完整资源、建筑、敌人和掉落资料库。",
+      "evidenceRefs": ["S001", "S007"]
+    },
+    {
+      "id": "repeatable-depth",
+      "category": "product",
+      "severity": "major",
+      "status": "open",
+      "description": "规划器只保存当前会话的第一次远征清单，没有跨局保存、比较或更多已核验查询。",
+      "evidenceRefs": ["S006", "S007"]
+    }
+  ]
+}

@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-07T02:42:50.047Z",
-  "reviewedRoundId": "production-warm-game-assets-r10",
+  "reviewedAt": "2026-09-07T09:13:38.546Z",
+  "reviewedRoundId": "migration-final",
   "reviewer": {
-    "id": "codex-fresh-4c8e966e6415",
+    "id": "codex-fresh-c4e0013abf79",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面以官方游戏截图、明确的 Beginner Guide 主动作和问题导向入口建立了清晰层级；桌面端首屏宽松完整，移动端导航、长标题、按钮与内容均能正常适配，整体保持 Dungeon Settlers 的聚落与地下城身份，并自然衔接版本边界、攻略入口和来源信息。",
+  "summary": "页面围绕 Dungeon Settlers 第一次远征规划建立了清楚的阅读和操作路径，桌面端层级舒展，移动端导航、长标题、表单和结果区域均能顺畅呈现；官方游戏截图、版本边界、检查清单与相关攻略链接共同支撑了具体的游戏身份和可信的内容边界。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "桌面首屏以标题、说明、主按钮和官方聚落截图为核心，后续按问题入口、玩法循环、视频、确认信息和行动建议递进；移动端顺序清晰，主动作仍位于首屏可见区域。"
+      "notes": "首屏以大标题和金色行动按钮建立主层级，随后进入规划器、官方截图说明、结果反馈和底部使用建议，桌面与移动端顺序都清楚。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "官方 Dungeon Settlers capsule、聚落截图、地下城画面和 Early Access 文案共同明确了具体游戏及其 settlement、research、expedition 玩法身份。"
+      "notes": "顶部官方 capsule、标题中的 Dungeon Settlers、聚落实机截图及 party、workstation、storage 画面共同呈现了具体游戏与 settlement-to-dungeon 玩法身份。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面双栏首屏与移动单栏布局转换自然；移动端四项导航按钮、CTA 和卡片均可见且具备足够触控尺寸，长标题没有横向溢出或异常截断。"
+      "notes": "1440px 桌面端采用双栏布局，390px 移动端切换为单栏；长标题完整换行，导航分两行显示，截图中未见横向溢出或内容裁切。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "用户能在首屏快速识别站点用途并点击 Beginner Guide，也能在后续 Start here 区域按 Beginner、Clay、Research 三类问题选择入口；官方页面和视频入口位置明确。"
+      "notes": "首屏明确说明规划目标并提供 Start planning，表单包含运行目的和四项准备检查，Build my route、Clear checklist、空结果反馈及 Beginner/updates 入口均易于定位。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "页面围绕新玩家实际问题组织内容，关键词融入标题和入口文案而不显得堆砌；Early Access、更新日期、官方截图说明及来源边界均以自然的辅助信息呈现。"
+      "notes": "文案围绕第一次远征的实际决策展开，没有展示关键词指标或内部状态；Early Access、更新时间、官方截图说明和证据边界自然融入页面，内链服务于后续任务。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-4c8e966e6415"
+  "reviewRunId": "codex-fresh-c4e0013abf79"
 }

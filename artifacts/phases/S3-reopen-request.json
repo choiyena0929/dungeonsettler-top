@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "phase": "S3",
+  "result": "reopened",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 12,
+  "capturedAt": "2026-09-07T02:20:00+08:00",
+  "reason": "本次迁移样板会改动页面家族、完整度数据、用户旅程和视觉素材；旧 S3-S6 证据只覆盖原三页 launch slice，不能代表本轮改动后的页面与闭环，因此从 S3 顺序重验。",
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "failed",
+    "failureType": "incomplete-output",
+    "evidenceLevel": "L3",
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "旧质量证据覆盖范围不足，需要对迁移后的完整度与纵向旅程重新验收。",
+    "recordedAt": "2026-09-07T02:20:00+08:00"
+  }
+}

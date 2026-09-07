@@ -7,6 +7,7 @@ export const siteConfig = {
     { href: "/guides/beginner-guide", label: "Beginner" },
     { href: "/guides/how-to-get-clay", label: "Clay" },
     { href: "/guides/how-to-research", label: "Research" },
+    { href: "/tools/first-expedition-planner", label: "Plan first run" },
   ],
 };
 

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-07T02:39:40.041Z",
-  "packRevision": "research-pack-4e2a0989d7d71a3f",
+  "generatedAt": "2026-09-07T09:17:00+08:00",
+  "packRevision": "research-pack-8e213b32abffe532",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -25,8 +25,8 @@
     "content-status": {
       "path": "research/content-status.md",
       "status": "present",
-      "bytes": 820,
-      "sha256": "d72a5d06c9ad6c4b321a02adea228e9de1d40d84e6e2d1f4251f01f6d6ad9966"
+      "bytes": 1379,
+      "sha256": "cef8da670e851d3ab196cbda053fe54f55774a3aad38b8dfe34e1bcebab6abb6"
     },
     "platform-questions": {
       "path": "research/platform-questions.md",
@@ -37,20 +37,20 @@
     "visual-benchmark": {
       "path": "research/visual-benchmark.md",
       "status": "present",
-      "bytes": 4386,
-      "sha256": "cbcbc8e72994bb4829c65ac010fa92e2a933aa9773f012075ea29e717777cc3e"
+      "bytes": 4967,
+      "sha256": "6ca539c0deee86f0ad5d8ef2f24ef9957d34cbeee61148302f0cadbccaec96cc"
     },
     "asset-manifest": {
       "path": "research/素材清单.json",
       "status": "present",
-      "bytes": 7291,
-      "sha256": "8a70b870c78ad81381572592456663f1540398564351c4cb067de8274d24a696"
+      "bytes": 17663,
+      "sha256": "98e0dee16622496e23e31409fa4c5d31988664e13807c109dc5acdeed9ab29d9"
     },
     "page-contracts": {
       "path": "research/page-contracts.json",
       "status": "present",
-      "bytes": 3419,
-      "sha256": "4dc532ce9ac229568f1e2eb9d452789c4dbddec713a325a30a1f6a3db1a9ce83"
+      "bytes": 5805,
+      "sha256": "c9d31dc9f5812df394ed98bc592302c041e5a4f8df89461f834858152ce7a490"
     }
   },
   "optional": {
@@ -91,10 +91,13 @@
       "/guides/beginner-guide",
       "/guides/how-to-get-clay",
       "/guides/how-to-research",
-      "/"
+      "/tools/first-expedition-planner",
+      "/",
+      "/library",
+      "/updates"
     ],
-    "pageCount": 4,
-    "assetCount": 5,
+    "pageCount": 7,
+    "assetCount": 11,
     "requiredAssetCount": 2,
     "videoItemCount": 9,
     "videoEvidenceStatus": "measured",

@@ -6,8 +6,8 @@
   "registryId": "site-steam-2798330",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "expectedStateRevision": 3,
-  "capturedAt": "2026-09-06T13:55:18.154Z",
+  "expectedStateRevision": 13,
+  "capturedAt": "2026-09-07T09:15:00+08:00",
   "executionContractVersion": 1,
   "execution": {
     "schemaVersion": 1,
@@ -16,13 +16,11 @@
     "evidenceLevel": null,
     "rootCauseConfirmed": false,
     "retry": {
-      "attempt": 1,
-      "changed": [
-        "tool"
-      ]
+      "attempt": 0,
+      "changed": []
     },
-    "note": "代表页首轮真实桌面/移动 PNG 与 SHA-256 已完成，fresh-context 独立审阅通过。",
-    "recordedAt": "2026-09-06T13:55:18.154Z"
+    "note": "迁移样板代表页、两轮桌面移动截图和 fresh 独立审阅均已完成。",
+    "recordedAt": "2026-09-07T09:15:00+08:00"
   },
   "checks": [
     {
@@ -31,25 +29,25 @@
       "evidence": [
         "artifacts/quality/representative-page.json"
       ],
-      "note": "代表页为 /guides/beginner-guide，页面合同、实现、截图和审阅均已绑定。"
+      "note": "代表页改为第一次远征规划器，并绑定当前页面合同、截图和真实浏览器闭环。"
     },
     {
       "id": "first-desktop-screenshot",
       "status": "passed",
       "evidence": [
-        "artifacts/quality/representative-first-desktop.png",
-        "artifacts/quality/representative-first-desktop-viewport.png"
+        "artifacts/quality/migration-first-desktop.png",
+        "artifacts/quality/migration-first-desktop-viewport.png"
       ],
-      "note": "1440x1000 真实桌面整页与首屏 PNG，SHA-256 由 quality-run.json 记录。"
+      "note": "第一轮 1440px 桌面截图完成，截图脚本站内跳转通过。"
     },
     {
       "id": "first-mobile-screenshot",
       "status": "passed",
       "evidence": [
-        "artifacts/quality/representative-first-mobile.png",
-        "artifacts/quality/representative-first-mobile-viewport.png"
+        "artifacts/quality/migration-first-mobile.png",
+        "artifacts/quality/migration-first-mobile-viewport.png"
       ],
-      "note": "390x844 真实移动整页与首屏 PNG，无横向溢出。"
+      "note": "第一轮 390px 移动截图完成，截图脚本检测无横向溢出。"
     },
     {
       "id": "independent-review-packet",
@@ -57,7 +55,7 @@
       "evidence": [
         "artifacts/quality/independent-review-packet.json"
       ],
-      "note": "交接包要求 reviewer fresh 且与 implementer 不同。"
+      "note": "交接包绑定 migration-final 四张截图和 fresh reviewer contract。"
     },
     {
       "id": "quality-review",
@@ -66,34 +64,16 @@
         "artifacts/quality/quality-review.json",
         "artifacts/quality/independent-review-run.json"
       ],
-      "note": "codex-fresh-dd02b8a9d865 审阅五项标准全部通过，issues 为空。"
+      "note": "Luna Max fresh 独立审阅第二轮通过，issues 为空。"
     }
   ],
   "artifacts": [
+    "research/站点完整度.json",
+    "research/page-contracts.json",
+    "research/素材清单.json",
+    "artifacts/research/research-pack.json",
     "artifacts/quality/quality-run.json",
-    "artifacts/quality/quality-review.json",
-    "artifacts/quality/independent-review-packet.json",
-    "artifacts/quality/independent-review-run.json"
+    "artifacts/quality/seo-routes.json"
   ],
-  "commands": [
-    {
-      "id": "capture-quality",
-      "command": "npm run capture:quality -- --base-url http://localhost:3000 --route /guides/beginner-guide --round-id representative-first",
-      "exitCode": 0,
-      "logPath": "artifacts/quality/quality-run.json"
-    },
-    {
-      "id": "prepare-review",
-      "command": "npm run prepare:review -- --site-path D:\\WebProjects\\sites\\dungeonsettler.top",
-      "exitCode": 0,
-      "logPath": "artifacts/quality/independent-review-packet.json"
-    },
-    {
-      "id": "review-run",
-      "command": "npm run review:run -- --site-path D:\\WebProjects\\sites\\dungeonsettler.top",
-      "exitCode": 0,
-      "logPath": "artifacts/quality/independent-review-run.json"
-    }
-  ],
-  "evidenceId": "phase-s3-11f5f0d0fc08a844"
+  "evidenceId": "phase-s3-239d6f3646aa4b12"
 }

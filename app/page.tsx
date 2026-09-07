@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EntityIconStrip } from "./components/entity-icon-strip";
 import { GameLoopDiagram } from "./components/game-loop-diagram";
 import { guideEntries } from "./content";
 import { JsonLd, itemListStructuredData } from "./structured-data";
@@ -28,7 +29,7 @@ export default function Home() {
           <p className="eyebrow">Dungeon Settlers / Early Access field notes</p>
           <h1>Dungeon Settlers beginner guide, built around the next decision.</h1>
           <p className="hero-lead">A practical starting point for the settlement, the first dungeon route, Clay questions, and Research choices that need a little more evidence.</p>
-          <div className="actions"><a className="button primary" href="/guides/beginner-guide">Start the Beginner Guide <span aria-hidden="true">↗</span></a><a className="button" href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Check the official page</a></div>
+          <div className="actions"><a className="button primary" href="/tools/first-expedition-planner">Build a first expedition plan <span aria-hidden="true">↗</span></a><a className="button" href="/guides/beginner-guide">Start the Beginner Guide</a></div>
           <div className="hero-meta"><span>Current frame: Early Access</span><span>Updated 06 Sep 2026</span></div>
         </div>
         <figure className="hero-visual"><img src="/game/official/hero.jpg" alt="Dungeon Settlers settlement with rooms, work areas, crops, and a central portal." width="1920" height="1080" /><figcaption>Settlement planning / official Dungeon Settlers screenshot from Steam</figcaption></figure>
@@ -38,6 +39,19 @@ export default function Home() {
         <div className="section-heading"><div><p className="eyebrow">Start here</p><h2 id="start-heading">Choose the problem you actually have.</h2></div><p className="section-intro">The first release stays narrow on purpose. Each page gives the short answer first, then marks what comes from an official page, what comes from a dated secondary report, and what is still unknown.</p></div>
         <div className="guide-grid">
           {[beginner, clay, research].map((entry, index) => <article className={`guide-card guide-card-${index + 1}`} key={entry.slug}><div className="card-topline"><span className="card-identity"><img src={guideVisuals[index].src} alt={guideVisuals[index].alt} width="64" height="64" /><small>0{index + 1}</small></span><span>{entry.label}</span></div><h3><a href={`/guides/${entry.slug}`}>{entry.title}</a></h3><p>{entry.summary}</p><a className="text-link" href={`/guides/${entry.slug}`}>Read the route <span aria-hidden="true">→</span></a></article>)}
+        </div>
+      </section>
+
+      <section className="section planner-section" aria-labelledby="planner-section-heading">
+        <div className="planner-section-copy">
+          <p className="eyebrow">A repeatable first step</p>
+          <h2 id="planner-section-heading">Turn the next run into a visible plan.</h2>
+          <p>Choose the question you want the expedition to answer, check the preparation you can see, and get the related route. The planner stays useful after a failed run because it is easy to clear and run again.</p>
+          <a className="button primary" href="/tools/first-expedition-planner">Open the first expedition planner <span aria-hidden="true">→</span></a>
+        </div>
+        <div className="planner-preview">
+          <div className="planner-preview-route"><span>Settlement</span><span aria-hidden="true">→</span><span>Research question</span><span aria-hidden="true">→</span><span>Party</span><span aria-hidden="true">→</span><span>Return with an observation</span></div>
+          <EntityIconStrip compact />
         </div>
       </section>
 
