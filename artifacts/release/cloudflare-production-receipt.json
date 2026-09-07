@@ -5,7 +5,7 @@
   "workerName": "dungeonsettler-top",
   "deploymentCommand": "npm run deploy:cloudflare",
   "wranglerVersion": "4.92.0",
-  "deploymentVersion": "2c2aef19-5826-4612-b534-cd36d70b480f",
+  "deploymentVersion": "0e7b58e9-8330-4e73-a510-fde9c6b4cb59",
   "workerPreviewUrl": "https://dungeonsettler-top.apiskpai-fe0.workers.dev",
   "customDomains": [
     {
@@ -59,14 +59,14 @@
     "reportDirectory": "artifacts/production/",
     "onPageReport": "artifacts/production/onpage-seo.json",
     "migrationJourneyReport": "artifacts/production/migration-journey.json",
-    "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
-    "capturedAt": "2026-09-07T14:43:00.000Z"
+    "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
+    "capturedAt": "2026-09-07T15:21:37.210Z"
   },
   "supersedes": {
     "wrongTarget": "dungeonsettler.top",
     "failureEvidence": "artifacts/failures/S5-domain-name-correction-2026-09-06.json"
   },
-  "sourceCommit": "37fcb1e3243a4419fb150637da05e3ca8dd2b44c",
-  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
-  "capturedAt": "2026-09-07T14:43:00.000Z"
+  "sourceCommit": "f9e94dc4935b447879403bc6966357137922b1f6",
+  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
+  "capturedAt": "2026-09-07T15:21:37.210Z"
 }

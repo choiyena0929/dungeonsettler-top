@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-07T14:43:00.000Z",
-  "runId": "44e606c2-80cc-40ea-a1c7-1ba8eb2c26dc",
+  "capturedAt": "2026-09-07T15:21:37.210Z",
+  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "https://dungeonsettlers.top",
@@ -615,7 +615,7 @@
       "h1s": [
         "Dungeon Settlers guide updates"
       ],
-      "wordCount": 600,
+      "wordCount": 624,
       "internalLinkCount": 8,
       "keywordCount": 2,
       "checks": [
@@ -652,7 +652,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "600/500 words"
+          "detail": "624/500 words"
         },
         {
           "id": "internal-links",
@@ -697,7 +697,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 12"
+          "detail": "2 次，上限 13"
         }
       ],
       "status": "passed"

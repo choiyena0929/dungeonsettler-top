@@ -34,6 +34,6 @@
 ## 截图回查说明
 
 - `dungeon-settlers-site.png` 是 2026-09-06 使用 Edge headless + 本机显式代理对公开页面的真实渲染截图。
-- `artifacts/quality/migration-complete/0b49c1c4-e31f-42a6-9352-feb677b9b40d/` 保存本轮四条旅程的桌面/移动关键状态截图；`artifacts/production/migration-journey.json` 记录同一 runId、8 个 viewport、3 条旧路径、内链、横向溢出和脚本错误结果。
+- `artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/` 保存本轮四条旅程的桌面/移动关键状态截图；`artifacts/production/migration-journey.json` 记录同一 runId、8 个 viewport、3 条旧路径、内链、横向溢出和脚本错误结果。
 - `steam-header.jpg` 是早期构图观察文件；生产页面实际使用的三张官方截图及其精确来源记录在 `research/素材清单.json`。
 - Steam HTML 页和 Prima HTML 页的本地截图尝试分别留下了真实连接关闭/Cloudflare 阻断画面；这些文件不作为设计绿灯，只保留在 `artifacts/visual-benchmark/` 供回查。

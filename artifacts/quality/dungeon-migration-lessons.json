@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "site": "Dungeon Settlers",
+  "purpose": "记录本次完整度迁移中已由源码、构建、正式 HTML、截图和生产收据验证的经验；共享规则与游戏专属事实分开。",
+  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
+  "generatedAt": "2026-09-07T15:21:37.210Z",
+  "productionDeployment": "0e7b58e9-8330-4e73-a510-fde9c6b4cb59",
+  "rules": [
+    {
+      "id": "route-inventory-before-contract",
+      "beforeProblem": "只按既有页面合同判断范围，会漏掉源码动态路由、构建路由和访客从实际 href 能进入的页面。",
+      "afterHandling": "在页面合同和 SEO 之前交叉清点 page.tsx、构建路由类型、正式 HTML href，并单独登记公开路由、查询变体和旧路径。",
+      "evidence": [
+        "artifacts/production/route-inventory.json：sourcePageFiles、buildRoutePatterns、publicRoutes、actualInternalHrefRoutes",
+        "artifacts/production/migration-journey.json：8 条公开链接全部 HTTP 200",
+        "npm run check:onpage：8 个 URL 通过"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S2 页面合同完成前；若源码、构建或 href 有新增，退回 S2。",
+      "legacyMigrationCheck": "先生成当前路由盘点，再对照 sitemap、canonical、内部链接和线上响应，不能只复用旧 page-contracts.json。",
+      "notGeneralRule": "8 个页面、查询参数或任何具体游戏路径不应复制到其他站。"
+    },
+    {
+      "id": "legacy-redirect-canonical-sitemap",
+      "beforeProblem": "旧详情 URL 曾把 canonical 指向首页，Clay 搜索还会落入旧 /library/how-to-get-clay。",
+      "afterHandling": "旧别名保留 308 到唯一新攻略 URL；新页面自规范；sitemap 和内部链接只列首选 URL，旧路径只做兼容入口。",
+      "evidence": [
+        "artifacts/production/migration-journey.json：3 条 /library/* 兼容跳转均 308 且 location 正确",
+        "artifacts/production/onpage-seo.json：8/8 页面 canonical 与首选 URL 一致",
+        "线上 HTML 盘点：Clay 搜索结果 href 为 /guides/how-to-get-clay，sitemap 仅含 8 个首选 URL"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S2 路由合同与 S4 SEO 审计；旧路径清单未验收不得发布。",
+      "legacyMigrationCheck": "逐个请求历史 URL，记录 status/location/canonical；再检查 sitemap、导航、搜索结果是否只输出首选路径。",
+      "notGeneralRule": "308、/library 或 /guides 命名是本站兼容策略，不是所有站固定的 URL 方案。"
+    },
+    {
+      "id": "cta-must-land-on-action",
+      "beforeProblem": "Research 主按钮和搜索后的下一步曾经不能稳定落到实际 checklist/攻略；按钮存在不等于任务完成。",
+      "afterHandling": "每个 primary CTA 都绑定真实页面或页面内可执行区段，并在 E2E 中点击、验证落点和下一步；无证据的按钮不添加。",
+      "evidence": [
+        "app/components/guide-page.tsx：Research 主按钮指向 #research-checklist",
+        "artifacts/production/migration-journey.json：Clay、Research 旅程均到达真实承接页并继续到 planner/updates",
+        "npm run check:complete-site：页面家族和导航门通过"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S3 代表页纵向切片；CTA 点击未落到内容/工具时不得扩页。",
+      "legacyMigrationCheck": "从每个入口实际点击主按钮、搜索结果、详情和返回；记录最终 URL、锚点或结果状态及脚本错误。",
+      "notGeneralRule": "Research、Clay 和 planner 文案不应作为其他游戏的固定 CTA。"
+    },
+    {
+      "id": "planner-evidence-and-persistence",
+      "beforeProblem": "规划器容易变成假工具：空提交、部分选择、完整选择结果相同，或返回/跨会话时状态丢失。",
+      "afterHandling": "结果只由可见选择计算，空/部分/完整状态给出不同的缺项或准备结果；将提交历史同步写入持久存储，再提供加载、比较和返回路径，并明确它是准备清单而非完整远征模拟。",
+      "evidence": [
+        "app/components/expedition-planner.tsx：结果分支、historyKey 同步写入、加载/比较动作",
+        "artifacts/production/migration-journey.json：empty-result、partial-result、ready-result、history-compare、return 均通过桌面/移动",
+        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：planner 六类桌面/移动截图"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S3 工具纵向切片；在空、部分、完整和返回分支通过前不得把工具写入完整度合同。",
+      "legacyMigrationCheck": "清空、只选一项、选满、提交、返回、刷新新会话并比较；同时检查结果是否由输入可解释且没有隐藏路线。",
+      "notGeneralRule": "localStorage key、最多 12 条历史和四个具体检查项是实现细节，不能成为通用产品承诺。"
+    },
+    {
+      "id": "version-locked-research-boundary",
+      "beforeProblem": "研究页面和更新文案把当前表格说成“完整 Research tree”或仍写成全部 pending，事实边界前后不一致。",
+      "afterHandling": "把数据锁定到精确 build/source/hash；当前快照中可核验的行进入 checklist 和数据库，未来版本、通用顺序及没有来源的机制继续标为 pending。",
+      "evidence": [
+        "artifacts/updates/game-data-evidence.json：DS_B.0.4.19、steamBuildId、SHA-256、31 条 Research 行",
+        "artifacts/production/onpage-seo.json：Research 页面内容与来源字段通过",
+        "artifacts/production/migration-journey.json：Research guide → checklist → database → updates 通过"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S1/S2 来源与事实边界；没有精确版本和来源哈希时只能保留未知或 launch-slice。",
+      "legacyMigrationCheck": "搜索公开文案中的旧 pending/过度完整措辞，逐条对照当前快照和来源；更新后重跑内容、SEO 和旅程。",
+      "notGeneralRule": "DS_B.0.4.19、31 行和 Research 字段名称只属于本游戏快照。"
+    },
+    {
+      "id": "official-update-impact-separation",
+      "beforeProblem": "版本复查容易把官方更新、二手观察和本站推断混成一个结论，进而错误改变 Clay、掉落或 Research 页面。",
+      "afterHandling": "先保存官方更新入口和观察时间，再把 confirmed fact、直接影响和未声明事项分开；二手路线保持日期边界，未被官方支持的数量/前置不扩写。",
+      "evidence": [
+        "artifacts/updates/game-update-evidence.json：v0.4.19、v0.4.17 的 confirmed/not-asserted 与 impact 分列",
+        "https://steamcommunity.com/app/2798330/：官方更新入口已登记",
+        "线上 /updates：只说明掉落惩罚、重量和 Research 显示影响，不新增 Clay 路线或固定前置"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S1 版本与来源核验；更新实现前运行影响判断和变更计划。",
+      "legacyMigrationCheck": "复查一手公告、版本号、发布日期和受影响路由；把事实、影响、未知和待复验项逐项回写收据。",
+      "notGeneralRule": "v0.4.19 的掉落/重量事实和任何具体官方 URL 不能迁移成其他游戏结论。"
+    },
+    {
+      "id": "traceable-entity-assets",
+      "beforeProblem": "页面只有 Hero 或重复装饰，实体没有可追溯素材；原创 SVG、AI 图或通用图标可能冒充游戏资产。",
+      "afterHandling": "素材清单记录来源、原图 URL、派生关系、代码落点和截图；真实实体素材分别承担角色、建筑/存储或资源等职责，并分布到搜索、攻略、工具和数据库。",
+      "evidence": [
+        "research/素材清单.json：6 个 entityAssetIds 均 originalOrGenerated=false、source.class=official-cdn 且列出 renderTargets",
+        "npm run check:assets：素材使用合同通过",
+        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：攻略、planner、database 的实体素材截图"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S1 素材闭环；来源、代码引用和职责未齐全时不得用 CSS/图标补视觉锚点。",
+      "legacyMigrationCheck": "逐项检查 asset ID → 本地文件 → 实现文件 → 页面职责 → 截图证据，确认没有整排重复、原创 SVG、AI 图或通用图标冒充实体。",
+      "notGeneralRule": "六个具体 asset ID、截图裁切坐标和 Dungeon Settlers 角色/建筑名称不可作为其他站素材清单。"
+    },
+    {
+      "id": "responsive-branch-acceptance",
+      "beforeProblem": "只看桌面或只证明 URL 可打开，无法发现移动端横向溢出、空状态和返回路径的真实问题。",
+      "afterHandling": "三条核心旅程同时覆盖桌面/移动、空/部分/完整/返回分支，真实点击可见链接，捕获脚本错误、横向溢出和 PNG 证据。",
+      "evidence": [
+        "artifacts/production/migration-journey.json：8 个 viewport journey，runtimeErrors 为空，链接/redirects 全通过",
+        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：Clay、Planner、Research、Database 桌面/移动截图",
+        "npm run check:complete-site：导航、返回和页面家族门通过"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S3/S4 代表页质量循环；没有第二轮桌面/移动和分支证据时不推进。",
+      "legacyMigrationCheck": "在目标域名重新走入口、主动作、结果、下一步、返回和刷新；逐 viewport 检查 overflow、console error 与可点击区域。",
+      "notGeneralRule": "390×844 和本次截图文件名是本轮验收参数，不是所有站的固定尺寸或命名。"
+    },
+    {
+      "id": "single-acceptance-run-clock",
+      "beforeProblem": "代码、SEO、截图和发布收据出现不同时间或时区，无法判断哪一轮证据对应当前部署。",
+      "afterHandling": "由一次验收运行生成 runId/capturedAt/observedAt，并将同一 UTC 时间写入生产检查、SEO、截图目录、更新证据和 Cloudflare 收据；源码提交和部署版本另行绑定。",
+      "evidence": [
+        "runId fe21f53f-3b70-4698-9c6a-183e3a0910d9 / capturedAt 2026-09-07T15:21:37.210Z 出现在 12 个当前收据",
+        "artifacts/release/cloudflare-production-receipt.json：deploymentVersion 0e7b58e9-8330-4e73-a510-fde9c6b4cb59 与完整 sourceCommit 绑定",
+        "artifacts/production/route-inventory.json：timestampSource=single migration acceptance run"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S4 生成证据时建立运行上下文；发布前拒绝混用旧轮次收据。",
+      "legacyMigrationCheck": "汇总所有当前 artifacts 的 runId/时间/时区，检查截图目录、SEO、线上响应和部署 receipt 是否同轮；历史阶段记录保留为历史。",
+      "notGeneralRule": "本次 UUID、时间和 Cloudflare 版本号不能写入其他站的模板默认值。"
+    },
+    {
+      "id": "strict-completeness-gate",
+      "beforeProblem": "页面质量绿灯、构建成功或三页上线可能被误报成 visitor-complete；缺口也可能通过修改 JSON 或状态卡被掩盖。",
+      "afterHandling": "先运行 check:completeness，再在有真实旅程、页面家族、重复价值、视觉词汇、导航和信任边界时运行 check:complete-site；证据不足继续留在 launch-slice，不能改状态伪造通过。",
+      "evidence": [
+        "npm run check:completeness：status/maturity=visitor-complete，3 journeys、7 valueUnits、6 entity icons",
+        "npm run check:complete-site：visitor-complete 门通过",
+        "research/站点完整度.json：P2 level-up 与 Gold/Food/Bone 仍分别为 planned/deferred-evidence-gap"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S2 建合同时先写 launch-slice；S4/S6 只有严格门通过才允许报告 visitor-complete。",
+      "legacyMigrationCheck": "不改 maturity/status 迎合检查；逐项核对机器门、真人三问和未解决 blocking 缺口，失败就保留 launch-slice。",
+      "notGeneralRule": "visitor-complete 的具体价值路由数量、游戏问题和页面名称不能机械复制；门槛需按站型合同解释。"
+    },
+    {
+      "id": "dungeon-version-snapshot-boundary",
+      "beforeProblem": "Dungeon 数据页面只有少量攻略事实，无法支撑 Research、资源和规划器的交叉核对。",
+      "afterHandling": "仅把 DS_B.0.4.19 解析快照提供的 Research、资源、物品、单位、建筑、掉落、配方和商人行做成版本锁定数据库，并把来源哈希和复查入口公开。",
+      "evidence": [
+        "artifacts/updates/game-data-evidence.json：counts 与 SHA-256",
+        "artifacts/production/representative-page.json：/database HTTP 200，正式 title 正确",
+        "artifacts/production/migration-journey.json：database index/search/pagination 桌面/移动通过"
+      ],
+      "appliesToAllGameSites": false,
+      "dungeonOnly": true,
+      "interceptStageForNewSites": "不适用；这是 Dungeon 本轮已有快照的内容边界。",
+      "legacyMigrationCheck": "只在该游戏快照仍可回查且 build/hash 未变时复用；新 build 必须重新提取并复验。",
+      "notGeneralRule": "不得把本游戏的数量、表名、build 或二手来源当成所有游戏站的数据合同。"
+    },
+    {
+      "id": "dungeon-entity-crop-boundary",
+      "beforeProblem": "此前实体视觉不足，单看页面难以辨认具体游戏；补素材时又可能误把裁切头像称为独立官方 icon。",
+      "afterHandling": "保留四枚 party portrait、Workstations 和 Storage 六个真实截图裁切资产，明确 derivedFrom 和“仅作站内实体标识”的边界，并分配到不同路由职责。",
+      "evidence": [
+        "research/素材清单.json：六个实体资产的 derivedFrom、crop、renderTargets、rights basis",
+        "npm run check:assets：6 个 entityIconCount 通过",
+        "artifacts/quality/migration-complete/fe21f53f-3b70-4698-9c6a-183e3a0910d9/：实体图出现在 planner、guide、library、database"
+      ],
+      "appliesToAllGameSites": false,
+      "dungeonOnly": true,
+      "interceptStageForNewSites": "不适用；只在 Dungeon 素材维护和后续版本复查时使用。",
+      "legacyMigrationCheck": "资产来源 URL、截图坐标和职责改变时重新跑素材检查与截图；不能把裁切图扩写成独立官方 icon。",
+      "notGeneralRule": "四枚头像及两个分类图标的名称、裁切坐标和路由映射只属于 Dungeon。"
+    }
+  ]
+}

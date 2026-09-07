@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "runId": "fe21f53f-3b70-4698-9c6a-183e3a0910d9",
+  "capturedAt": "2026-09-07T15:21:37.210Z",
+  "timestampSource": "single migration acceptance run",
+  "baseUrl": "https://dungeonsettlers.top",
+  "method": "交叉核对源码 page.tsx、.next/types/routes.d.ts、正式 HTML href 与线上响应",
+  "sourcePageFiles": [
+    "app/page.tsx",
+    "app/database/page.tsx",
+    "app/guides/[slug]/page.tsx",
+    "app/library/page.tsx",
+    "app/library/[slug]/page.tsx",
+    "app/tools/first-expedition-planner/page.tsx",
+    "app/updates/page.tsx",
+    "app/robots.ts",
+    "app/sitemap.ts"
+  ],
+  "buildRoutePatterns": [
+    "/",
+    "/database",
+    "/guides/[slug]",
+    "/library",
+    "/library/[slug]",
+    "/tools/first-expedition-planner",
+    "/updates"
+  ],
+  "publicRoutes": [
+    "/",
+    "/guides/beginner-guide",
+    "/guides/how-to-get-clay",
+    "/guides/how-to-research",
+    "/tools/first-expedition-planner",
+    "/database",
+    "/updates",
+    "/library"
+  ],
+  "actualInternalHrefRoutes": [
+    "/",
+    "/guides/beginner-guide",
+    "/guides/how-to-get-clay",
+    "/guides/how-to-research",
+    "/tools/first-expedition-planner",
+    "/database",
+    "/database?tab=research",
+    "/updates",
+    "/library"
+  ],
+  "legacyRoutes": [
+    {
+      "path": "/library/beginner-guide",
+      "statusCode": 308,
+      "target": "/guides/beginner-guide"
+    },
+    {
+      "path": "/library/how-to-get-clay",
+      "statusCode": 308,
+      "target": "/guides/how-to-get-clay"
+    },
+    {
+      "path": "/library/how-to-research",
+      "statusCode": 308,
+      "target": "/guides/how-to-research"
+    }
+  ],
+  "onlineChecks": {
+    "status": "passed",
+    "canonical": "8/8 preferred public routes self-canonical",
+    "sitemap": "8/8 public routes; no legacy aliases",
+    "hrefs": "8 public route paths plus research tab query",
+    "runtimeErrors": 0,
+    "horizontalOverflow": "0 at desktop and mobile journey viewports"
+  }
+}
