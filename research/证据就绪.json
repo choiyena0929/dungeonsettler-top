@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "acquisitionModel": "public-fact-acquisition-v1",
+  "phase": "ready",
+  "site": "dungeonsettler.top",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z",
+  "sourceManifest": "research/source-manifest.md",
+  "dataFeasibility": {
+    "path": "research/资料可行性.json",
+    "hash": "e81864f4e282df53c4e997f2fda9b13c377da21787b8f573e0bfdfa16c01f37c"
+  },
+  "readyForLaunchSlice": true,
+  "readyForVisitorComplete": true,
+  "gameIdentity": {
+    "status": "confirmed",
+    "name": "dungeonsettler.top",
+    "id": "dungeonsettler.top",
+    "versionBoundary": "以 source-manifest.md 当前版本边界为准",
+    "sourceRefs": [
+      "S001",
+      "S002"
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "https://steamcommunity.com/app/2798330/"
+    ]
+  },
+  "factCoverage": [
+    {
+      "id": "first-expedition",
+      "question": "第一次准备 settlement 和 party 后，下一步远征应该检查什么？",
+      "status": "partial",
+      "sourceRefs": [
+        "S001"
+      ],
+      "allowedRoutes": [
+        "/tools/first-expedition-planner"
+      ]
+    },
+    {
+      "id": "clay-route",
+      "question": "Clay 当前有哪些可以比较的获得路径？",
+      "status": "partial",
+      "sourceRefs": [
+        "S001"
+      ],
+      "allowedRoutes": [
+        "/guides/how-to-get-clay"
+      ]
+    },
+    {
+      "id": "research-next-step",
+      "question": "Research 如何帮助我决定下一次 expedition？",
+      "status": "partial",
+      "sourceRefs": [
+        "S001"
+      ],
+      "allowedRoutes": [
+        "/guides/how-to-research"
+      ]
+    }
+  ],
+  "dataSnapshot": {
+    "status": "partial",
+    "evidenceMode": "manual-normalization",
+    "scopeMode": "bounded",
+    "unknowns": [
+      "完整数据库字段和未经来源核验的精确数值"
+    ],
+    "outOfScope": [
+      "原始整包数据复制",
+      "未声明版本的社区推断"
+    ],
+    "scope": "本站现在覆盖 Dungeon Settlers Early Access 的起步、Clay 和 Research 任务，提供版本锁定的当前构建资料索引，并用可保存/比较的第一次远征清单把问题、准备、结果和下一页连接起来。",
+    "path": "",
+    "hash": "",
+    "generator": "",
+    "recordCounts": {
+      "demandFacts": 3
+    },
+    "samples": [],
+    "sourceRefs": [
+      "S001",
+      "S002",
+      "S003",
+      "S006",
+      "S007",
+      "Settlers"
+    ]
+  },
+  "assetCoverage": {
+    "identity": {
+      "status": "confirmed",
+      "requiredForVisitorComplete": true,
+      "assetIds": [
+        "dungeon-settlers-hero",
+        "dungeon-settlers-capsule"
+      ],
+      "reason": "身份素材来自素材清单的官方/游戏原图或实机证据。"
+    },
+    "mechanics": {
+      "status": "confirmed",
+      "requiredForVisitorComplete": true,
+      "assetIds": [
+        "dungeon-settlers-research-loop",
+        "dungeon-settlers-dungeon-scene"
+      ],
+      "reason": "玩法素材来自素材清单的官方/游戏原图或实机证据。"
+    },
+    "entities": {
+      "status": "confirmed",
+      "requiredForVisitorComplete": false,
+      "assetIds": [
+        "dungeon-settlers-party-portrait-01",
+        "dungeon-settlers-party-portrait-02",
+        "dungeon-settlers-party-portrait-03",
+        "dungeon-settlers-party-portrait-04",
+        "dungeon-settlers-workstations-icon",
+        "dungeon-settlers-storage-icon"
+      ],
+      "reason": "当前产品不把完整实体图标库作为硬承诺；已有实体素材只作具体页面语境。"
+    }
+  },
+  "scopeDecision": {
+    "launchSlice": {
+      "status": "ready",
+      "reason": "P0/P1 任务、真实路由和主要素材职责已登记。"
+    },
+    "visitorComplete": {
+      "status": "ready",
+      "reason": "有界承诺内的旅程和来源已闭环；范围外未知保持延期。"
+    }
+  }
+}

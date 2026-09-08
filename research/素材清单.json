@@ -26,7 +26,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/f2770dcdb4fc1716e2bd73259293e15468c3f79e/ss_f2770dcdb4fc1716e2bd73259293e15468c3f79e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -62,7 +63,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -98,7 +100,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/bbbdb81369854f132117bf19d8ecc53c1624beaa/ss_bbbdb81369854f132117bf19d8ecc53c1624beaa.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -134,7 +137,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/a142dd72485c214b0fe0e6f2d631e73113450220/capsule_231x87.jpg?t=1788710401",
         "originKind": "official-game-asset",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -165,7 +169,8 @@
         "pageUrl": "https://www.youtube.com/watch?v=BkGIa5V39-w",
         "assetUrl": "https://i.ytimg.com/vi/BkGIa5V39-w/hqdefault.jpg",
         "originKind": "official-game-video-thumbnail",
-        "evidence": "research/source-manifest.md#S004"
+        "evidence": "research/source-manifest.md#S004",
+        "url": "https://www.youtube.com/watch?v=BkGIa5V39-w"
       },
       "rights": {
         "status": "documented",
@@ -196,7 +201,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -204,12 +210,37 @@
       },
       "localPath": "public/game/official/icons/party-portrait-01.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 party 视觉标记" },
-        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Beginner 搜索结果卡片实体标识" },
-        { "route": "全站浏览器元数据", "implementation": "app/layout.tsx", "placement": "使用真实角色头像作为站点图标；public/favicon.ico 为同素材的 ICO 回退，避免默认 /favicon.ico 404" }
+        {
+          "route": "/",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "首页第一次远征规划预览"
+        },
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器 party 视觉标记"
+        },
+        {
+          "route": "/library",
+          "implementation": "app/components/library-search.tsx",
+          "placement": "Beginner 搜索结果卡片实体标识"
+        },
+        {
+          "route": "全站浏览器元数据",
+          "implementation": "app/layout.tsx",
+          "placement": "使用真实角色头像作为站点图标；public/favicon.ico 为同素材的 ICO 回退，避免默认 /favicon.ico 404"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1238, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 1238,
+          "y": 26,
+          "width": 82,
+          "height": 100
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图裁切第一枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
       "alt": "Cropped Dungeon Settlers party portrait from an official Steam screenshot."
     },
@@ -227,7 +258,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -235,10 +267,27 @@
       },
       "localPath": "public/game/official/icons/party-portrait-02.jpg",
       "renderTargets": [
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 Research 视觉标记" },
-        { "route": "/guides/how-to-research", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Research 攻略 party 视觉标记" }
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器 Research 视觉标记"
+        },
+        {
+          "route": "/guides/how-to-research",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Research 攻略 party 视觉标记"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1330, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 1330,
+          "y": 26,
+          "width": 82,
+          "height": 100
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图裁切第二枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
       "alt": "Cropped Dungeon Settlers party portrait from an official Steam screenshot."
     },
@@ -256,7 +305,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -264,10 +314,27 @@
       },
       "localPath": "public/game/official/icons/party-portrait-03.jpg",
       "renderTargets": [
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器侧栏 party 视觉标记" },
-        { "route": "/guides/beginner-guide", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Beginner 攻略 party 视觉标记" }
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器侧栏 party 视觉标记"
+        },
+        {
+          "route": "/guides/beginner-guide",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Beginner 攻略 party 视觉标记"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1410, "y": 26, "width": 82, "height": 100 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 1410,
+          "y": 26,
+          "width": 82,
+          "height": 100
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图裁切第三枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
       "alt": "Cropped Dungeon Settlers party portrait from an official Steam screenshot."
     },
@@ -285,7 +352,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -293,10 +361,27 @@
       },
       "localPath": "public/game/official/icons/party-portrait-04.jpg",
       "renderTargets": [
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器侧栏 party 视觉标记" },
-        { "route": "/guides/how-to-get-clay", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Clay 攻略远征视觉标记" }
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器侧栏 party 视觉标记"
+        },
+        {
+          "route": "/guides/how-to-get-clay",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Clay 攻略远征视觉标记"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 1498, "y": 26, "width": 86, "height": 100 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 1498,
+          "y": 26,
+          "width": 86,
+          "height": 100
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图裁切第四枚 party portrait，保留头像、边框和状态条，作为原素材实体标识。",
       "alt": "Cropped Dungeon Settlers party portrait from an official Steam screenshot."
     },
@@ -314,7 +399,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -322,14 +408,47 @@
       },
       "localPath": "public/game/official/icons/workstations.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器 settlement 视觉标记" },
-        { "route": "/guides/beginner-guide", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Beginner 攻略 settlement 视觉标记" },
-        { "route": "/guides/how-to-research", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Research 攻略 settlement 视觉标记" },
-        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Research 搜索结果卡片实体标识" },
-        { "route": "/database", "implementation": "app/components/database-browser.tsx", "placement": "版本锁定资料页证据卡片实体标识" }
+        {
+          "route": "/",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "首页第一次远征规划预览"
+        },
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器 settlement 视觉标记"
+        },
+        {
+          "route": "/guides/beginner-guide",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Beginner 攻略 settlement 视觉标记"
+        },
+        {
+          "route": "/guides/how-to-research",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Research 攻略 settlement 视觉标记"
+        },
+        {
+          "route": "/library",
+          "implementation": "app/components/library-search.tsx",
+          "placement": "Research 搜索结果卡片实体标识"
+        },
+        {
+          "route": "/database",
+          "implementation": "app/components/database-browser.tsx",
+          "placement": "版本锁定资料页证据卡片实体标识"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 8, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 8,
+          "y": 972,
+          "width": 70,
+          "height": 78
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Workstations 图标，保留游戏内边框和像素图形。",
       "alt": "Cropped Dungeon Settlers Workstations icon from an official Steam screenshot."
     },
@@ -347,7 +466,8 @@
         "pageUrl": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
         "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2798330/fa594fb31067cea992d08521aa62c5438534995e/ss_fa594fb31067cea992d08521aa62c5438534995e.1920x1080.jpg?t=1788710401",
         "originKind": "official-game-asset-crop",
-        "evidence": "research/source-manifest.md#S001"
+        "evidence": "research/source-manifest.md#S001",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/"
       },
       "rights": {
         "status": "documented",
@@ -355,13 +475,42 @@
       },
       "localPath": "public/game/official/icons/storage.jpg",
       "renderTargets": [
-        { "route": "/", "implementation": "app/components/entity-icon-strip.tsx", "placement": "首页第一次远征规划预览" },
-        { "route": "/tools/first-expedition-planner", "implementation": "app/components/entity-icon-strip.tsx", "placement": "规划器返程观察视觉标记" },
-        { "route": "/guides/how-to-get-clay", "implementation": "app/components/entity-icon-strip.tsx", "placement": "Clay 攻略资源视觉标记" },
-        { "route": "/library", "implementation": "app/components/library-search.tsx", "placement": "Clay 搜索结果卡片实体标识" },
-        { "route": "/database", "implementation": "app/components/database-browser.tsx", "placement": "版本锁定资料页证据卡片实体标识" }
+        {
+          "route": "/",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "首页第一次远征规划预览"
+        },
+        {
+          "route": "/tools/first-expedition-planner",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "规划器返程观察视觉标记"
+        },
+        {
+          "route": "/guides/how-to-get-clay",
+          "implementation": "app/components/entity-icon-strip.tsx",
+          "placement": "Clay 攻略资源视觉标记"
+        },
+        {
+          "route": "/library",
+          "implementation": "app/components/library-search.tsx",
+          "placement": "Clay 搜索结果卡片实体标识"
+        },
+        {
+          "route": "/database",
+          "implementation": "app/components/database-browser.tsx",
+          "placement": "版本锁定资料页证据卡片实体标识"
+        }
       ],
-      "derivedFrom": { "assetId": "dungeon-settlers-research-loop", "crop": { "x": 178, "y": 972, "width": 70, "height": 78 }, "transform": "local crop, scaled to 112x112" },
+      "derivedFrom": {
+        "assetId": "dungeon-settlers-research-loop",
+        "crop": {
+          "x": 178,
+          "y": 972,
+          "width": 70,
+          "height": 78
+        },
+        "transform": "local crop, scaled to 112x112"
+      },
       "crop": "从官方 settlement 截图底部建造分类栏裁切 Storage 图标，保留游戏内边框和像素图形。",
       "alt": "Cropped Dungeon Settlers Storage icon from an official Steam screenshot."
     }

@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "status": "visitor-complete",
+  "maturity": "visitor-complete",
+  "counts": {
+    "demandClusters": 5,
+    "implementedJourneys": 3,
+    "implementedValueUnits": 7,
+    "implementedValueRoutes": 7,
+    "visualAssets": 10,
+    "entityIconCount": 6
+  },
+  "errors": [],
+  "site": "",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z"
+}

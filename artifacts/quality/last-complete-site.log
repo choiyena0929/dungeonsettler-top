@@ -1,0 +1,76 @@
+
+> data-to-decision-site-starter@1.1.1 check:complete-site
+> npm run prepare:completeness-run && node scripts/检查完整度闭环.mjs --site-path . --write
+
+
+> data-to-decision-site-starter@1.1.1 prepare:completeness-run
+> node scripts/同步完整度运行记录.mjs --site-path .
+
+{
+  "schemaVersion": 1,
+  "runId": "completeness-20260908163503-83da989d",
+  "capturedAt": "2026-09-08T16:35:03.621Z",
+  "observedAt": "2026-09-08T16:35:03.621Z",
+  "generatedAt": "2026-09-08T16:35:03.621Z",
+  "dataPath": "research/资料可行性.json",
+  "evidencePath": "research/证据就绪.json",
+  "dataHash": "4e39a1d6b8f87b736c65ce1063dd9e2d303f0436ce5564f8efa2c5f8f89b262d"
+}
+{
+  "schemaVersion": 1,
+  "type": "visitor-complete-iteration",
+  "site": "dungeonsettler.top",
+  "runId": "completeness-20260908163503-83da989d",
+  "observedAt": "2026-09-08T16:35:03.621Z",
+  "iteration": 4,
+  "inputFingerprint": "6c227837880dc9677d922d4356e78b377d0f0cef0a308d3bbf71135597313283",
+  "previousInputFingerprint": "8ab1e859debff2d80e0ef16a8f4fb7c7f18b232ffa3dde9149fb7f9bd7af36d4",
+  "retryChanged": true,
+  "ok": true,
+  "status": "visitor-complete",
+  "current": {
+    "data": {
+      "status": "bounded-scope",
+      "readyForVisitorCompletePlan": true,
+      "errors": [],
+      "warnings": [
+        "当前是 bounded-scope：可以做一个范围诚实、任务完整的工具或攻略产品，不能在公开文案中暗示全游戏数据库。"
+      ]
+    },
+    "evidence": {
+      "status": "visitor-complete-ready",
+      "readyForLaunchSlice": true,
+      "readyForVisitorComplete": true,
+      "errors": [],
+      "visitorGaps": []
+    },
+    "completeness": {
+      "status": "visitor-complete",
+      "ok": true,
+      "errors": [],
+      "runId": "completeness-20260908163503-83da989d",
+      "observedAt": "2026-09-08T16:35:03.621Z"
+    }
+  },
+  "gaps": [],
+  "errors": [],
+  "nextIteration": null,
+  "commandResults": [
+    {
+      "script": "scripts/检查资料可行性.mjs",
+      "exitCode": 0,
+      "resultStatus": "bounded-scope"
+    },
+    {
+      "script": "scripts/检查证据就绪.mjs",
+      "exitCode": 0,
+      "resultStatus": "visitor-complete-ready"
+    },
+    {
+      "script": "scripts/检查站点完整度.mjs",
+      "exitCode": 0,
+      "resultStatus": "visitor-complete"
+    }
+  ],
+  "stopReason": "all-strict-gates-passed"
+}

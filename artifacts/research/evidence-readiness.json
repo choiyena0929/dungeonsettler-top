@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "status": "visitor-complete-ready",
+  "readyForLaunchSlice": true,
+  "readyForVisitorComplete": true,
+  "counts": {
+    "factRows": 3,
+    "identityAssets": 2,
+    "mechanicsAssets": 2,
+    "entitiesAssets": 6
+  },
+  "errors": [],
+  "visitorGaps": [],
+  "site": "dungeonsettler.top",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z"
+}

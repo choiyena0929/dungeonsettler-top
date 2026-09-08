@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "status": "bounded-scope",
+  "decisionStatus": "bounded-scope",
+  "readyForVisitorCompletePlan": true,
+  "readyForBoundedScope": true,
+  "purchaseFree": true,
+  "dataAvailabilityScore": {
+    "total": 90,
+    "band": "data-ready",
+    "components": {
+      "officialSources": 20,
+      "communitySources": 15,
+      "structuredData": 0,
+      "observableEvidence": 10,
+      "patchHistory": 10,
+      "videoEvidence": 10,
+      "journeyCoverage": 15,
+      "versionClarity": 5,
+      "mediaAvailability": 5
+    },
+    "basis": {
+      "usableSourceCount": 31,
+      "coveredNeedCount": 3,
+      "totalNeedCount": 3
+    },
+    "method": "public-fact-acquisition-v1"
+  },
+  "errors": [],
+  "warnings": [
+    "当前是 bounded-scope：可以做一个范围诚实、任务完整的工具或攻略产品，不能在公开文案中暗示全游戏数据库。"
+  ],
+  "counts": {
+    "sources": 31,
+    "dataNeeds": 3,
+    "coveredDemands": 3,
+    "plannedAssets": 4
+  },
+  "site": "dungeonsettler.top",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z"
+}

@@ -73,3 +73,9 @@
 - 首页使用 Steam App 2798330 官方商店接口返回的三张游戏截图与 capsule 图，并使用 CanOpener 官方 YouTube Trailer 缩略图作为视频入口；原始 URL、本地文件、渲染位置和裁切规则逐项登记在 `research/素材清单.json`，生产页面使用本地副本。
 - 游戏身份区禁止原创 SVG、AI 生图和抽象占位图。CSS 与通用图标只负责排版和交互状态。
 - Prima 图片、YouTube 缩略图和社区截图不进入本站 `public/`，只保留 URL 作为研究和视觉观察依据。
+
+
+## 当前完整度验收运行
+- runId: portfolio-completeness-20260909-002
+- observedAt: 2026-09-08T16:38:12.424Z
+- 说明：本轮资料、证据、完整度、截图和线上验收必须引用同一运行记录；历史观察保留不覆盖。

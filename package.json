@@ -16,8 +16,8 @@
     "check:assets": "node scripts/检查素材使用.mjs",
     "check:public-copy": "node scripts/check-public-copy.mjs --output dist/client",
     "check:deployment": "node scripts/检查发布目标.mjs",
-    "check:completeness": "node scripts/检查站点完整度.mjs",
-    "check:complete-site": "node scripts/检查站点完整度.mjs --require-visitor-complete",
+    "check:completeness": "npm run prepare:completeness-run && node scripts/检查站点完整度.mjs --site-path . --write",
+    "check:complete-site": "npm run prepare:completeness-run && node scripts/检查完整度闭环.mjs --site-path . --write",
     "data:generate": "node scripts/生成游戏资料快照.mjs",
     "check:data": "node scripts/检查游戏资料快照.mjs",
     "audit:onpage": "node scripts/审计页面SEO.mjs",
@@ -27,7 +27,11 @@
     "check:production": "node scripts/验收生产.mjs",
     "deploy:cloudflare": "npm run verify:release && node scripts/deploy.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "check:data-feasibility": "node scripts/检查资料可行性.mjs --site-path . --write",
+    "check:evidence-readiness": "node scripts/检查证据就绪.mjs --site-path . --write",
+    "check:completeness-loop": "npm run prepare:completeness-run && node scripts/检查完整度闭环.mjs --site-path . --write",
+    "prepare:completeness-run": "node scripts/同步完整度运行记录.mjs --site-path ."
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "type": "visitor-complete-iteration",
+  "site": "dungeonsettler.top",
+  "runId": "portfolio-completeness-20260909-001",
+  "observedAt": "2026-09-08T16:29:10.788Z",
+  "iteration": 1,
+  "inputFingerprint": "2f0a4ecf88201ea8b1f3a2d8555ee02f8287ba409624618619c5b9a065deac03",
+  "previousInputFingerprint": null,
+  "retryChanged": true,
+  "ok": false,
+  "status": "blocked",
+  "current": {
+    "data": {
+      "status": "bounded-scope",
+      "readyForVisitorCompletePlan": true,
+      "errors": [],
+      "warnings": [
+        "当前是 bounded-scope：可以做一个范围诚实、任务完整的工具或攻略产品，不能在公开文案中暗示全游戏数据库。"
+      ]
+    },
+    "evidence": {
+      "status": "blocked",
+      "readyForLaunchSlice": false,
+      "readyForVisitorComplete": false,
+      "errors": [
+        "资产 dungeon-settlers-hero 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-capsule 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-research-loop 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-dungeon-scene 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-01 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-02 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-03 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-04 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-workstations-icon 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-storage-icon 缺少 localPath 或 source.url。"
+      ],
+      "visitorGaps": []
+    },
+    "completeness": {
+      "status": "visitor-complete",
+      "ok": true,
+      "errors": [],
+      "runId": "portfolio-completeness-20260909-001",
+      "observedAt": "2026-09-08T16:29:10.788Z"
+    }
+  },
+  "gaps": [
+    {
+      "id": "evidence-readiness",
+      "stage": "S1",
+      "kind": "external-blocker",
+      "problem": "证据门当前为 blocked，visitor-complete 证据尚未闭环。",
+      "evidence": [
+        "资产 dungeon-settlers-hero 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-capsule 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-research-loop 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-dungeon-scene 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-01 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-02 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-03 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-party-portrait-04 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-workstations-icon 缺少 localPath 或 source.url。",
+        "资产 dungeon-settlers-storage-icon 缺少 localPath 或 source.url。",
+        "artifacts/research/evidence-readiness.json"
+      ],
+      "requiredChange": "补齐事实快照、来源回查、真实文件和按合同声明的素材；未知项保持 unknown/out-of-scope。",
+      "rerun": "npm run check:evidence-readiness -- --write && npm run check:completeness-loop"
+    }
+  ],
+  "errors": [],
+  "nextIteration": {
+    "iteration": 2,
+    "requiredInputChange": true,
+    "canContinue": true,
+    "ownerStages": [
+      "S1"
+    ],
+    "requiredChanges": [
+      {
+        "id": "evidence-readiness",
+        "stage": "S1",
+        "kind": "external-blocker",
+        "change": "补齐事实快照、来源回查、真实文件和按合同声明的素材；未知项保持 unknown/out-of-scope。"
+      }
+    ],
+    "rerunCommands": [
+      "npm run check:evidence-readiness -- --write && npm run check:completeness-loop"
+    ],
+    "stopConditions": [
+      "新增证据或实现后才进入下一轮；相同 inputFingerprint 不算进展。",
+      "外部来源/权利/版本无法取得时保持 blocked，并记录可执行的解除条件。",
+      "只有 data、evidence 和严格完整度三道门全部 ready 才能写 visitor-complete。"
+    ]
+  },
+  "commandResults": [
+    {
+      "script": "scripts/检查资料可行性.mjs",
+      "exitCode": 0,
+      "resultStatus": "bounded-scope"
+    },
+    {
+      "script": "scripts/检查证据就绪.mjs",
+      "exitCode": 1,
+      "resultStatus": "blocked"
+    },
+    {
+      "script": "scripts/检查站点完整度.mjs",
+      "exitCode": 0,
+      "resultStatus": "visitor-complete"
+    }
+  ],
+  "stopReason": "external-evidence-blocker",
+  "generatedAt": "2026-09-08T16:30:16.512Z"
+}

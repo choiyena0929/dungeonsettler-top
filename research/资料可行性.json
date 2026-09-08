@@ -1,0 +1,825 @@
+{
+  "schemaVersion": 2,
+  "acquisitionModel": "public-fact-acquisition-v1",
+  "phase": "ready",
+  "site": "dungeonsettler.top",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z",
+  "targetMaturity": "visitor-complete",
+  "productScope": {
+    "mode": "bounded-complete-product",
+    "promise": "本站现在覆盖 Dungeon Settlers Early Access 的起步、Clay 和 Research 任务，提供版本锁定的当前构建资料索引，并用可保存/比较的第一次远征清单把问题、准备、结果和下一页连接起来。",
+    "identitySourceRefs": [
+      "S001",
+      "S002"
+    ],
+    "p0p1DemandIds": [
+      "first-expedition",
+      "clay-route",
+      "research-next-step"
+    ],
+    "requiredJourneyIds": [
+      "first-expedition-plan",
+      "clay-route-comparison",
+      "research-safe-check"
+    ],
+    "outOfScope": [
+      "未被来源覆盖的完整数据库字段",
+      "未经版本锁定的精确数值和概率"
+    ]
+  },
+  "sourceCandidates": [
+    {
+      "id": "S001",
+      "sourceClass": "official-news",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": [
+        "identity",
+        "mechanics",
+        "entities"
+      ]
+    },
+    {
+      "id": "S002",
+      "sourceClass": "official-news",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://steamcommunity.com/app/2798330/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S003",
+      "sourceClass": "video-observation",
+      "status": "reachable",
+      "authority": "observable",
+      "access": "public-video",
+      "format": "video",
+      "url": "https://primagames.com/tips/how-to-get-clay-in-dungeon-settlers",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "observe",
+        "media": "unknown",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S006",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://dungeonsettlers.wiki/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S007",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://dungeonsettlers.wiki/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Settlers",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "site-starter",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S1",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Shanghai",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Steam",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "store",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "steampowered",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "simulation",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "settlement",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "steamcommunity",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "stone",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "settlers",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Slogels",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "secondary",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S004",
+      "sourceClass": "video-observation",
+      "status": "reachable",
+      "authority": "observable",
+      "access": "public-video",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=BkGIa5V39-w",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "observe",
+        "media": "unknown",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S005",
+      "sourceClass": "video-observation",
+      "status": "reachable",
+      "authority": "observable",
+      "access": "public-video",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=FxqGcrey9S8",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "observe",
+        "media": "unknown",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Semrush",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "semrush-magic",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "steam",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "Search",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "source-coverage",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "success",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "S008",
+      "sourceClass": "video-observation",
+      "status": "reachable",
+      "authority": "observable",
+      "access": "public-video",
+      "format": "video",
+      "url": "https://dungeonsettlers.wiki/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "observe",
+        "media": "unknown",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "settlers-db",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "SHA-256",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    },
+    {
+      "id": "SVG",
+      "sourceClass": "official-store",
+      "status": "reachable",
+      "authority": "official",
+      "access": "public-web",
+      "format": "html",
+      "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+      "versionBoundary": "本轮 2026-09-08T16:32:46.629Z UTC 回查；具体版本以来源正文和站点资料清单为准",
+      "rights": {
+        "facts": "cite",
+        "media": "attribution-required",
+        "basis": "公开来源只用于回查、核验和改写必要事实；不发布原始整包资料。"
+      },
+      "supportsFactIds": [
+        "first-expedition",
+        "clay-route",
+        "research-next-step"
+      ],
+      "supportsAssetRoles": []
+    }
+  ],
+  "dataNeeds": [
+    {
+      "id": "need-first-expedition",
+      "demandId": "first-expedition",
+      "userQuestion": "第一次准备 settlement 和 party 后，下一步远征应该检查什么？",
+      "visitorOutcome": "用户可以在 /tools/first-expedition-planner 得到可执行的有界答案或下一步。",
+      "publicFields": [
+        "结论",
+        "适用边界",
+        "下一步",
+        "来源"
+      ],
+      "status": "covered",
+      "useMode": "manual-fact-extraction",
+      "confidence": "medium",
+      "sourceRefs": [
+        "S001"
+      ]
+    },
+    {
+      "id": "need-clay-route",
+      "demandId": "clay-route",
+      "userQuestion": "Clay 当前有哪些可以比较的获得路径？",
+      "visitorOutcome": "用户可以在 /guides/how-to-get-clay 得到可执行的有界答案或下一步。",
+      "publicFields": [
+        "结论",
+        "适用边界",
+        "下一步",
+        "来源"
+      ],
+      "status": "covered",
+      "useMode": "manual-fact-extraction",
+      "confidence": "medium",
+      "sourceRefs": [
+        "S001"
+      ]
+    },
+    {
+      "id": "need-research-next-step",
+      "demandId": "research-next-step",
+      "userQuestion": "Research 如何帮助我决定下一次 expedition？",
+      "visitorOutcome": "用户可以在 /guides/how-to-research 得到可执行的有界答案或下一步。",
+      "publicFields": [
+        "结论",
+        "适用边界",
+        "下一步",
+        "来源"
+      ],
+      "status": "covered",
+      "useMode": "manual-fact-extraction",
+      "confidence": "medium",
+      "sourceRefs": [
+        "S001"
+      ]
+    }
+  ],
+  "assetNeeds": [
+    {
+      "role": "identity",
+      "requiredForPromise": true,
+      "minimumDistinctAssets": 1,
+      "assetIds": [
+        "dungeon-settlers-hero",
+        "dungeon-settlers-capsule"
+      ],
+      "sourceRefs": [
+        "S001"
+      ],
+      "status": "covered",
+      "reason": "素材清单已登记 identity 的可追溯游戏素材。"
+    },
+    {
+      "role": "mechanics",
+      "requiredForPromise": true,
+      "minimumDistinctAssets": 1,
+      "assetIds": [
+        "dungeon-settlers-research-loop",
+        "dungeon-settlers-dungeon-scene"
+      ],
+      "sourceRefs": [
+        "S001"
+      ],
+      "status": "covered",
+      "reason": "素材清单已登记 mechanics 的可追溯游戏素材。"
+    },
+    {
+      "role": "entities",
+      "requiredForPromise": false,
+      "minimumDistinctAssets": 0,
+      "assetIds": [
+        "dungeon-settlers-party-portrait-01",
+        "dungeon-settlers-party-portrait-02",
+        "dungeon-settlers-party-portrait-03",
+        "dungeon-settlers-party-portrait-04",
+        "dungeon-settlers-workstations-icon",
+        "dungeon-settlers-storage-icon"
+      ],
+      "sourceRefs": [
+        "S001"
+      ],
+      "status": "blocked",
+      "reason": "entities 不在当前公开承诺的硬要求内，保留缺口而不伪造素材。"
+    }
+  ],
+  "cost": {
+    "purchaseRequired": false,
+    "freeDemoRequired": false,
+    "developerContactRequired": false,
+    "manualVerificationRequired": true,
+    "note": "本轮只使用公开来源和已经登记的本地素材。"
+  },
+  "decision": {
+    "status": "bounded-scope",
+    "reason": "公开承诺只覆盖已实现且有来源的 P0/P1 旅程；完整数据库和未经核验的字段继续延期。",
+    "pilotEligible": false
+  },
+  "dataAvailabilityScore": {
+    "total": 90,
+    "band": "data-ready",
+    "components": {
+      "officialSources": 20,
+      "communitySources": 15,
+      "structuredData": 0,
+      "observableEvidence": 10,
+      "patchHistory": 10,
+      "videoEvidence": 10,
+      "journeyCoverage": 15,
+      "versionClarity": 5,
+      "mediaAvailability": 5
+    },
+    "basis": {
+      "usableSourceCount": 31,
+      "coveredNeedCount": 3,
+      "totalNeedCount": 3
+    },
+    "method": "public-fact-acquisition-v1"
+  }
+}

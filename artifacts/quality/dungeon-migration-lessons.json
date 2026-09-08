@@ -1,5 +1,6 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "ruleRevision": "public-fact-acquisition-v1",
   "site": "Dungeon Settlers",
   "purpose": "记录本次完整度迁移中已由源码、构建、正式 HTML、截图和生产收据验证的经验；共享规则与游戏专属事实分开。",
   "runId": "8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
@@ -99,7 +100,7 @@
     {
       "id": "traceable-entity-assets",
       "beforeProblem": "页面只有 Hero 或重复装饰，实体没有可追溯素材；原创 SVG、AI 图或通用图标可能冒充游戏资产。",
-      "afterHandling": "素材清单记录来源、原图 URL、派生关系、代码落点和截图；真实实体素材分别承担角色、建筑/存储或资源等职责，并分布到搜索、攻略、工具和数据库。",
+      "afterHandling": "素材清单记录来源、原图 URL、派生关系、代码落点和截图；只有页面合同声明为 required 的身份、玩法或实体素材才进入硬门，并且每个素材承担明确职责。",
       "evidence": [
         "research/素材清单.json：6 个 entityAssetIds 均 originalOrGenerated=false、source.class=official-cdn 且列出 renderTargets",
         "npm run check:assets：素材使用合同通过",
@@ -109,7 +110,7 @@
       "dungeonOnly": false,
       "interceptStageForNewSites": "S1 素材闭环；来源、代码引用和职责未齐全时不得用 CSS/图标补视觉锚点。",
       "legacyMigrationCheck": "逐项检查 asset ID → 本地文件 → 实现文件 → 页面职责 → 截图证据，确认没有整排重复、原创 SVG、AI 图或通用图标冒充实体。",
-      "notGeneralRule": "六个具体 asset ID、截图裁切坐标和 Dungeon Settlers 角色/建筑名称不可作为其他站素材清单。"
+      "notGeneralRule": "六个具体 asset ID、截图裁切坐标和 Dungeon Settlers 角色/建筑名称不可作为其他站素材清单；实体数量必须由产品承诺决定。"
     },
     {
       "id": "responsive-branch-acceptance",
@@ -215,6 +216,21 @@
       "interceptStageForNewSites": "S1 素材/身份闭环与 S4 线上 smoke；发布前必须确认 favicon/identity asset 200 且来源可回查。",
       "legacyMigrationCheck": "检查历史页面的 favicon 请求、元数据 icon、响应 MIME 和来源；把 404、默认模板 SVG 或无来源图标修复后再验收。",
       "notGeneralRule": "party portrait、ICO 封装方式和具体 favicon 路径是 Dungeon 的实现选择，不是所有站的固定素材。"
+    },
+    {
+      "id": "public-fact-reconstruction-rights-separation",
+      "beforeProblem": "把“没有官方完整数据库或独立 License”直接判为 blocked，导致可回查的客观事实无法进入有界工具；反过来又可能把能读取误当成能复制整包数据和媒体。",
+      "afterHandling": "在来源级别、访问状态、版本边界、factExtraction、datasetCopyRight、mediaReuseRight 之外，单独声明自有字段白名单和证据模式。公开事实可在交叉核验后进入自有 schema；原始 CSV/JSON、代码、精灵图和媒体只有对应复用权或归属确认才可公开。结果固定为 data-ready、bounded-scope 或 blocked。",
+      "evidence": [
+        "Sephiria research/资料可行性.json：4 个来源、3/3 dataNeeds covered、dataAvailabilityScore=60/bounded-scope",
+        "Sephiria research/证据就绪.json：evidenceMode=fact-reconstruction、scopeMode=bounded、unknowns/outOfScope 已列出，readyForLaunchSlice=true",
+        "模板与工作台回归：无 License 社区来源 + normalize-facts 可通过；bulk-import 仍被拒绝"
+      ],
+      "appliesToAllGameSites": true,
+      "dungeonOnly": false,
+      "interceptStageForNewSites": "S1 资料可行性与证据就绪门；在页面合同前先锁定三条旅程、字段白名单、版本和三类权利状态。",
+      "legacyMigrationCheck": "先从源码、构建和真实 href 反推承诺，再为每个核心任务标记可提取事实、数据集复用和媒体复用；若只能完成窄范围，改为 bounded-scope，不扩写全库标题。",
+      "notGeneralRule": "Sephiria 的 fan kit、Dungeon 的 Research/Clay 数据和任何具体许可证结论不能迁移成其他站事实；规则只规定分离判断和证据格式。"
     }
   ]
 }

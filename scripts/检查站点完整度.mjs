@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { readFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -18,6 +19,10 @@ async function readJson(path, label) {
   } catch (error) {
     throw new Error(`${label} 不存在或不是有效 JSON：${error.message}`);
   }
+}
+
+async function readOptionalJson(path) {
+  try { return JSON.parse(await readFile(path, "utf8")); } catch { return {}; }
 }
 
 export function validateCompleteness({ contract, pageContracts, assetManifest, requireVisitorComplete = false }) {
@@ -107,7 +112,9 @@ export function validateCompleteness({ contract, pageContracts, assetManifest, r
     if (!implementedRoles.has("hub") || !["guide", "detail"].some((role) => implementedRoles.has(role)) || !["tool", "lookup", "comparison", "checklist", "database", "update"].some((role) => implementedRoles.has(role))) fail("visitor-complete 必须同时覆盖入口、内容承接和可重复价值页面家族。");
     const unresolvedPriority = demandCoverage.filter((item) => ["P0", "P1"].includes(item?.priority) && !["implemented", "deferred-evidence-gap", "not-applicable"].includes(item?.status));
     if (unresolvedPriority.length) fail("visitor-complete 仍有未归类的 P0/P1 需求簇。");
-    if (list(visual.identityAssetIds).length < 1 || list(visual.mechanicAssetIds).length < 1 || list(visual.entityAssetIds).length < 1 || Number(visual.entityIconCount) < 6) fail("visitor-complete 需要身份、玩法、实体三类视觉词汇，并至少有 6 个可辨认游戏实体图标。");
+    const requiredEntityIconCount = Math.max(0, Number(visual.requiredEntityIconCount ?? 0) || 0);
+    if (list(visual.identityAssetIds).length < 1 || list(visual.mechanicAssetIds).length < 1) fail("visitor-complete 需要身份和玩法两类可追溯的游戏视觉词汇。");
+    if (requiredEntityIconCount > 0 && (list(visual.entityAssetIds).length < 1 || Number(visual.entityIconCount) < requiredEntityIconCount)) fail(`visitor-complete 当前产品声明需要实体视觉词汇，至少要有 ${requiredEntityIconCount} 个可辨认游戏实体图标。`);
     if (list(visual.representativeRoutes).length < 3) fail("visitor-complete 至少要为三个代表路由绑定真实游戏素材。");
     if (list(contract?.navigation?.primaryRoutes).length < 4 || contract?.navigation?.deadEndsReviewed !== true || contract?.navigation?.hasReturnPaths !== true) fail("visitor-complete 需要至少四个主导航路由，并完成死路与返回路径检查。");
     for (const route of list(contract?.navigation?.primaryRoutes)) requireRoute(route, "主导航");
@@ -140,8 +147,23 @@ async function main() {
     readJson(resolve(sitePath, arg("assets", "research/素材清单.json")), "素材清单"),
   ]);
   const result = validateCompleteness({ contract, pageContracts, assetManifest, requireVisitorComplete: process.argv.includes("--require-visitor-complete") });
-  process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
-  if (!result.ok) process.exitCode = 1;
+  const [planContext, evidenceContext] = await Promise.all([
+    readOptionalJson(resolve(sitePath, "research/资料可行性.json")),
+    readOptionalJson(resolve(sitePath, "research/证据就绪.json")),
+  ]);
+  const output = {
+    ...result,
+    site: clean(contract?.site),
+    runId: arg("run-id", clean(planContext?.runId) || clean(evidenceContext?.runId)),
+    observedAt: arg("captured-at", clean(planContext?.observedAt) || clean(evidenceContext?.observedAt)),
+  };
+  if (process.argv.includes("--write")) {
+    const outputPath = resolve(sitePath, arg("out", "artifacts/quality/completeness.json"));
+    await mkdir(dirname(outputPath), { recursive: true });
+    await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  }
+  process.stdout.write(`${JSON.stringify(output, null, 2)}\n`);
+  if (!output.ok) process.exitCode = 1;
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url))) {

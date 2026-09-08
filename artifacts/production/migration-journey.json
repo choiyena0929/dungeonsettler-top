@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "runId": "8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
-  "capturedAt": "2026-09-07T16:27:34.019Z",
+  "runId": "portfolio-completeness-20260909-002",
+  "capturedAt": "2026-09-08T16:38:12.424Z",
   "timestampSource": "single migration acceptance run",
-  "baseUrl": "https://dungeonsettlers.top",
+  "baseUrl": "http://127.0.0.1:4309",
   "status": "passed",
   "viewports": [
     {
@@ -186,49 +186,49 @@
   "links": [
     {
       "path": "/",
-      "url": "https://dungeonsettlers.top/",
+      "url": "http://127.0.0.1:4309/",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/guides/beginner-guide",
-      "url": "https://dungeonsettlers.top/guides/beginner-guide",
+      "url": "http://127.0.0.1:4309/guides/beginner-guide",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/guides/how-to-get-clay",
-      "url": "https://dungeonsettlers.top/guides/how-to-get-clay",
+      "url": "http://127.0.0.1:4309/guides/how-to-get-clay",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/guides/how-to-research",
-      "url": "https://dungeonsettlers.top/guides/how-to-research",
+      "url": "http://127.0.0.1:4309/guides/how-to-research",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/tools/first-expedition-planner",
-      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "url": "http://127.0.0.1:4309/tools/first-expedition-planner",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/database",
-      "url": "https://dungeonsettlers.top/database",
+      "url": "http://127.0.0.1:4309/database",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/updates",
-      "url": "https://dungeonsettlers.top/updates",
+      "url": "http://127.0.0.1:4309/updates",
       "statusCode": 200,
       "location": ""
     },
     {
       "path": "/library",
-      "url": "https://dungeonsettlers.top/library",
+      "url": "http://127.0.0.1:4309/library",
       "statusCode": 200,
       "location": ""
     }
@@ -256,6 +256,6 @@
       "status": "passed"
     }
   ],
-  "screenshots": "D:/WebProjects/sites/dungeonsettler.top/artifacts/quality/migration-final/8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
+  "screenshots": "D:/WebProjects/sites/dungeonsettler.top/artifacts/quality/migration-repair/portfolio-completeness-20260909-002",
   "failures": []
 }
