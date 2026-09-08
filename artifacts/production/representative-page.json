@@ -1,12 +1,12 @@
 {
-  "url": "https://dungeonsettlers.top/database",
+  "url": "https://dungeonsettlers.top/guides/beginner-guide",
   "schemaVersion": 1,
   "status": "passed",
   "statusCode": 200,
   "expectedStatus": 200,
-  "contentLength": 38509,
-  "capturedAt": "2026-09-07T16:27:34.019Z",
-  "runId": "8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
-  "title": "Dungeon Settlers database | DS_B.0.4.19 | DS Field Guide",
-  "deploymentVersion": "e4df48f5-6b75-45d9-8946-42b9ab00871b"
+  "contentLength": 50447,
+  "capturedAt": "2026-09-08T02:24:26.5778813Z",
+  "runId": "0c53fe77-7bbc-400e-a313-0f56c12f50a5",
+  "title": "Dungeon Settlers beginner guide | DS Field Guide",
+  "deploymentVersion": "0566e6e1-5b24-48ac-bc7a-df9aaa2939a8"
 }
