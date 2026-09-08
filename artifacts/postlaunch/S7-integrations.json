@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s7-integrations",
+  "phase": "S7",
+  "status": "verified",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "phaseStateRevision": 17,
+  "capturedAt": "2026-09-08T03:14:00.000Z",
+  "secretsRedacted": true,
+  "services": {
+    "gsc": {
+      "status": "verified",
+      "source": "readonly-api",
+      "property": "sc-domain:dungeonsettlers.top",
+      "sitemapUrl": "https://dungeonsettlers.top/sitemap.xml",
+      "verification": {
+        "observed": true,
+        "observedAt": "2026-09-08T03:09:19.495Z",
+        "detail": "GSC 只读 API 已成功取得 dungeonsettlers.top 的真实快照，窗口为 2026-09-05 至 2026-09-07，原始快照已写入工作台并可回查；本产物不保存访问凭据。",
+        "sourceRef": "workbench/data/raw/google-2026-09-08T03-09-19-495Z.json"
+      }
+    },
+    "ga4": {
+      "status": "verified",
+      "source": "readonly-api",
+      "propertyId": "552898476",
+      "measurementId": "G-GE8ZVMQJ0N",
+      "verification": {
+        "observed": true,
+        "observedAt": "2026-09-08T03:09:19.495Z",
+        "detail": "GA4 只读 API 已成功取得 dungeonsettlers.top 的真实快照，窗口为 2026-09-05 至 2026-09-07，原始快照已写入工作台并可回查；本产物不保存访问凭据。",
+        "sourceRef": "workbench/data/raw/google-2026-09-08T03-09-19-495Z.json"
+      }
+    },
+    "clarity": {
+      "status": "verified",
+      "source": "official-export",
+      "projectId": "yevjcaqti3",
+      "verification": {
+        "observed": true,
+        "observedAt": "2026-09-08T03:04:51.886Z",
+        "detail": "使用该项目的受保护 Clarity Export Token 调用 Data Export API 返回 HTTP 200；最近 3 天接口返回 0 条会话行，当前确认项目接口可用，空数据保留为暂无数据，不解释为活跃量。",
+        "sourceRef": "artifacts/integrations/clarity-verification.json"
+      }
+    }
+  }
+}

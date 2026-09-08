@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-clarity-verification",
+  "status": "verified",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "domain": "dungeonsettlers.top",
+  "projectId": "yevjcaqti3",
+  "source": "official-export",
+  "verification": {
+    "observed": true,
+    "observedAt": "2026-09-08T03:04:51.886Z",
+    "detail": "使用该项目的受保护 Clarity Export Token 调用 Data Export API 返回 HTTP 200；最近 3 天接口返回 0 条会话行，当前确认项目接口可用，空数据保留为暂无数据，不解释为活跃量。"
+  }
+}

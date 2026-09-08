@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-07T16:27:34.019Z",
-  "runId": "8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
+  "capturedAt": "2026-09-08T03:12:00.000Z",
+  "runId": "20260908-s7-api",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "https://dungeonsettlers.top",
@@ -704,7 +704,7 @@
     },
     {
       "path": "/database",
-      "pageType": "database",
+      "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers database",
       "url": "https://dungeonsettlers.top/database",
       "statusCode": 200,

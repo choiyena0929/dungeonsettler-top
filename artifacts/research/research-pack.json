@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-07T09:17:00+08:00",
-  "packRevision": "research-pack-8e213b32abffe532",
+  "generatedAt": "2026-09-08T03:11:56.248Z",
+  "packRevision": "research-pack-8159a7c8e4045a39",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -19,14 +19,14 @@
     "source-manifest": {
       "path": "research/source-manifest.md",
       "status": "present",
-      "bytes": 5530,
-      "sha256": "af4dc3e04905445f8ee1d4abda93312372b8f631d239f00fa3e31523b42f5b10"
+      "bytes": 7161,
+      "sha256": "9f17013f723aa060996cdf0fd429262b91398c193af41c897414c0a15f87b269"
     },
     "content-status": {
       "path": "research/content-status.md",
       "status": "present",
-      "bytes": 1379,
-      "sha256": "cef8da670e851d3ab196cbda053fe54f55774a3aad38b8dfe34e1bcebab6abb6"
+      "bytes": 1638,
+      "sha256": "51cd4a6e02378dabfcdea44a58705337cef2d180b91476a2f2f5c19c03995cf5"
     },
     "platform-questions": {
       "path": "research/platform-questions.md",
@@ -37,20 +37,20 @@
     "visual-benchmark": {
       "path": "research/visual-benchmark.md",
       "status": "present",
-      "bytes": 4967,
-      "sha256": "6ca539c0deee86f0ad5d8ef2f24ef9957d34cbeee61148302f0cadbccaec96cc"
+      "bytes": 5531,
+      "sha256": "da78e0b4479caed147065e1e7882a26530577061596210fb0f16fc305077bfd9"
     },
     "asset-manifest": {
       "path": "research/素材清单.json",
       "status": "present",
-      "bytes": 17663,
-      "sha256": "98e0dee16622496e23e31409fa4c5d31988664e13807c109dc5acdeed9ab29d9"
+      "bytes": 19181,
+      "sha256": "a2c489bffe912dd26ec121f448b34dd0660084bae56cd4af33f932262115b760"
     },
     "page-contracts": {
       "path": "research/page-contracts.json",
       "status": "present",
-      "bytes": 5805,
-      "sha256": "c9d31dc9f5812df394ed98bc592302c041e5a4f8df89461f834858152ce7a490"
+      "bytes": 7519,
+      "sha256": "acef9195b9cdd8980484ee42c06e6dcfedc5cf6b4103d8c65272e880e73c8923"
     }
   },
   "optional": {
@@ -84,19 +84,21 @@
       "S004",
       "S005",
       "S006",
-      "S007"
+      "S007",
+      "S008"
     ],
-    "sourceCount": 7,
+    "sourceCount": 8,
     "mappedRoutes": [
       "/guides/beginner-guide",
       "/guides/how-to-get-clay",
       "/guides/how-to-research",
-      "/tools/first-expedition-planner",
       "/",
+      "/tools/first-expedition-planner",
       "/library",
-      "/updates"
+      "/updates",
+      "/database"
     ],
-    "pageCount": 7,
+    "pageCount": 8,
     "assetCount": 11,
     "requiredAssetCount": 2,
     "videoItemCount": 9,

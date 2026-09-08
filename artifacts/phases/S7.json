@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "phase": "S7",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 17,
+  "capturedAt": "2026-09-08T03:14:00.000Z",
+  "checks": [
+    {
+      "id": "gsc",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S7-integrations.json"
+      ]
+    },
+    {
+      "id": "ga4",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S7-integrations.json"
+      ]
+    },
+    {
+      "id": "clarity",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S7-integrations.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    "artifacts/postlaunch/S7-integrations.json"
+  ],
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "S7 真实来源已按当前状态卡生成并通过机器合同。",
+    "recordedAt": "2026-09-08T03:14:00.000Z"
+  },
+  "evidenceId": "phase-s7-62ebd8266a6e3df6"
+}

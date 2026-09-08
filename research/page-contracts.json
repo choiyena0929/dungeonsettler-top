@@ -89,7 +89,7 @@
     },
     {
       "path": "/database",
-      "pageType": "database",
+      "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers database",
       "intent": "A player wants to look up current-build Research, resources, items, units, buildings, drop pools and recipes before making a settlement or expedition decision.",
       "acceptance": "The page exposes every row in the version-locked DS_B.0.4.19 snapshot through category tabs, search and pagination, records the source manifest and hashes, links to official updates and the relevant guide routes, and labels the extraction as a reviewed secondary source.",
