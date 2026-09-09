@@ -5,7 +5,7 @@
   "statusCode": 200,
   "expectedStatus": 200,
   "contentLength": 1909,
-  "capturedAt": "2026-09-08T02:24:26.5778813Z",
-  "runId": "0c53fe77-7bbc-400e-a313-0f56c12f50a5",
+  "capturedAt": "2026-09-09T02:08:59.174Z",
+  "runId": "portfolio-completeness-20260909-002",
   "containsSitemap": true
 }
