@@ -1,36 +1,123 @@
 {
   "schemaVersion": 1,
+  "type": "game-update-evidence",
+  "siteId": "site-steam-2798330",
+  "inputRevision": "portfolio-update-scan-20260909091137604",
   "runId": "8d3fbdab-6b99-4a8f-9e82-67b09f50705a",
-  "observedAt": "2026-09-07T16:27:34.019Z",
+  "observedAt": "2026-09-09T09:11:37.604Z",
   "timezone": "UTC",
   "queryStatus": "changes-found",
   "source": {
     "label": "Steam Community Hub / official update path",
-    "url": "https://steamcommunity.com/app/2798330/"
+    "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295"
   },
+  "sources": [
+    {
+      "id": "dungeon-feedback-status-20260906",
+      "status": "verified",
+      "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
+      "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and separates future improvements as planned work.",
+      "observedAt": "2026-09-09T09:11:37.604Z"
+    },
+    {
+      "id": "dungeon-v0419-official",
+      "status": "verified",
+      "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+      "claim": "The official v0.4.19 note changes high-difficulty drop handling and the weight of listed items including Clay.",
+      "observedAt": "2026-09-09T09:11:37.604Z"
+    },
+    {
+      "id": "dungeon-v0417-official",
+      "status": "verified",
+      "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
+      "claim": "The official v0.4.17 note corrects displayed Research tiers among other changes.",
+      "observedAt": "2026-09-09T09:11:37.604Z"
+    }
+  ],
   "changes": [
     {
+      "id": "dungeon-v0419-drop-weight",
+      "kind": "fact-correction",
       "version": "v0.4.19",
       "status": "confirmed",
+      "summary": "Keep the v0.4.19 high-difficulty drop and weight changes visible in the affected routes.",
+      "affectedPaths": ["/guides/how-to-get-clay", "/tools/first-expedition-planner"],
+      "areas": ["copy", "data", "internal-links"],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+          "claim": "The official v0.4.19 note removes the item-drop quantity penalty on Very Hard and Devastation Management and reduces the weight of listed items including Clay.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
       "fact": "The official note removes the item-drop quantity penalty on Very Hard and Devastation Management.",
       "impact": "High-difficulty collection context changes; this does not prove a new Clay enemy, floor, or quantity route."
     },
     {
+      "id": "dungeon-v0419-clay-weight",
+      "kind": "fact-correction",
       "version": "v0.4.19",
       "status": "confirmed",
+      "summary": "Keep Clay carry context version-sensitive after the official weight change.",
+      "affectedPaths": ["/guides/how-to-get-clay"],
+      "areas": ["copy", "data"],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+          "claim": "The official v0.4.19 note lists Clay among items with reduced weight.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
       "fact": "The official note reduces the weight of armor, helmets, bones, stone, clay, and other listed items.",
       "impact": "Clay carry context is lighter in the updated build; the guide keeps route and quantity claims version-sensitive."
     },
     {
+      "id": "dungeon-v0417-research-tier",
+      "kind": "fact-correction",
       "version": "v0.4.17",
       "status": "confirmed",
+      "summary": "Keep the Research checklist tied to the visible current-build label and tier.",
+      "affectedPaths": ["/guides/how-to-research"],
+      "areas": ["copy", "data"],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
+          "claim": "The official v0.4.17 note corrects displayed Research tiers for Carapace Processing among other changes.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
       "fact": "The official note corrects the displayed Research tier for Carapace Processing among other Research display changes.",
       "impact": "The Research checklist now asks visitors to copy the visible label and tier and does not infer a hidden prerequisite or order."
     },
     {
+      "id": "dungeon-status-20260906",
+      "kind": "fact-correction",
+      "version": "status-2026-09-06",
+      "status": "confirmed",
+      "summary": "Record the feedback status and keep planned work separate from released mechanics.",
+      "affectedPaths": ["/", "/guides/beginner-guide", "/tools/first-expedition-planner"],
+      "areas": ["copy", "internal-links"],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
+          "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and describes later improvements as still being reviewed.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
+      "fact": "The official feedback announcement says three updates shipped during the first three days of Early Access, links v0.4.12, v0.4.17, and v0.4.19, and lists further improvements still under review.",
+      "impact": "Keep v0.4.19 as the current numbered boundary; treat the listed future work as pending and do not add a new Clay route, quantity, or Research prerequisite."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "dungeon-unknown-clay-research",
       "status": "not-asserted",
       "fact": "No direct Clay route, enemy, floor, quantity, or fixed Research prerequisite is stated in the reviewed official update notes.",
-      "impact": "The Prima Clay report remains a dated secondary observation. A separate S008 snapshot now covers the current-build Research rows, while future-build behavior and universal order remain unverified."
+      "impact": "The Prima Clay report remains a dated secondary observation. A separate S008 snapshot covers the current-build Research rows, while future-build behavior and universal order remain unverified."
     }
   ]
 }

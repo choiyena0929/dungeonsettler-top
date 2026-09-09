@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "type": "visitor-complete-iteration",
   "site": "dungeonsettler.top",
-  "runId": "portfolio-update-remaining-20260909113849",
-  "observedAt": "2026-09-09T11:38:49.497Z",
-  "iteration": 12,
-  "inputFingerprint": "75a2a8282502b102824d5b8689f66803b398e97f665644a30c7c897786acf414",
-  "previousInputFingerprint": "251dfa6661bae8ed89edebad84cafad8be02481eb3dece209fb88f11cc11a0a3",
+  "runId": "portfolio-completeness-20260909-002",
+  "observedAt": "2026-09-08T16:38:12.424Z",
+  "iteration": 11,
+  "inputFingerprint": "251dfa6661bae8ed89edebad84cafad8be02481eb3dece209fb88f11cc11a0a3",
+  "previousInputFingerprint": "e648500afdb35bba438734f77ace4d67516626965c19b2f2eec32fc0cd9236d0",
   "retryChanged": true,
   "ok": true,
   "status": "visitor-complete",
@@ -30,8 +30,8 @@
       "status": "visitor-complete",
       "ok": true,
       "errors": [],
-      "runId": "portfolio-update-remaining-20260909113849",
-      "observedAt": "2026-09-09T11:38:49.497Z"
+      "runId": "portfolio-completeness-20260909-002",
+      "observedAt": "2026-09-08T16:38:12.424Z"
     }
   },
   "gaps": [],
@@ -55,5 +55,5 @@
     }
   ],
   "stopReason": "all-strict-gates-passed",
-  "generatedAt": "2026-09-09T11:40:03.372Z"
+  "generatedAt": "2026-09-09T11:37:06.237Z"
 }

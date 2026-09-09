@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "type": "site-update-delta",
+  "status": "ready-to-prepare",
+  "generatedAt": "2026-09-09T11:35:19.009Z",
+  "siteId": "site-steam-2798330",
+  "inputRevision": "portfolio-update-scan-20260909091137604",
+  "observedAt": "2026-09-09T09:11:37.604Z",
+  "sourceVersion": "",
+  "queryStatus": "changes-found",
+  "query": {
+    "status": "changes-found",
+    "sources": [
+      {
+        "id": "dungeon-feedback-status-20260906",
+        "status": "verified",
+        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
+        "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and separates future improvements as planned work.",
+        "observedAt": "2026-09-09T09:11:37.604Z"
+      },
+      {
+        "id": "dungeon-v0419-official",
+        "status": "verified",
+        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+        "claim": "The official v0.4.19 note changes high-difficulty drop handling and the weight of listed items including Clay.",
+        "observedAt": "2026-09-09T09:11:37.604Z"
+      },
+      {
+        "id": "dungeon-v0417-official",
+        "status": "verified",
+        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
+        "claim": "The official v0.4.17 note corrects displayed Research tiers among other changes.",
+        "observedAt": "2026-09-09T09:11:37.604Z"
+      }
+    ]
+  },
+  "pageContractsRevision": "c2d6958e21d75f03",
+  "pageContractsPath": "research/page-contracts.json",
+  "keywordPolicy": {
+    "mode": "deferred",
+    "queriesExecuted": 0,
+    "reason": "版本维护不自动查询长尾；新子页候选只来自已核验官方更新中的独立用户任务。"
+  },
+  "decisions": [
+    {
+      "id": "dungeon-v0419-drop-weight",
+      "kind": "fact-correction",
+      "summary": "Keep the v0.4.19 high-difficulty drop and weight changes visible in the affected routes.",
+      "affectedPaths": [
+        "/guides/how-to-get-clay",
+        "/tools/first-expedition-planner"
+      ],
+      "areas": [
+        "copy",
+        "data",
+        "internal-links"
+      ],
+      "assetRefs": [],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+          "claim": "The official v0.4.19 note removes the item-drop quantity penalty on Very Hard and Devastation Management and reduces the weight of listed items including Clay.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
+      "unknownPaths": [],
+      "verifiedEvidenceCount": 1,
+      "action": "update-existing-page",
+      "status": "ready-to-prepare",
+      "implementation": {
+        "action": "update-existing-page",
+        "areas": [
+          "copy",
+          "data",
+          "internal-links"
+        ],
+        "steps": [
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。",
+          "补齐受影响页面之间的首选 URL 内链，并重新核对 canonical、sitemap 和旧别名。"
+        ],
+        "keywordSearch": "deferred",
+        "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
+      },
+      "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
+    },
+    {
+      "id": "dungeon-v0419-clay-weight",
+      "kind": "fact-correction",
+      "summary": "Keep Clay carry context version-sensitive after the official weight change.",
+      "affectedPaths": [
+        "/guides/how-to-get-clay"
+      ],
+      "areas": [
+        "copy",
+        "data"
+      ],
+      "assetRefs": [],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
+          "claim": "The official v0.4.19 note lists Clay among items with reduced weight.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
+      "unknownPaths": [],
+      "verifiedEvidenceCount": 1,
+      "action": "update-existing-page",
+      "status": "ready-to-prepare",
+      "implementation": {
+        "action": "update-existing-page",
+        "areas": [
+          "copy",
+          "data"
+        ],
+        "steps": [
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。"
+        ],
+        "keywordSearch": "deferred",
+        "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
+      },
+      "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
+    },
+    {
+      "id": "dungeon-v0417-research-tier",
+      "kind": "fact-correction",
+      "summary": "Keep the Research checklist tied to the visible current-build label and tier.",
+      "affectedPaths": [
+        "/guides/how-to-research"
+      ],
+      "areas": [
+        "copy",
+        "data"
+      ],
+      "assetRefs": [],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
+          "claim": "The official v0.4.17 note corrects displayed Research tiers for Carapace Processing among other changes.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
+      "unknownPaths": [],
+      "verifiedEvidenceCount": 1,
+      "action": "update-existing-page",
+      "status": "ready-to-prepare",
+      "implementation": {
+        "action": "update-existing-page",
+        "areas": [
+          "copy",
+          "data"
+        ],
+        "steps": [
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。"
+        ],
+        "keywordSearch": "deferred",
+        "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
+      },
+      "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
+    },
+    {
+      "id": "dungeon-status-20260906",
+      "kind": "fact-correction",
+      "summary": "Record the feedback status and keep planned work separate from released mechanics.",
+      "affectedPaths": [
+        "/",
+        "/guides/beginner-guide",
+        "/tools/first-expedition-planner"
+      ],
+      "areas": [
+        "copy",
+        "internal-links"
+      ],
+      "assetRefs": [],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
+          "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and describes later improvements as still being reviewed.",
+          "observedAt": "2026-09-09T09:11:37.604Z"
+        }
+      ],
+      "unknownPaths": [],
+      "verifiedEvidenceCount": 1,
+      "action": "update-existing-page",
+      "status": "ready-to-prepare",
+      "implementation": {
+        "action": "update-existing-page",
+        "areas": [
+          "copy",
+          "internal-links"
+        ],
+        "steps": [
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。",
+          "补齐受影响页面之间的首选 URL 内链，并重新核对 canonical、sitemap 和旧别名。"
+        ],
+        "keywordSearch": "deferred",
+        "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
+      },
+      "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
+    }
+  ],
+  "summary": {
+    "queryStatus": "changes-found",
+    "sourcesChecked": 3,
+    "changeCount": 4,
+    "readyToPrepare": 4,
+    "needsReview": 0,
+    "blocked": 0,
+    "keywordQueriesExecuted": 0
+  },
+  "safety": {
+    "codeChanged": false,
+    "urlChanged": false,
+    "directPublish": false,
+    "rule": "update-delta 只生成判断和待办；已查询无变化与未查询分开；实现、URL 变更、删除、部署必须经过对应阶段和人工边界。"
+  }
+}

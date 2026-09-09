@@ -71,7 +71,7 @@
       "acceptance": "The library explains its dated evidence boundary, exposes every current guide as a real searchable entry linking to canonical guide pages, and offers a route into the first-expedition planner, update record, and legacy-path compatibility redirects.",
       "primaryAction": "Search the guide library",
       "requiredSections": ["Guide library", "Problem and category search", "Dated evidence boundary", "First expedition handoff", "Guide update path"],
-      "sourceRefs": ["S001", "S002", "S003"],
+      "sourceRefs": ["S001", "S002", "S003", "S010"],
       "minWords": 500,
       "minInternalLinks": 3
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "status": "passed",
+  "status": "in-progress",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "implementerId": "codex-implementer-dungeonsettler-20260906",
@@ -1190,6 +1190,146 @@
             "href": "/",
             "expectedUrl": "http://localhost:4173/",
             "finalUrl": "http://localhost:4173/",
+            "runtimeErrors": []
+          }
+        }
+      }
+    },
+    {
+      "id": "dungeon-update-20260909",
+      "completedAt": "2026-09-09T11:38:30.932Z",
+      "route": "/updates",
+      "url": "http://127.0.0.1:4502/updates",
+      "desktopScreenshot": "artifacts/quality/dungeon-update-20260909-desktop.png",
+      "mobileScreenshot": "artifacts/quality/dungeon-update-20260909-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/dungeon-update-20260909-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/dungeon-update-20260909-mobile-viewport.png",
+      "desktopSha256": "b26f166ebab51a6513c68472ba106dab801e7f6741e400e5d4e39b909c7cc438",
+      "mobileSha256": "eaccbcbc1a026ab4d32e166cda2268fac2a5f8e9b4ef6089d0cfdb8651222c9c",
+      "desktopViewportSha256": "8c9976253a5a3c1c07622999ea4b55d5a074b60266514c4fe0351d0f8525654c",
+      "mobileViewportSha256": "962e23ebd887af0eb67c15d9ae2adc61c9fb2edbc7ae02978e591c4522aa9e8f",
+      "desktopDomSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+      "mobileDomSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://127.0.0.1:4502/updates",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers guide updates | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 2659,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4449,
+          "domSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+          "screenshotSha256": "b26f166ebab51a6513c68472ba106dab801e7f6741e400e5d4e39b909c7cc438",
+          "viewportScreenshotSha256": "8c9976253a5a3c1c07622999ea4b55d5a074b60266514c4fe0351d0f8525654c",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://127.0.0.1:4502/",
+            "finalUrl": "http://127.0.0.1:4502/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://127.0.0.1:4502/updates",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers guide updates | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 4294,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4449,
+          "domSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+          "screenshotSha256": "eaccbcbc1a026ab4d32e166cda2268fac2a5f8e9b4ef6089d0cfdb8651222c9c",
+          "viewportScreenshotSha256": "962e23ebd887af0eb67c15d9ae2adc61c9fb2edbc7ae02978e591c4522aa9e8f",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://127.0.0.1:4502/",
+            "finalUrl": "http://127.0.0.1:4502/",
+            "runtimeErrors": []
+          }
+        }
+      }
+    },
+    {
+      "id": "dungeon-update-r2-20260909",
+      "completedAt": "2026-09-09T11:39:13.137Z",
+      "route": "/updates",
+      "url": "http://127.0.0.1:4502/updates",
+      "desktopScreenshot": "artifacts/quality/dungeon-update-r2-20260909-desktop.png",
+      "mobileScreenshot": "artifacts/quality/dungeon-update-r2-20260909-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/dungeon-update-r2-20260909-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/dungeon-update-r2-20260909-mobile-viewport.png",
+      "desktopSha256": "b26f166ebab51a6513c68472ba106dab801e7f6741e400e5d4e39b909c7cc438",
+      "mobileSha256": "eaccbcbc1a026ab4d32e166cda2268fac2a5f8e9b4ef6089d0cfdb8651222c9c",
+      "desktopViewportSha256": "8c9976253a5a3c1c07622999ea4b55d5a074b60266514c4fe0351d0f8525654c",
+      "mobileViewportSha256": "962e23ebd887af0eb67c15d9ae2adc61c9fb2edbc7ae02978e591c4522aa9e8f",
+      "desktopDomSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+      "mobileDomSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://127.0.0.1:4502/updates",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers guide updates | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 2659,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4449,
+          "domSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+          "screenshotSha256": "b26f166ebab51a6513c68472ba106dab801e7f6741e400e5d4e39b909c7cc438",
+          "viewportScreenshotSha256": "8c9976253a5a3c1c07622999ea4b55d5a074b60266514c4fe0351d0f8525654c",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://127.0.0.1:4502/",
+            "finalUrl": "http://127.0.0.1:4502/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://127.0.0.1:4502/updates",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers guide updates | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 4294,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 4449,
+          "domSha256": "0c7cd4efbebf41a7db1463f4f890a0da3f1b53c77acb31baa17e6e0b5cd9f66e",
+          "screenshotSha256": "eaccbcbc1a026ab4d32e166cda2268fac2a5f8e9b4ef6089d0cfdb8651222c9c",
+          "viewportScreenshotSha256": "962e23ebd887af0eb67c15d9ae2adc61c9fb2edbc7ae02978e591c4522aa9e8f",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://127.0.0.1:4502/",
+            "finalUrl": "http://127.0.0.1:4502/",
             "runtimeErrors": []
           }
         }

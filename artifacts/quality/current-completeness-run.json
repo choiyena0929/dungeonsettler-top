@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "runId": "portfolio-completeness-20260909-002",
-  "capturedAt": "2026-09-08T16:38:12.424Z",
-  "observedAt": "2026-09-08T16:38:12.424Z",
-  "generatedAt": "2026-09-08T16:38:12.424Z",
+  "runId": "portfolio-update-remaining-20260909113849",
+  "capturedAt": "2026-09-09T11:38:49.497Z",
+  "observedAt": "2026-09-09T11:38:49.497Z",
+  "generatedAt": "2026-09-09T11:38:49.497Z",
   "dataPath": "research/资料可行性.json",
   "evidencePath": "research/证据就绪.json",
-  "dataHash": "e81864f4e282df53c4e997f2fda9b13c377da21787b8f573e0bfdfa16c01f37c"
+  "dataHash": "6ac724ee3beb18eb2ccc62a1ab66efbd7ec004b2ebe4bd7deeb7438a3ecfa694"
 }

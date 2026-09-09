@@ -256,6 +256,14 @@ export const libraryEntries: LibraryEntry[] = guideEntries.map((entry) => ({
 
 export const updates = [
   {
+    version: "Official feedback status",
+    date: "2026-09-06",
+    summary: "The latest official feedback post says three updates shipped during the first three days of Early Access and links v0.4.12, v0.4.17, and v0.4.19. It also lists future improvements that are still being reviewed, so it does not create a new numbered version or a new Clay or Research conclusion.",
+    affectedRoutes: ["/", "/guides/beginner-guide", "/tools/first-expedition-planner"],
+    sourceLabel: "Steam Community official feedback announcement",
+    sourceHref: "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
+  },
+  {
     version: "Official Steam v0.4.19",
     date: "2026-09-06",
     summary: "The official update removed the item-drop quantity penalty on Very Hard and Devastation Management and reduced the weight of several items, including Clay. These changes affect high-difficulty collection and carry context; they do not establish a new Clay route or a Research prerequisite.",

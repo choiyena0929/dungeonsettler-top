@@ -3,12 +3,12 @@
   "acquisitionModel": "public-fact-acquisition-v1",
   "phase": "ready",
   "site": "dungeonsettler.top",
-  "runId": "portfolio-completeness-20260909-002",
-  "observedAt": "2026-09-08T16:38:12.424Z",
+  "runId": "portfolio-update-remaining-20260909113849",
+  "observedAt": "2026-09-09T11:38:49.497Z",
   "sourceManifest": "research/source-manifest.md",
   "dataFeasibility": {
     "path": "research/资料可行性.json",
-    "hash": "e81864f4e282df53c4e997f2fda9b13c377da21787b8f573e0bfdfa16c01f37c"
+    "hash": "6ac724ee3beb18eb2ccc62a1ab66efbd7ec004b2ebe4bd7deeb7438a3ecfa694"
   },
   "readyForLaunchSlice": true,
   "readyForVisitorComplete": true,

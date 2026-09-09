@@ -1,11 +1,22 @@
 {
   "schemaVersion": 1,
   "status": "pending",
-  "currentVersionBoundary": "",
+  "currentVersionBoundary": "0.4.19",
+  "currentAnnouncementBoundary": "2026-09-06",
   "signalCadenceHours": 24,
   "deepCadenceDays": 7,
-  "lastScanStatus": "not-queried",
+  "lastScanStatus": "changes-found",
+  "currentVersionCheckedAt": "2026-09-09T09:11:37.604Z",
+  "currentVersionSource": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814451295",
+  "lastScanNote": "官方最新公告是反馈汇总，明确已发布更新包含 v0.4.19，未公布更高编号版本；当前站点以 v0.4.19 为编号边界，并以 2026-09-06 为公告边界。",
   "sources": [
+    {
+      "id": "steam-news-api",
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=2798330&count=20&maxlength=1000&format=json",
+      "kind": "official-steam-news-api",
+      "signal": true,
+      "required": true
+    },
     {
       "id": "steam-news-rss",
       "url": "https://store.steampowered.com/feeds/news/app/2798330/?cc=US&l=english",
@@ -28,5 +39,5 @@
       "required": false
     }
   ],
-  "note": "官方更新入口已登记；首次成功扫描前保持 not-queried，不能把抓取失败写成 no-change。变化需经过官方正文核验、game-update-evidence、update-delta、site-change-plan 和发布验收。"
+  "note": "官方更新入口已登记。反馈汇总与编号补丁分开记录；状态公告使用 currentAnnouncementBoundary 对账，不能把未来计划写成已发布内容。变化需经过官方正文核验、game-update-evidence、update-delta、site-change-plan 和发布验收。"
 }

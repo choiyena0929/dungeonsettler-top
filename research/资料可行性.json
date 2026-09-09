@@ -3,8 +3,8 @@
   "acquisitionModel": "public-fact-acquisition-v1",
   "phase": "ready",
   "site": "dungeonsettler.top",
-  "runId": "portfolio-completeness-20260909-002",
-  "observedAt": "2026-09-08T16:38:12.424Z",
+  "runId": "portfolio-update-remaining-20260909113849",
+  "observedAt": "2026-09-09T11:38:49.497Z",
   "targetMaturity": "visitor-complete",
   "productScope": {
     "mode": "bounded-complete-product",
