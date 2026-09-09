@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "pending",
+  "currentVersionBoundary": "",
+  "signalCadenceHours": 24,
+  "deepCadenceDays": 7,
+  "lastScanStatus": "not-queried",
+  "sources": [
+    {
+      "id": "steam-news-rss",
+      "url": "https://store.steampowered.com/feeds/news/app/2798330/?cc=US&l=english",
+      "kind": "official-steam-news-rss",
+      "signal": true,
+      "required": true
+    },
+    {
+      "id": "steam-store",
+      "url": "https://store.steampowered.com/app/2798330/",
+      "kind": "official-steam-store",
+      "signal": true,
+      "required": true
+    },
+    {
+      "id": "steam-community-news",
+      "url": "https://steamcommunity.com/app/2798330/",
+      "kind": "official-steam-community-news",
+      "signal": true,
+      "required": false
+    }
+  ],
+  "note": "官方更新入口已登记；首次成功扫描前保持 not-queried，不能把抓取失败写成 no-change。变化需经过官方正文核验、game-update-evidence、update-delta、site-change-plan 和发布验收。"
+}
