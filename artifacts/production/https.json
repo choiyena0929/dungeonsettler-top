@@ -6,7 +6,7 @@
   "statusCode": 200,
   "customDomain": "dungeonsettlers.top",
   "tlsCheck": "passed",
-  "deploymentVersion": "2e80517e-8ae4-48ff-a97b-3560c8062846",
-  "runId": "portfolio-completeness-20260909-002",
-  "capturedAt": "2026-09-09T02:08:59.174Z"
+  "deploymentVersion": "11d390e8-4d07-4c1c-ad0f-5745a144869e",
+  "runId": "production-acceptance-20260909114613183",
+  "capturedAt": "2026-09-09T11:46:13.1788025Z"
 }

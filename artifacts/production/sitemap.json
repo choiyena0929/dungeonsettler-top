@@ -5,7 +5,7 @@
   "statusCode": 200,
   "expectedStatus": 200,
   "contentLength": 1003,
-  "capturedAt": "2026-09-09T02:08:59.174Z",
-  "runId": "portfolio-completeness-20260909-002",
+  "capturedAt": "2026-09-09T11:46:13.1788025Z",
+  "runId": "production-acceptance-20260909114613183",
   "containsXmlUrlset": true
 }
