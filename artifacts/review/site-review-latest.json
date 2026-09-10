@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "type": "site-review",
-  "status": "blocked",
-  "generatedAt": "2026-09-10T03:37:22.816Z",
+  "status": "needs-attention",
+  "generatedAt": "2026-09-10T09:19:56.571Z",
   "site": {
     "siteId": "site-steam-2798330",
     "registryId": "site-steam-2798330",
@@ -22,10 +22,10 @@
   "summary": {
     "sectionCount": 6,
     "readySections": 4,
-    "attentionSections": 0,
-    "blockedSections": 1,
+    "attentionSections": 1,
+    "blockedSections": 0,
     "notQueriedSections": 1,
-    "actionCount": 4
+    "actionCount": 3
   },
   "sections": [
     {
@@ -377,7 +377,7 @@
     {
       "id": "data",
       "title": "数据与组合决策",
-      "status": "blocked",
+      "status": "needs-attention",
       "summary": "验证期；页面观测 3 个，有量 1 个，桌面广告候选 1 个。",
       "checks": [
         {
@@ -406,10 +406,18 @@
         },
         {
           "id": "postlaunch-s9",
-          "status": "blocked",
-          "detail": "S9 缺少标准 postlaunch 产物。",
+          "status": "passed",
+          "detail": "S9 postlaunch 产物、阶段证据和附属证据均已绑定。",
           "evidence": [
-            "artifacts/postlaunch/S9-observation.json"
+            "artifacts/phases/S9.json",
+            "artifacts/postlaunch/S9-observation.json",
+            "artifacts/postlaunch/S7-integrations.json",
+            "artifacts/postlaunch/S8-ads.json",
+            "artifacts/postlaunch/google-2026-09-10T02-18-15-024Z-dungeonsettlers.json",
+            "artifacts/postlaunch/clarity-observation-2026-09-10.json",
+            "artifacts/postlaunch/adsterra-observation-2026-09-10.json",
+            "artifacts/production/homepage.json",
+            "artifacts/production/onpage-seo.json"
           ]
         }
       ],
@@ -431,29 +439,11 @@
           "evidence": [
             "data/workbench.json"
           ]
-        },
-        {
-          "id": "repair-postlaunch-s9",
-          "priority": "P0",
-          "action": "补齐并重新验收 S9 postlaunch 产物",
-          "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
-          "evidence": [
-            "artifacts/postlaunch/S9-observation.json"
-          ]
         }
       ]
     }
   ],
   "priorityActions": [
-    {
-      "id": "data:repair-postlaunch-s9",
-      "priority": "P0",
-      "action": "补齐并重新验收 S9 postlaunch 产物",
-      "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
-      "evidence": [
-        "artifacts/postlaunch/S9-observation.json"
-      ]
-    },
     {
       "id": "data:continue-data-validation",
       "priority": "P1",

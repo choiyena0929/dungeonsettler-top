@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-adsterra-observation",
+  "status": "not-queried",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "domain": "dungeonsettlers.top",
+  "sourceType": "adsterra",
+  "capturedAt": "2026-09-10T08:50:00.000Z",
+  "period": {
+    "start": "2026-08-11",
+    "end": "2026-09-09",
+    "timezone": "UTC"
+  },
+  "domainRecord": null,
+  "metrics": null,
+  "reason": "S8 当前 mode=disabled、provider=none；2026-09-10 Adsterra Publisher API 域名清单中没有 dungeonsettlers.top。按合同保留为未查询/未登记，不写成 0 收益。",
+  "workbenchRawRef": "workbench/data/raw/adsterra-2026-09-10T02-18-54-566Z.json",
+  "secretsRedacted": true,
+  "note": "未启用广告的站点不把缺失登记解释为零收益。"
+}

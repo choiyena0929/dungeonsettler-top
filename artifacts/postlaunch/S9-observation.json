@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s9-observation",
+  "phase": "S9",
+  "status": "recorded",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "phaseStateRevision": 19,
+  "capturedAt": "2026-09-10T08:50:00.000Z",
+  "observationWindow": {
+    "status": "ongoing",
+    "start": "2026-09-07",
+    "end": null,
+    "days": 3
+  },
+  "sources": [
+    {
+      "sourceType": "gsc",
+      "status": "ok",
+      "checkedAt": "2026-09-10T02:18:15.024Z",
+      "detail": "工作台 Google 只读同步成功，窗口 2026-08-13 至 2026-09-09。GSC 汇总为 0 clicks / 2 impressions / 平均位置 8；仅 1 个页面行，分页 complete。展示极少，不能据此判断需求为零。"
+    },
+    {
+      "sourceType": "ga4",
+      "status": "ok",
+      "checkedAt": "2026-09-10T02:18:15.024Z",
+      "detail": "同一 Google 同步成功。GA4 汇总为 50 active users / 62 sessions / 73 page views，engagementRate 约 0.113；主要落地页为首页，另有 /guides/beginner-guide 与 /guides/how-to-research 各 1 session。"
+    },
+    {
+      "sourceType": "clarity",
+      "status": "ok",
+      "checkedAt": "2026-09-10T02:18:54.683Z",
+      "detail": "Clarity Export API（project yevjcaqti3）近 3 天 live insights 返回真实会话行；http 首页 DeadClickCount 会话占比 42.86%，https/www 会话无该指标。S7 已核验项目集成，本轮补上数值快照。"
+    },
+    {
+      "sourceType": "adsterra",
+      "status": "not-queried",
+      "checkedAt": "2026-09-10T02:18:54.566Z",
+      "detail": "S8 当前 mode=disabled、provider=none；同日 Adsterra Publisher API 域名清单不含 dungeonsettlers.top。按合同保留为未查询/未登记，不写成 0 收益或已接入广告。"
+    }
+  ],
+  "sourceRefs": [
+    "artifacts/postlaunch/S7-integrations.json",
+    "artifacts/postlaunch/S8-ads.json",
+    "artifacts/postlaunch/google-2026-09-10T02-18-15-024Z-dungeonsettlers.json",
+    "artifacts/postlaunch/clarity-observation-2026-09-10.json",
+    "artifacts/postlaunch/adsterra-observation-2026-09-10.json",
+    "artifacts/production/homepage.json",
+    "artifacts/production/onpage-seo.json"
+  ],
+  "nextPrimaryAction": {
+    "type": "continue-observation",
+    "priority": "P1",
+    "summary": "继续观察 GA4 会话与 GSC 索引扩展，并按页面级证据处理 SEO 队列",
+    "reason": "GA4 已有 50 用户/62 会话，但 GSC 仅 2 次展示且几乎只有首页；样本仍不足以切换广告或删除页面。下一步应继续同窗口观察，并优先对 /guides/beginner-guide 等已出现落地意图的页面做受控 SEO 改进，不启用广告。",
+    "requiresUserConfirmation": false,
+    "evidence": [
+      "artifacts/postlaunch/S9-observation.json",
+      "artifacts/postlaunch/google-2026-09-10T02-18-15-024Z-dungeonsettlers.json",
+      "artifacts/postlaunch/clarity-observation-2026-09-10.json",
+      "artifacts/postlaunch/S8-ads.json"
+    ]
+  }
+}

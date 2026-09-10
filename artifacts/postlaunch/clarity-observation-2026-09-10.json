@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-clarity-observation",
+  "status": "measured",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "domain": "dungeonsettlers.top",
+  "sourceType": "clarity",
+  "projectId": "yevjcaqti3",
+  "capturedAt": "2026-09-10T02:18:54.683Z",
+  "request": {
+    "endpoint": "https://www.clarity.ms/export-data/api/v1/project-live-insights",
+    "numOfDays": 3,
+    "dimensions": [
+      "URL"
+    ]
+  },
+  "metricSummary": [
+    {
+      "metricName": "DeadClickCount",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 42.86,
+          "pagesViews": 3,
+          "subTotal": 3
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "ExcessiveScroll",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "RageClickCount",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "QuickbackClick",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "ScriptErrorCount",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "ErrorClickCount",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://dungeonsettlers.top/",
+          "sessionsCount": 7,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/",
+          "sessionsCount": 4,
+          "sessionsWithMetricPercentage": 0,
+          "pagesViews": 0,
+          "subTotal": 0
+        }
+      ]
+    },
+    {
+      "metricName": "ScrollDepth",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/"
+        },
+        {
+          "Url": "https://dungeonsettlers.top/"
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/"
+        }
+      ]
+    },
+    {
+      "metricName": "Traffic",
+      "rows": [
+        {
+          "Url": null
+        },
+        {
+          "Url": "http://127.0.0.1:4502/"
+        },
+        {
+          "Url": "http://127.0.0.1:4309/guides/how-to-research"
+        },
+        {
+          "Url": "http://dungeonsettlers.top/"
+        },
+        {
+          "Url": "http://127.0.0.1:4309/guides/how-to-get-clay"
+        },
+        {
+          "Url": "https://dungeonsettlers.top/"
+        },
+        {
+          "Url": "http://127.0.0.1:4309/tools/first-expedition-planner"
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/"
+        },
+        {
+          "Url": "http://127.0.0.1:4309/database"
+        },
+        {
+          "Url": "http://127.0.0.1:4502/updates"
+        },
+        {
+          "Url": "http://127.0.0.1:4309/library"
+        }
+      ]
+    },
+    {
+      "metricName": "EngagementTime",
+      "rows": [
+        {
+          "Url": "http://dungeonsettlers.top/"
+        },
+        {
+          "Url": "https://dungeonsettlers.top/"
+        },
+        {
+          "Url": "https://www.dungeonsettlers.top/"
+        }
+      ]
+    }
+  ],
+  "workbenchRawRef": "workbench/data/raw/clarity-site-steam-2798330-20260910021854683.json",
+  "secretsRedacted": true,
+  "note": "Clarity Data Export API 近 3 天 live insights；站点层观测，不含 token。DeadClick 出现在 http 首页，不解释为收益。"
+}

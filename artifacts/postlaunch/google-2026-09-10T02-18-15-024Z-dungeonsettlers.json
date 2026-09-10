@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-google-site-snapshot",
+  "status": "complete",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "domain": "dungeonsettlers.top",
+  "capturedAt": "2026-09-10T02:18:15.024Z",
+  "runId": "google-2026-09-10T02-18-15-024Z",
+  "range": {
+    "startDate": "2026-08-13",
+    "endDate": "2026-09-09",
+    "mode": "rolling-28d",
+    "dataState": "all",
+    "timeZone": "Asia/Shanghai"
+  },
+  "sourceRawRef": "workbench/data/raw/google-2026-09-10T02-18-15-024Z.json",
+  "sources": {
+    "gsc": {
+      "status": "ok",
+      "sourceId": "site-steam-2798330-gsc",
+      "property": "sc-domain:dungeonsettlers.top",
+      "metrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
+      },
+      "pages": [
+        {
+          "page": "https://dungeonsettlers.top/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8
+        }
+      ],
+      "queries": [],
+      "coverage": {
+        "pages": {
+          "rows": 1,
+          "pageCount": 1,
+          "complete": true
+        },
+        "queries": {
+          "rows": 0,
+          "pageCount": 1,
+          "complete": true
+        },
+        "totals": {
+          "rows": 1,
+          "pageCount": 1,
+          "complete": true
+        }
+      }
+    },
+    "ga4": {
+      "status": "ok",
+      "sourceId": "site-steam-2798330-ga4",
+      "propertyId": "552898476",
+      "measurementId": "G-GE8ZVMQJ0N",
+      "metrics": {
+        "activeUsers": 50,
+        "sessions": 62,
+        "screenPageViews": 73,
+        "engagementRate": 0.11290322580645161
+      },
+      "landingPages": [
+        {
+          "landingPagePlusQueryString": "/",
+          "activeUsers": 45,
+          "sessions": 57,
+          "screenPageViews": 69,
+          "engagementRate": 0.12280701754385964
+        },
+        {
+          "landingPagePlusQueryString": "/?gtm_latency=1",
+          "activeUsers": 2,
+          "sessions": 2,
+          "screenPageViews": 2,
+          "engagementRate": 0
+        },
+        {
+          "landingPagePlusQueryString": "",
+          "activeUsers": 1,
+          "sessions": 1,
+          "screenPageViews": 0,
+          "engagementRate": 0
+        },
+        {
+          "landingPagePlusQueryString": "/guides/beginner-guide",
+          "activeUsers": 1,
+          "sessions": 1,
+          "screenPageViews": 1,
+          "engagementRate": 0
+        },
+        {
+          "landingPagePlusQueryString": "/guides/how-to-research",
+          "activeUsers": 1,
+          "sessions": 1,
+          "screenPageViews": 1,
+          "engagementRate": 0
+        }
+      ],
+      "events": [
+        {
+          "eventName": "page_view",
+          "eventCount": 73,
+          "totalUsers": 49
+        },
+        {
+          "eventName": "session_start",
+          "eventCount": 54,
+          "totalUsers": 49
+        },
+        {
+          "eventName": "first_visit",
+          "eventCount": 49,
+          "totalUsers": 49
+        },
+        {
+          "eventName": "scroll",
+          "eventCount": 15,
+          "totalUsers": 8
+        },
+        {
+          "eventName": "user_engagement",
+          "eventCount": 10,
+          "totalUsers": 10
+        },
+        {
+          "eventName": "click",
+          "eventCount": 2,
+          "totalUsers": 2
+        }
+      ],
+      "coverage": {
+        "landingPages": {
+          "rows": 5,
+          "pageCount": 1,
+          "complete": true
+        },
+        "events": {
+          "rows": 6,
+          "pageCount": 1,
+          "complete": true
+        },
+        "totals": {
+          "rows": 1,
+          "pageCount": 1,
+          "complete": true
+        }
+      }
+    }
+  },
+  "secretsRedacted": true,
+  "note": "工作台 Google 只读同步的站点切片；不含凭据。GSC 展示极少，GA4 有真实会话，二者不可互相替代。"
+}

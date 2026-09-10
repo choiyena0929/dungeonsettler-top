@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "phase": "S9",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 19,
+  "capturedAt": "2026-09-10T08:50:00.000Z",
+  "checks": [
+    {
+      "id": "observation-window",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S9-observation.json",
+        "artifacts/postlaunch/google-2026-09-10T02-18-15-024Z-dungeonsettlers.json",
+        "artifacts/postlaunch/clarity-observation-2026-09-10.json",
+        "artifacts/postlaunch/adsterra-observation-2026-09-10.json"
+      ]
+    },
+    {
+      "id": "next-primary-action",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S9-observation.json",
+        "artifacts/postlaunch/S8-ads.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    "artifacts/postlaunch/S9-observation.json",
+    "artifacts/postlaunch/google-2026-09-10T02-18-15-024Z-dungeonsettlers.json",
+    "artifacts/postlaunch/clarity-observation-2026-09-10.json",
+    "artifacts/postlaunch/adsterra-observation-2026-09-10.json",
+    "artifacts/postlaunch/S7-integrations.json",
+    "artifacts/postlaunch/S8-ads.json",
+    "artifacts/production/homepage.json",
+    "artifacts/production/onpage-seo.json"
+  ],
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "S9 首次真实观察产物：GSC/GA4 来自工作台 2026-09-10 只读同步切片，Clarity 来自 Export API 近 3 天快照，Adsterra 因广告未启用且域名未登记保留 not-queried。下一主动作为继续观察与页面级 SEO，不启用广告。",
+    "recordedAt": "2026-09-10T08:50:00.000Z"
+  },
+  "evidenceId": "phase-s9-6bfd6e66d5f04801"
+}
