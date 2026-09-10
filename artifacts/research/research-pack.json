@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-08T03:11:56.248Z",
-  "packRevision": "research-pack-8159a7c8e4045a39",
+  "generatedAt": "2026-09-10T03:29:05.701Z",
+  "packRevision": "research-pack-da52d00172783e5a",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -19,8 +19,8 @@
     "source-manifest": {
       "path": "research/source-manifest.md",
       "status": "present",
-      "bytes": 7161,
-      "sha256": "9f17013f723aa060996cdf0fd429262b91398c193af41c897414c0a15f87b269"
+      "bytes": 8202,
+      "sha256": "42b72abe060b57b8f5a4299c4812a3f42c2face2a1b16a6a142723c8bbf41ee2"
     },
     "content-status": {
       "path": "research/content-status.md",
@@ -43,14 +43,14 @@
     "asset-manifest": {
       "path": "research/素材清单.json",
       "status": "present",
-      "bytes": 19181,
-      "sha256": "a2c489bffe912dd26ec121f448b34dd0660084bae56cd4af33f932262115b760"
+      "bytes": 21817,
+      "sha256": "e075ebfaca4aee97c35bd28f4c156cf7b80ccb92c1a6b1592549dddde0b12932"
     },
     "page-contracts": {
       "path": "research/page-contracts.json",
       "status": "present",
-      "bytes": 7519,
-      "sha256": "acef9195b9cdd8980484ee42c06e6dcfedc5cf6b4103d8c65272e880e73c8923"
+      "bytes": 8373,
+      "sha256": "20375413921c1eda09dbf8108a560594e4eefa75c852f3a21e46801280796278"
     }
   },
   "optional": {
@@ -85,9 +85,10 @@
       "S005",
       "S006",
       "S007",
-      "S008"
+      "S008",
+      "S010"
     ],
-    "sourceCount": 8,
+    "sourceCount": 9,
     "mappedRoutes": [
       "/guides/beginner-guide",
       "/guides/how-to-get-clay",
@@ -96,9 +97,10 @@
       "/tools/first-expedition-planner",
       "/library",
       "/updates",
+      "/privacy",
       "/database"
     ],
-    "pageCount": 8,
+    "pageCount": 9,
     "assetCount": 11,
     "requiredAssetCount": 2,
     "videoItemCount": 9,

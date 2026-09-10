@@ -88,6 +88,18 @@
       "minInternalLinks": 3
     },
     {
+      "path": "/privacy",
+      "pageType": "legal",
+      "primaryKeyword": "",
+      "intent": "A visitor wants to understand the guide site's analytics, local planner storage, external links, and current advertising boundary.",
+      "acceptance": "The page explains analytics and Clarity, browser-local planner history, the current no-advertising boundary, external service limits, and practical browser controls without exposing internal research or inventing legal promises.",
+      "primaryAction": "Review privacy controls",
+      "requiredSections": ["Analytics and Clarity", "Planner history", "Advertising status", "External links", "Browser choices"],
+      "sourceRefs": [],
+      "minWords": 250,
+      "minInternalLinks": 1
+    },
+    {
       "path": "/database",
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers database",

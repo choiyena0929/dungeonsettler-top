@@ -53,7 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer>
           <div className="footer-inner">
             <div><strong>{siteConfig.name}</strong><p>Independent guides for a changing Early Access game.</p></div>
-            <div className="footer-links"><a href="/tools/first-expedition-planner">First expedition planner</a><a href="/library">Guide library</a><a href="/database">Data reference</a><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><a href="https://www.youtube.com/watch?v=BkGIa5V39-w" rel="noreferrer">Official trailer</a><a href="/updates">Guide updates</a></div>
+            <div className="footer-links"><a href="/tools/first-expedition-planner">First expedition planner</a><a href="/library">Guide library</a><a href="/database">Data reference</a><a href="/updates">Guide updates</a><a href="/privacy">Privacy</a><a href="https://store.steampowered.com/app/2798330/Dungeon_Settlers/" rel="noreferrer">Official Steam page</a><a href="https://www.youtube.com/watch?v=BkGIa5V39-w" rel="noreferrer">Official trailer</a></div>
           </div>
           <p className="footer-small">Guide details are dated. Check the official game pages after major updates.</p>
         </footer>

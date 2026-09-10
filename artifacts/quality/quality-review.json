@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-07T16:03:14.888Z",
-  "reviewedRoundId": "migration-acceptance-final-f808-r2",
+  "reviewedAt": "2026-09-10T03:31:16.484Z",
+  "reviewedRoundId": "s8-disabled-20260910-r2",
   "reviewer": {
-    "id": "codex-fresh-7705f6fa1d55",
+    "id": "codex-fresh-dc4da5cb9b47",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "页面以 Dungeon Settlers 的具体聚落截图、远征清单和明确的 Review preparation 动作为核心，桌面与移动端均保持清晰层级。长标题、导航、表单卡片和后续说明在窄屏下可读且未见横向溢出，内容边界与 Early Access 语境自然融入整体体验。",
+  "summary": "首页在桌面端建立了清晰的游戏身份、首要行动和实机视觉，移动端导航、长标题与按钮均能自然收束并保持可操作性；整页内容按问题、玩法循环、官方视频、版本边界和来源逐层展开，信息密度较高但主次明确，没有明显横向溢出或视觉断裂。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "首屏先呈现站点身份、页面任务与 Start planning 动作，随后进入检查工具、结果、历史和解释区域；桌面双栏与移动单栏顺序清晰。"
+      "notes": "桌面首屏以大标题、官方聚落截图和首要行动为核心，后续按问题入口、玩法循环、视频、版本信息和来源分层；移动端虽为长页，但区块边界和标题层级仍清楚。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "Dungeon Settlers 名称、官方 capsule、聚落实机截图、队伍头像和工作台/储存素材共同建立了明确的游戏与玩法身份。"
+      "notes": "官方 Dungeon Settlers capsule、聚落截图、地下城截图和官方宣传视频入口共同建立了明确的游戏与玩法身份，即使遮住站点名称也能辨认是具体游戏攻略页面。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面与 390px 移动视图均能容纳导航、长标题、表单和卡片；移动导航分两行排列，主要按钮和勾选项具有可操作尺寸，未见横向溢出。"
+      "notes": "桌面采用左右首屏布局，移动端改为单列并将导航分成两行；长标题、CTA、卡片和图片均能收缩，无明显横向溢出，触控目标尺寸看起来足够使用。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "页面在首屏直接说明规划目的，并提供 Start planning、Run purpose、四项准备检查与 Review preparation，核心任务路径无需额外寻找。"
+      "notes": "首屏几秒内即可看到 Beginner Guide 与 Build a first expedition plan 两个核心入口，随后可按 Clay、Research 和首次远征等具体问题继续进入内容。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "标题和说明围绕 Dungeon Settlers 首次远征场景展开，版本、证据边界和相关指南入口以辅助信息呈现，没有明显关键词堆叠或破坏阅读的营销内容。"
+      "notes": "页面使用自然的问题导向文案和真实游戏画面，Early Access、版本与来源信息作为信任边界出现，没有在视觉中暴露内部指标或研究流程；长页内容组织仍服务于玩家决策。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-7705f6fa1d55"
+  "reviewRunId": "codex-fresh-dc4da5cb9b47"
 }
