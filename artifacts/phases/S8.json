@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "phase": "S8",
+  "result": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "expectedStateRevision": 18,
+  "capturedAt": "2026-09-10T03:34:30.1538690Z",
+  "checks": [
+    {
+      "id": "privacy",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S8-ads.json"
+      ]
+    },
+    {
+      "id": "desktop-ad-ux",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S8-ads.json",
+        "artifacts/postlaunch/s8-20260910-dungeon-desktop.png"
+      ]
+    },
+    {
+      "id": "mobile-ad-ux",
+      "status": "passed",
+      "evidence": [
+        "artifacts/postlaunch/S8-ads.json",
+        "artifacts/postlaunch/s8-20260910-dungeon-mobile.png",
+        "artifacts/postlaunch/s8-20260910-dungeon-mobile-network.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    "artifacts/postlaunch/S8-ads.json",
+    "artifacts/postlaunch/s8-20260910-dungeon-desktop.png",
+    "artifacts/postlaunch/s8-20260910-dungeon-mobile.png",
+    "artifacts/postlaunch/s8-20260910-dungeon-mobile-network.json",
+    "scripts/采集S8广告证据.mjs"
+  ],
+  "executionContractVersion": 1,
+  "execution": {
+    "schemaVersion": 1,
+    "outcome": "success",
+    "failureType": null,
+    "evidenceLevel": null,
+    "rootCauseConfirmed": false,
+    "retry": {
+      "attempt": 0,
+      "changed": []
+    },
+    "note": "S8 隐私页、无广告边界和桌面、移动体验已按当前状态卡在正式域名真实核验。",
+    "recordedAt": "2026-09-10T03:34:30.1538690Z"
+  },
+  "evidenceId": "phase-s8-c779df40d8a06990"
+}

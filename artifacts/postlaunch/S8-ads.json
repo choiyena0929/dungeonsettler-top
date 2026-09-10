@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-s8-ads",
+  "phase": "S8",
+  "status": "passed",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "phaseStateRevision": 18,
+  "capturedAt": "2026-09-10T03:34:06.086Z",
+  "mode": "disabled",
+  "provider": "none",
+  "userConfirmation": {
+    "status": "not-required",
+    "reason": "本轮没有用户启用广告的明确确认；继续保持无广告，先完成隐私与桌面、移动体验核验。"
+  },
+  "checks": {
+    "privacy": {
+      "status": "passed",
+      "route": "/privacy",
+      "checkedAt": "2026-09-10T03:34:30.1538690Z",
+      "notes": "正式域名 /privacy 返回 HTTP 200；页面说明 Google Analytics、Microsoft Clarity、浏览器本地 planner history、当前无第三方广告边界以及外部服务由各自政策负责。"
+    },
+    "desktopAdUx": {
+      "status": "passed",
+      "behavior": "ads-not-enabled",
+      "checkedAt": "2026-09-10T03:34:06.086Z",
+      "screenshot": "artifacts/postlaunch/s8-20260910-dungeon-desktop.png",
+      "notes": "正式域名桌面 Chrome 1440x900 真实复核返回 HTTP 200；当前版本未启用广告，没有广告容器，正文与规划入口可正常阅读。"
+    },
+    "mobileAdUx": {
+      "status": "passed",
+      "behavior": "ads-not-enabled",
+      "checkedAt": "2026-09-10T03:34:06.086Z",
+      "screenshot": "artifacts/postlaunch/s8-20260910-dungeon-mobile.png",
+      "networkEvidence": "artifacts/postlaunch/s8-20260910-dungeon-mobile-network.json",
+      "notes": "正式域名 iPhone UA 390x844 真实复核返回 HTTP 200；当前版本未启用广告，未请求广告相关脚本，也未渲染广告容器。"
+    }
+  }
+}

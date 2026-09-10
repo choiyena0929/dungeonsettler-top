@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-mobile-ad-network-check",
+  "status": "passed",
+  "siteId": "steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "phaseStateRevision": 18,
+  "capturedAt": "2026-09-10T03:34:06.086Z",
+  "url": "https://dungeonsettlers.top/",
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+  "adScriptRequests": 0,
+  "adContainerCount": 0,
+  "adScriptElementCount": 0,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "notes": "正式域名桌面与 iPhone UA 移动端均已真实打开；当前站点未启用广告，移动端未请求广告相关脚本，也未渲染广告容器。请求 URL 已去除查询参数。"
+}

@@ -2,38 +2,48 @@
   "schemaVersion": 1,
   "type": "site-review",
   "status": "blocked",
-  "generatedAt": "2026-09-07T01:35:00.000Z",
+  "generatedAt": "2026-09-10T03:37:22.816Z",
   "site": {
-    "siteId": "steam-2798330",
+    "siteId": "site-steam-2798330",
     "registryId": "site-steam-2798330",
     "name": "Dungeon Settlers",
     "domain": "dungeonsettlers.top",
     "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top"
   },
   "state": {
-    "currentPhase": "S7",
+    "currentPhase": "S9",
     "phaseStatus": "IN_PROGRESS",
     "qualityStatus": "PASSED",
     "handoffId": "handoff-c94ddea503cd",
     "inputRevision": "input-59995249c82e",
-    "stateRevision": "17",
-    "nextAllowedAction": "由用户完成 GSC/GA4/Clarity 后台确认并登记证据"
+    "stateRevision": "19",
+    "nextAllowedAction": "继续观察或按证据开启下一轮受控改进"
   },
   "summary": {
     "sectionCount": 6,
-    "readySections": 3,
+    "readySections": 4,
     "attentionSections": 0,
-    "blockedSections": 2,
+    "blockedSections": 1,
     "notQueriedSections": 1,
-    "actionCount": 7
+    "actionCount": 4
   },
   "sections": [
     {
       "id": "technical",
       "title": "技术与发布",
       "status": "ready",
-      "summary": "17/17 项技术与发布检查通过。",
+      "summary": "18/18 项技术与发布检查通过。",
       "checks": [
+        {
+          "id": "site-identity",
+          "status": "passed",
+          "detail": "注册表、状态卡和工作台均绑定 site-steam-2798330 / dungeonsettlers.top。",
+          "evidence": [
+            "data/站点注册.json",
+            "状态卡",
+            "data/workbench.json"
+          ]
+        },
         {
           "id": "file-AGENTS.md",
           "status": "passed",
@@ -195,7 +205,7 @@
         {
           "id": "本地-onpage-result",
           "status": "passed",
-          "detail": "本地 On-page 报告 7 个 URL 全部通过。",
+          "detail": "本地 On-page 报告 9 个 URL 全部通过。",
           "evidence": [
             "artifacts/quality/seo-routes.json"
           ]
@@ -203,7 +213,7 @@
         {
           "id": "生产-onpage-result",
           "status": "passed",
-          "detail": "生产 On-page 报告 7 个 URL 全部通过。",
+          "detail": "生产 On-page 报告 9 个 URL 全部通过。",
           "evidence": [
             "artifacts/production/onpage-seo.json"
           ]
@@ -228,13 +238,13 @@
         {
           "id": "quality-run",
           "status": "passed",
-          "detail": "最新质量轮次 migration-final 含桌面/移动整页图和首屏视口图共四张真实截图。",
+          "detail": "最新质量轮次 s8-disabled-20260910-r2 含桌面/移动整页图和首屏视口图共四张真实截图。",
           "evidence": [
             "artifacts/quality/quality-run.json",
-            "artifacts/quality/migration-final-desktop.png",
-            "artifacts/quality/migration-final-mobile.png",
-            "artifacts/quality/migration-final-desktop-viewport.png",
-            "artifacts/quality/migration-final-mobile-viewport.png"
+            "artifacts/quality/s8-disabled-20260910-r2-desktop.png",
+            "artifacts/quality/s8-disabled-20260910-r2-mobile.png",
+            "artifacts/quality/s8-disabled-20260910-r2-desktop-viewport.png",
+            "artifacts/quality/s8-disabled-20260910-r2-mobile-viewport.png"
           ]
         },
         {
@@ -264,7 +274,7 @@
         {
           "id": "quality-review",
           "status": "passed",
-          "detail": "独立审阅 codex-fresh-c4e0013abf79 已按五项标准通过。",
+          "detail": "独立审阅 codex-fresh-dc4da5cb9b47 已按五项标准通过。",
           "evidence": [
             "artifacts/quality/quality-review.json"
           ]
@@ -275,27 +285,34 @@
     {
       "id": "integrations",
       "title": "来源接入",
-      "status": "blocked",
-      "summary": "必需来源 0/2 已有成功快照；可选来源 0/2 已有成功快照。",
+      "status": "not-queried",
+      "summary": "必需来源 2/2 已有成功快照；可选来源 1/2 已有成功快照。",
       "checks": [
         {
           "id": "source-gsc",
-          "status": "needs-attention",
-          "detail": "必需来源 GSC 尚未登记可验证接入。",
-          "evidence": []
+          "status": "passed",
+          "detail": "GSC 有成功标准观测，采集时间 2026-09-10T02:18:15.024Z。",
+          "evidence": [
+            "data/raw/google-2026-09-10T02-18-15-024Z.json",
+            "site-steam-2798330-gsc"
+          ]
         },
         {
           "id": "source-ga4",
-          "status": "needs-attention",
-          "detail": "必需来源 GA4 尚未登记可验证接入。",
-          "evidence": []
+          "status": "passed",
+          "detail": "GA4 有成功标准观测，采集时间 2026-09-10T02:18:15.024Z。",
+          "evidence": [
+            "data/raw/google-2026-09-10T02-18-15-024Z.json",
+            "site-steam-2798330-ga4"
+          ]
         },
         {
           "id": "source-clarity",
-          "status": "not-queried",
-          "detail": "可选来源 CLARITY 接口或代码已登记，但尚无成功数值快照。",
+          "status": "passed",
+          "detail": "CLARITY 有成功标准观测，采集时间 2026-09-10T02:18:54.683Z。",
           "evidence": [
-            "source-clarity"
+            "data/raw/clarity-site-steam-2798330-20260910021854683.json",
+            "site-clarity-site-steam-2798330"
           ]
         },
         {
@@ -308,37 +325,27 @@
         },
         {
           "id": "postlaunch-s7",
-          "status": "blocked",
-          "detail": "S7 缺少标准 postlaunch 产物。",
+          "status": "passed",
+          "detail": "S7 postlaunch 产物、阶段证据和附属证据均已绑定。",
           "evidence": [
+            "artifacts/phases/S7.json",
             "artifacts/postlaunch/S7-integrations.json"
+          ]
+        },
+        {
+          "id": "postlaunch-s8",
+          "status": "passed",
+          "detail": "S8 postlaunch 产物、阶段证据和附属证据均已绑定。",
+          "evidence": [
+            "artifacts/phases/S8.json",
+            "artifacts/postlaunch/S8-ads.json",
+            "artifacts/postlaunch/s8-20260910-dungeon-desktop.png",
+            "artifacts/postlaunch/s8-20260910-dungeon-mobile.png",
+            "artifacts/postlaunch/s8-20260910-dungeon-mobile-network.json"
           ]
         }
       ],
       "actions": [
-        {
-          "id": "source-gsc-next",
-          "priority": "P0",
-          "action": "登记并核验 GSC 的只读接入路径",
-          "reason": "GSC 缺口不能被当成 0；必需来源当前状态为 not_configured。",
-          "evidence": []
-        },
-        {
-          "id": "source-ga4-next",
-          "priority": "P0",
-          "action": "登记并核验 GA4 的只读接入路径",
-          "reason": "GA4 缺口不能被当成 0；必需来源当前状态为 not_configured。",
-          "evidence": []
-        },
-        {
-          "id": "source-clarity-next",
-          "priority": "P1",
-          "action": "补采并导入 CLARITY 成功数据快照",
-          "reason": "CLARITY 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
-          "evidence": [
-            "source-clarity"
-          ]
-        },
         {
           "id": "source-adsterra-next",
           "priority": "P1",
@@ -347,68 +354,91 @@
           "evidence": [
             "source-adsterra"
           ]
-        },
-        {
-          "id": "repair-postlaunch-s7",
-          "priority": "P0",
-          "action": "补齐并重新验收 S7 postlaunch 产物",
-          "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
-          "evidence": [
-            "artifacts/postlaunch/S7-integrations.json"
-          ]
         }
       ]
     },
     {
       "id": "updates",
       "title": "游戏更新与页面影响",
-      "status": "not-queried",
-      "summary": "本轮未把未查询的更新写成无更新。",
+      "status": "ready",
+      "summary": "已读取 4 项更新判断；代码、URL 和部署均未由复查器直接修改。",
       "checks": [
         {
           "id": "update-delta",
-          "status": "not-queried",
-          "detail": "本轮没有可回查的游戏更新证据；这不代表没有更新。",
+          "status": "passed",
+          "detail": "更新判断 4 项均可进入准备阶段，尚未自动改站。",
           "evidence": [
             "artifacts/updates/update-delta.json"
           ]
         }
       ],
-      "actions": [
-        {
-          "id": "query-official-updates",
-          "priority": "P1",
-          "action": "需要更新复查时先采集官方更新证据，再生成 update-delta",
-          "reason": "未查询、无更新和已确认无影响是三种不同状态。",
-          "evidence": [
-            "artifacts/updates/update-delta.json"
-          ]
-        }
-      ]
+      "actions": []
     },
     {
       "id": "data",
       "title": "数据与组合决策",
       "status": "blocked",
-      "summary": "站点身份未进入工作台。",
+      "summary": "验证期；页面观测 3 个，有量 1 个，桌面广告候选 1 个。",
       "checks": [
         {
-          "id": "site-data-registration",
-          "status": "blocked",
-          "detail": "工作台中找不到站点 steam-2798330。",
+          "id": "analytics-coverage",
+          "status": "needs-attention",
+          "detail": "GSC/GA4 已有快照，但仍处于验证期：GSC 展示量只有 2，还没到稳定判断门槛；GSC 还没有真实搜索点击",
+          "evidence": [
+            "2026-09-10T02:18:15.024Z"
+          ]
+        },
+        {
+          "id": "page-priority",
+          "status": "needs-attention",
+          "detail": "有 2 个页面进入 SEO 优先队列。",
           "evidence": [
             "data/workbench.json"
+          ]
+        },
+        {
+          "id": "ad-boundary",
+          "status": "passed",
+          "detail": "广告与页面动作仍只生成建议，缺失数据不会自动关站或改代码。",
+          "evidence": [
+            "data/workbench.json"
+          ]
+        },
+        {
+          "id": "postlaunch-s9",
+          "status": "blocked",
+          "detail": "S9 缺少标准 postlaunch 产物。",
+          "evidence": [
+            "artifacts/postlaunch/S9-observation.json"
           ]
         }
       ],
       "actions": [
         {
-          "id": "reconcile-site-data",
-          "priority": "P0",
-          "action": "将当前站点按机器注册表幂等同步到工作台",
-          "reason": "没有站点身份绑定就不能解释任何数据。",
+          "id": "continue-data-validation",
+          "priority": "P1",
+          "action": "继续积累同窗口的真实 GSC/GA4 数据，再决定投入和广告",
+          "reason": "样本不足时不切换广告、不删除页面、不把一次波动当结论。",
+          "evidence": [
+            "2026-09-10T02:18:15.024Z"
+          ]
+        },
+        {
+          "id": "review-seo-pages",
+          "priority": "P1",
+          "action": "按页面级 GSC/GA4 证据处理 SEO 优先队列",
+          "reason": "有点击页面保护 URL 和主意图；新意图再开子页。",
           "evidence": [
             "data/workbench.json"
+          ]
+        },
+        {
+          "id": "repair-postlaunch-s9",
+          "priority": "P0",
+          "action": "补齐并重新验收 S9 postlaunch 产物",
+          "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
+          "evidence": [
+            "artifacts/postlaunch/S9-observation.json"
           ]
         }
       ]
@@ -416,36 +446,31 @@
   ],
   "priorityActions": [
     {
-      "id": "data:reconcile-site-data",
+      "id": "data:repair-postlaunch-s9",
       "priority": "P0",
-      "action": "将当前站点按机器注册表幂等同步到工作台",
-      "reason": "没有站点身份绑定就不能解释任何数据。",
+      "action": "补齐并重新验收 S9 postlaunch 产物",
+      "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
+      "evidence": [
+        "artifacts/postlaunch/S9-observation.json"
+      ]
+    },
+    {
+      "id": "data:continue-data-validation",
+      "priority": "P1",
+      "action": "继续积累同窗口的真实 GSC/GA4 数据，再决定投入和广告",
+      "reason": "样本不足时不切换广告、不删除页面、不把一次波动当结论。",
+      "evidence": [
+        "2026-09-10T02:18:15.024Z"
+      ]
+    },
+    {
+      "id": "data:review-seo-pages",
+      "priority": "P1",
+      "action": "按页面级 GSC/GA4 证据处理 SEO 优先队列",
+      "reason": "有点击页面保护 URL 和主意图；新意图再开子页。",
       "evidence": [
         "data/workbench.json"
       ]
-    },
-    {
-      "id": "integrations:repair-postlaunch-s7",
-      "priority": "P0",
-      "action": "补齐并重新验收 S7 postlaunch 产物",
-      "reason": "阶段状态不能只靠任意文本或空 JSON 通过，必须保留结构化、绑定当前站点的实际证据。",
-      "evidence": [
-        "artifacts/postlaunch/S7-integrations.json"
-      ]
-    },
-    {
-      "id": "integrations:source-ga4-next",
-      "priority": "P0",
-      "action": "登记并核验 GA4 的只读接入路径",
-      "reason": "GA4 缺口不能被当成 0；必需来源当前状态为 not_configured。",
-      "evidence": []
-    },
-    {
-      "id": "integrations:source-gsc-next",
-      "priority": "P0",
-      "action": "登记并核验 GSC 的只读接入路径",
-      "reason": "GSC 缺口不能被当成 0；必需来源当前状态为 not_configured。",
-      "evidence": []
     },
     {
       "id": "integrations:source-adsterra-next",
@@ -454,24 +479,6 @@
       "reason": "ADSTERRA 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
       "evidence": [
         "source-adsterra"
-      ]
-    },
-    {
-      "id": "integrations:source-clarity-next",
-      "priority": "P1",
-      "action": "补采并导入 CLARITY 成功数据快照",
-      "reason": "CLARITY 缺口不能被当成 0；可选来源当前状态为 awaiting_data。",
-      "evidence": [
-        "source-clarity"
-      ]
-    },
-    {
-      "id": "updates:query-official-updates",
-      "priority": "P1",
-      "action": "需要更新复查时先采集官方更新证据，再生成 update-delta",
-      "reason": "未查询、无更新和已确认无影响是三种不同状态。",
-      "evidence": [
-        "artifacts/updates/update-delta.json"
       ]
     }
   ],

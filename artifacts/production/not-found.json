@@ -4,7 +4,7 @@
   "status": "passed",
   "statusCode": 404,
   "expectedStatus": 404,
-  "contentLength": 12279,
-  "capturedAt": "2026-09-09T11:46:13.1788025Z",
-  "runId": "production-acceptance-20260909114613183"
+  "contentLength": 12377,
+  "capturedAt": "2026-09-10T03:33:45.2956847Z",
+  "runId": "dungeonsettlers-s8-20260910"
 }
