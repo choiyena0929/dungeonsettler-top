@@ -11,3 +11,4 @@
 - npm run audit:onpage -- --base-url <地址> --handoff-id <当前交接> --input-revision <当前修订> 只能生成标准 artifacts/quality/seo-routes.json；随后必须运行 npm run check:onpage，发布前再运行 npm run verify:release，缺失或重复 SEO 报告时不得部署。
 - S7-S9 只能使用 artifacts/postlaunch/S7-integrations.json、S8-ads.json 和 S9-observation.json 的结构化产物；.example.json 只有字段示例，不能作为通过证据。启用广告必须有用户明确确认，移动端必须同时有截图和网络检查。S9 是持续观察循环，刷新观察证据不递增状态修订。
 - 禁止直接修改状态卡的 current_phase、phase_status 或 state_revision；阶段完成或阻塞必须调用 AI Web 工作台 site-phase.mjs，并保存 artifacts/phases/ 证据。新阶段证据要带 executionContractVersion: 1 和统一 execution 回执；失败或重开必须写失败类型、L0—L4 证据等级、说明与重试变化，不能只写 error。
+- 开发、修复或优化完成后，必须运行 npm run verify 和 git diff --check；只按明确文件清单提交，默认 push 当前分支的 upstream，不 force push。

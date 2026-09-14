@@ -10,6 +10,9 @@
 - 输入修订：input-59995249c82e
 - handoff-id：handoff-c94ddea503cd（机器兼容别名）
 - input-revision：input-59995249c82e（机器兼容别名）
+- 当前分支：`main`
+- 上游分支：`origin/main`
+- 当前 HEAD：`5ac1e88`；每次开工仍必须实时读取；当前工作树与 `origin/main` 已核对。
 
 ## 首版范围
 
