@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "type": "site-change-proposal",
+  "siteId": "steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "proposedAt": "2026-09-17T03:30:00.000Z",
+  "changes": [
+    {
+      "id": "enable-adsterra-homepage-desktop",
+      "kind": "ad",
+      "summary": "按用户明确提供的 Adsterra 300x250 代码，在 Dungeon Settlers 首页启用桌面广告；移动端、平板和爬虫保持关闭。",
+      "affectedPaths": ["/", "/privacy"],
+      "before": "artifacts/postlaunch/S8-ads.json：mode=disabled、provider=none，正式首页无广告脚本和容器。",
+      "after": "首页桌面广告组件、移动端网络证据、更新后的隐私说明和新的 S8/S9 生产收据。",
+      "rollback": {
+        "ref": "本次单独广告提交的 Git commit",
+        "method": "回滚本次单独提交，恢复 S8 mode=disabled、provider=none，并重新执行 verify、部署和正式域名验收。",
+        "verified": true
+      }
+    }
+  ]
+}

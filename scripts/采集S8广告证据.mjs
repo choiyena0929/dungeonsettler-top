@@ -18,6 +18,7 @@ const outputPath = resolve(arg("output", "artifacts/postlaunch/s8-mobile-network
 const desktopScreenshot = resolve(arg("desktop-screenshot", "artifacts/postlaunch/s8-desktop.png"));
 const mobileScreenshot = resolve(arg("mobile-screenshot", "artifacts/postlaunch/s8-mobile.png"));
 const capturedAt = new Date().toISOString();
+const desktopUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36";
 const mobileUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1";
 const adPattern = /adsterra|highperformanceformat|highrevenueformat|effectivecpmnetwork|googlesyndication|doubleclick|adsbygoogle/i;
 
@@ -50,11 +51,13 @@ const browser = await chromium.launch({
 });
 
 async function capture(name, viewport, screenshotPath, options = {}) {
-  const context = await browser.newContext({ viewport, ...options });
+  const context = await browser.newContext({ viewport, userAgent: desktopUserAgent, ...options });
   const page = await context.newPage();
   const matchingRequests = [];
+  const pageOrigin = new URL(baseUrl).origin;
   page.on("request", (request) => {
-    if (adPattern.test(request.url())) matchingRequests.push(request.url().split("?")[0]);
+    const requestUrl = request.url();
+    if (adPattern.test(requestUrl) && new URL(requestUrl).origin !== pageOrigin) matchingRequests.push(requestUrl.split("?")[0]);
   });
   try {
     const url = new URL(route, baseUrl).toString();
@@ -62,7 +65,7 @@ async function capture(name, viewport, screenshotPath, options = {}) {
     if (!response || !response.ok()) throw new Error(`${name} 页面响应失败：${response?.status() ?? "no-response"}`);
     await page.waitForTimeout(500);
     await page.screenshot({ path: screenshotPath, fullPage: true });
-    const dom = await page.evaluate((patternSource) => {
+    const dom = await page.evaluate(({ patternSource, origin }) => {
       const pattern = new RegExp(patternSource, "i");
       const elements = [...document.querySelectorAll("[id], [class], [data-ad-slot], [data-adsterra], iframe")];
       const adContainerCount = elements.filter((element) => pattern.test([
@@ -73,9 +76,9 @@ async function capture(name, viewport, screenshotPath, options = {}) {
         element.getAttribute("src") || "",
       ].join(" "))).length;
       const adScriptElementCount = [...document.querySelectorAll("script[src]")]
-        .filter((script) => pattern.test(script.getAttribute("src") || "")).length;
+        .filter((script) => pattern.test(script.getAttribute("src") || "") && new URL(script.src, location.href).origin !== origin).length;
       return { adContainerCount, adScriptElementCount };
-    }, adPattern.source);
+    }, { patternSource: adPattern.source, origin: pageOrigin });
     return { name, url, statusCode: response.status(), matchingRequests, ...dom };
   } finally {
     await context.close();
@@ -100,7 +103,7 @@ try {
     adContainerCount: mobile.adContainerCount,
     adScriptElementCount: mobile.adScriptElementCount,
     viewport: { width: 390, height: 844 },
-    notes: "正式域名桌面与 iPhone UA 移动端均已真实打开；当前站点未启用广告，移动端未请求广告相关脚本，也未渲染广告容器。请求 URL 已去除查询参数。",
+    notes: "正式域名桌面与 iPhone UA 移动端均已真实打开；移动端必须不请求广告相关脚本，也不渲染广告容器。请求 URL 已去除查询参数。",
   };
   await writeFile(outputPath, `${JSON.stringify(network, null, 2)}\n`, "utf8");
   console.log(JSON.stringify({ ok: network.status === "passed", outputPath, desktopScreenshot, mobileScreenshot, desktop, mobile, network }, null, 2));

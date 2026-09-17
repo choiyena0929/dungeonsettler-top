@@ -13,7 +13,7 @@ export default function PrivacyPage() {
     <article className="article-shell legal-page">
       <div className="article-header">
         <a className="back-link" href="/">← Back to the Field Guide</a>
-        <p className="eyebrow">Trust / privacy / reviewed 10 Sep 2026</p>
+        <p className="eyebrow">Trust / privacy / reviewed 17 Sep 2026</p>
         <h1>Privacy information.</h1>
         <p className="lead">This page explains what the Dungeon Settlers Field Guide uses to understand visits, how the first-expedition planner stores your own history, and where this independent guide stops collecting information.</p>
         <div className="tag-row"><span>Independent guide</span><span>Early Access</span><span>Current boundary</span></div>
@@ -40,8 +40,8 @@ export default function PrivacyPage() {
 
         <section className="article-section">
           <h2>Advertising status</h2>
-          <p>This release does not enable third-party advertising. It does not render an Adsterra component, request an Adsterra script, or place an advertising container on the current guide pages.</p>
-          <p>If that boundary changes, the site owner must review the desktop and mobile experience, update this notice, and record the change before publishing the new behavior. A future advertising provider may have its own policy and consent requirements.</p>
+          <p>The homepage may show one 300×250 desktop advertisement supplied through Adsterra&apos;s High Revenue Format delivery script. The advertising script is not injected for mobile or tablet user agents, on this privacy page, or on auxiliary routes. The provider and its partners may process technical information such as browser or device details, approximate location, and ad interactions under their own policies.</p>
+          <p>The site owner does not control the provider&apos;s cookies, similar technologies, or landing pages. You can limit third-party requests and storage through browser settings or privacy extensions. This guide does not ask for an account, payment details, or personal information.</p>
         </section>
 
         <section className="article-section">
@@ -53,10 +53,10 @@ export default function PrivacyPage() {
         <section className="article-section">
           <h2>Your browser choices</h2>
           <p>You can limit cookies, site storage, analytics activity, or third-party requests through your browser and device settings. Those controls can change how the planner, measurement, or external links behave. This page will be updated when the site&apos;s collection or advertising boundary changes.</p>
-          <p>Last reviewed: 10 September 2026.</p>
+          <p>Last reviewed: 17 September 2026.</p>
         </section>
 
-        <aside className="guide-callout"><strong>Short version.</strong> There is no account or advertising in this release. Analytics and Clarity help measure the site, while planner history stays in your browser. Use the official links and dated update path for the game&apos;s own policies and changing Early Access details.</aside>
+        <aside className="guide-callout"><strong>Short version.</strong> There is no account or payment flow. The homepage may show a desktop-only Adsterra advertisement; mobile and auxiliary pages remain closed to the ad script. Analytics and Clarity help measure the site, while planner history stays in your browser.</aside>
 
         <section className="article-sources" aria-labelledby="privacy-links-heading">
           <p className="eyebrow">Useful links</p>

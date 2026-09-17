@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdsterraAd } from "./components/adsterra-ad";
 import { EntityIconStrip } from "./components/entity-icon-strip";
 import { GameLoopDiagram } from "./components/game-loop-diagram";
 import { guideEntries } from "./content";
@@ -41,6 +42,8 @@ export default function Home() {
           {[beginner, clay, research].map((entry, index) => <article className={`guide-card guide-card-${index + 1}`} key={entry.slug}><div className="card-topline"><span className="card-identity"><img src={guideVisuals[index].src} alt={guideVisuals[index].alt} width="64" height="64" /><small>0{index + 1}</small></span><span>{entry.label}</span></div><h3><a href={`/guides/${entry.slug}`}>{entry.title}</a></h3><p>{entry.summary}</p><a className="text-link" href={`/guides/${entry.slug}`}>Read the route <span aria-hidden="true">→</span></a></article>)}
         </div>
       </section>
+
+      <AdsterraAd path="/" />
 
       <section className="section planner-section" aria-labelledby="planner-section-heading">
         <div className="planner-section-copy">

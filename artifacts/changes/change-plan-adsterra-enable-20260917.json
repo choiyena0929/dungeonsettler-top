@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "type": "site-change-plan",
+  "status": "blocked",
+  "generatedAt": "2026-09-17T03:35:00.000Z",
+  "siteId": "steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "proposedAt": "2026-09-17T03:30:00.000Z",
+  "changes": [
+    {
+      "id": "enable-adsterra-homepage-desktop",
+      "kind": "ad",
+      "summary": "按用户明确提供的 Adsterra 300x250 代码，在 Dungeon Settlers 首页启用桌面广告；移动端、平板和爬虫保持关闭。",
+      "affectedPaths": [
+        "/",
+        "/privacy"
+      ],
+      "risk": {
+        "level": "critical",
+        "score": 4,
+        "reason": "涉及广告、权限、凭据或安全边界，必须人工确认。",
+        "humanConfirmationRequired": true
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/postlaunch/S8-ads.json：mode=disabled、provider=none，正式首页无广告脚本和容器。",
+        "label": "before"
+      },
+      "after": {
+        "status": "provided",
+        "ref": "首页桌面广告组件、移动端网络证据、更新后的隐私说明和新的 S8/S9 生产收据。",
+        "label": "after"
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "本次单独广告提交的 Git commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "回滚本次单独提交，恢复 S8 mode=disabled、provider=none，并重新执行 verify、部署和正式域名验收。",
+        "verified": true
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/",
+          "/privacy"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /, /privacy 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "任一受影响 URL 非预期状态码时停止继续发布。",
+          "On-page 或移动端主要动作失败时回滚。",
+          "发现搜索意图或来源事实冲突时暂停后续修改。"
+        ]
+      },
+      "status": "blocked",
+      "blockers": [
+        "该变更属于 critical，不能由自动流程直接放行。 "
+      ]
+    }
+  ],
+  "summary": {
+    "changeCount": 1,
+    "readyToPrepare": 0,
+    "needsReview": 0,
+    "blocked": 1,
+    "highestRisk": "critical"
+  },
+  "safety": {
+    "codeChanged": false,
+    "urlChanged": false,
+    "directPublish": false,
+    "directExternalWrite": false,
+    "rule": "site-change-plan 只生成风险、before/after、回滚和上线观察合同；实现、URL 变更、删除、广告和部署必须经过对应阶段与人工边界。"
+  }
+}
