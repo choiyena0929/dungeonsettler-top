@@ -7,35 +7,36 @@
   "registryId": "site-steam-2798330",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "phaseStateRevision": 18,
-  "capturedAt": "2026-09-10T03:34:06.086Z",
-  "mode": "disabled",
-  "provider": "none",
+  "phaseStateRevision": 19,
+  "capturedAt": "2026-09-17T03:35:46.582Z",
+  "mode": "enabled",
+  "provider": "adsterra",
   "userConfirmation": {
-    "status": "not-required",
-    "reason": "本轮没有用户启用广告的明确确认；继续保持无广告，先完成隐私与桌面、移动体验核验。"
+    "status": "confirmed",
+    "confirmedAt": "2026-09-17T03:35:46.582Z",
+    "scope": "用户在当前任务明确提供 Adsterra 300x250 High Revenue Format 代码，并要求接入 Dungeon Settlers 正式站后完成发布与验收。"
   },
   "checks": {
     "privacy": {
       "status": "passed",
       "route": "/privacy",
-      "checkedAt": "2026-09-10T03:34:30.1538690Z",
-      "notes": "正式域名 /privacy 返回 HTTP 200；页面说明 Google Analytics、Microsoft Clarity、浏览器本地 planner history、当前无第三方广告边界以及外部服务由各自政策负责。"
+      "checkedAt": "2026-09-17T03:35:17.191Z",
+      "notes": "正式域名逐页 SEO 验收包含 /privacy 且通过；隐私页已说明首页桌面端可能加载一个 300x250 Adsterra 广告，移动端、法律页和辅助页不注入广告脚本。"
     },
     "desktopAdUx": {
       "status": "passed",
-      "behavior": "ads-not-enabled",
-      "checkedAt": "2026-09-10T03:34:06.086Z",
-      "screenshot": "artifacts/postlaunch/s8-20260910-dungeon-desktop.png",
-      "notes": "正式域名桌面 Chrome 1440x900 真实复核返回 HTTP 200；当前版本未启用广告，没有广告容器，正文与规划入口可正常阅读。"
+      "behavior": "desktop-only",
+      "checkedAt": "2026-09-17T03:35:46.582Z",
+      "screenshot": "artifacts/postlaunch/S8-adsterra-desktop-20260917.png",
+      "notes": "正式域名桌面 Chrome 1440x900 返回 HTTP 200；观察到 High Revenue Format 外部加载请求和一个广告脚本元素，300x250 广告位不遮挡首页内容。此证据确认脚本路由与版式，不代表收益或广告素材已稳定填充。"
     },
     "mobileAdUx": {
       "status": "passed",
-      "behavior": "ads-not-enabled",
-      "checkedAt": "2026-09-10T03:34:06.086Z",
-      "screenshot": "artifacts/postlaunch/s8-20260910-dungeon-mobile.png",
-      "networkEvidence": "artifacts/postlaunch/s8-20260910-dungeon-mobile-network.json",
-      "notes": "正式域名 iPhone UA 390x844 真实复核返回 HTTP 200；当前版本未启用广告，未请求广告相关脚本，也未渲染广告容器。"
+      "behavior": "not-rendered-and-not-injected",
+      "checkedAt": "2026-09-17T03:35:46.582Z",
+      "screenshot": "artifacts/postlaunch/S8-adsterra-mobile-20260917.png",
+      "networkEvidence": "artifacts/postlaunch/S8-mobile-network-20260917.json",
+      "notes": "正式域名 iPhone UA 390x844 返回 HTTP 200；移动端没有广告相关跨域请求、广告脚本元素或广告容器，也没有留下空白广告位，页面核心内容可继续使用。"
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "type": "ai-web-adsterra-observation",
+  "sourceType": "adsterra",
+  "status": "not-queried",
+  "siteId": "steam-2798330",
+  "registryId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "phaseStateRevision": 19,
+  "checkedAt": "2026-09-17T03:35:46.582Z",
+  "detail": "本轮部署后尚未调用 Adsterra Publisher API；已有组合报告采集早于本次部署，不能确认本次站点已经产生展示或收益。按证据合同保留为 not-queried，不解释为 0。",
+  "nextAction": "进入下一次收益与展示观察窗口后，再查询站点或广告位数据并保留同一站点身份。"
+}

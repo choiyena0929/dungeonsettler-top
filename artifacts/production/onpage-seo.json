@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-10T03:36:17.4685501Z",
-  "runId": "dungeonsettlers-onpage-20260910-prod",
+  "capturedAt": "2026-09-17T03:35:17.191Z",
+  "runId": "dungeonsettlers-adsterra-20260917",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
   "baseUrl": "https://dungeonsettlers.top",
@@ -714,7 +714,7 @@
       "h1s": [
         "Privacy information."
       ],
-      "wordCount": 610,
+      "wordCount": 645,
       "internalLinkCount": 9,
       "keywordCount": 0,
       "checks": [
@@ -751,7 +751,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "610/250 words"
+          "detail": "645/250 words"
         },
         {
           "id": "internal-links",
