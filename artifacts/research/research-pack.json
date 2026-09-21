@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "type": "ai-web-research-pack",
   "status": "ready",
-  "generatedAt": "2026-09-10T03:29:05.701Z",
-  "packRevision": "research-pack-da52d00172783e5a",
+  "generatedAt": "2026-09-21T06:21:32.946Z",
+  "packRevision": "research-pack-fb79055a23e17a60",
   "siteId": "steam-2798330",
   "siteName": "Dungeon Settlers Field Guide",
   "sourcePath": "D:\\WebProjects\\sites\\dungeonsettler.top",
@@ -19,14 +19,14 @@
     "source-manifest": {
       "path": "research/source-manifest.md",
       "status": "present",
-      "bytes": 8202,
-      "sha256": "42b72abe060b57b8f5a4299c4812a3f42c2face2a1b16a6a142723c8bbf41ee2"
+      "bytes": 10352,
+      "sha256": "50d80139c81e1a4aa05556b744abeaea3edcaa7e8fe561633c44e137a62e7808"
     },
     "content-status": {
       "path": "research/content-status.md",
       "status": "present",
-      "bytes": 1638,
-      "sha256": "51cd4a6e02378dabfcdea44a58705337cef2d180b91476a2f2f5c19c03995cf5"
+      "bytes": 1801,
+      "sha256": "7af23f8e667abee773eddf5ab068bc7b03a2ce2c076b855d422bcd8789cab74f"
     },
     "platform-questions": {
       "path": "research/platform-questions.md",
@@ -49,8 +49,8 @@
     "page-contracts": {
       "path": "research/page-contracts.json",
       "status": "present",
-      "bytes": 8373,
-      "sha256": "20375413921c1eda09dbf8108a560594e4eefa75c852f3a21e46801280796278"
+      "bytes": 8618,
+      "sha256": "04c0295d4299a9e7eb754c52f95b711a1224c26984803a0d1feb3a6d59a074ce"
     }
   },
   "optional": {
@@ -86,9 +86,13 @@
       "S006",
       "S007",
       "S008",
-      "S010"
+      "S010",
+      "S011",
+      "S012",
+      "S013",
+      "S014"
     ],
-    "sourceCount": 9,
+    "sourceCount": 13,
     "mappedRoutes": [
       "/guides/beginner-guide",
       "/guides/how-to-get-clay",

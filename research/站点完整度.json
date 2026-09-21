@@ -133,9 +133,9 @@
         { "route": "/guides/how-to-research", "action": "点击主按钮跳到 research-checklist，阅读已核验前置条件和具体操作示例。" },
         { "route": "/database", "action": "按当前构建检索完整 Research 行，核对前置、Tech Book、workload 和解锁引用。" },
         { "route": "/guides/how-to-research", "action": "沿 planner bridge 进入准备清单，保留 Research 选择和待核验前置边界。" },
-        { "route": "/updates", "action": "回查 v0.4.19 与 v0.4.17 官方更新，再返回规划器重新定义一次 expedition 问题。" }
+        { "route": "/updates", "action": "回查 v0.4.23、Archer Balance Reverted 与历史官方更新，再返回规划器重新定义一次 expedition 问题。" }
       ],
-      "outcome": "访客能区分官方确认、DS_B.0.4.19 版本锁定表行和未来版本未知边界，而不把一个构建写成 universal best order。",
+      "outcome": "访客能区分 v0.4.23 官方确认、DS_B.0.4.19 版本锁定表行和未来版本未知边界，而不把一个构建写成 universal best order。",
       "evidenceRefs": ["S001", "S002", "S007"]
     }
   ],
@@ -185,7 +185,7 @@
       "category": "facts",
       "severity": "major",
       "status": "resolved",
-      "description": "DS_B.0.4.19 的 31 条 ResearchTable 行已保存、带前置/Tech Book/workload/解锁引用并可检索；未来版本和 universal best order 仍需重验。",
+      "description": "DS_B.0.4.19 的 31 条 ResearchTable 行已保存、带前置/Tech Book/workload/解锁引用并可检索；v0.4.23 官方 Research Work Amount 修正已单独记录，未来版本和 universal best order 仍需重验。",
       "evidenceRefs": ["S001", "S002", "S008"]
     },
     {

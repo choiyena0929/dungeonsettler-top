@@ -2,7 +2,7 @@
 
 本文件沿用 data-to-decision-site-starter template 的来源字段合同；内容已替换为本站真实来源与证据状态。
 
-状态：S1 资料已整理，公开事实按来源和版本边界使用。核验日期：2026-09-09（Asia/Shanghai）。
+状态：S1 资料已整理，公开事实按来源和版本边界使用。核验日期：2026-09-21（Asia/Shanghai）。本轮官方编号边界为 v0.4.23；本地 Community Hub 扫描仍为 partial，但官方 RSS、API 和更新正文已完成核验。
 
 ## 身份与官方玩法
 
@@ -17,10 +17,36 @@
 ### S002 — Steam Community Hub / 官方更新
 
 - URL：<https://steamcommunity.com/app/2798330/>
-- 观察：2026-09-07；官方更新区显示 v0.4.19（2026-09-06）和 v0.4.17（2026-09-05）。v0.4.19 移除 Very Hard 与 Devastation Management 的物品掉落数量惩罚，并降低 armor、helmets、bones、stone、clay 等物品重量；v0.4.17 包括研究层级显示修正和 Inventory guide 控制补充。
+- 观察：2026-09-21；本地 scanner 对 Community Hub 与三个旧直链超时，但官方页面内容通过更新中心复核。RSS/API 显示 v0.4.23（2026-09-12）、Archer Balance Reverted（2026-09-13）和 Tokyo Game Show（2026-09-17）位于最新条目；v0.4.19 与 v0.4.17 保留为历史更新。
 - 支持事实：高难度掉落数量和携带重量的公开行为已发生版本变化；研究显示也有官方修订。版本敏感的攻略需要保留补丁日期，不能把旧 Demo 资料当作当前规则。
-- 不支持的结论：这条官方更新没有给出新的 Clay 敌人、楼层或数量，也没有证明任何固定 Research 前置；这些内容继续保持日期敏感或 pending_verification。
+- 不支持的结论：v0.4.23 没有给出新的 Clay 敌人、楼层、数量或固定 Research 顺序；完整 Research 表也尚未重提取到 v0.4.23，这些内容继续保持日期敏感或 pending_verification。
 - 可公开使用：是；只总结更新边界和官方入口。
+
+### S011 — Steam 官方 v0.4.23 更新
+
+- URL：<https://store.steampowered.com/news/app/2798330/view/702153223322993663>
+- 观察：2026-09-21；官方说明提高 Rank 2/3 最大 expedition size 到 6/8，默认关闭可能伤害队友的技能 Auto Use，降低 Normal/Easy Active Skill Energy，短暂显示视野外攻击者所在格，并把 Very Hard/Devastation 的 Research Work Amount 调整为 1.15×/1.30×。
+- 支持事实：本站首页、Beginner、Research、Planner 和 Updates 可使用这些明确更新事实。
+- 不支持的结论：公告的其他平衡、掉落、保存、UI 和引导修复不在本轮逐项转写；不能由此推出固定 Research 顺序或新的 Clay 表。
+
+### S012 — Steam 官方 Archer Balance Reverted
+
+- URL：<https://store.steampowered.com/news/app/2798330/view/702153223322993978>
+- 观察：2026-09-21；公告说明 v0.4.23 后的 Rapid Fire、Arrow Rain、Sniping Shot、Sharp Shooter 指定数值已回退。
+- 支持事实：这是公告级平衡修正，更新记录可公开链接；它不产生新的编号版本。
+
+### S013 — Steam 官方 Tokyo Game Show 公告
+
+- URL：<https://store.steampowered.com/news/app/2798330/view/679635858932892079>
+- 观察：2026-09-21；公告说明参加 Tokyo Game Show 2026，没有编号版本或玩法改动。
+- 支持事实：用于确定最新公告边界，不把活动信息改写成游戏机制变化。
+
+### S014 — Steam 官方 RSS/API 当前条目
+
+- RSS：<https://store.steampowered.com/feeds/news/app/2798330/?cc=US&l=english>
+- API：<https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=2798330&count=20&maxlength=20000&format=json>
+- 观察：2026-09-21；两条机器可读官方入口均返回 Tokyo Game Show、Archer Balance Reverted、v0.4.23 的当前排序，并保留 v0.4.19/v0.4.17 历史条目。
+- 使用边界：用于信号扫描和公告排序；正文事实仍以官方更新正文为准。本地 Community Hub 直连失败不改写成无变化。
 
 ### S010 — Steam 官方反馈公告（Your Feedback in Action）
 

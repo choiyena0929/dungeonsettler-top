@@ -43,12 +43,12 @@
 
 - 用户任务：使用版本锁定的 Research 表回答当前 settlement bottleneck，避免把一个构建的顺序写成永久规则。
 - 首要动作：Use the safe research checklist。
-- 允许事实：S001 官方 Research 与循环、S002 v0.4.17 Research-tier 显示修正和 v0.4.19 版本提醒；S008 提供 DS_B.0.4.19 的 31 条节点/前置/解锁快照，未来版本和 universal best order 仍需重验。
-- 通过条件：主按钮进入 `#research-checklist`；页面补充已核验 starting conditions、具体操作和 Clay/Carapace Processing 示例，展示完整当前构建表格，机制图和文字都把可证实事实与版本边界分开。
+- 允许事实：S001 官方 Research 与循环、S002 历史更新、S008 提供 DS_B.0.4.19 的 31 条节点/前置/解锁快照，S011 提供 v0.4.23 Research Work Amount 修正；未来版本和 universal best order 仍需重验。
+- 通过条件：主按钮进入 `#research-checklist`；页面补充已核验 starting conditions、具体操作和 Clay/Carapace Processing 示例，展示版本锁定表格，机制图和文字都把 v0.4.23 官方事实、DS_B.0.4.19 快照与 pending 边界分开。
 
 ## 版本锁定资料页 `/database`
 
-- 用户任务：检索当前 DS_B.0.4.19 的 Research、资源、物品、单位、建筑、掉落、配方和商人表行。
+- 用户任务：检索版本锁定的 DS_B.0.4.19 Research、资源、物品、单位、建筑、掉落、配方和商人表行，并知道当前官方边界已到 v0.4.23。
 - 首要动作：Browse the data reference。
 - 真实交互：按类别切换、关键字过滤、分页浏览全部快照行；页面展示来源清单、提取日期、Steam build 和哈希，并回到官方更新入口与相关攻略。
 - 证据边界：S008 是未修改游戏文件的 reviewed secondary extraction；它支持当前构建表行，不替代官方补丁说明，也不承诺未来值。

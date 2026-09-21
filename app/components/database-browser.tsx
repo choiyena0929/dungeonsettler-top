@@ -10,12 +10,12 @@ type CategoryId = "research" | "resources" | "items" | "units" | "buildings" | "
 const categoryMeta: Array<{ id: CategoryId; label: string; description: string }> = [
   { id: "research", label: "Research", description: "Nodes, tiers, workload, prerequisites and unlock references" },
   { id: "resources", label: "Resources", description: "Every item row marked Resource in the source ItemTable" },
-  { id: "items", label: "Items", description: "Equipment, consumables and materials with current-build fields" },
+  { id: "items", label: "Items", description: "Equipment, consumables and materials with snapshot fields" },
   { id: "units", label: "Units and enemies", description: "Player units, NPCs and monsters with stats and drop refs" },
   { id: "buildings", label: "Buildings", description: "Construction, housing, storage and gathering rows" },
   { id: "drops", label: "Drop pools", description: "Three-slot loot pools with source percentages and amounts" },
   { id: "recipes", label: "Recipes", description: "Outputs, ingredients, workstations and workload" },
-  { id: "tradePools", label: "Trade pools", description: "Merchant inventory ranges from the current build" },
+  { id: "tradePools", label: "Trade pools", description: "Merchant inventory ranges from the version-locked snapshot" },
 ];
 
 const datasets: Record<CategoryId, readonly BaseRow[]> = {

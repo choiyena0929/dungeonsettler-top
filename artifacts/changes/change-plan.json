@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "type": "site-change-plan",
+  "status": "ready-to-prepare",
+  "generatedAt": "2026-09-21T05:52:40.727Z",
+  "siteId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "proposedAt": "2026-09-21T05:52:40.7279410Z",
+  "changes": [
+    {
+      "id": "dungeon-v0423-expedition-combat",
+      "kind": "fact-correction",
+      "summary": "Update the homepage, beginner guide, planner, and update record for the official v0.4.23 expedition and combat changes.",
+      "affectedPaths": [
+        "/",
+        "/guides/beginner-guide",
+        "/tools/first-expedition-planner",
+        "/updates"
+      ],
+      "risk": {
+        "level": "low",
+        "score": 1,
+        "reason": "限定在已绑定页面的事实或数值修正，保留 URL 和旧内容。",
+        "humanConfirmationRequired": false
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-v0423-expedition-combat",
+        "label": "before",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "official v0.4.23 note and current repository page content",
+        "verified": false
+      },
+      "after": {
+        "status": "provided",
+        "ref": "planned: app/content.ts, app/page.tsx, app/tools/first-expedition-planner/page.tsx, app/updates/page.tsx",
+        "label": "after",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "replace stale version boundary and add only the verified v0.4.23 facts",
+        "verified": false
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "dedicated Dungeon Settlers update commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "revert the dedicated update commit before deployment if route or action acceptance fails",
+        "verified": false
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/",
+          "/guides/beginner-guide",
+          "/tools/first-expedition-planner",
+          "/updates"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /, /guides/beginner-guide, /tools/first-expedition-planner, /updates 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "受影响 URL 或主要动作失败时回滚。",
+          "下一次数据窗口出现异常时只复核该变更，不扩大改动范围。"
+        ]
+      },
+      "status": "ready-to-prepare",
+      "blockers": []
+    },
+    {
+      "id": "dungeon-v0423-research-work",
+      "kind": "numeric-change",
+      "summary": "Update official Research Work Amount multipliers and explicitly keep the full data table at its older version-locked boundary.",
+      "affectedPaths": [
+        "/guides/how-to-research",
+        "/tools/first-expedition-planner",
+        "/updates"
+      ],
+      "risk": {
+        "level": "low",
+        "score": 1,
+        "reason": "限定在已绑定页面的事实或数值修正，保留 URL 和旧内容。",
+        "humanConfirmationRequired": false
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-v0423-research-work",
+        "label": "before",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "official v0.4.23 note plus DS_B.0.4.19 extraction label",
+        "verified": false
+      },
+      "after": {
+        "status": "provided",
+        "ref": "planned: app/content.ts, app/tools/first-expedition-planner/page.tsx, app/updates/page.tsx",
+        "label": "after",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "publish the verified multipliers and preserve pending/full-table warnings",
+        "verified": false
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "dedicated Dungeon Settlers update commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "revert the dedicated update commit before deployment if the version boundary or data warning is inconsistent",
+        "verified": false
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/guides/how-to-research",
+          "/tools/first-expedition-planner",
+          "/updates"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /guides/how-to-research, /tools/first-expedition-planner, /updates 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "受影响 URL 或主要动作失败时回滚。",
+          "下一次数据窗口出现异常时只复核该变更，不扩大改动范围。"
+        ]
+      },
+      "status": "ready-to-prepare",
+      "blockers": []
+    },
+    {
+      "id": "dungeon-archer-balance-reverted",
+      "kind": "fact-correction",
+      "summary": "Add the official Archer Balance Reverted announcement to the update record without creating a new version.",
+      "affectedPaths": [
+        "/updates"
+      ],
+      "risk": {
+        "level": "low",
+        "score": 1,
+        "reason": "限定在已绑定页面的事实或数值修正，保留 URL 和旧内容。",
+        "humanConfirmationRequired": false
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-archer-balance-reverted",
+        "label": "before",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "official Archer announcement and existing update page",
+        "verified": false
+      },
+      "after": {
+        "status": "provided",
+        "ref": "planned: app/content.ts, app/updates/page.tsx",
+        "label": "after",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "add a dated announcement entry with the official link and no inferred version",
+        "verified": false
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "dedicated Dungeon Settlers update commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "revert the dedicated update commit before deployment if the announcement is presented as a numbered patch",
+        "verified": false
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/updates"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /updates 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "受影响 URL 或主要动作失败时回滚。",
+          "下一次数据窗口出现异常时只复核该变更，不扩大改动范围。"
+        ]
+      },
+      "status": "ready-to-prepare",
+      "blockers": []
+    },
+    {
+      "id": "dungeon-tokyo-announcement-boundary",
+      "kind": "fact-correction",
+      "summary": "Show the latest official Tokyo Game Show announcement as event-only context and keep v0.4.23 as the numbered boundary.",
+      "affectedPaths": [
+        "/updates"
+      ],
+      "risk": {
+        "level": "low",
+        "score": 1,
+        "reason": "限定在已绑定页面的事实或数值修正，保留 URL 和旧内容。",
+        "humanConfirmationRequired": false
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-tokyo-announcement-boundary",
+        "label": "before",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "official RSS/API latest-entry order",
+        "verified": false
+      },
+      "after": {
+        "status": "provided",
+        "ref": "planned: app/content.ts, app/updates/page.tsx",
+        "label": "after",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "add announcement boundary and explicitly state no gameplay impact was claimed",
+        "verified": false
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "dedicated Dungeon Settlers update commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "revert the dedicated update commit before deployment if event context is mistaken for a gameplay update",
+        "verified": false
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/updates"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /updates 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "受影响 URL 或主要动作失败时回滚。",
+          "下一次数据窗口出现异常时只复核该变更，不扩大改动范围。"
+        ]
+      },
+      "status": "ready-to-prepare",
+      "blockers": []
+    },
+    {
+      "id": "dungeon-data-snapshot-boundary",
+      "kind": "fact-correction",
+      "summary": "Make the DS_B.0.4.19 database snapshot boundary explicit after the official v0.4.23 recheck.",
+      "affectedPaths": [
+        "/guides/how-to-research",
+        "/database",
+        "/updates"
+      ],
+      "risk": {
+        "level": "low",
+        "score": 1,
+        "reason": "限定在已绑定页面的事实或数值修正，保留 URL 和旧内容。",
+        "humanConfirmationRequired": false
+      },
+      "before": {
+        "status": "provided",
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-data-snapshot-boundary",
+        "label": "before",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "current official v0.4.23 note and repository snapshot metadata",
+        "verified": false
+      },
+      "after": {
+        "status": "provided",
+        "ref": "planned: app/content.ts, app/database/page.tsx, app/updates/page.tsx",
+        "label": "after",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "keep the existing rows intact and update only the visible version/evidence boundary",
+        "verified": false
+      },
+      "rollback": {
+        "status": "provided",
+        "ref": "dedicated Dungeon Settlers update commit",
+        "label": "rollback",
+        "sha256": "",
+        "capturedAt": "",
+        "method": "revert the dedicated update commit before deployment if the database snapshot is presented as v0.4.23",
+        "verified": false
+      },
+      "observationPlan": {
+        "required": true,
+        "routes": [
+          "/guides/how-to-research",
+          "/database",
+          "/updates"
+        ],
+        "checks": [
+          {
+            "id": "affected-routes",
+            "when": "发布后立即",
+            "detail": "逐个检查 /guides/how-to-research, /database, /updates 的 HTTPS 状态码、主要动作和移动端布局。"
+          },
+          {
+            "id": "production-receipts",
+            "when": "发布后立即",
+            "detail": "重新采集首页、代表页、robots、sitemap、404 和 HTTPS 生产收据。"
+          },
+          {
+            "id": "production-onpage",
+            "when": "发布后立即",
+            "detail": "重新运行正式域名逐 URL On-page SEO，确认标题、描述、canonical、内链和公开文案。"
+          },
+          {
+            "id": "analytics-next-window",
+            "when": "下一个真实数据窗口",
+            "detail": "读取 GSC、GA4、Clarity、Adsterra 可用快照；缺失保持 known gap，不把它当作 0。"
+          }
+        ],
+        "window": "发布后立即、24 小时和下一个 7 天数据窗口",
+        "stopConditions": [
+          "受影响 URL 或主要动作失败时回滚。",
+          "下一次数据窗口出现异常时只复核该变更，不扩大改动范围。"
+        ]
+      },
+      "status": "ready-to-prepare",
+      "blockers": []
+    }
+  ],
+  "summary": {
+    "changeCount": 5,
+    "readyToPrepare": 5,
+    "needsReview": 0,
+    "blocked": 0,
+    "highestRisk": "low"
+  },
+  "safety": {
+    "codeChanged": false,
+    "urlChanged": false,
+    "directPublish": false,
+    "directExternalWrite": false,
+    "rule": "site-change-plan 只生成风险、before/after、回滚和上线观察合同；实现、URL 变更、删除、广告和部署必须经过对应阶段与人工边界。"
+  }
+}

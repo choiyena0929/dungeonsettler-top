@@ -32,19 +32,19 @@ export type LibraryEntry = {
   body: string[];
 };
 
-const sourceNote = "Source boundary: official Steam information is the baseline. The official v0.4.19 update changes high-difficulty drop handling and item weight, while the Clay report and the DS_B.0.4.19 table extraction remain version-sensitive reviewed references; none establishes a permanent rule for every build.";
+const sourceNote = "Source boundary: official Steam information is the baseline. The current numbered boundary is v0.4.23; the 2026-09-13 Archer correction and 2026-09-17 Tokyo Game Show notice are announcement-level context, not a newer numbered build. The Clay report and the DS_B.0.4.19 table extraction remain version-sensitive reviewed references; none establishes a permanent rule for every build.";
 
 export const guideEntries: GuideEntry[] = [
   {
     slug: "beginner-guide",
     title: "Dungeon Settlers beginner guide: the first expedition route",
-    summary: "A cautious starting route for the settlement, the first party, Research, and the first dungeon commitment.",
+    summary: "A cautious starting route for the settlement, the first party, Research, and the first dungeon commitment under v0.4.23.",
     description: "This Dungeon Settlers beginner guide gives new Early Access players a practical route from settlement setup to the first dungeon expedition.",
     category: "Start here",
     label: "First route",
     primaryKeyword: "Dungeon Settlers beginner guide",
     evidence: "official",
-    updatedAt: "2026-09-07",
+    updatedAt: "2026-09-21",
     sections: [
       {
         heading: "Quick answer",
@@ -69,8 +69,8 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Prepare the party",
         paragraphs: [
-          "The official game description says a party can include up to four expedition members and that dungeon exploration has real-time action with pause. It also describes permadeath. Those facts make a small pre-expedition check worthwhile: know who is going, know what the party is expected to do, and pause when the next choice needs inspection rather than allowing the route to decide for you.",
-          "Do not turn the party limit into a claim that four is always correct. A full party may be appropriate for one route, while a smaller or differently prepared group may be a better learning run. The reliable principle is to match the party to the purpose of the expedition and to the preparation the settlement can actually provide.",
+          "The official v0.4.23 update raises the maximum expedition size to 6 members at Rank 2 and 8 at Rank 3. Dungeon exploration still has real-time action with pause and the store description still provides the broad Early Access and permadeath context. Before leaving, confirm the rank and current party slots in the build you are playing.",
+          "Do not turn the new maximum into a claim that a full party is always correct. A smaller or differently prepared group may be the better learning run. The reliable principle is to match the party to the purpose of the expedition and to the preparation the settlement can actually provide.",
           "Before leaving, write one sentence that begins with ‘This expedition is for…’. If it says Clay, you can compare the early enemy and merchant routes in the Clay guide. If it says Research, use the Research checklist and avoid assuming that an unverified prerequisite is real. If it says ‘see what happens’, treat the run as reconnaissance and keep the expectations low.",
         ],
       },
@@ -89,7 +89,7 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "When to return and what can change",
         paragraphs: [
-          "Dungeon Settlers is an Early Access game, so update notes deserve a place in the route. A Steam Community update dated September 5, 2026 mentions combat changes, save compatibility, research-tier display corrections, and inventory guide controls. Those are exactly the kinds of changes that can alter how a player reads a guide without changing the broad settlement-to-expedition idea.",
+          "Dungeon Settlers is an Early Access game, so update notes deserve a place in the route. The current numbered boundary is v0.4.23, which changes expedition size, combat defaults, skill energy, and high-difficulty Research workload. The later Archer Balance Reverted announcement changes only the listed Archer balance values, while the latest Tokyo Game Show notice is event-only. Those distinctions alter how a player reads a guide without changing the broad settlement-to-expedition idea.",
           "Return to the settlement when the expedition has answered its question, when the party is no longer safe, or when the next action depends on a system you have not confirmed. The point is to keep the next decision observable. Recheck the official store and community pages after updates, and treat quantities or floor references from secondary guides as dated observations.",
           sourceNote,
         ],
@@ -163,13 +163,13 @@ export const guideEntries: GuideEntry[] = [
   {
     slug: "how-to-research",
     title: "How to research in Dungeon Settlers",
-    summary: "A version-locked Research reference with a complete current-build table and a cautious way to apply it.",
+    summary: "A version-locked Research reference with the DS_B.0.4.19 table and a cautious way to apply it after v0.4.23.",
     description: "This guide explains how to research in Dungeon Settlers using a cautious checklist grounded in the official loop and clear version boundaries.",
     category: "System guide",
     label: "Research answer",
     primaryKeyword: "How to research in Dungeon Settlers",
     evidence: "official",
-    updatedAt: "2026-09-07",
+    updatedAt: "2026-09-21",
     sections: [
       {
         heading: "What Research is confirmed to do",
@@ -181,9 +181,9 @@ export const guideEntries: GuideEntry[] = [
       {
         heading: "Verified starting conditions",
         paragraphs: [
-          "The official store page confirms the current Early Access loop: build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. It also describes up to four party members, permadeath, and the first two dungeon regions. These broad facts support a preparation check; the version-locked table below supplies the current-build node rows separately from those official claims.",
-          "Before choosing a Research item, write down the visible settlement bottleneck, the exact label and tier shown in your current build, and the change you expect to observe. The latest official Steam Community update path includes a v0.4.17 correction to the displayed tier for Carapace Processing and a v0.4.19 patch on September 6, 2026. Keep the build date beside your note so an older display is not mistaken for a current prerequisite.",
-          "The current-build ResearchTable snapshot records node cost, prerequisite links, Tech Book requirements, and unlock references. It is a reviewed secondary extraction, not an official patch note; if the game or a newer official build disagrees, record the difference and defer the claim until the source is refreshed.",
+          "The official store page confirms the broad Early Access loop: build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. The current official update boundary is v0.4.23, which changes high-difficulty Research Work Amount multipliers. These facts support a preparation check; the version-locked table below supplies the DS_B.0.4.19 node rows separately from the current official patch facts.",
+          "Before choosing a Research item, write down the visible settlement bottleneck, the exact label and tier shown in your current build, and the change you expect to observe. The official v0.4.23 note reports Very Hard Research Work Amount 1.15× and Devastation 1.30×; the earlier v0.4.17 note corrected a displayed tier for Carapace Processing. Keep the build date beside your note so an older display is not mistaken for a current prerequisite.",
+          "The DS_B.0.4.19 ResearchTable snapshot records node cost, prerequisite links, Tech Book requirements, and unlock references. It is a reviewed secondary extraction, not an official patch note or a v0.4.23 table; if the game or a newer official build disagrees, record the difference and defer the claim until the source is refreshed.",
         ],
         bullets: [
           "Visible bottleneck: what settlement or expedition decision is blocked?",
@@ -196,7 +196,7 @@ export const guideEntries: GuideEntry[] = [
         paragraphs: [
           "First, name the bottleneck in plain language. ‘I cannot prepare the next expedition’ is more useful than ‘I need the strongest technology’. Open the in-game Research panel, copy the displayed choice and tier into your note, and record the build date. Do not infer a hidden prerequisite from the position of a node or from a screenshot made on another patch.",
           "Next, check the displayed description against the result you expect. Select one choice only when you can name the observable change: a new settlement option, an equipment option, a resource step, or a party preparation change. After using it, compare the before and after screens and record what actually changed. If there is no visible result, keep the choice pending and do not call it a finished route.",
-          "Example: if Clay is the current bottleneck, use the dated Clay route for the resource lead, then check the current Research table for the production or preparation unlock you intend to test. The official update notes do not establish a Clay node; the data snapshot only reports the item and unlock references present in DS_B.0.4.19, so a newer build still needs a fresh check.",
+          "Example: if Clay is the current bottleneck, use the dated Clay route for the resource lead, then check the DS_B.0.4.19 snapshot for the production or preparation unlock you intend to test. The official update notes do not establish a Clay node, and v0.4.23 does not make this older table current, so a newer build still needs a fresh check.",
         ],
         bullets: [
           "State the current bottleneck and copy the displayed Research label and tier.",
@@ -210,27 +210,27 @@ export const guideEntries: GuideEntry[] = [
         paragraphs: [
           "Research is most useful when it changes the next expedition decision. The official system description gives a clear broad loop: build and expand the settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. Read that loop as a cycle. Settlement creates a preparation question; Research may change the answer; the expedition tests it; resources and observations return to the settlement.",
           "A research choice should therefore have a next action attached to it. If the expected result is better preparation, prepare and test a route. If the expected result is a new production option, check the resource requirement before leaving. If the expected result is unclear, keep learning rather than spending a risky expedition on a theory you cannot observe.",
-          "The game supports real-time dungeon play with pause, and the official page describes a party of up to four plus permadeath. Those facts make observation valuable. Pause before a consequential choice, write down what the research was meant to change, and use the return to the settlement as the point where the decision is reviewed.",
+          "The game supports real-time dungeon play with pause, and the v0.4.23 update raises the maximum expedition size by rank. Those facts make observation valuable. Pause before a consequential choice, write down what the research was meant to change, and use the return to the settlement as the point where the decision is reviewed.",
         ],
       },
       {
         heading: "What remains unverified",
         paragraphs: [
-          "The table below resolves the current DS_B.0.4.19 node and prerequisite snapshot, but it does not prove a universal best-first route, a permanent relationship between one technology and one resource, or behavior in a later build. Treat those forward-looking claims as pending until the current game and update path agree.",
-          "The Steam Community update path is still useful because it shows where version-sensitive corrections may appear. The v0.4.17 official note mentions a Research-tier display correction, while v0.4.19 changes item weights and high-difficulty drop-quantity handling. Those notes are reasons to recheck the interface and preparation context after updates, not evidence of a particular research order.",
+          "The table below resolves the DS_B.0.4.19 node and prerequisite snapshot, but it does not prove a universal best-first route, a permanent relationship between one technology and one resource, or behavior in v0.4.23 and later. Treat those forward-looking claims as pending until the current game and update path agree.",
+          "The official v0.4.23 note is enough to state the current Research Work Amount multipliers, not to rewrite every Research row. The v0.4.17 display correction, v0.4.19 drop and weight changes, and the later Archer balance correction are reasons to recheck the interface and preparation context after updates, not evidence of a particular research order.",
         ],
       },
       {
         heading: "Version note",
         paragraphs: [
-          "Dungeon Settlers is an Early Access title. A safe Research guide should make its date visible and should keep the official system description separate from observations, community explanations, and reports that may age quickly. When a choice no longer produces the expected result, pause the route, record the difference, and check the official update path before expanding the claim.",
+          "Dungeon Settlers is an Early Access title. This guide currently binds official update facts to v0.4.23 while the full Research table remains DS_B.0.4.19. A safe Research guide should make its date visible and should keep the official system description separate from observations, community explanations, and reports that may age quickly. When a choice no longer produces the expected result, pause the route, record the difference, and check the official update path before expanding the claim.",
           "When the Research interface changes, compare the result in your current build with the latest official update notes before following an older route.",
         ],
       },
       {
         heading: "Sources",
         paragraphs: [
-          "The official Steam page is the baseline for the Research system and the settlement-to-expedition loop. Steam Community is the version-sensitive update path. The version-locked DungeonSettlers.wiki table is a reviewed secondary extraction of the stock game files for DS_B.0.4.19; it is linked for auditability and must be rechecked after a build change. The Clay guide is linked because resource and research decisions often meet at the same settlement bottleneck.",
+          "The official Steam page is the baseline for the Research system and the settlement-to-expedition loop. The official v0.4.23 note is the current numbered update boundary, while Steam Community/RSS is the version-sensitive update path. The version-locked DungeonSettlers.wiki table is a reviewed secondary extraction of the stock game files for DS_B.0.4.19; it is linked for auditability and must be rechecked after a build change. The Clay guide is linked because resource and research decisions often meet at the same settlement bottleneck.",
         ],
       },
     ],
@@ -256,10 +256,34 @@ export const libraryEntries: LibraryEntry[] = guideEntries.map((entry) => ({
 
 export const updates = [
   {
+    version: "Official Tokyo Game Show announcement",
+    date: "2026-09-17",
+    summary: "The latest dated official announcement is a Tokyo Game Show appearance notice. It does not publish a numbered version or gameplay change, so it updates the announcement boundary only; v0.4.23 remains the current numbered boundary.",
+    affectedRoutes: ["/updates"],
+    sourceLabel: "Steam official Tokyo Game Show announcement",
+    sourceHref: "https://store.steampowered.com/news/app/2798330/view/679635858932892079",
+  },
+  {
+    version: "Archer Balance Reverted",
+    date: "2026-09-13",
+    summary: "After feedback on v0.4.23, the official announcement reverted the listed Rapid Fire, Arrow Rain, Sniping Shot, and Sharp Shooter balance values. This is an announcement-level correction, not a newer numbered version.",
+    affectedRoutes: ["/updates"],
+    sourceLabel: "Steam official Archer Balance Reverted announcement",
+    sourceHref: "https://store.steampowered.com/news/app/2798330/view/702153223322993978",
+  },
+  {
+    version: "Official Steam v0.4.23",
+    date: "2026-09-12",
+    summary: "The official v0.4.23 note changes expedition size by rank, disables ally-damaging skill Auto Use by default, lowers Active Skill Energy on Normal and Easy, briefly reveals an attacking enemy tile, and changes high-difficulty Research Work Amount to 1.15× on Very Hard and 1.30× on Devastation. It also includes other combat, UI, save, and expedition fixes; this record only carries verified facts into the affected routes.",
+    affectedRoutes: ["/", "/guides/beginner-guide", "/guides/how-to-research", "/tools/first-expedition-planner", "/database", "/updates"],
+    sourceLabel: "Steam official v0.4.23 update",
+    sourceHref: "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+  },
+  {
     version: "Official feedback status",
     date: "2026-09-06",
-    summary: "The latest official feedback post says three updates shipped during the first three days of Early Access and links v0.4.12, v0.4.17, and v0.4.19. It also lists future improvements that are still being reviewed, so it does not create a new numbered version or a new Clay or Research conclusion.",
-    affectedRoutes: ["/", "/guides/beginner-guide", "/tools/first-expedition-planner"],
+    summary: "The earlier official feedback post links v0.4.12, v0.4.17, and v0.4.19 and separates future improvements as still being reviewed. It remains historical context rather than the current numbered boundary.",
+    affectedRoutes: ["/updates"],
     sourceLabel: "Steam Community official feedback announcement",
     sourceHref: "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
   },
@@ -269,7 +293,7 @@ export const updates = [
     summary: "The official update removed the item-drop quantity penalty on Very Hard and Devastation Management and reduced the weight of several items, including Clay. These changes affect high-difficulty collection and carry context; they do not establish a new Clay route or a Research prerequisite.",
     affectedRoutes: ["/guides/how-to-get-clay", "/guides/how-to-research", "/tools/first-expedition-planner"],
     sourceLabel: "Steam Community update path",
-    sourceHref: "https://steamcommunity.com/app/2798330/",
+    sourceHref: "https://store.steampowered.com/news/app/2798330/view/694271289525798758",
   },
   {
     version: "Field Guide 0.1",

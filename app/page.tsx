@@ -31,7 +31,7 @@ export default function Home() {
           <h1>Dungeon Settlers beginner guide, built around the next decision.</h1>
           <p className="hero-lead">A practical starting point for the settlement, the first dungeon route, Clay questions, and Research choices that need a little more evidence.</p>
           <div className="actions"><a className="button primary" href="/tools/first-expedition-planner">Build a first expedition plan <span aria-hidden="true">↗</span></a><a className="button" href="/guides/beginner-guide">Start the Beginner Guide</a></div>
-          <div className="hero-meta"><span>Current frame: Early Access</span><span>Updated 06 Sep 2026</span></div>
+          <div className="hero-meta"><span>Current numbered boundary: v0.4.23</span><span>Updated 21 Sep 2026</span></div>
         </div>
         <figure className="hero-visual"><img src="/game/official/hero.jpg" alt="Dungeon Settlers settlement with rooms, work areas, crops, and a central portal." width="1920" height="1080" /><figcaption>Settlement planning / official Dungeon Settlers screenshot from Steam</figcaption></figure>
       </section>
@@ -70,9 +70,9 @@ export default function Home() {
       <section className="section confirmed-section" aria-labelledby="confirmed-heading">
         <div className="section-heading"><div><p className="eyebrow">What is confirmed right now</p><h2 id="confirmed-heading">Enough to start, with a build-locked reference.</h2></div><p className="section-intro">The official store page establishes the broad loop. A version-locked table now exposes the current Research, resource, building, unit, drop and recipe rows while dated update notes keep future changes visible.</p></div>
         <div className="confirmed-grid">
-          <article><span className="status-pill official">Official baseline</span><h3>Settlement to expedition is the core shape.</h3><p>Build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. The store page also describes real-time action with pause, a party of up to four, and permadeath.</p></article>
-          <article><span className="status-pill dated">Version-sensitive</span><h3>Updates can change how a guide reads.</h3><p>A Steam Community update dated September 5, 2026 mentions combat, save compatibility, research-tier display, and inventory guide changes. Recheck dated routes after an update.</p></article>
-          <article><span className="status-pill pending">Version locked</span><h3>Research rows are available for the current build.</h3><p>The database exposes the DS_B.0.4.19 node rows and prerequisites. It remains a dated reference, so a newer build still needs a fresh comparison before a route is treated as universal.</p><a className="text-link" href="/database?tab=research">Browse the data reference <span aria-hidden="true">→</span></a></article>
+          <article><span className="status-pill official">Official baseline</span><h3>Settlement to expedition is the core shape.</h3><p>Build and expand a settlement, manage expedition members, explore dungeons, gather resources, craft equipment, and research technologies. The current v0.4.23 update raises the maximum expedition size to 6 at Rank 2 and 8 at Rank 3; use the current build rather than the older store-summary party limit.</p></article>
+          <article><span className="status-pill dated">Version-sensitive</span><h3>v0.4.23 changes the preparation check.</h3><p>Ally-damaging skills now have Auto Use disabled by default, Active Skill Energy is reduced on Normal and Easy, and high-difficulty Research Work Amount uses 1.15× on Very Hard and 1.30× on Devastation. Recheck the dated routes after an update.</p></article>
+          <article><span className="status-pill pending">Version locked</span><h3>Research rows remain an older snapshot.</h3><p>The database exposes the DS_B.0.4.19 node rows and prerequisites. It is not a v0.4.23 extraction, so use its labels for auditability only and keep current-build disagreements pending.</p><a className="text-link" href="/database?tab=research">Browse the data reference <span aria-hidden="true">→</span></a></article>
         </div>
       </section>
 

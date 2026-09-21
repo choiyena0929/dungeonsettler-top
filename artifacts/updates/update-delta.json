@@ -2,39 +2,67 @@
   "schemaVersion": 1,
   "type": "site-update-delta",
   "status": "ready-to-prepare",
-  "generatedAt": "2026-09-09T11:35:19.009Z",
+  "generatedAt": "2026-09-21T05:56:21.935Z",
   "siteId": "site-steam-2798330",
-  "inputRevision": "portfolio-update-scan-20260909091137604",
-  "observedAt": "2026-09-09T09:11:37.604Z",
+  "inputRevision": "input-59995249c82e",
+  "observedAt": "2026-09-21T05:52:40.7279410Z",
   "sourceVersion": "",
   "queryStatus": "changes-found",
   "query": {
     "status": "changes-found",
     "sources": [
       {
-        "id": "dungeon-feedback-status-20260906",
+        "id": "dungeon-news-rss-20260921",
         "status": "verified",
-        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
-        "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and separates future improvements as planned work.",
-        "observedAt": "2026-09-09T09:11:37.604Z"
+        "url": "https://store.steampowered.com/feeds/news/app/2798330/?cc=US&l=english",
+        "claim": "The official RSS feed lists Tokyo Game Show on 2026-09-17, Archer Balance Reverted on 2026-09-13, and [Update] v0.4.23 on 2026-09-12 as the latest official entries.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
       },
       {
-        "id": "dungeon-v0419-official",
+        "id": "dungeon-news-api-20260921",
         "status": "verified",
-        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
-        "claim": "The official v0.4.19 note changes high-difficulty drop handling and the weight of listed items including Clay.",
-        "observedAt": "2026-09-09T09:11:37.604Z"
+        "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=2798330&count=20&maxlength=20000&format=json",
+        "claim": "The official Steam news API returns the same current boundary: Tokyo Game Show, Archer Balance Reverted, and [Update] v0.4.23, followed by the older v0.4.19 and v0.4.17 notes.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
       },
       {
-        "id": "dungeon-v0417-official",
+        "id": "dungeon-v0423-official",
         "status": "verified",
-        "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
-        "claim": "The official v0.4.17 note corrects displayed Research tiers among other changes.",
-        "observedAt": "2026-09-09T09:11:37.604Z"
+        "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+        "claim": "The official v0.4.23 note separates Lock Consecration Results, restores Region 1/2 Soulstone merchant conditions, disables ally-damaging skill Auto Use by default, lowers Active Skill Energy on Normal/Easy, raises maximum expedition size to 6 at Rank 2 and 8 at Rank 3, reveals an attacking enemy tile briefly, and changes high-difficulty Research Work Amount multipliers from 1.33x/1.66x to 1.15x/1.30x.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
+      },
+      {
+        "id": "dungeon-archer-reverted-20260913",
+        "status": "verified",
+        "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993978",
+        "claim": "The official Archer Balance Reverted announcement says the v0.4.23 Archer changes were reverted for Rapid Fire, Arrow Rain, Sniping Shot, and Sharp Shooter; it is a balance announcement and does not create a new numbered version.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
+      },
+      {
+        "id": "dungeon-tokyo-show-20260917",
+        "status": "verified",
+        "url": "https://store.steampowered.com/news/app/2798330/view/679635858932892079",
+        "claim": "The latest dated official announcement is a Tokyo Game Show appearance notice; it contains no numbered version or guide-mechanic change.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
+      },
+      {
+        "id": "dungeon-store-20260921",
+        "status": "verified",
+        "url": "https://store.steampowered.com/app/2798330/Dungeon_Settlers/",
+        "claim": "The official store still presents Dungeon Settlers as an Early Access game and provides the current product identity; it does not override the numbered update boundary.",
+        "observedAt": "2026-09-21T05:52:40.7279410Z"
+      },
+      {
+        "id": "dungeon-community-local-scan-20260921",
+        "status": "pending",
+        "url": "https://steamcommunity.com/app/2798330/allnews/",
+        "claim": "The local source scanner timed out on the Community Hub and three direct legacy announcement URLs; the official RSS/API and update-hub evidence above were used instead, so the local scan remains partial.",
+        "observedAt": "2026-09-21T05:44:55.5726661Z"
       }
     ]
   },
-  "pageContractsRevision": "c2d6958e21d75f03",
+  "pageContractsRevision": "421ce9413036d76a",
   "pageContractsPath": "research/page-contracts.json",
   "keywordPolicy": {
     "mode": "deferred",
@@ -43,12 +71,14 @@
   },
   "decisions": [
     {
-      "id": "dungeon-v0419-drop-weight",
+      "id": "dungeon-v0423-expedition-combat",
       "kind": "fact-correction",
-      "summary": "Keep the v0.4.19 high-difficulty drop and weight changes visible in the affected routes.",
+      "summary": "Update the first-run and planner boundary for v0.4.23 expedition size, combat defaults, energy costs, and visibility behavior.",
       "affectedPaths": [
-        "/guides/how-to-get-clay",
-        "/tools/first-expedition-planner"
+        "/",
+        "/guides/beginner-guide",
+        "/tools/first-expedition-planner",
+        "/updates"
       ],
       "areas": [
         "copy",
@@ -59,9 +89,9 @@
       "evidence": [
         {
           "status": "verified",
-          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
-          "claim": "The official v0.4.19 note removes the item-drop quantity penalty on Very Hard and Devastation Management and reduces the weight of listed items including Clay.",
-          "observedAt": "2026-09-09T09:11:37.604Z"
+          "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+          "claim": "The official v0.4.23 note changes maximum expedition size, ally-damaging skill Auto Use defaults, Active Skill Energy by Combat Difficulty, and outside-vision attacker tile visibility.",
+          "observedAt": "2026-09-21T05:52:40.7279410Z"
         }
       ],
       "unknownPaths": [],
@@ -85,11 +115,13 @@
       "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
     },
     {
-      "id": "dungeon-v0419-clay-weight",
-      "kind": "fact-correction",
-      "summary": "Keep Clay carry context version-sensitive after the official weight change.",
+      "id": "dungeon-v0423-research-work",
+      "kind": "numeric-change",
+      "summary": "Replace the outdated high-difficulty Research Work Amount multipliers in the guide boundary while preserving the version-locked table warning.",
       "affectedPaths": [
-        "/guides/how-to-get-clay"
+        "/guides/how-to-research",
+        "/tools/first-expedition-planner",
+        "/updates"
       ],
       "areas": [
         "copy",
@@ -99,9 +131,9 @@
       "evidence": [
         {
           "status": "verified",
-          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451268",
-          "claim": "The official v0.4.19 note lists Clay among items with reduced weight.",
-          "observedAt": "2026-09-09T09:11:37.604Z"
+          "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+          "claim": "The official v0.4.23 note changes Research Work Amount multipliers on Very Hard from 1.33x to 1.15x and Devastation from 1.66x to 1.30x.",
+          "observedAt": "2026-09-21T05:52:40.7279410Z"
         }
       ],
       "unknownPaths": [],
@@ -123,11 +155,11 @@
       "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
     },
     {
-      "id": "dungeon-v0417-research-tier",
+      "id": "dungeon-archer-balance-reverted",
       "kind": "fact-correction",
-      "summary": "Keep the Research checklist tied to the visible current-build label and tier.",
+      "summary": "Record the Archer Balance Reverted announcement as a current balance correction without treating it as a new numbered release.",
       "affectedPaths": [
-        "/guides/how-to-research"
+        "/updates"
       ],
       "areas": [
         "copy",
@@ -137,9 +169,9 @@
       "evidence": [
         {
           "status": "verified",
-          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814450004",
-          "claim": "The official v0.4.17 note corrects displayed Research tiers for Carapace Processing among other changes.",
-          "observedAt": "2026-09-09T09:11:37.604Z"
+          "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993978",
+          "claim": "The official announcement reverts the listed Archer balance values introduced in v0.4.23 and does not state a new numbered version.",
+          "observedAt": "2026-09-21T05:52:40.7279410Z"
         }
       ],
       "unknownPaths": [],
@@ -161,25 +193,61 @@
       "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
     },
     {
-      "id": "dungeon-status-20260906",
+      "id": "dungeon-tokyo-announcement-boundary",
       "kind": "fact-correction",
-      "summary": "Record the feedback status and keep planned work separate from released mechanics.",
+      "summary": "Show the latest Tokyo Game Show announcement as announcement-only context with no claimed gameplay impact.",
       "affectedPaths": [
-        "/",
-        "/guides/beginner-guide",
-        "/tools/first-expedition-planner"
+        "/updates"
       ],
       "areas": [
-        "copy",
-        "internal-links"
+        "copy"
       ],
       "assetRefs": [],
       "evidence": [
         {
           "status": "verified",
-          "url": "https://steamcommunity.com/games/2798330/announcements/detail/1842846814451295",
-          "claim": "The official feedback announcement lists v0.4.12, v0.4.17, and v0.4.19 as released paths and describes later improvements as still being reviewed.",
-          "observedAt": "2026-09-09T09:11:37.604Z"
+          "url": "https://store.steampowered.com/news/app/2798330/view/679635858932892079",
+          "claim": "The latest official dated entry announces Tokyo Game Show attendance and does not publish a numbered version or gameplay change.",
+          "observedAt": "2026-09-21T05:52:40.7279410Z"
+        }
+      ],
+      "unknownPaths": [],
+      "verifiedEvidenceCount": 1,
+      "action": "update-existing-page",
+      "status": "ready-to-prepare",
+      "implementation": {
+        "action": "update-existing-page",
+        "areas": [
+          "copy"
+        ],
+        "steps": [
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。"
+        ],
+        "keywordSearch": "deferred",
+        "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
+      },
+      "reason": "只更新已绑定页面的事实/版本区块，保留 URL、canonical、主意图和有效旧内容。"
+    },
+    {
+      "id": "dungeon-data-snapshot-boundary",
+      "kind": "fact-correction",
+      "summary": "Make the older version-locked Research database snapshot explicit after the official v0.4.23 recheck.",
+      "affectedPaths": [
+        "/guides/how-to-research",
+        "/database",
+        "/updates"
+      ],
+      "areas": [
+        "copy",
+        "data"
+      ],
+      "assetRefs": [],
+      "evidence": [
+        {
+          "status": "verified",
+          "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+          "claim": "The official v0.4.23 note changes Research Work Amount, while the repository's extracted Research table is explicitly labeled DS_B.0.4.19.",
+          "observedAt": "2026-09-21T05:52:40.7279410Z"
         }
       ],
       "unknownPaths": [],
@@ -190,11 +258,10 @@
         "action": "update-existing-page",
         "areas": [
           "copy",
-          "internal-links"
+          "data"
         ],
         "steps": [
-          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。",
-          "补齐受影响页面之间的首选 URL 内链，并重新核对 canonical、sitemap 和旧别名。"
+          "只在绑定的既有页面更新已核验事实、数值和版本说明，并保留未知项。"
         ],
         "keywordSearch": "deferred",
         "keywordReason": "版本维护默认不查询长尾；只有官方证据证明独立用户任务时，才保留页面候选供后续人工决定。"
@@ -204,9 +271,9 @@
   ],
   "summary": {
     "queryStatus": "changes-found",
-    "sourcesChecked": 3,
-    "changeCount": 4,
-    "readyToPrepare": 4,
+    "sourcesChecked": 7,
+    "changeCount": 5,
+    "readyToPrepare": 5,
     "needsReview": 0,
     "blocked": 0,
     "keywordQueriesExecuted": 0

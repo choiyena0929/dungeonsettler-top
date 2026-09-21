@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "type": "site-change-proposal",
+  "siteId": "site-steam-2798330",
+  "handoffId": "handoff-c94ddea503cd",
+  "inputRevision": "input-59995249c82e",
+  "proposedAt": "2026-09-21T05:52:40.7279410Z",
+  "sourceDelta": "artifacts/updates/update-delta.json",
+  "changes": [
+    {
+      "id": "dungeon-v0423-expedition-combat",
+      "kind": "fact-correction",
+      "summary": "Update the homepage, beginner guide, planner, and update record for the official v0.4.23 expedition and combat changes.",
+      "affectedPaths": ["/", "/guides/beginner-guide", "/tools/first-expedition-planner", "/updates"],
+      "before": {
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-v0423-expedition-combat",
+        "method": "official v0.4.23 note and current repository page content"
+      },
+      "after": {
+        "ref": "planned: app/content.ts, app/page.tsx, app/tools/first-expedition-planner/page.tsx, app/updates/page.tsx",
+        "method": "replace stale version boundary and add only the verified v0.4.23 facts"
+      },
+      "rollback": {
+        "ref": "dedicated Dungeon Settlers update commit",
+        "method": "revert the dedicated update commit before deployment if route or action acceptance fails"
+      }
+    },
+    {
+      "id": "dungeon-v0423-research-work",
+      "kind": "numeric-change",
+      "summary": "Update official Research Work Amount multipliers and explicitly keep the full data table at its older version-locked boundary.",
+      "affectedPaths": ["/guides/how-to-research", "/tools/first-expedition-planner", "/updates"],
+      "before": {
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-v0423-research-work",
+        "method": "official v0.4.23 note plus DS_B.0.4.19 extraction label"
+      },
+      "after": {
+        "ref": "planned: app/content.ts, app/tools/first-expedition-planner/page.tsx, app/updates/page.tsx",
+        "method": "publish the verified multipliers and preserve pending/full-table warnings"
+      },
+      "rollback": {
+        "ref": "dedicated Dungeon Settlers update commit",
+        "method": "revert the dedicated update commit before deployment if the version boundary or data warning is inconsistent"
+      }
+    },
+    {
+      "id": "dungeon-archer-balance-reverted",
+      "kind": "fact-correction",
+      "summary": "Add the official Archer Balance Reverted announcement to the update record without creating a new version.",
+      "affectedPaths": ["/updates"],
+      "before": {
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-archer-balance-reverted",
+        "method": "official Archer announcement and existing update page"
+      },
+      "after": {
+        "ref": "planned: app/content.ts, app/updates/page.tsx",
+        "method": "add a dated announcement entry with the official link and no inferred version"
+      },
+      "rollback": {
+        "ref": "dedicated Dungeon Settlers update commit",
+        "method": "revert the dedicated update commit before deployment if the announcement is presented as a numbered patch"
+      }
+    },
+    {
+      "id": "dungeon-tokyo-announcement-boundary",
+      "kind": "fact-correction",
+      "summary": "Show the latest official Tokyo Game Show announcement as event-only context and keep v0.4.23 as the numbered boundary.",
+      "affectedPaths": ["/updates"],
+      "before": {
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-tokyo-announcement-boundary",
+        "method": "official RSS/API latest-entry order"
+      },
+      "after": {
+        "ref": "planned: app/content.ts, app/updates/page.tsx",
+        "method": "add announcement boundary and explicitly state no gameplay impact was claimed"
+      },
+      "rollback": {
+        "ref": "dedicated Dungeon Settlers update commit",
+        "method": "revert the dedicated update commit before deployment if event context is mistaken for a gameplay update"
+      }
+    },
+    {
+      "id": "dungeon-data-snapshot-boundary",
+      "kind": "fact-correction",
+      "summary": "Make the DS_B.0.4.19 database snapshot boundary explicit after the official v0.4.23 recheck.",
+      "affectedPaths": ["/guides/how-to-research", "/database", "/updates"],
+      "before": {
+        "ref": "artifacts/updates/game-update-evidence.json#dungeon-data-snapshot-boundary",
+        "method": "current official v0.4.23 note and repository snapshot metadata"
+      },
+      "after": {
+        "ref": "planned: app/content.ts, app/database/page.tsx, app/updates/page.tsx",
+        "method": "keep the existing rows intact and update only the visible version/evidence boundary"
+      },
+      "rollback": {
+        "ref": "dedicated Dungeon Settlers update commit",
+        "method": "revert the dedicated update commit before deployment if the database snapshot is presented as v0.4.23"
+      }
+    }
+  ],
+  "safety": {
+    "codeChanged": false,
+    "urlChanged": false,
+    "directPublish": false,
+    "rule": "先完成证据、delta 和风险计划；只改已绑定页面的事实与版本边界，不改 URL、数据库行或未核验数据。"
+  }
+}

@@ -10,8 +10,8 @@ export function ResearchTree() {
     <section className="research-tree" aria-labelledby="research-tree-heading">
       <div className="research-tree-heading">
         <p className="eyebrow">Version-locked reference</p>
-        <h2 id="research-tree-heading">The complete Research table for DS_B.0.4.19</h2>
-        <p>This table is a reviewed secondary extraction from the stock game files, captured on {gameDataSnapshot.extracted} for Steam build {gameDataSnapshot.steamBuildId}. It exposes the current rows, prerequisites, Tech Book requirement, workload, and unlocks; it does not turn an old build into a permanent best order.</p>
+        <h2 id="research-tree-heading">The version-locked Research table for DS_B.0.4.19</h2>
+        <p>This table is a reviewed secondary extraction from the stock game files, captured on {gameDataSnapshot.extracted} for Steam build {gameDataSnapshot.steamBuildId}. It exposes that snapshot&apos;s rows, prerequisites, Tech Book requirement, workload, and unlocks; it is not a v0.4.23 extraction and does not turn an old build into a permanent best order.</p>
         <p><a className="text-link" href={gameDataSnapshot.source.researchPage} rel="noreferrer">Open the source Research table ↗</a> <a className="text-link" href="/database?tab=research">Browse the local data index →</a></p>
       </div>
       <div className="research-tree-list">
@@ -33,7 +33,7 @@ export function ResearchTree() {
           </details>
         ))}
       </div>
-      <p className="research-tree-note">The extraction gives a complete snapshot for this build. Difficulty scaling, future patches, and an in-game display that disagrees with the snapshot still require a fresh check.</p>
+      <p className="research-tree-note">The extraction gives a complete DS_B.0.4.19 snapshot. The official v0.4.23 Research Work Amount change, future patches, and an in-game display that disagrees with the snapshot still require a fresh check.</p>
     </section>
   );
 }

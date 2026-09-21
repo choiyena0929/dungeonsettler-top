@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "status": "pending",
-  "currentVersionBoundary": "0.4.19",
-  "currentAnnouncementBoundary": "2026-09-06",
+  "status": "changes-found",
+  "currentVersionBoundary": "0.4.23",
+  "currentAnnouncementBoundary": "2026-09-17",
   "signalCadenceHours": 24,
   "deepCadenceDays": 7,
-  "lastScanStatus": "changes-found",
-  "currentVersionCheckedAt": "2026-09-09T09:11:37.604Z",
-  "currentVersionSource": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814451295",
-  "lastScanNote": "官方最新公告是反馈汇总，明确已发布更新包含 v0.4.19，未公布更高编号版本；当前站点以 v0.4.19 为编号边界，并以 2026-09-06 为公告边界。",
+  "lastScanStatus": "partial",
+  "currentVersionCheckedAt": "2026-09-21T05:52:40.7279410Z",
+  "currentVersionSource": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+  "lastScanNote": "官方 RSS/API 和更新中心复核确认 v0.4.23 是当前编号边界；2026-09-13 Archer Balance Reverted 是公告级修正，2026-09-17 Tokyo Game Show 是活动公告，不改变编号版本。Community Hub 本地扫描超时，因此保留 partial，不把失败当作无变化。",
   "sources": [
     {
       "id": "steam-news-api",
@@ -35,6 +35,27 @@
       "id": "steam-community-news",
       "url": "https://steamcommunity.com/app/2798330/",
       "kind": "official-steam-community-news",
+      "signal": true,
+      "required": false
+    },
+    {
+      "id": "steam-v0423-official",
+      "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
+      "kind": "official-steam-update",
+      "signal": true,
+      "required": true
+    },
+    {
+      "id": "steam-archer-reverted",
+      "url": "https://store.steampowered.com/news/app/2798330/view/702153223322993978",
+      "kind": "official-steam-announcement",
+      "signal": true,
+      "required": false
+    },
+    {
+      "id": "steam-tokyo-show",
+      "url": "https://store.steampowered.com/news/app/2798330/view/679635858932892079",
+      "kind": "official-steam-announcement",
       "signal": true,
       "required": false
     }

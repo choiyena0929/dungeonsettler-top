@@ -20,7 +20,7 @@ export default function FirstExpeditionPlannerPage() {
         <h1>Dungeon Settlers expedition planner: build a first-run checklist.</h1>
         <p className="lead">Use this Dungeon Settlers expedition planner when the settlement, the party, and the next dungeon question are pulling in different directions. It turns the next run into a short list you can observe and review.</p>
         <div className="tool-header-actions"><a className="button primary" href="#planner-form">Start planning <span aria-hidden="true">↓</span></a></div>
-        <div className="tag-row"><span>Session + history</span><span>Early Access</span><span>Updated 07 Sep 2026</span></div>
+        <div className="tag-row"><span>Session + history</span><span>Early Access / v0.4.23</span><span>Updated 21 Sep 2026</span></div>
       </div>
 
       <div className="tool-layout">
@@ -29,8 +29,8 @@ export default function FirstExpeditionPlannerPage() {
           <figure className="tool-context-visual"><img src="/game/official/settlement.jpg" alt="Dungeon Settlers settlement preparation screen from an official Steam screenshot." width="1920" height="1080" /><figcaption>Settlement preparation / official Steam screenshot</figcaption></figure>
           <p className="eyebrow">Why this route exists</p>
           <h2>Keep the loop visible.</h2>
-          <p>The official store page describes a settlement-to-dungeon loop with building, gathering, crafting, research, party preparation, and real-time combat with pause. The planner stays at that evidence level.</p>
-          <p>It does not fill in hidden values. If the current build shows a different prerequisite, quantity, or route, keep that observation separate and check the dated update path.</p>
+          <p>The official store page describes a settlement-to-dungeon loop with building, gathering, crafting, research, party preparation, and real-time combat with pause. The current official v0.4.23 update adds rank-based expedition sizes, changes skill Auto Use and Energy defaults, and adjusts high-difficulty Research Work Amount.</p>
+          <p>It does not fill in hidden values or choose a party for you. If the current build shows a different prerequisite, quantity, rank limit, or route, keep that observation separate and check the dated update path.</p>
           <EntityIconStrip compact assetIds={["dungeon-settlers-party-portrait-03", "dungeon-settlers-party-portrait-04", "dungeon-settlers-workstations-icon", "dungeon-settlers-storage-icon"]} />
           <div className="tool-route-links"><a className="text-link" href="/guides/beginner-guide">Need the first route? Read Beginner <span aria-hidden="true">→</span></a><a className="text-link" href="/updates">Check dated guide updates <span aria-hidden="true">→</span></a></div>
         </aside>
@@ -40,7 +40,7 @@ export default function FirstExpeditionPlannerPage() {
         <p className="eyebrow">Use the result in play</p>
         <h2 id="planner-notes-heading">A small plan is useful when it can be checked.</h2>
         <p>Start with the question that is blocking the next decision. If the settlement is missing a visible preparation step, write that down before asking the party to solve a dungeon problem. If the party is ready but the purpose is unclear, select one observation that would make the return meaningful.</p>
-        <p>The result page gives you a related guide instead of pretending that one checklist answers every build. Beginner covers the first route, Clay covers a dated material lead, and Research explains how to hold an unknown technology order at the right boundary.</p>
+        <p>The result page gives you a related guide instead of pretending that one checklist answers every build. Beginner covers the first route under the v0.4.23 boundary, Clay covers a dated material lead, and Research explains how to hold the DS_B.0.4.19 table and unknown technology order at the right boundary.</p>
         <p>Each submitted result is saved in this browser, so you can return after an update or a failed expedition and compare up to two earlier preparation states. The history records the visible checks and missing items only; it does not pretend to be a save-file profile or a generated route.</p>
       </section>
     </section>

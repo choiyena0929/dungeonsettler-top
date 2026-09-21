@@ -1,11 +1,10 @@
 {
   "schemaVersion": 2,
   "status": "passed",
-  "capturedAt": "2026-09-17T03:35:17.191Z",
-  "runId": "dungeonsettlers-adsterra-20260917",
+  "capturedAt": "2026-09-21T06:20:07.959Z",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "baseUrl": "https://dungeonsettlers.top",
+  "baseUrl": "http://localhost:4174",
   "canonicalOrigin": "https://dungeonsettlers.top",
   "contractPath": "D:/WebProjects/sites/dungeonsettler.top/research/page-contracts.json",
   "routes": [
@@ -13,7 +12,7 @@
       "path": "/",
       "pageType": "homepage",
       "primaryKeyword": "Dungeon Settlers beginner guide",
-      "url": "https://dungeonsettlers.top/",
+      "url": "http://localhost:4174/",
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide: start here | DS Field Guide",
       "description": "Start with a practical Dungeon Settlers beginner guide for the settlement, first expedition, Clay questions, and Research choices.",
@@ -21,7 +20,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide, built around the next decision."
       ],
-      "wordCount": 788,
+      "wordCount": 830,
       "internalLinkCount": 10,
       "keywordCount": 2,
       "checks": [
@@ -58,7 +57,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "788/650 words"
+          "detail": "830/650 words"
         },
         {
           "id": "internal-links",
@@ -103,7 +102,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 16"
+          "detail": "2 次，上限 17"
         }
       ],
       "status": "passed"
@@ -112,7 +111,7 @@
       "path": "/guides/beginner-guide",
       "pageType": "guide",
       "primaryKeyword": "Dungeon Settlers beginner guide",
-      "url": "https://dungeonsettlers.top/guides/beginner-guide",
+      "url": "http://localhost:4174/guides/beginner-guide",
       "statusCode": 200,
       "title": "Dungeon Settlers beginner guide | DS Field Guide",
       "description": "This Dungeon Settlers beginner guide gives new Early Access players a practical route from settlement setup to the first dungeon expedition.",
@@ -120,7 +119,7 @@
       "h1s": [
         "Dungeon Settlers beginner guide: the first expedition route"
       ],
-      "wordCount": 1173,
+      "wordCount": 1186,
       "internalLinkCount": 9,
       "keywordCount": 3,
       "checks": [
@@ -157,7 +156,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1173/850 words"
+          "detail": "1186/850 words"
         },
         {
           "id": "internal-links",
@@ -211,7 +210,7 @@
       "path": "/guides/how-to-get-clay",
       "pageType": "guide",
       "primaryKeyword": "How to get clay in Dungeon Settlers",
-      "url": "https://dungeonsettlers.top/guides/how-to-get-clay",
+      "url": "http://localhost:4174/guides/how-to-get-clay",
       "statusCode": 200,
       "title": "How to get clay in Dungeon Settlers | DS Field Guide",
       "description": "Learn how to get Clay in Dungeon Settlers through early dungeon encounters, merchants, and later regions while keeping version-sensitive quantities clearly labelled.",
@@ -219,7 +218,7 @@
       "h1s": [
         "How to get clay in Dungeon Settlers"
       ],
-      "wordCount": 1069,
+      "wordCount": 1081,
       "internalLinkCount": 9,
       "keywordCount": 4,
       "checks": [
@@ -256,7 +255,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1069/750 words"
+          "detail": "1081/750 words"
         },
         {
           "id": "internal-links",
@@ -310,7 +309,7 @@
       "path": "/guides/how-to-research",
       "pageType": "guide",
       "primaryKeyword": "How to research in Dungeon Settlers",
-      "url": "https://dungeonsettlers.top/guides/how-to-research",
+      "url": "http://localhost:4174/guides/how-to-research",
       "statusCode": 200,
       "title": "How to research in Dungeon Settlers | DS Field Guide",
       "description": "This guide explains how to research in Dungeon Settlers using a cautious checklist grounded in the official loop and clear version boundaries.",
@@ -318,7 +317,7 @@
       "h1s": [
         "How to research in Dungeon Settlers"
       ],
-      "wordCount": 2716,
+      "wordCount": 2787,
       "internalLinkCount": 10,
       "keywordCount": 3,
       "checks": [
@@ -355,7 +354,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "2716/750 words"
+          "detail": "2787/750 words"
         },
         {
           "id": "internal-links",
@@ -400,7 +399,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "3 次，上限 55"
+          "detail": "3 次，上限 56"
         }
       ],
       "status": "passed"
@@ -409,7 +408,7 @@
       "path": "/tools/first-expedition-planner",
       "pageType": "tool",
       "primaryKeyword": "Dungeon Settlers expedition planner",
-      "url": "https://dungeonsettlers.top/tools/first-expedition-planner",
+      "url": "http://localhost:4174/tools/first-expedition-planner",
       "statusCode": 200,
       "title": "Dungeon Settlers expedition planner | First run | DS Field Guide",
       "description": "Use a Dungeon Settlers expedition planner to turn the settlement, Research, party, and first dungeon question into a clear Early Access checklist.",
@@ -417,7 +416,7 @@
       "h1s": [
         "Dungeon Settlers expedition planner: build a first-run checklist."
       ],
-      "wordCount": 595,
+      "wordCount": 636,
       "internalLinkCount": 9,
       "keywordCount": 2,
       "checks": [
@@ -454,7 +453,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "595/300 words"
+          "detail": "636/300 words"
         },
         {
           "id": "internal-links",
@@ -499,7 +498,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 12"
+          "detail": "2 次，上限 13"
         }
       ],
       "status": "passed"
@@ -508,7 +507,7 @@
       "path": "/library",
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers guide library",
-      "url": "https://dungeonsettlers.top/library",
+      "url": "http://localhost:4174/library",
       "statusCode": 200,
       "title": "Dungeon Settlers guide library | DS Field Guide",
       "description": "Search and filter the current Dungeon Settlers guide library by the problem you need to solve next.",
@@ -516,7 +515,7 @@
       "h1s": [
         "Dungeon Settlers guide library"
       ],
-      "wordCount": 532,
+      "wordCount": 543,
       "internalLinkCount": 9,
       "keywordCount": 2,
       "checks": [
@@ -553,7 +552,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "532/500 words"
+          "detail": "543/500 words"
         },
         {
           "id": "internal-links",
@@ -607,15 +606,15 @@
       "path": "/updates",
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers guide updates",
-      "url": "https://dungeonsettlers.top/updates",
+      "url": "http://localhost:4174/updates",
       "statusCode": 200,
-      "title": "Dungeon Settlers guide updates | DS Field Guide",
-      "description": "Track Dungeon Settlers guide updates, dated source changes, and the pages affected by Early Access updates.",
+      "title": "Dungeon Settlers guide updates | v0.4.23 | DS Field Guide",
+      "description": "Track Dungeon Settlers guide updates, the official v0.4.23 boundary, dated balance announcements, and the guide pages that need a recheck.",
       "canonical": "https://dungeonsettlers.top/updates",
       "h1s": [
         "Dungeon Settlers guide updates"
       ],
-      "wordCount": 694,
+      "wordCount": 906,
       "internalLinkCount": 9,
       "keywordCount": 2,
       "checks": [
@@ -632,12 +631,12 @@
         {
           "id": "title-length",
           "status": "passed",
-          "detail": "47 chars"
+          "detail": "57 chars"
         },
         {
           "id": "description-length",
           "status": "passed",
-          "detail": "107 chars"
+          "detail": "138 chars"
         },
         {
           "id": "single-h1",
@@ -652,7 +651,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "694/500 words"
+          "detail": "906/500 words"
         },
         {
           "id": "internal-links",
@@ -697,7 +696,7 @@
         {
           "id": "keyword-natural-frequency",
           "status": "passed",
-          "detail": "2 次，上限 14"
+          "detail": "2 次，上限 19"
         }
       ],
       "status": "passed"
@@ -706,7 +705,7 @@
       "path": "/privacy",
       "pageType": "legal",
       "primaryKeyword": "",
-      "url": "https://dungeonsettlers.top/privacy",
+      "url": "http://localhost:4174/privacy",
       "statusCode": 200,
       "title": "Dungeon Settlers privacy information | DS Field Guide",
       "description": "Privacy information for the independent Dungeon Settlers Field Guide, including analytics, Clarity, planner storage, and advertising boundaries.",
@@ -780,15 +779,15 @@
       "path": "/database",
       "pageType": "hub",
       "primaryKeyword": "Dungeon Settlers database",
-      "url": "https://dungeonsettlers.top/database",
+      "url": "http://localhost:4174/database",
       "statusCode": 200,
       "title": "Dungeon Settlers database | DS_B.0.4.19 | DS Field Guide",
-      "description": "Browse the Dungeon Settlers database for the version-locked DS_B.0.4.19 Research, resources, items, units, buildings, drops and recipes.",
+      "description": "Browse the version-locked DS_B.0.4.19 Dungeon Settlers database; v0.4.23 is the current official update boundary.",
       "canonical": "https://dungeonsettlers.top/database",
       "h1s": [
         "Dungeon Settlers database reference"
       ],
-      "wordCount": 1151,
+      "wordCount": 1175,
       "internalLinkCount": 9,
       "keywordCount": 2,
       "checks": [
@@ -810,7 +809,7 @@
         {
           "id": "description-length",
           "status": "passed",
-          "detail": "136 chars"
+          "detail": "113 chars"
         },
         {
           "id": "single-h1",
@@ -825,7 +824,7 @@
         {
           "id": "word-count",
           "status": "passed",
-          "detail": "1151/650 words"
+          "detail": "1175/650 words"
         },
         {
           "id": "internal-links",

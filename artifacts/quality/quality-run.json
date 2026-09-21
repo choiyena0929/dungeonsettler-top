@@ -1474,9 +1474,149 @@
           }
         }
       }
+    },
+    {
+      "id": "dungeon-v0423-20260921-r1",
+      "completedAt": "2026-09-21T06:17:03.084Z",
+      "route": "/guides/beginner-guide",
+      "url": "http://localhost:4174/guides/beginner-guide",
+      "desktopScreenshot": "artifacts/quality/dungeon-v0423-20260921-r1-desktop.png",
+      "mobileScreenshot": "artifacts/quality/dungeon-v0423-20260921-r1-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/dungeon-v0423-20260921-r1-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/dungeon-v0423-20260921-r1-mobile-viewport.png",
+      "desktopSha256": "b78239622f07d06e2a4d4cff1f9c1c797f2914596b37a45b3e6ed79431414da2",
+      "mobileSha256": "892ec9fca371c9366ed63556b49f6536a0177861a0463b2c4836e007e0a6e84f",
+      "desktopViewportSha256": "9b0052355d13db02d69ff50a8789781afdec644ecc0c5239336696da67997f1d",
+      "mobileViewportSha256": "4fb816f6be079ebb762e91a886f7839982418444ece31bb996262406c4c67e1e",
+      "desktopDomSha256": "16f7eb04ef92faa3883c26ccda7183e760743d73bd080fc383d13dc875316c28",
+      "mobileDomSha256": "9bea7f981ff266578d59395bbe7a10d7e6c45e21ec41ef72f889138cf2e5dcb2",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:4174/guides/beginner-guide",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 4804,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 7542,
+          "domSha256": "16f7eb04ef92faa3883c26ccda7183e760743d73bd080fc383d13dc875316c28",
+          "screenshotSha256": "b78239622f07d06e2a4d4cff1f9c1c797f2914596b37a45b3e6ed79431414da2",
+          "viewportScreenshotSha256": "9b0052355d13db02d69ff50a8789781afdec644ecc0c5239336696da67997f1d",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4174/",
+            "finalUrl": "http://localhost:4174/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:4174/guides/beginner-guide",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers beginner guide | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 7537,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 7542,
+          "domSha256": "9bea7f981ff266578d59395bbe7a10d7e6c45e21ec41ef72f889138cf2e5dcb2",
+          "screenshotSha256": "892ec9fca371c9366ed63556b49f6536a0177861a0463b2c4836e007e0a6e84f",
+          "viewportScreenshotSha256": "4fb816f6be079ebb762e91a886f7839982418444ece31bb996262406c4c67e1e",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4174/",
+            "finalUrl": "http://localhost:4174/",
+            "runtimeErrors": []
+          }
+        }
+      }
+    },
+    {
+      "id": "dungeon-v0423-updates-20260921-r1",
+      "completedAt": "2026-09-21T06:17:48.745Z",
+      "route": "/updates",
+      "url": "http://localhost:4174/updates",
+      "desktopScreenshot": "artifacts/quality/dungeon-v0423-updates-20260921-r1-desktop.png",
+      "mobileScreenshot": "artifacts/quality/dungeon-v0423-updates-20260921-r1-mobile.png",
+      "desktopViewportScreenshot": "artifacts/quality/dungeon-v0423-updates-20260921-r1-desktop-viewport.png",
+      "mobileViewportScreenshot": "artifacts/quality/dungeon-v0423-updates-20260921-r1-mobile-viewport.png",
+      "desktopSha256": "a8b8b43e98188679d0a95e8778f487b750cfcebe478fdb564e5fe0c1662bbbbd",
+      "mobileSha256": "2e0a2bc2e496f772645471146eaa6fa3a2bbd568d1bea3fae31395f2183a162e",
+      "desktopViewportSha256": "d120f980434b92ea8bee410fdd740ddfb8a4a6c6219809c3ebd457d3ad3fc062",
+      "mobileViewportSha256": "afd584c7a8d77b7fb493976bac0c5eec78993a203e639c4c5c6869ba9b0f8fa9",
+      "desktopDomSha256": "825517fe1f4624592e189c498545997a3b51d0a1db48e260b1c3403ca25aeebc",
+      "mobileDomSha256": "ad734dac4dd6108b7384b9eb0cc07b5f91715679991ba7a981afdadfbc146505",
+      "capture": {
+        "desktop": {
+          "name": "desktop",
+          "url": "http://localhost:4174/updates",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "title": "Dungeon Settlers guide updates | v0.4.23 | DS Field Guide",
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentWidth": 1440,
+          "documentHeight": 3534,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 5781,
+          "domSha256": "825517fe1f4624592e189c498545997a3b51d0a1db48e260b1c3403ca25aeebc",
+          "screenshotSha256": "a8b8b43e98188679d0a95e8778f487b750cfcebe478fdb564e5fe0c1662bbbbd",
+          "viewportScreenshotSha256": "d120f980434b92ea8bee410fdd740ddfb8a4a6c6219809c3ebd457d3ad3fc062",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4174/",
+            "finalUrl": "http://localhost:4174/",
+            "runtimeErrors": []
+          }
+        },
+        "mobile": {
+          "name": "mobile",
+          "url": "http://localhost:4174/updates",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "title": "Dungeon Settlers guide updates | v0.4.23 | DS Field Guide",
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 5639,
+          "horizontalOverflow": false,
+          "h1Count": 1,
+          "bodyTextLength": 5781,
+          "domSha256": "ad734dac4dd6108b7384b9eb0cc07b5f91715679991ba7a981afdadfbc146505",
+          "screenshotSha256": "2e0a2bc2e496f772645471146eaa6fa3a2bbd568d1bea3fae31395f2183a162e",
+          "viewportScreenshotSha256": "afd584c7a8d77b7fb493976bac0c5eec78993a203e639c4c5c6869ba9b0f8fa9",
+          "interaction": {
+            "status": "passed",
+            "href": "/",
+            "expectedUrl": "http://localhost:4174/",
+            "finalUrl": "http://localhost:4174/",
+            "runtimeErrors": []
+          }
+        }
+      }
     }
   ],
   "blockingOpen": 0,
   "majorOpen": 0,
-  "independentReviewRunId": "codex-fresh-dc4da5cb9b47"
+  "independentReviewRunId": "codex-fresh-912e76c13620"
 }

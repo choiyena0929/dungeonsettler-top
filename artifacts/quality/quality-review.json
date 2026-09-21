@@ -5,41 +5,41 @@
   "verdict": "passed",
   "handoffId": "handoff-c94ddea503cd",
   "inputRevision": "input-59995249c82e",
-  "reviewedAt": "2026-09-10T03:31:16.484Z",
-  "reviewedRoundId": "s8-disabled-20260910-r2",
+  "reviewedAt": "2026-09-21T06:18:49.653Z",
+  "reviewedRoundId": "dungeon-v0423-updates-20260921-r1",
   "reviewer": {
-    "id": "codex-fresh-dc4da5cb9b47",
+    "id": "codex-fresh-912e76c13620",
     "role": "independent-quality-reviewer",
     "context": "fresh"
   },
-  "summary": "首页在桌面端建立了清晰的游戏身份、首要行动和实机视觉，移动端导航、长标题与按钮均能自然收束并保持可操作性；整页内容按问题、玩法循环、官方视频、版本边界和来源逐层展开，信息密度较高但主次明确，没有明显横向溢出或视觉断裂。",
+  "summary": "页面在桌面与移动端均保持清晰的版本更新层级，标题、当前边界、更新卡片、来源入口和解释正文组织自然；移动导航与主要按钮可用，长内容虽密集但未破坏阅读与信息查找。整体具备稳定的游戏身份识别和可信的版本证据边界。",
   "criteria": [
     {
       "id": "visual-hierarchy",
       "status": "passed",
-      "notes": "桌面首屏以大标题、官方聚落截图和首要行动为核心，后续按问题入口、玩法循环、视频、版本信息和来源分层；移动端虽为长页，但区块边界和标题层级仍清楚。"
+      "notes": "标题、版本边界、主按钮、更新卡片和解释区层级明确，桌面留白与移动纵向结构均未造成信息迷失。"
     },
     {
       "id": "game-identity",
       "status": "passed",
-      "notes": "官方 Dungeon Settlers capsule、聚落截图、地下城截图和官方宣传视频入口共同建立了明确的游戏与玩法身份，即使遮住站点名称也能辨认是具体游戏攻略页面。"
+      "notes": "顶部官方 Dungeon Settlers 标识与页面标题持续建立游戏身份，更新内容中的职业、远征、研究和资源语境也与具体游戏一致。"
     },
     {
       "id": "responsive",
       "status": "passed",
-      "notes": "桌面采用左右首屏布局，移动端改为单列并将导航分成两行；长标题、CTA、卡片和图片均能收缩，无明显横向溢出，触控目标尺寸看起来足够使用。"
+      "notes": "桌面与390px移动布局均无明显横向溢出；移动导航分成可触控网格，长标题和日期能够换行显示，主要按钮宽度充足。"
     },
     {
       "id": "usability",
       "status": "passed",
-      "notes": "首屏几秒内即可看到 Beginner Guide 与 Build a first expedition plan 两个核心入口，随后可按 Clay、Research 和首次远征等具体问题继续进入内容。"
+      "notes": "用户可在首屏快速看到返回入口、当前版本边界和重新检查首次流程的动作，随后按日期浏览受影响路由与来源。"
     },
     {
       "id": "content-seo-balance",
       "status": "passed",
-      "notes": "页面使用自然的问题导向文案和真实游戏画面，Early Access、版本与来源信息作为信任边界出现，没有在视觉中暴露内部指标或研究流程；长页内容组织仍服务于玩家决策。"
+      "notes": "页面包含自然的游戏名、版本号、更新主题、受影响页面和来源路径，且明确区分编号版本、公告修正与待复查信息，没有明显关键词堆叠。"
     }
   ],
   "issues": [],
-  "reviewRunId": "codex-fresh-dc4da5cb9b47"
+  "reviewRunId": "codex-fresh-912e76c13620"
 }
