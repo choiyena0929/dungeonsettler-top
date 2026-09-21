@@ -7,6 +7,7 @@
   "observedAt": "2026-09-21T05:52:40.7279410Z",
   "timezone": "UTC",
   "queryStatus": "changes-found",
+  "sourceVersion": "0.4.23",
   "source": {
     "label": "Steam official RSS/API plus official update hub recheck",
     "url": "https://steamcommunity.com/app/2798330/allnews/"

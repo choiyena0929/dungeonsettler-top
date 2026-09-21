@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "type": "site-update-delta",
   "status": "ready-to-prepare",
-  "generatedAt": "2026-09-21T05:56:21.935Z",
+  "generatedAt": "2026-09-21T06:28:25.763Z",
   "siteId": "site-steam-2798330",
   "inputRevision": "input-59995249c82e",
   "observedAt": "2026-09-21T05:52:40.7279410Z",
-  "sourceVersion": "",
+  "sourceVersion": "0.4.23",
   "queryStatus": "changes-found",
   "query": {
     "status": "changes-found",
@@ -62,7 +62,7 @@
       }
     ]
   },
-  "pageContractsRevision": "421ce9413036d76a",
+  "pageContractsRevision": "53a47f60edb57111",
   "pageContractsPath": "research/page-contracts.json",
   "keywordPolicy": {
     "mode": "deferred",
