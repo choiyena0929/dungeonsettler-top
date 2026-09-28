@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "status": "changes-found",
+  "status": "no-change",
   "currentVersionBoundary": "0.4.23",
   "currentAnnouncementBoundary": "2026-09-17",
   "signalCadenceHours": 24,
   "deepCadenceDays": 7,
-  "lastScanStatus": "partial",
+  "lastScanStatus": "success",
+  "lastScannedAt": "2026-09-28T02:30:10.000Z",
   "currentVersionCheckedAt": "2026-09-21T05:52:40.7279410Z",
   "currentVersionSource": "https://store.steampowered.com/news/app/2798330/view/702153223322993663",
   "lastScanNote": "官方 RSS/API 和更新中心复核确认 v0.4.23 是当前编号边界；2026-09-13 Archer Balance Reverted 是公告级修正，2026-09-17 Tokyo Game Show 是活动公告，不改变编号版本。Community Hub 本地扫描超时，因此保留 partial，不把失败当作无变化。",
@@ -60,5 +61,5 @@
       "required": false
     }
   ],
-  "note": "官方更新入口已登记。反馈汇总与编号补丁分开记录；状态公告使用 currentAnnouncementBoundary 对账，不能把未来计划写成已发布内容。变化需经过官方正文核验、game-update-evidence、update-delta、site-change-plan 和发布验收。"
+  "note": "2026-09-28 官方 Steam API、RSS 和已登记补丁页最新仍为 2026-09-17 Tokyo Game Show 公告，已由 currentAnnouncementBoundary 覆盖，当前编号版本仍为 0.4.23。Steam Community Hub 连续超时后不再重试，保留可选来源 known_gap。"
 }
